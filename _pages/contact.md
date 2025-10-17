@@ -11,7 +11,7 @@ author_profile: true
 
 <details>
 <summary>
-I use [PGP encryption](https://en.wikipedia.org/wiki/Pretty_Good_Privacy). Click to see my public key.
+My mail client uses [PGP encryption](https://en.wikipedia.org/wiki/Pretty_Good_Privacy). Click to see my public key.
 </summary>
 
 Or download the file directly: [PGP Public Key](https://olicorne.org/files/PGP_public_key).
