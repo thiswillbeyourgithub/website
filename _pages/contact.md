@@ -13,9 +13,7 @@ My mail client uses [PGP encryption](https://en.wikipedia.org/wiki/Pretty_Good_P
 
 <details>
 
-<summary>
-PGP Public Key
-</summary>
+<summary>PGP Public Key</summary>
 
 Or download the file directly: [PGP Public Key](https://olicorne.org/files/PGP_public_key).
 
