@@ -49,6 +49,8 @@ layout: default
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Paper</a> | <a href="{{ page.slidesurl }}">Slides</a> | <a href="{{ page.bibtexurl }}">Bibtex</a></p>
+        {% elsif page.paperurl and page.bibtexurl and page.pdfurl %}
+        <p><a href=" {{ page.paperurl }} ">Paper</a> | <a href=" {{ page.pdfurl }} ">PDF</a> | <a href="{{ page.bibtexurl }}">Bibtex</a></p>
         {% elsif page.citation and page.paperurl and page.slidesurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Paper</a> | <a href="{{ page.slidesurl }}">Slides</a></p>
         {% elsif page.citation and page.paperurl and page.bibtexurl %}
