@@ -45,8 +45,7 @@ I love:
 
 I hate:
 - Forcing others to reinvent the wheel.
-- Having to invent a wheel knowing full well that someone already did it in the passed but did not open source it.
-
+- Having to invent a wheel knowing full well that someone already did it in the past but did not open source it.
 
 
 
