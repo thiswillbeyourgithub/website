@@ -1,22 +1,23 @@
 ---
 permalink: /
-title: "Olivier CORNELIS"
+title: "About Olivier CORNELIS"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-{% include toc %}
 
+## Hi there 👋
 
-## Hi there 👋, I'm Olivier Cornelis
-
-Medical resident in psychiatry in Paris and self-taught developer.
+I'm Olivier Cornelis. A medical resident in psychiatry in Paris. I'm also a (mostly self-taught) developer and datascientist.
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
-**Education**: started coding on my own, then [bac](https://en.wikipedia.org/wiki/Baccalaur%C3%A9at), then some math in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) with a Master-1-type internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin), then [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in [psychiatry](https://fr.wikipedia.org/wiki/Psychiatrie_en_France). I never managed to quit coding so here we are 🤷. If you want to know more about me, my email and [Bluesky](https://en.wikipedia.org/wiki/Bluesky) handle can be found in this README.
+
+{% include toc %}
+
+**Education**: started coding on my own, then [bac](https://en.wikipedia.org/wiki/Baccalaur%C3%A9at), then some math/physics/chemistry in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) with a Master-1-type internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin), then [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in [psychiatry](https://fr.wikipedia.org/wiki/Psychiatrie_en_France). I never managed to quit coding so here we are 🤷. If you want to know more about me, my email and [Bluesky](https://en.wikipedia.org/wiki/Bluesky) handle can be found in this README.
 
 **Interests**: everything AI & Neuroscience🧠, including in-betweens and even-remotely-related. This obviously includes psychiatry and computational psychiatry.
 
