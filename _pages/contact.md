@@ -36,4 +36,4 @@ X+JEP0Pzmy8cTmKIPgTC9jM5cbUS6ciiksw0+ZrsgA8=
 
 ## Other
 - I sometimes use [Bluesky](https://en.wikipedia.org/wiki/Bluesky) and my handle is [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social) so you can DM me there.
-- Note that I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. That means no whatsapp, no messenger, 
+- Note that I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. That means no [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), no messenger, not most social networks etc. Privacy and encryption-by-default are among my core values.
