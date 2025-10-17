@@ -10,11 +10,13 @@ redirect_from:
 
 I'm Olivier Cornelis. A French medical resident in psychiatry in Paris. I'm also a (mostly self-taught) developer and datascientist.
 
-[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
-
 ## Education
 
 I started coding on my own, then [bac](https://en.wikipedia.org/wiki/Baccalaur%C3%A9at), then some math/physics/chemistry in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) with a Master-1-type internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin), then [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in [psychiatry](https://fr.wikipedia.org/wiki/Psychiatrie_en_France).
+
+Almost everything I code is open source and hosted on github. Here are my stats:
+[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
+
 
 ## Interests
 My core interests is neuroscience with a focus on psychiatry. Around 2015 I got interested in AI/ML so naturally I'm drawn towards computational psychiatry.
