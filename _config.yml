@@ -24,9 +24,9 @@ repository               : "thiswillbeyourgithub/website"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Olivier Cornelis"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Medical resident in psychiatry in Paris and self-taught developer / datascientist."
   location         : "Paris, France"
   employer         : "Assistance publique - Hôpitaux de Paris"
   uri              : # URL
