@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I'm Olivier Cornelis. A medical resident in psychiatry in Paris. I'm also a (mostly self-taught) developer and datascientist.
+I'm Olivier Cornelis. A French medical resident in psychiatry in Paris. I'm also a (mostly self-taught) developer and datascientist.
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
