@@ -1,0 +1,15 @@
+---
+permalink: /contact
+title: "Contact - Olivier CORNELIS"
+author_profile: true
+redirect_from:
+  - /contact/
+  - /contact.html
+---
+
+
+**Ways to get in touch**:
+- A mail is `getintouch` then the at symbol then `oliviercornelis.fr`.
+- another email is "`2hf` immediately followed by `w1bgt` at `mailer.me`"
+- I sometimes use [Bluesky](https://en.wikipedia.org/wiki/Bluesky) and my handle is "`3 first letters of my first name` followed by `5 first letters of my last name` dot bsky dot social"
+- I mostly use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) to communicate.
