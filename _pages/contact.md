@@ -1,6 +1,6 @@
 ---
 permalink: /contact
-title: "Contact - Olivier CORNELIS"
+title: "Get in touch"
 author_profile: true
 ---
 
