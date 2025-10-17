@@ -7,6 +7,10 @@ redirect_from:
   - /projects.html
 ---
 
+I host my coding projects on Github:
+
+[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
+
 To browse my projects, you can also go to my [github stars page](https://github.com/thiswillbeyourgithub?tab=stars) and look at `lists`: they contain all my public projects (and only my projects) but are thematically organized. Both those "starred lists" and the list below should exhaustively list my *public* projects.
 A few of them are `pinned` to my [profile page](https://github.com/thiswillbeyourgithub/).
 
@@ -19,9 +23,7 @@ I have some other private repositories that I don't publish here.
 
 {% include toc %}
 
-## Projects
-
-### Medicine & Computer Science
+## Medicine & Computer Science
 - [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): fork of [rpeng](https://github.com/vgel/repeng/) by @vgel, to try to investigate personal theories about LLMs. This is relevant for LLM interpretability.
 - `REDACTED NAME`: A private repo (but hopefully later open source) library to comprehensively use *all* of [scikit-learn](https://scikit-learn.org/)'s clustering techniques on any data then running *all* metrics with a complex plot pipelines to pick the best results. This is less easy than it sounds because clustering have varying types of outputs, not all allow inference, some metrics are intrinsic while others are based on labels, clusters can be fuzzy, can have to be merged or split, need to be remapped etc. Subject of my M1 internship.
 - [wdoc](https://github.com/thiswillbeyourgithub/wdoc): Multi-modal document querying and summarization system integrating diverse content types with advanced RAG capabilities and LLM-powered semantic processing for comprehensive information extraction.
@@ -35,7 +37,7 @@ I have some other private repositories that I don't publish here.
     - [med-pharmacokinetic-simulator](https://github.com/thiswillbeyourgithub/Med-pharmacokinetic-simulator): Its predecessor many years prior. One of my very first coding projects!
 - [ADHD_european_drug_map](https://github.com/thiswillbeyourgithub/ADHD-european-drug-map): Data visualization tool for tracking and mapping the availability of ADHD medications across European countries using official EMA data sources.
 
-### Anki
+## Anki
 *[Anki](https://github.com/ankitects/anki/) is an open source flashcard/spaced repetition memorization system*
 
 - [Voice2Anki](https://github.com/thiswillbeyourgithub/Voice2Anki): Universal language learning tool combining speech recognition and AI to automatically generate and manage personalized flashcards from voice recordings with adaptive formatting and intelligent memory features.
@@ -52,14 +54,14 @@ I have some other private repositories that I don't publish here.
 - [pdf2anki](https://github.com/thiswillbeyourgithub/pdf2anki): Tool for batch-converting PDF documents into Anki flashcards with searchable text and page images, enabling multi-keyword search across PDF content within Anki's interface.
 - [clozolkor](https://github.com/thiswillbeyourgithub/Clozolkor): Advanced spaced repetition flashcard template enabling sequential reveal of cloze deletions with customizable hints, shortcuts, and cross-platform compatibility.
 
-### Karakeep
+## Karakeep
 *[Karakeep](https://github.com/karakeep-app/karakeep) is an open source read it later app*
 
 - [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): Python interface and command-line tool providing comprehensive access to Karakeep's bookmarking API with automated testing, data validation, and community-contributed scripts.
 - [Karanki](https://github.com/thiswillbeyourgithub/Karanki): Bidirectional synchronization tool for automating flashcard creation from highlights with color-coded retention levels and intelligent state tracking capabilities.
 - [freshrss_to_karakeep](https://github.com/thiswillbeyourgithub/freshrss_to_karakeep): Integration tool connecting FreshRSS RSS reader with Karakeep bookmarking service for automated content curation and seamless article transfer between platforms.
 
-### Logseq
+## Logseq
 *[Logseq](https://github.com/logseq/logseq) is an open source PKM (Personal Knowledge Management) app*
 
 - [LogseqMarkdownParser](https://github.com/thiswillbeyourgithub/LogseqMarkdownParser): Parser and utility library supporting seamless reading, manipulation and export of Logseq markdown files with properties and blocks.
@@ -67,18 +69,18 @@ I have some other private repositories that I don't publish here.
 - [LogseqPDFImporter](https://github.com/thiswillbeyourgithub/LogseqPDFImporter): Tool for importing and converting PDF annotations from various PDF readers into Logseq's native format, preserving highlights, colors, and area annotations.
 - [MdXLogseqTODOSync](https://github.com/thiswillbeyourgithub/MdXLogseqTODOSync): Synchronization tool for maintaining TODO items across different markdown file formats with support for pattern filtering, custom delimiters, and nested bullet point preservation.
 
-### Open-WebUI
+## Open-WebUI
 *[Open-WebUI](https://github.com/open-webui/open-webui/issues) is a self hosted AI platform*
 
 - [openwebui_custom_pipes_filters](https://github.com/thiswillbeyourgithub/openwebui_custom_pipes_filters): Comprehensive suite of custom filters, tools, and pipes designed to enhance OpenWebUI's functionality with message tracking, cost monitoring, and extended chat capabilities.
 
-### Smartwatch
+## Smartwatch
 *Mainly for [wasp-os](https://github.com/wasp-os/wasp-os) on the [pinetime](https://pine64.org/devices/pinetime/)*
 
 - [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): Privacy-oriented sleep tracking and smart alarm system utilizing accelerometer and heart rate data to optimize wake-up times based on sleep cycle analysis and gradual wake-up patterns.
 - [pomodoro_wasp_os](https://github.com/thiswillbeyourgithub/Pomodoro-wasp-os): Customizable Pomodoro timer application for PineTime smartwatches featuring multiple presets, vibration patterns, and persistent settings.
 
-### API
+## API
 *I made my own "reference" libraries to make my other projects more interoperable*
 
 - [freshrss_python_api](https://github.com/thiswillbeyourgithub/freshrss_python_api): Python wrapper and API client for the FreshRSS Fever API, enabling programmatic management of RSS feeds, items, and categories with robust error handling and type safety.
@@ -86,7 +88,7 @@ I have some other private repositories that I don't publish here.
 - [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): *See above*
 - [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): *See above*
 
-### Productivity
+## Productivity
 *Tools I use, used or made*
 
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.
@@ -101,14 +103,14 @@ I have some other private repositories that I don't publish here.
 - [simple_voice_chat](https://github.com/thiswillbeyourgithub/simple_voice_chat): Conversational interface integrating various speech-to-text, language model, and text-to-speech services for real-time voice interactions with AI assistants.
 - [AiderBuilder](https://github.com/thiswillbeyourgithub/AiderBuilder): Minimal script and prompt to give [aider.chat](https://aider.chat/) some autonomy by running in a loop and coordinating with itself using a text file.
 
-### "Rot" tools
+## "Rot" tools
 *Tools leveraging deterministic time-based codes*
 
 - [wormrot.sh](https://github.com/thiswillbeyourgithub/wormrot.sh): Secure file transfer automation system using time-synchronized codes and a shared secret for seamless transmission between trusted devices.
 - [fowlrot.sh](https://github.com/thiswillbeyourgithub/fowlrot.sh): Time-based code generation system for secure peer-to-peer connections using synchronized, deterministic codes derived from pre-shared secrets.
 - [knockd_rotator](https://github.com/thiswillbeyourgithub/knockd_rotator): Security enhancement to port knocking via time-based sequence rotation and synchronization between client and server, leveraging shared secrets and deterministic generation to prevent replay attacks.
 
-### Ntfy
+## Ntfy
 *[ntfy.sh](https://ntfy.sh) makes it easy to send and receive notifications, I use it a lot for monitoring*
 
 - [Daily_Fact_Ntfy](https://github.com/thiswillbeyourgithub/Daily_Fact_Ntfy): Notification system that generates and delivers AI-powered interesting facts about user-specified topics through ntfy.sh at randomized intervals.
@@ -119,7 +121,7 @@ I have some other private repositories that I don't publish here.
 - [weather_notifier](https://github.com/thiswillbeyourgithub/weather_notifier): Weather notification system that monitors rainfall forecasts and temperature variations while delivering mobile alerts through ntfy.sh integration.
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
-### Misc Tools
+## Misc Tools
 - [Home Assistant CalDAV client](https://github.com/thiswillbeyourgithub/Home-Assistant-CalDAV-client): A CalDAV client for automating task management with Home Assistant, Nextcloud, and voice commands.
 - [LiteLLM Proxy OpenRouter Price Updater](https://github.com/thiswillbeyourgithub/litellm_proxy_openrouter_price_updater): CLI tool for updating [LiteLLM](https://github.com/BerriAI/litellm) proxy pricing configurations using [OpenRouter](https://openrouter.ai/) API data.
 - [OpenRouter to Langfuse Model Pricing Sync](https://github.com/thiswillbeyourgithub/openrouter_cost_into_langfuse/): A Python script that automatically syncs model pricing data from [OpenRouter](https://openrouter.ai/) to Langfuse's pricing page.
@@ -149,5 +151,5 @@ I have some other private repositories that I don't publish here.
 - [prompt_GPT3](https://github.com/thiswillbeyourgithub/prompt_GPT3): Command-line interface for OpenAI's GPT-3 featuring conversation logging, vim mode, and specialized modes for flashcard creation and translation tasks.
 - [pdfannots](https://github.com/thiswillbeyourgithub/pdfannots): Text extraction tool for PDF documents that processes annotations, highlights, and comments into formatted Markdown, JSON, or EDN outputs for academic paper reviews and document analysis.
 
-### Others
+## Others
 - [FUTOmeter](https://github.com/thiswillbeyourgithub/FUTOmeter): Library suite for privacy-preserving usage tracking and context-aware donation prompts in FOSS applications, enabling sustainable funding through data-driven user engagement metrics.
