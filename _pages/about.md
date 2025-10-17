@@ -1,14 +1,12 @@
 ---
 permalink: /
-title: "Who am I?"
+title: "Hi there 👋"
 author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
 
-
-## Hi there 👋
 
 I'm Olivier Cornelis. A medical resident in psychiatry in Paris. I'm also a (mostly self-taught) developer and datascientist.
 
