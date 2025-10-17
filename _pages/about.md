@@ -27,7 +27,11 @@ I'm Olivier Cornelis. A medical resident in psychiatry in Paris. I'm also a (mos
 
 **Strength**: Although I think I'm good at working with teams as I'm used to collaborating with open source projects at various scale, I also think I'm good at working autonomously as when I hit issues I've been forced to create solutions from scratch. Examples of this are: getting frustrated with keeping track of knowledge source in med school made me create [wdoc](https://github.com/thiswillbeyourgithub/wdoc/), having a new idea on using machine learning for psychiatry let me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA), as well as pretty much all my other projects listed down below.
 
-**Ways to get in touch**: one of my email is "`2hf` immediately followed by `w1bgt` at `mailer.me`", alternatively I sometimes use [Bluesky](https://en.wikipedia.org/wiki/Bluesky) and my handle is "`3 first letters of my first name` followed by `5 first letters of my last name` dot bsky dot social" or invite me to a private github repository to exchange via other means (ideally [Signal](https://en.wikipedia.org/wiki/Signal_(software)).
+**Ways to get in touch**:
+- A mail is `getintouch` then the at symbol then `oliviercornelis.fr`.
+- another email is "`2hf` immediately followed by `w1bgt` at `mailer.me`"
+- I sometimes use [Bluesky](https://en.wikipedia.org/wiki/Bluesky) and my handle is "`3 first letters of my first name` followed by `5 first letters of my last name` dot bsky dot social"
+- I mostly use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) to communicate.
 
 ## Github Projects
 
