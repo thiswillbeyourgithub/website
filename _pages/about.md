@@ -47,9 +47,9 @@ Examples of this are:
 
 
 
-### Misc
+## Other
 
-#### Bounty Track Record
+### Bounty Track Record
 
 Being dedicated to open source, I try to fund what I can using bounty incentives.
 
