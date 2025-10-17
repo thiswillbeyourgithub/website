@@ -17,15 +17,22 @@ I started coding on my own, then [bac](https://en.wikipedia.org/wiki/Baccalaur%C
 Almost everything I code is open source and hosted on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
+I have worked in collaboration but can work autonomously : my coding experience forced me to create solutions from scratch. For example:
+- getting frustrated with keeping track of knowledge source in med school made me create [wdoc](https://github.com/thiswillbeyourgithub/wdoc/)
+- having a new idea on using machine learning for psychiatry let me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA)
+- pretty much all my other projects listed in the [Projects](./projects) page.
+
 
 ## Interests
-My core interests is neuroscience with a focus on psychiatry. Around 2015 I got interested in AI/ML so naturally I'm drawn towards computational psychiatry.
+My core interest is neuroscience with a focus on psychiatry. Around 2015 I got interested in AI/ML so naturally I'm drawn towards computational psychiatry.
 
 I'm highly convinced that AI research will advance psychiatry research, improving patient's lives for the better.
 
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
 ## Personality
+
+
 I love:
 - [love open source and hate closed source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
 - encryption-by-default and privacy respecting tech.
@@ -38,18 +45,12 @@ I hate:
 - Forcing others to reinvent the wheel.
 - Having to invent a wheel knowing full well that someone already did it in the passed but did not open source it.
 
-I have worked in collaboration but can work autonomously : my coding experience forced me to create solutions from scratch.
-
-Examples of this are:
-- getting frustrated with keeping track of knowledge source in med school made me create [wdoc](https://github.com/thiswillbeyourgithub/wdoc/)
-- having a new idea on using machine learning for psychiatry let me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA)
-- pretty much all my other projects listed in the [Projects](./projects) page.
 
 
 
 ## Other
 
-### Bounty Track Record
+### Bug Bounties Payment Track Records
 
 Being dedicated to open source, I try to fund what I can using bounty incentives.
 
