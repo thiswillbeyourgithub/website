@@ -7,6 +7,10 @@ redirect_from:
   - /projects.html
 ---
 
+I host my coding projects on Github:
+
+[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
+
 To browse my projects, you can also go to my [github stars page](https://github.com/thiswillbeyourgithub?tab=stars) and look at `lists`: they contain all my public projects (and only my projects) but are thematically organized. Both those "starred lists" and the list below should exhaustively list my *public* projects.
 A few of them are `pinned` to my [profile page](https://github.com/thiswillbeyourgithub/).
 
