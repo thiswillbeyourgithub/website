@@ -2,9 +2,6 @@
 permalink: /contact
 title: "Contact - Olivier CORNELIS"
 author_profile: true
-redirect_from:
-  - /contact/
-  - /contact.html
 ---
 
 
