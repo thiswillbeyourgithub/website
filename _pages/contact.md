@@ -10,7 +10,9 @@ author_profile: true
 - another email is "`2hf` immediately followed by `w1bgt` at `mailer.me`"
 
 My mail client uses [PGP encryption](https://en.wikipedia.org/wiki/Pretty_Good_Privacy). Click to see my public key:
+
 <details>
+
 <summary>
 PGP Public Key
 </summary>
@@ -38,6 +40,8 @@ X+JEP0Pzmy8cTmKIPgTC9jM5cbUS6ciiksw0+ZrsgA8=
 =RX/l
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+
 </details>
 
 ## Other
