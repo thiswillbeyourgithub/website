@@ -5,11 +5,18 @@ author_profile: true
 ---
 
 
-## By mail
+## Email
 - A mail is `getintouch` then the at symbol then `oliviercornelis.fr`.
 - another email is "`2hf` immediately followed by `w1bgt` at `mailer.me`"
 
-In both cases, you can use [PGP encryption](https://en.wikipedia.org/wiki/Pretty_Good_Privacy). Here is my public key:
+I use [PGP encryption](https://en.wikipedia.org/wiki/Pretty_Good_Privacy).
+
+<details>
+<summary>
+Click to see my PGP public key
+</summary>
+
+Or download the file directly: [PGP Public Key](https://olicorne.org/files/PGP_public_key).
 
 `fingerprint: 2d865b11d32836fdf346cb4cdd066352a75a462b`
 
@@ -32,8 +39,7 @@ X+JEP0Pzmy8cTmKIPgTC9jM5cbUS6ciiksw0+ZrsgA8=
 =RX/l
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-```
-```
+</details>
 
 ## Other
 - I sometimes use [Bluesky](https://en.wikipedia.org/wiki/Bluesky) and my handle is [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social).
