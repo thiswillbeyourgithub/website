@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Olivier CORNELIS"
+title: "About - Olivier CORNELIS"
 author_profile: true
 redirect_from:
   - /about/
