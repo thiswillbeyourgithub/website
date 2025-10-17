@@ -7,19 +7,17 @@ redirect_from:
   - /projects.html
 ---
 
-{% include toc %}
-
-To browse my projects, you can also go to [my stars page](https://github.com/thiswillbeyourgithub?tab=stars) and look at `lists`: they contain all my public projects (and only my projects) but are thematically organized. Both those "starred lists" and the list below should exhaustively list my *public* projects.
+To browse my projects, you can also go to my [github stars page](https://github.com/thiswillbeyourgithub?tab=stars) and look at `lists`: they contain all my public projects (and only my projects) but are thematically organized. Both those "starred lists" and the list below should exhaustively list my *public* projects.
 A few of them are `pinned` to my profile page.
 
-All code is almost always only done by me.
-
-Althrough I've been using AI for many years, I didn't use it for coding until somewhere 2025. Since then, I almost exclusively use [aider](https://aider.chat/) with `--attribute-author` so you can transparently see which projects where done with its assistance and which are "my own".
+All code is almost always only done by me although I'm always open to contributions. Although I've been using AI for many years, I didn't use it for coding until somewhere 2025. Since then, I almost exclusively use [aider](https://aider.chat/) with `--attribute-author` so you can transparently see which projects where done with its assistance and which are "my own".
 
 I have some other private repositories that I don't publish here.
 
 
-*The list below was up to date as of september 15th 2025. You can see in the commit history when I last edited this "readme" repository but note that I use a git push hook to obscure my commit history.*
+*The list below was up to date as of october 17th 2025.*
+
+{% include toc %}
 
 ## Projects
 
