@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Hi there 👋"
-author_profile: false
+author_profile: true
 redirect_from:
   - /about/
   - /about.html
@@ -35,7 +35,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 ## Personality
 
 
-I love:
+Things I love:
 - [love open source and hate closed source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
 - encryption-by-default and privacy respecting tech.
 - applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
@@ -43,7 +43,7 @@ I love:
 - robust, distributed and resilient systems.
 - Coding things from scratch.
 
-I hate:
+Things I hate:
 - Forcing others to reinvent the wheel.
 - Having to invent a wheel knowing full well that someone already did it in the past but did not open source it.
 
