@@ -4,10 +4,9 @@ title: "Get in touch"
 author_profile: true
 ---
 
+Note that I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. A notable exception is [Bluesky](https://en.wikipedia.org/wiki/Bluesky) that I sometimes use. You can DM me at [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social).
 
-## Email
-- A mail is `getintouch` then the at symbol then `oliviercornelis.fr`.
-- another email is "`2hf` immediately followed by `w1bgt` at `mailer.me`"
+You can email me at `getintouch@oliviercornelis.fr`.
 
 My mail client uses [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) encryption. You can download my public key here: [PGP Public Key](../files/PGP_public_key).
 
@@ -33,7 +32,3 @@ X+JEP0Pzmy8cTmKIPgTC9jM5cbUS6ciiksw0+ZrsgA8=
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-
-## Other
-- I sometimes use [Bluesky](https://en.wikipedia.org/wiki/Bluesky) and my handle is [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social) so you can DM me there.
-- Note that I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. That means no [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), no messenger, not most social networks etc. Privacy and encryption-by-default are among my core values.
