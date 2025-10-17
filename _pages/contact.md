@@ -9,7 +9,7 @@ author_profile: true
 - A mail is `getintouch` then the at symbol then `oliviercornelis.fr`.
 - another email is "`2hf` immediately followed by `w1bgt` at `mailer.me`"
 
-My mail client uses [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) encryption. You can download my public key here: [PGP Public Key](https://olicorne.org/files/PGP_public_key).
+My mail client uses [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) encryption. You can download my public key here: [PGP Public Key](../files/PGP_public_key).
 
 `fingerprint: 2d865b11d32836fdf346cb4cdd066352a75a462b`
 
