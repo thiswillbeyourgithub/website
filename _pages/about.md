@@ -1,56 +1,46 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Olivier CORNELIS"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+## Hi there 👋
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I'm Olivier Cornelis. A medical resident in psychiatry in Paris. I'm also a (mostly self-taught) developer and datascientist.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+**Education**: started coding on my own, then [bac](https://en.wikipedia.org/wiki/Baccalaur%C3%A9at), then some math/physics/chemistry in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) with a Master-1-type internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin), then [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in [psychiatry](https://fr.wikipedia.org/wiki/Psychiatrie_en_France). I never managed to quit coding so here we are 🤷. If you want to know more about me, my email and [Bluesky](https://en.wikipedia.org/wiki/Bluesky) handle can be found in this README.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+**Interests**: everything AI & Neuroscience🧠, including in-betweens and even-remotely-related. This obviously includes psychiatry and computational psychiatry.
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+**Belief:** As of 2025, I believe that bridging "deep learning" and neuroscience represents a very promising avenue for advancing patient care. The computational insights from AI could enhance our understanding of neural mechanisms underlying mental health conditions, while clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+**Personality**: investing my time by coding from the grounds up, hate closed source systems and forcing others to reinvent the same stack, love collaboration, love distributed and resilient systems, love deep learning interpretability, love repairing stuff.
 
-**Markdown generator**
+**Strength**: Although I think I'm good at working with teams as I'm used to collaborating with open source projects at various scale, I also think I'm good at working autonomously as when I hit issues I've been forced to create solutions from scratch. Examples of this are: getting frustrated with keeping track of knowledge source in med school made me create [wdoc](https://github.com/thiswillbeyourgithub/wdoc/), having a new idea on using machine learning for psychiatry let me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA), as well as pretty much all my other projects listed down below.
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+**Ways to get in touch**:
+- A mail is `getintouch` then the at symbol then `oliviercornelis.fr`.
+- another email is "`2hf` immediately followed by `w1bgt` at `mailer.me`"
+- I sometimes use [Bluesky](https://en.wikipedia.org/wiki/Bluesky) and my handle is "`3 first letters of my first name` followed by `5 first letters of my last name` dot bsky dot social"
+- I mostly use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) to communicate.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+## Bounty Track Record
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Being dedicated to open source, I try to fund what I can using bounty incentives.
+
+<details>
+<summary>Click here to see my bounty track record</summary>
+
+1. [Porting my SleepTk app from a micropython-based OS to a C-based device](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker/issues/13)
+2. [Adding highlights on the mobile webapp for Karakeep](https://github.com/karakeep-app/karakeep/issues/1220)
+
+3. *The other bounties are currently in progress*
+
+</details>
