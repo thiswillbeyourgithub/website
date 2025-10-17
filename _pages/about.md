@@ -23,16 +23,13 @@ I'm Olivier Cornelis. A medical resident in psychiatry in Paris. I'm also a (mos
 **Strength**: Although I think I'm good at working with teams as I'm used to collaborating with open source projects at various scale, I also think I'm good at working autonomously as when I hit issues I've been forced to create solutions from scratch. Examples of this are: getting frustrated with keeping track of knowledge source in med school made me create [wdoc](https://github.com/thiswillbeyourgithub/wdoc/), having a new idea on using machine learning for psychiatry let me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA), as well as pretty much all my other projects listed down below.
 
 
-## Bounty Track Record
+## Misc
+
+### Bounty Track Record
 
 Being dedicated to open source, I try to fund what I can using bounty incentives.
-
-<details>
-<summary>Click here to see my bounty track record</summary>
 
 1. [Porting my SleepTk app from a micropython-based OS to a C-based device](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker/issues/13)
 2. [Adding highlights on the mobile webapp for Karakeep](https://github.com/karakeep-app/karakeep/issues/1220)
 
 3. *The other bounties are currently in progress*
-
-</details>
