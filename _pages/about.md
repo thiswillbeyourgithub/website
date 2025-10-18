@@ -47,7 +47,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 
 ### Bug Bounties Payment Track Records
 
-Being dedicated to open source, I try to fund what I can using bounty incentives.
+Being dedicated to open source, I actively support open source development through bounty incentives and community contributions:
 
 1. [Porting my SleepTk app from a micropython-based OS to a C-based device](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker/issues/13).
 2. [Adding highlights on the mobile webapp for Karakeep](https://github.com/karakeep-app/karakeep/issues/1220).
