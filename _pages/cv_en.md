@@ -56,7 +56,7 @@ redirect_from:
 * *NeuroSpin*, UNICOG team of Pr Stanislas Dehaene, Gif-Sur-Yvettes, France - 2022
     * Master's internship: computational modeling of consciousness states via fMRI, Python library development, Machine learning, High-dimensional data clustering
 * *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH USA - 2015
-    * One-month internship at *Geisel School of Medicine*, R programming, published work
+    * One-month internship at *Geisel School of Medicine*, R programming, cf publication
 
 
 # Skills

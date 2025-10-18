@@ -55,7 +55,7 @@ redirect_from:
 * *NeuroSpin*, équipe UNICOG du Pr Stanislas Dehaene, Gif-Sur-Yvettes, France - 2022
     * Stage de M1: modélisation computationnelle des états de conscience via IRMf, Développement de bibliothèques Python, Apprentissage automatique, Clustering de données de haute dimension
 * *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH USA - 2015
-    * Stage d’un mois à la *Geisel School of Medicine*, programation en R, travaux publiés
+    * Stage d’un mois à la *Geisel School of Medicine*, programation en R, cf publication
 
 
 # Compétences
