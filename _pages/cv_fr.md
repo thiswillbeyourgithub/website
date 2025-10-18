@@ -84,7 +84,7 @@ redirect_from:
   {% endfor %}</ul>
 
 # Formation en ligne
-* Inria - 2021:
+* Inria - 2021
     * *Recherche reproductible : principes méthodologiques pour une science transparente*
     * *Bioinformatique : algorithmes et génomes*
     * *Python 3 : des fondamentaux aux concepts avancés du langage*
