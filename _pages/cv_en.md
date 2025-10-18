@@ -40,7 +40,7 @@ redirect_from:
 
 
 # Education
-* Specialized Studies Diploma (DES) in Psychiatry - starting in 2025
+* Specialized Studies Diploma (DES) in Psychiatry - since 2025
     * Paris Cité University, Paris psychiatry
 * Master's degree (M1), 2019-2025
     * Health Research Track, Neuroscience, Genetics, R programming, Paris Cité University
@@ -76,7 +76,7 @@ redirect_from:
 * German level A1-A2
 
 ## Other
-* Technical & Innovation Advisor at *Société Nouvelle des Cycles Cavales* (ecological intermediate mobility) - starting in 2024
+* Technical & Innovation Advisor at *Société Nouvelle des Cycles Cavales* (ecological intermediate mobility) - since 2024
 * Driver's license (category B) - 2015
 
 # Publication

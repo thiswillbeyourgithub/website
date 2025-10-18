@@ -39,7 +39,7 @@ redirect_from:
 
 
 # Formation
-* Diplôme d'Étude Spécialisée (DES) de psychiatrie - début en 2025
+* Diplôme d'Étude Spécialisée (DES) de psychiatrie - depuis 2025
     * Université Paris Cité, psychiatrie Paris
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
@@ -75,7 +75,7 @@ redirect_from:
 * Allemand niveau A1-A2
 
 ## Autre
-* Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - début en 2024
+* Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - depuis 2024
 * Permis B - 2015
 
 # Publication
