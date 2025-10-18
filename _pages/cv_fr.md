@@ -66,7 +66,6 @@ redirect_from:
 * Maitrise de logiciels de collaboration (git, Jupyter Notebook, markdown)
 * Notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
-* Utilisateur avancé d’Anki (logiciel de mémorisation)
 
 ## Linguistique
 - Français natif
