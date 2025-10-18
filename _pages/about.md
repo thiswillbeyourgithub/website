@@ -8,17 +8,17 @@ redirect_from:
 ---
 
 
-I'm Olivier Cornelis, a French psychiatry resident in Paris. I'm also a (self-taught) developer and data scientist.
+I'm Olivier Cornelis, a French psychiatry resident in Paris and a self-taught developer and data scientist.
 
 ## Education
 
 I took advanced math/physics/chemistry classes in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then went to [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) during which I did a 2 months research internship (french: "stage de M1") at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin) creating from scratch a cluster plotting and benchmarking library for neuroscience. In 2025 I started [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in psychiatry in Paris, France.
 
-I started coding when I was about 12. Almost everything I code is open source and hosted on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
+I started coding when I was about 12. I'm passionate about open source — most of my code is publicly available on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
-I have experience working in collaboration and autonomously : I had the opportunity to build innovative solutions from scratch and share them with the world. Example of my self-motivation include:
-- To search across my diverse medical corpus dataset with natural language query I created [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). The innovative summarizer feature was added to save me time during those student years.
+I have experience working in collaboration and autonomously: I had the opportunity to build innovative solutions from scratch and make them freely available. Examples of my self-motivation include:
+- To search across my diverse medical corpus dataset with natural language query I created [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). The innovative summarizer feature was added to save me time catching up on the news.
 - Tinkering with [high dimensional embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) led me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) and pitch it to renowned researchers. The goal being to uncover hidden patterns in medical questionnaires allowing to unify partially disjointed medical datasets.
 - Tinkering with [AI interpretability](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) led me to fork the [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) library to test various high dimensional vector modification techniques to steer its behavior.
 -  More at [Projects](./projects).
@@ -29,17 +29,17 @@ My core interest has always been around neuroscience with a focus on psychiatry.
 
 Circa 2015, I got interested in AI/ML so naturally I'm heavily drawn towards computational psychiatry.
 
-I'm highly convinced that AI research will advance psychiatry research, improving patient's lives for the better.
+I'm excited about how AI research will advance psychiatry research, improving patient's lives for the better.
 
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
 ## Things I love
-- [open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
-- when building blocks I participated in have positive compounding effects.
-- applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
-- repairing stuff.
-- robust, distributed and resilient systems.
-- encryption-by-default and privacy respecting tech.
+- [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
+- When building blocks I participated in have positive compounding effects.
+- Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
+- Repairing stuff.
+- Robust, distributed and resilient systems.
+- Encryption-by-default and privacy respecting tech.
 
 
 
@@ -47,9 +47,9 @@ At the same time, clinical observations from psychiatry could inform more robust
 
 ### Bug Bounties Payment Track Records
 
-Being dedicated to open source, I try to fund what I can using bounty incentives.
+I actively support open source development through bounty incentives and community contributions:
 
-1. [Porting my SleepTk app from a micropython-based OS to a C-based device](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker/issues/13)
-2. [Adding highlights on the mobile webapp for Karakeep](https://github.com/karakeep-app/karakeep/issues/1220)
+1. [Porting my SleepTk app from a micropython-based OS to a C-based device](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker/issues/13).
+2. [Adding highlights on the mobile webapp for Karakeep](https://github.com/karakeep-app/karakeep/issues/1220).
 
-3. *The other bounties are currently in progress*
+3. *Additional bounties are underway.*
