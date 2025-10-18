@@ -11,9 +11,9 @@ I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software
 
 You can email me at `getintouch@oliviercornelis.fr`.
 
-My mail client uses [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) encryption. You can download my public key here: [PGP Public Key](../files/PGP_public_key).
+You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) public key here: [PGP Public Key](../files/PGP_public_key) or copy it from below:
 
-`fingerprint: 2d865b11d32836fdf346cb4cdd066352a75a462b`
+`public key fingerprint: 2d865b11d32836fdf346cb4cdd066352a75a462b`
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
