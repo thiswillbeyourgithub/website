@@ -12,9 +12,9 @@ I'm Olivier Cornelis, a French psychiatry resident in Paris. I'm also a (mostly 
 
 ## Education
 
-I started coding on my own, then [bac](https://en.wikipedia.org/wiki/Baccalaur%C3%A9at) with honors, then some math/physics/chemistry in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles) (`A` grade), then [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) with a Master-1-type internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin), then [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in [psychiatry](https://fr.wikipedia.org/wiki/Psychiatrie_en_France).
+I took advanced math/physics/chemistry classes in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then went to [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) during which I did a 2 months research internship ("stage de M1" in France) at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin). In 2025 I started [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in [psychiatry](https://fr.wikipedia.org/wiki/Psychiatrie_en_France) in Paris, France.
 
-Almost everything I code is open source and hosted on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
+I started coding when I was about 12. Almost everything I code is open source and hosted on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
 I have worked in collaboration but can work autonomously : my coding experience forced me to create solutions from scratch. For example:
