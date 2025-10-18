@@ -43,11 +43,11 @@ redirect_from:
     * Université Paris Cité, psychiatrie Paris
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
-    * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
+    * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD), 18/20
 * Diplôme de Formation Générale et Approfondie en Sciences Médicales - 2016-2025
     * Université Paris Cité
 * Classe Préparatoire aux Grandes Écoles - 2015-2016
-    * Lycée Général Carnot, section Physique Chimie (PCSI-PC)
+    * Lycée Général Carnot, section Physique Chimie (PCSI-PC), mention A
 
 
 
