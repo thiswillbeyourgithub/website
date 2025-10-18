@@ -19,6 +19,33 @@ ul ul, ol ul, ul ol, ol ol {
   padding-bottom: 0.0rem;
 }
 
+/* CV Header - compact info section */
+.cv-header {
+  margin-bottom: 1.5rem;
+}
+
+.cv-header h1 {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.cv-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.cv-info-item {
+  white-space: nowrap;
+}
+
+.cv-info-item strong {
+  margin-right: 0.3rem;
+}
+
 
 
 /* Print-specific styles - remove backgrounds to save ink */
@@ -99,30 +126,3 @@ ul ul, ol ul, ul ol, ol ol {
 }
 
 
-
-/* CV Header - compact info section */
-.cv-header {
-  margin-bottom: 1.5rem;
-}
-
-.cv-header h1 {
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.3rem;
-}
-
-.cv-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.cv-info-item {
-  white-space: nowrap;
-}
-
-.cv-info-item strong {
-  margin-right: 0.3rem;
-}
