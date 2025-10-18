@@ -21,3 +21,17 @@ ul {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
 }
+
+
+/* Print-specific styles - remove backgrounds to save ink */
+@media print {
+  body, html, .page, .page__content, .masthead, .sidebar, * {
+    background: white !important;
+    background-color: white !important;
+  }
+
+  /* Optional: hide elements you don't want in print */
+  .masthead, .page__footer, .sidebar {
+    display: none !important;
+  }
+}
