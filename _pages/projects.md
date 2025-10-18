@@ -19,18 +19,17 @@ Authorship disclaimer:
 {% include toc %}
 
 ## Medicine & Computer Science
-- [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): fork of [rpeng](https://github.com/vgel/repeng/) by @vgel, to try to investigate personal theories about LLMs. This is relevant for LLM interpretability.
-- `REDACTED NAME`: A private repo (but hopefully later open source) library to comprehensively use *all* of [scikit-learn](https://scikit-learn.org/)'s clustering techniques on any data then running *all* metrics with a complex plot pipelines to pick the best results. This is less easy than it sounds because clustering have varying types of outputs, not all allow inference, some metrics are intrinsic while others are based on labels, clusters can be fuzzy, can have to be merged or split, need to be remapped etc. Subject of my M1 internship.
-- [wdoc](https://github.com/thiswillbeyourgithub/wdoc): Multi-modal document querying and summarization system integrating diverse content types with advanced RAG capabilities and LLM-powered semantic processing for comprehensive information extraction.
-    - [OmniQA](https://github.com/thiswillbeyourgithub/OmniQA): Document indexing tool for seamless querying of any file format using large language models and vector search technology. Was superseeded by **wdoc**.
-- KnQuant (not yet pushed): Advanced text processing library that converts unstructured text into searchable knowledge triplets using multi-modal embeddings and parallel processing architecture.
 - [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA): Research project merging numerical survey responses with semantic question embeddings to enhance patient data analysis and uncover hidden patterns in medical questionnaires.
-- [Beta-Variational-Autoencoder](https://github.com/thiswillbeyourgithub/Beta-Variational-Autoencoder): Deep learning model implementing beta-variational autoencoder architecture for dimensionality reduction and data compression using the scikit-learn API.
-- [GridSearchReductor](https://github.com/thiswillbeyourgithub/GridSearchReductor): Statistical optimization tool leveraging stratified sampling to reduce parameter search space while maintaining effective parameter coverage in experiments. Vibecoded.
-- [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Advanced command-line tool for automated webpage archival to PDF with metadata extraction and seamless integration into Zotero's reference management system across multiple devices.
+- [wdoc](https://github.com/thiswillbeyourgithub/wdoc): Multi-modal document querying and summarization system integrating diverse content types with advanced [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) capabilities and LLM-powered semantic processing for comprehensive information extraction.
+    - [OmniQA](https://github.com/thiswillbeyourgithub/OmniQA): Document indexing tool for seamless querying of any file format using large language models and vector search technology. Was superseeded by **wdoc**.
+- [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): fork of [rpeng](https://github.com/vgel/repeng/) by @vgel, to try to investigate personal theories about LLMs. This is relevant for LLM interpretability.
+- `REDACTED NAME`: A private repo (but hopefully later open source) library to comprehensively use *all* of [scikit-learn](https://scikit-learn.org/)'s clustering techniques on any data then running *all* metrics with a complex plot pipelines to pick the best results. This is less easy than it sounds because clustering have varying types of outputs, not all allow inference, some metrics are intrinsic while others are based on labels, clusters can be fuzzy, can have to be merged or split, need to be remapped etc. Subject of my M1 internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin).
 - [gradio_pharmacokinetic_simulator](https://github.com/thiswillbeyourgithub/gradio_pharmacokinetic_simulator): Pharmacokinetic simulation tool to help me improve my intuition about drug accumulation.
     - [med-pharmacokinetic-simulator](https://github.com/thiswillbeyourgithub/Med-pharmacokinetic-simulator): Its predecessor many years prior. One of my very first coding projects!
 - [ADHD_european_drug_map](https://github.com/thiswillbeyourgithub/ADHD-european-drug-map): Data visualization tool for tracking and mapping the availability of ADHD medications across European countries using official EMA data sources.
+- KnQuant (not yet pushed): Advanced text processing library that converts unstructured text into searchable knowledge triplets using multi-modal embeddings and parallel processing architecture.
+- [Beta-Variational-Autoencoder](https://github.com/thiswillbeyourgithub/Beta-Variational-Autoencoder): Deep learning model implementing beta-variational autoencoder architecture for dimensionality reduction and data compression using the scikit-learn API.
+- [GridSearchReductor](https://github.com/thiswillbeyourgithub/GridSearchReductor): Statistical optimization tool leveraging stratified sampling to reduce parameter search space while maintaining effective parameter coverage in experiments. Vibecoded.
 
 ## Anki
 *[Anki](https://github.com/ankitects/anki/) is an open source flashcard/spaced repetition memorization system*
@@ -86,6 +85,7 @@ Authorship disclaimer:
 ## Productivity
 *Tools I use, used or made*
 
+- [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Advanced command-line tool for automated webpage archival to PDF with metadata extraction and seamless integration into Zotero's reference management system across multiple devices.
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.
     - [LiTOY](https://github.com/thiswillbeyourgithub/LiTOY-aka-List-that-Outlives-You): Smart prioritization tool utilizing pairwise comparisons and ELO ratings to rank personal goals based on importance and time investment.
 - [BrownieCutter](https://github.com/thiswillbeyourgithub/BrownieCutter): Template generator for Python projects that automates boilerplate code creation and project structure setup with customizable configurations.
