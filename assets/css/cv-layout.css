@@ -62,7 +62,7 @@ ul ul, ol ul, ul ol, ol ol {
 
   /* Force light mode for links */
   a, a:link, a:visited {
-    color: #0066cc !important;
+    color: black !important;
     text-decoration: underline;
   }
 
