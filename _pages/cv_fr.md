@@ -59,7 +59,7 @@ redirect_from:
 
 
 # Compétences
-## Informatique
+## Informatiques
 * Maîtrise de l’environnement **Unix** (GNU/Linux, OSX), complexité algorithimique, notions avancées du shell (zsh/bash), vi/vim/neovim, des regexp, sysadmin (self hosting, databases), Interfaces (GUI/CLI)
 * **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image
 * **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
@@ -68,7 +68,7 @@ redirect_from:
 * Notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
 
-## Linguistique
+## Linguistiques
 - Français natif
 * Anglais niveau C1/C2 (plus de 3 mois cumulés en Amérique du Nord)
 * Espagnol niveau A2-B1
