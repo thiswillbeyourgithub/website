@@ -62,7 +62,7 @@ redirect_from:
 ## Informatique
 * Maîtrise de l’environnement **Unix** (GNU/Linux, OSX), complexité algorithimique, notions avancées du shell (zsh/bash), vi/vim/neovim, des regexp, sysadmin (self hosting, databases), Interfaces (GUI/CLI)
 * **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image
-* **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, umap, numpy, pandas, regexp, complexité, optimisation)
+* **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
 * Maitrise de **logiciels de collaboration** (git, Jupyter Notebook, markdown)
 * Fort engagement envers les **Logiciels Libre** (1800+ :stars: sur Github, Data For Good, InterHop)
 * Notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
