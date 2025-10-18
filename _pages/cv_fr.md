@@ -11,6 +11,9 @@ redirect_from:
 
 {% include base_path %}
 
+# Contact
+`cv@oliviercornelis.fr`
+
 
 # Formation
 * Diplôme d'Étude Spécialisée (DES) - début en 2025
