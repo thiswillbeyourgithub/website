@@ -18,9 +18,9 @@ I started coding when I was about 12. Almost everything I code is open source an
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
 I have worked in collaboration but can work autonomously : my coding experience gave me the opportunity to build innovative solutions from scratch — and share them with the world. For example:
-- to search across my diverse medical corpus dataset with natural language query I created [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). The innovative summarizer feature was added to save me time during those student years.
-- tinkering with [high dimensional embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) led me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) and pitch it to renowned researchers. The goal being to uncover hidden patterns in medical questionnaires allowing to unify partially disjointed medical datasets.
-- tinkering with [AI interpretability](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) led me to fork the [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) library to test various high dimensional vector modification techniques to steer its behavior.
+- To search across my diverse medical corpus dataset with natural language query I created [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). The innovative summarizer feature was added to save me time during those student years.
+- Tinkering with [high dimensional embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) led me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) and pitch it to renowned researchers. The goal being to uncover hidden patterns in medical questionnaires allowing to unify partially disjointed medical datasets.
+- Tinkering with [AI interpretability](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) led me to fork the [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) library to test various high dimensional vector modification techniques to steer its behavior.
 -  More at [Projects](./projects).
 
 
