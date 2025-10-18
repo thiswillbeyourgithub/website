@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+My CV in french can be found at [this page](./cv_fr)
+
 {% include base_path %}
 
 Education
