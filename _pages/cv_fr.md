@@ -39,15 +39,15 @@ redirect_from:
 
 
 # Formation
-* Diplôme d'Étude Spécialisée (DES) en psychiatrie - début en 2025
+* Diplôme d'Étude Spécialisée (DES) de psychiatrie - début en 2025
     * Université Paris Cité, psychiatrie Paris
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
-    * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
+    * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD), 18/20
 * Diplôme de Formation Générale et Approfondie en Sciences Médicales - 2016-2025
     * Université Paris Cité
 * Classe Préparatoire aux Grandes Écoles - 2015-2016
-    * Lycée Général Carnot, section Physique Chimie (PCSI-PC)
+    * Lycée Général Carnot, section Physique Chimie (PCSI-PC), mention A
 
 
 
@@ -59,16 +59,16 @@ redirect_from:
 
 
 # Compétences
-## Informatique
-* Fort engagement envers les Logiciels Libre (1800+ :stars: sur Github, Data For Good, InterHop)
-* Maîtrise de l’environnement Unix (GNU/Linux, OSX), complexité algorithimique, notions avancées du shell (zsh/bash), vi/vim/neovim, des regexp, sysadmin (self hosting, databases), Interfaces (GUI/CLI)
-* Large Language Models (pytorch, scikit-learn, huggingface, ...), Agents (LangChain, DIY), interprétabilité (representation engineering), RAG (wdoc), image generation, embeddings & vector search
-* Machine Learning et big data en Python (PCA, T-SNE, UMAP, TFIDF, umap, numpy, pandas, regexp, complexité, optimisation)
-* Maitrise de logiciels de collaboration (git, Jupyter Notebook, markdown)
+## Informatiques
+* Maîtrise de l’environnement **Unix** (GNU/Linux, OSX), complexité algorithimique, notions avancées du shell (zsh/bash), vi/vim/neovim, des regexp, sysadmin (self hosting, databases), Interfaces (GUI/CLI)
+* **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image
+* **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
+* Maitrise de **logiciels de collaboration** (git, Jupyter Notebook, markdown)
+* Fort engagement envers les **Logiciels Libre** (1800+ :stars: sur Github, Data For Good, InterHop)
 * Notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
 
-## Linguistique
+## Linguistiques
 - Français natif
 * Anglais niveau C1/C2 (plus de 3 mois cumulés en Amérique du Nord)
 * Espagnol niveau A2-B1
@@ -84,9 +84,9 @@ redirect_from:
   {% endfor %}</ul>
 
 # Formation en ligne
-* Inria - 2021
+* **Inria** - 2021
     * *Recherche reproductible : principes méthodologiques pour une science transparente*
     * *Bioinformatique : algorithmes et génomes*
     * *Python 3 : des fondamentaux aux concepts avancés du langage*
-* HuggingFace : *Natural Language Processing Machine Learning Course* - 2021
+* **HuggingFace** : *Natural Language Processing Machine Learning Course* - 2021
 
