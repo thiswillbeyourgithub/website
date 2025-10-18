@@ -39,12 +39,13 @@ redirect_from:
 
 
 # Formation
-* Diplôme d'Étude Spécialisée (DES) - début en 2025
-    * Psychiatrie à Paris, France
+* Diplôme d'Étude Spécialisée (DES) en psychiatrie - début en 2025
+    * Université Paris Cité, psychiatrie Paris
 * Master 1, 2019-2025
-    * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R
+    * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
     * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
-* Diplôme de Formation Générale et Approfondie en Sciences Médicales (DFGSM) - 2016-2025
+* Diplôme de Formation Générale et Approfondie en Sciences Médicales - 2016-2025
+    * Université Paris Cité
 * Classe Préparatoire aux Grandes Écoles - 2015-2016
     * Lycée Général Carnot, section Physique Chimie (PCSI-PC)
 
