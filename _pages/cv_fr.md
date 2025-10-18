@@ -21,7 +21,7 @@ redirect_from:
       <strong>Website:</strong> olicorne.org
     </div>
     <div class="cv-info-item">
-      <strong>Location:</strong> Paris, France
+      <strong>Lieu:</strong> Paris, France
     </div>
     <div class="cv-info-item">
       <strong>ORCID:</strong> 0000-0002-5445-4679
