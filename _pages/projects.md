@@ -12,7 +12,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
 Authorship disclaimer:
-* Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, I almost exclusively use [aider](https://aider.chat/) with `--attribute-author` so you can transparently see which projects where done with its assistance and which are "my own".
+* Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, when I want AI-based assistance I almost exclusively use [aider](https://aider.chat/) with `--attribute-author`. This way you can see which projects and commits where done with or without its assistance.
 
 {% include toc %}
 
