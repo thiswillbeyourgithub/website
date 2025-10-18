@@ -8,19 +8,20 @@ redirect_from:
 ---
 
 
-I'm Olivier Cornelis, a French psychiatry resident in Paris. I'm also a (mostly self-taught) developer and datascientist.
+I'm Olivier Cornelis, a French psychiatry resident in Paris. I'm also a (self-taught) developer and data scientist.
 
 ## Education
 
-I started coding on my own, then [bac](https://en.wikipedia.org/wiki/Baccalaur%C3%A9at) with honors, then some math/physics/chemistry in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles) (`A` grade), then [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) with a Master-1-type internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin), then [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in [psychiatry](https://fr.wikipedia.org/wiki/Psychiatrie_en_France).
+I took advanced math/physics/chemistry classes in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then went to [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) during which I did a 2 months research internship (french: "stage de M1") at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin) creating from scratch a cluster plotting and benchmarking library for neuroscience. In 2025 I started [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in psychiatry in Paris, France.
 
-Almost everything I code is open source and hosted on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
+I started coding when I was about 12. Almost everything I code is open source and hosted on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
-I have worked in collaboration but can work autonomously : my coding experience forced me to create solutions from scratch. For example:
-- getting frustrated with keeping track of knowledge source in med school made me create [wdoc](https://github.com/thiswillbeyourgithub/wdoc/)
-- having a new idea on using machine learning for psychiatry let me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA)
-- pretty much all my other projects listed in the [Projects](./projects) page.
+I have experience working in collaboration and autonomously : I had the opportunity to build innovative solutions from scratch and share them with the world. Example of my self-motivation include:
+- To search across my diverse medical corpus dataset with natural language query I created [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). The innovative summarizer feature was added to save me time during those student years.
+- Tinkering with [high dimensional embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) led me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) and pitch it to renowned researchers. The goal being to uncover hidden patterns in medical questionnaires allowing to unify partially disjointed medical datasets.
+- Tinkering with [AI interpretability](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) led me to fork the [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) library to test various high dimensional vector modification techniques to steer its behavior.
+-  More at [Projects](./projects).
 
 
 ## Interests
@@ -32,20 +33,13 @@ I'm highly convinced that AI research will advance psychiatry research, improvin
 
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
-## Personality
-
-
-Things I love:
-- [love open source and hate closed source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
-- encryption-by-default and privacy respecting tech.
+## Things I love
+- [open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
+- when building blocks I participated in have positive compounding effects.
 - applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
 - repairing stuff.
 - robust, distributed and resilient systems.
-- Coding things from scratch.
-
-Things I hate:
-- Forcing others to reinvent the wheel.
-- Having to invent a wheel knowing full well that someone already did it in the past but did not open source it.
+- encryption-by-default and privacy respecting tech.
 
 
 
