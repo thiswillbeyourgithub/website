@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: cv-layout
 title: "CV Français"
 permalink: /cv_fr/
 author_profile: false
