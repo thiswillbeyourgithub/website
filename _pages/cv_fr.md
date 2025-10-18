@@ -47,7 +47,7 @@ redirect_from:
 * Allemand niveau A1-A2
 
 ## Autre
-* Contribution au Pôle Innovation de la Société Nouvelle des Cycles Cavales (mobilités intermédiaires écologiques) - début en 2024
+* Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - début en 2024
 * Permis B - 2015
 
 # Publications
