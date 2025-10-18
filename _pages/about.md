@@ -29,7 +29,7 @@ My core interest has always been around neuroscience with a focus on psychiatry.
 
 Circa 2015, I got interested in AI/ML so naturally I'm heavily drawn towards computational psychiatry.
 
-I'm highly convinced that AI research will advance psychiatry research, improving patient's lives for the better.
+I'm excited about how AI research will advance psychiatry research, improving patient's lives for the better.
 
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
