@@ -34,12 +34,12 @@ I'm highly convinced that AI research will advance psychiatry research, improvin
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
 ## Things I love
-- [open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
-- when building blocks I participated in have positive compounding effects.
-- applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
-- repairing stuff.
-- robust, distributed and resilient systems.
-- encryption-by-default and privacy respecting tech.
+- [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
+- When building blocks I participated in have positive compounding effects.
+- Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
+- Repairing stuff.
+- Robust, distributed and resilient systems.
+- Encryption-by-default and privacy respecting tech.
 
 
 
@@ -49,7 +49,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 
 Being dedicated to open source, I try to fund what I can using bounty incentives.
 
-1. [Porting my SleepTk app from a micropython-based OS to a C-based device](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker/issues/13)
-2. [Adding highlights on the mobile webapp for Karakeep](https://github.com/karakeep-app/karakeep/issues/1220)
+1. [Porting my SleepTk app from a micropython-based OS to a C-based device](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker/issues/13).
+2. [Adding highlights on the mobile webapp for Karakeep](https://github.com/karakeep-app/karakeep/issues/1220).
 
-3. *The other bounties are currently in progress*
+3. *The other bounties are currently in progress*.
