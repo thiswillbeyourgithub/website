@@ -23,13 +23,13 @@ redirect_from:
       <strong>Email:</strong> cv@oliviercornelis.fr
     </div>
     <div class="cv-info-item">
-      <strong>Website:</strong> olicorne.org
+      <strong>Website:</strong> <a href="https://olicorne.org">olicorne.org</a>
     </div>
     <div class="cv-info-item">
       <strong>Location:</strong> Paris, France
     </div>
     <div class="cv-info-item">
-      <strong>ORCID:</strong> 0000-0002-5445-4679
+      <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
       <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (1800+ ★ as of Oct 2025)
