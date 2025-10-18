@@ -39,7 +39,7 @@ redirect_from:
 
 
 # Formation
-* Diplôme d'Étude Spécialisée (DES) en psychiatrie - début en 2025
+* Diplôme d'Étude Spécialisée (DES) de psychiatrie - début en 2025
     * Université Paris Cité, psychiatrie Paris
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
