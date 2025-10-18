@@ -17,7 +17,7 @@ I took advanced math/physics/chemistry classes in [classe prépa](https://en.wik
 I started coding when I was about 12. I'm passionate about open source — most of my code is publicly available on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
-I have experience working in collaboration and autonomously : I had the opportunity to build innovative solutions from scratch and share them with the world. Examples of my self-motivation include:
+I have experience working in collaboration and autonomously: I had the opportunity to build innovative solutions from scratch and share them with the world. Examples of my self-motivation include:
 - To search across my diverse medical corpus dataset with natural language query I created [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). The innovative summarizer feature was added to save me time catching up on the news.
 - Tinkering with [high dimensional embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) led me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) and pitch it to renowned researchers. The goal being to uncover hidden patterns in medical questionnaires allowing to unify partially disjointed medical datasets.
 - Tinkering with [AI interpretability](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) led me to fork the [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) library to test various high dimensional vector modification techniques to steer its behavior.
