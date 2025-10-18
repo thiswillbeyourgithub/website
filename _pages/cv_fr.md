@@ -12,7 +12,7 @@ redirect_from:
 <p class="no-print">
   <a href="#" onclick="window.print(); return false;">Télécharger le PDF</a>
   |
-  <a href="../cv">English version here / Version en anglais ici</a>
+  <a href="../cv_en">English version here / Version en anglais ici</a>
 </p>
 
 <div class="cv-header">
@@ -39,7 +39,7 @@ redirect_from:
 
 
 # Formation
-* Diplôme d'Étude Spécialisée (DES) de psychiatrie - début en 2025
+* Diplôme d'Étude Spécialisée (DES) de psychiatrie - depuis 2025
     * Université Paris Cité, psychiatrie Paris
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
@@ -55,7 +55,7 @@ redirect_from:
 * *NeuroSpin*, équipe UNICOG du Pr Stanislas Dehaene, Gif-Sur-Yvettes, France - 2022
     * Stage de M1: modélisation computationnelle des états de conscience via IRMf, Développement de bibliothèques Python, Apprentissage automatique, Clustering de données de haute dimension
 * *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH USA - 2015
-    * Stage d’un mois à la *Geisel School of Medicine*, programation en R, travaux publiés
+    * Stage d’un mois à la *Geisel School of Medicine*, programation en R, cf publication
 
 
 # Compétences
@@ -75,10 +75,10 @@ redirect_from:
 * Allemand niveau A1-A2
 
 ## Autre
-* Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - début en 2024
+* Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - depuis 2024
 * Permis B - 2015
 
-# Publications
+# Publication
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>

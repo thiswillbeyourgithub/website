@@ -19,6 +19,33 @@ ul ul, ol ul, ul ol, ol ol {
   padding-bottom: 0.0rem;
 }
 
+/* CV Header - compact info section */
+.cv-header {
+  margin-bottom: 1.5rem;
+}
+
+.cv-header h1 {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.cv-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.cv-info-item {
+  white-space: nowrap;
+}
+
+.cv-info-item strong {
+  margin-right: 0.3rem;
+}
+
 
 
 /* Print-specific styles - remove backgrounds to save ink */
@@ -51,39 +78,44 @@ ul ul, ol ul, ul ol, ol ol {
     margin-left: 1cm;
     margin-right: 1cm;
   }
-}
 
 
+  /* Force light mode colors for all elements */
+  body, html, .page, .page__content, .masthead, .sidebar, * {
+    background: white !important;
+    background-color: white !important;
+    color: black !important;
+  }
 
-/* CV Header - compact info section */
-.cv-header {
-  margin-bottom: 1.5rem;
-}
+  /* Force light mode for links */
+  a, a:link, a:visited {
+    color: black !important;
+    text-decoration: underline;
+  }
 
-.cv-header h1 {
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.3rem;
-}
+  /* Override any dark mode specific elements */
+  h1, h2, h3, h4, h5, h6 {
+    color: #222 !important;
+  }
 
-.cv-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
+  /* Force code blocks and pre to light mode */
+  code, pre {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+  }
 
-.cv-info-item {
-  white-space: nowrap;
-}
+  /* Force any other text elements */
+  p, li, span, div {
+    color: black !important;
+  }
 
-.cv-info-item strong {
-  margin-right: 0.3rem;
-}
+  /* Hide elements you don't want in print */
+  .masthead, .page__footer, .sidebar, .no-print {
+    display: none !important;
+  }
 
-/* For print: ensure it stays compact */
-@media print {
+  /* For print: ensure it stays compact */
   .cv-header h1 {
     border-bottom: 1px solid #000;
   }
@@ -92,3 +124,5 @@ ul ul, ol ul, ul ol, ol ol {
     font-size: 0.85rem;
   }
 }
+
+
