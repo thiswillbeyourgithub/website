@@ -7,4 +7,6 @@ redirect_from:
   - /resume_fr
 ---
 
+[English version here / Version en anglais ici](../cv)
+
 TODO
