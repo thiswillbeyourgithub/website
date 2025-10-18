@@ -38,9 +38,11 @@ redirect_from:
 * Diplôme d'Étude Spécialisée (DES) - début en 2025
     * Psychiatrie à Paris, France
 * Master 1, 2019-2025
-* Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R
+    * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R
+    * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
 * Diplôme de Formation Générale et Approfondie en Sciences Médicales (DFGSM) - 2016-2025
-* Classe Préparatoire aux Grandes Écoles, section PCSI-PC - 2015-2016
+* Classe Préparatoire aux Grandes Écoles - 2015-2016
+    * Lycée Général Carnot, section Physique Chimie (PCSI-PC)
 
 
 
