@@ -7,7 +7,7 @@ redirect_from:
   - /contact.html
 ---
 
-Note that I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. A notable exception is [Bluesky](https://en.wikipedia.org/wiki/Bluesky) that I sometimes use. You can DM me at [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social).
+I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. A notable exception is [Bluesky](https://en.wikipedia.org/wiki/Bluesky) that I sometimes use so you can DM me at [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social).
 
 You can email me at `getintouch@oliviercornelis.fr`.
 
