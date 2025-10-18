@@ -1,7 +1,7 @@
 ---
 layout: cv-layout
 title: "International CV"
-permalink: /cv/
+permalink: /cv_en/
 author_profile: false
 redirect_from:
   - /resume
