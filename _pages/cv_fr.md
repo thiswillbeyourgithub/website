@@ -11,8 +11,13 @@ redirect_from:
 
 {% include base_path %}
 
-# Contact
-`cv@oliviercornelis.fr`
+# Info
+* Mail: `cv@oliviercornelis.fr`
+* Website: `olicorne.org`
+* Habite à Paris, France
+* ORCID ID : orcid.org/0000-0002-5445-4679
+* Github : [@thiswillbeyourgithub](https://thiswillbeyourgithub.github.io/) (1800+ :stars: en oct 2025)
+
 
 
 # Formation
