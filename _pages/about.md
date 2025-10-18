@@ -32,20 +32,13 @@ I'm highly convinced that AI research will advance psychiatry research, improvin
 
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
-## Personality
-
-
-Things I love:
+## Things I love
 - [open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
 - encryption-by-default and privacy respecting tech.
 - applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
 - repairing stuff.
 - robust, distributed and resilient systems.
 - Coding things from scratch.
-
-Things I hate:
-- Forcing others to reinvent the wheel.
-- Having to invent a wheel knowing full well that someone already did it in the past but did not open source it.
 
 
 
