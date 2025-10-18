@@ -2,7 +2,7 @@
 layout: archive
 title: "CV Français"
 permalink: /cv_fr/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume_fr
 ---
