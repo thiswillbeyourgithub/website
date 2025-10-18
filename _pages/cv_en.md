@@ -79,7 +79,7 @@ redirect_from:
 * Technical & Innovation Advisor at *Société Nouvelle des Cycles Cavales* (ecological intermediate mobility) - starting in 2024
 * Driver's license (category B) - 2015
 
-# Publications
+# Publication
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>

@@ -78,7 +78,7 @@ redirect_from:
 * Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - début en 2024
 * Permis B - 2015
 
-# Publications
+# Publication
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
