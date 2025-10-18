@@ -7,12 +7,14 @@ redirect_from:
   - /resume
 ---
 
-My CV in french can be found at [this page](./cv_fr)
+My CV in french can be found at [this page](../cv_fr)
 
 {% include base_path %}
 
 Education
 ======
+* Diplôme d'Étude Spécialisée (DES) en psychiatrie, 2025 - *now*
+* M1 Parcours Recherche en Santé
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012
