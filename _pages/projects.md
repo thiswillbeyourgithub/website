@@ -7,7 +7,7 @@ redirect_from:
   - /projects.html
 ---
 
-I host my coding projects on Github:
+My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](https://github.com/thiswillbeyourgithub/github-readme-stats)
 
