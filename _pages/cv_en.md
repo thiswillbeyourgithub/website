@@ -48,7 +48,7 @@ redirect_from:
 * General and Advanced Medical Sciences Degree - 2016-2025
     * Paris Cité University
 * Preparatory Class for Grandes Écoles - 2015-2016
-    * Carnot High School, Physics Chemistry section (PCSI-PC), highest honors
+    * Carnot High School, Physics Chemistry section (PCSI-PC), A grade
 
 
 
