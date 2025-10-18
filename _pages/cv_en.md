@@ -23,13 +23,13 @@ redirect_from:
       <strong>Email:</strong> cv@oliviercornelis.fr
     </div>
     <div class="cv-info-item">
-      <strong>Website:</strong> olicorne.org
+      <strong>Website:</strong> <a href="https://olicorne.org">olicorne.org</a>
     </div>
     <div class="cv-info-item">
       <strong>Location:</strong> Paris, France
     </div>
     <div class="cv-info-item">
-      <strong>ORCID:</strong> 0000-0002-5445-4679
+      <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
       <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (1800+ ★ as of Oct 2025)
@@ -44,11 +44,11 @@ redirect_from:
     * Paris Cité University, Paris psychiatry
 * Master's degree (M1), 2019-2025
     * Health Research Track, Neuroscience, Genetics, R programming, Paris Cité University
-    * Reviewers: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD), 18/20
+    * Reviewers: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
 * General and Advanced Medical Sciences Degree - 2016-2025
     * Paris Cité University
 * Preparatory Class for Grandes Écoles - 2015-2016
-    * Carnot High School, Physics Chemistry section (PCSI-PC), A grade
+    * Carnot High School, Physics Chemistry section (PCSI-PC)
 
 
 
