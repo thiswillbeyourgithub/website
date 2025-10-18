@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I'm Olivier Cornelis, a French psychiatry resident in Paris. I'm also a self-taught developer and data scientist.
+I'm Olivier Cornelis, a French psychiatry resident in Paris and a self-taught developer and data scientist.
 
 ## Education
 
