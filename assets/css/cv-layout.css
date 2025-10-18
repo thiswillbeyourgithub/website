@@ -7,19 +7,16 @@ h1 {
 h2 {
   margin-top: 0.2rem;
   margin-bottom: 0.0rem;
+  padding-left: 0.8rem;
 }
 
-h3, h4, h5, h6 {
-  margin-top: 0.1rem;
-  margin-bottom: 0.0rem;
-}
-li {
+
+/* Remove extra spacing from nested lists */
+ul ul, ol ul, ul ol, ol ol {
   margin-top: 0.0rem;
   margin-bottom: 0.0rem;
-}
-ul {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+  padding-top: 0.0rem;
+  padding-bottom: 0.0rem;
 }
 
 
