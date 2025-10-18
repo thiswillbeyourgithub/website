@@ -87,6 +87,15 @@ ul ul, ol ul, ul ol, ol ol {
   .masthead, .page__footer, .sidebar, .no-print {
     display: none !important;
   }
+
+  /* For print: ensure it stays compact */
+  .cv-header h1 {
+    border-bottom: 1px solid #000;
+  }
+
+  .cv-info {
+    font-size: 0.85rem;
+  }
 }
 
 
@@ -116,15 +125,4 @@ ul ul, ol ul, ul ol, ol ol {
 
 .cv-info-item strong {
   margin-right: 0.3rem;
-}
-
-/* For print: ensure it stays compact */
-@media print {
-  .cv-header h1 {
-    border-bottom: 1px solid #000;
-  }
-
-  .cv-info {
-    font-size: 0.85rem;
-  }
 }
