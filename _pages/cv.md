@@ -1,16 +1,20 @@
 ---
 layout: archive
-title: "CV"
+title: "International CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
+[French version here / Version en français ici](../cv_fr)
+
 {% include base_path %}
 
 Education
 ======
+* Diplôme d'Étude Spécialisée (DES) en psychiatrie, 2025 - *now*
+* M1 Parcours Recherche en Santé - 2019-2025
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012

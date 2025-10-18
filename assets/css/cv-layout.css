@@ -1,0 +1,94 @@
+/* Reduce space around headers and bullet points */
+h1 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.0rem;
+}
+
+h2 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.0rem;
+  padding-left: 0.8rem;
+}
+
+
+/* Remove extra spacing from nested lists */
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: 0.0rem;
+  margin-bottom: 0.0rem;
+  padding-top: 0.0rem;
+  padding-bottom: 0.0rem;
+}
+
+
+
+/* Print-specific styles - remove backgrounds to save ink */
+@media print {
+  body, html, .page, .page__content, .masthead, .sidebar, * {
+    background: white !important;
+    background-color: white !important;
+  }
+
+  /* Hide elements you don't want in print */
+  .masthead, .page__footer, .sidebar, .no-print {
+    display: none !important;
+  }
+
+  /* Reduce top margin/padding to minimize wasted space */
+  body, html {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page, .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Set page margins for print */
+  @page {
+    margin-top: 0.5cm;  /* Adjust this value as needed */
+    margin-bottom: 1cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+  }
+}
+
+
+
+/* CV Header - compact info section */
+.cv-header {
+  margin-bottom: 1.5rem;
+}
+
+.cv-header h1 {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.cv-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.cv-info-item {
+  white-space: nowrap;
+}
+
+.cv-info-item strong {
+  margin-right: 0.3rem;
+}
+
+/* For print: ensure it stays compact */
+@media print {
+  .cv-header h1 {
+    border-bottom: 1px solid #000;
+  }
+
+  .cv-info {
+    font-size: 0.85rem;
+  }
+}
