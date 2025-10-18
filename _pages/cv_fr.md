@@ -7,9 +7,13 @@ redirect_from:
   - /resume_fr
 ---
 
-<p class="no-print"><a href="../cv">English version here / Version en anglais ici</a></p>
-
 {% include base_path %}
+
+<p class="no-print">
+  <a href="#" onclick="window.print(); return false;">Télécharger le PDF</a>
+  |
+  <a href="../cv">English version here / Version en anglais ici</a>
+</p>
 
 <div class="cv-header">
   <h1>Olivier Cornelis</h1>
