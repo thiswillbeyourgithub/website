@@ -38,7 +38,7 @@ redirect_from:
 * Diplôme d'Étude Spécialisée (DES) - début en 2025
     * Psychiatrie à Paris, France
 * Master 1, 2019-2025
-    * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R
+* Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R
 * Diplôme de Formation Générale et Approfondie en Sciences Médicales (DFGSM) - 2016-2025
 * Classe Préparatoire aux Grandes Écoles, section PCSI-PC - 2015-2016
 
