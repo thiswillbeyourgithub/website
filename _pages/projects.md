@@ -14,8 +14,6 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 Authorship disclaimer:
 * Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, I almost exclusively use [aider](https://aider.chat/) with `--attribute-author` so you can transparently see which projects where done with its assistance and which are "my own".
 
-*The list below was up to date as of october 17th 2025.*
-
 {% include toc %}
 
 ## Medicine & Computer Science
