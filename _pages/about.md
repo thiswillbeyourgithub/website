@@ -36,7 +36,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 
 
 Things I love:
-- [love open source and hate closed source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
+- [open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
 - encryption-by-default and privacy respecting tech.
 - applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
 - repairing stuff.
