@@ -14,7 +14,7 @@ redirect_from:
 Education
 ======
 * Diplôme d'Étude Spécialisée (DES) en psychiatrie, 2025 - *now*
-* M1 Parcours Recherche en Santé
+* M1 Parcours Recherche en Santé - 2019-2025
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012
