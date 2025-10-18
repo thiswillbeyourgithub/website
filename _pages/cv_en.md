@@ -44,11 +44,11 @@ redirect_from:
     * Paris Cité University, Paris psychiatry
 * Master's degree (M1), 2019-2025
     * Health Research Track, Neuroscience, Genetics, R programming, Paris Cité University
-    * Reviewers: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD), 18/20
+    * Reviewers: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
 * General and Advanced Medical Sciences Degree - 2016-2025
     * Paris Cité University
 * Preparatory Class for Grandes Écoles - 2015-2016
-    * Carnot High School, Physics Chemistry section (PCSI-PC), A grade
+    * Carnot High School, Physics Chemistry section (PCSI-PC)
 
 
 
