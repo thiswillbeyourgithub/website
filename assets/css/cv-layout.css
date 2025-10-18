@@ -23,6 +23,7 @@ ul {
 }
 
 
+
 /* Print-specific styles - remove backgrounds to save ink */
 @media print {
   body, html, .page, .page__content, .masthead, .sidebar, * {
@@ -30,8 +31,27 @@ ul {
     background-color: white !important;
   }
 
-  /* Optional: hide elements you don't want in print */
-  .masthead, .page__footer, .sidebar {
+  /* Hide elements you don't want in print */
+  .masthead, .page__footer, .sidebar, .no-print {
     display: none !important;
+  }
+
+  /* Reduce top margin/padding to minimize wasted space */
+  body, html {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page, .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Set page margins for print */
+  @page {
+    margin-top: 0.5cm;  /* Adjust this value as needed */
+    margin-bottom: 1cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
   }
 }

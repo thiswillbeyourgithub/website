@@ -7,7 +7,7 @@ redirect_from:
   - /resume_fr
 ---
 
-[English version here / Version en anglais ici](../cv)
+<p class="no-print"><a href="../cv">English version here / Version en anglais ici</a></p>
 
 {% include base_path %}
 
