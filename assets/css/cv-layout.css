@@ -73,8 +73,8 @@ ul ul, ol ul, ul ol, ol ol {
 
   /* Set page margins for print */
   @page {
-    margin-top: 0.5cm;  /* Adjust this value as needed */
-    margin-bottom: 1cm;
+    margin-top: 0.3cm;  /* Adjust this value as needed */
+    margin-bottom: 0.3cm;
     margin-left: 1cm;
     margin-right: 1cm;
   }
