@@ -66,7 +66,7 @@ redirect_from:
 * **Machine Learning and big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization)
 * Proficiency in **collaboration software** (git, Jupyter Notebook, markdown)
 * Strong commitment to **Free/Open Source Software** (1800+ ★ on Github, Data For Good, InterHop)
-* Knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
+* Web stack and knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
 * Hardware knowledge (soldering, server assembly), embedded systems (micropython, smartwatch)
 
 ## Language

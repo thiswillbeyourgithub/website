@@ -65,7 +65,7 @@ redirect_from:
 * **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
 * Maitrise de **logiciels de collaboration** (git, Jupyter Notebook, markdown)
 * Fort engagement envers les **Logiciels Libre** (1800+ :stars: sur Github, Data For Good, InterHop)
-* Notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
+* Technologies du web et notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
 
 ## Linguistiques
