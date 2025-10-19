@@ -33,6 +33,9 @@ redirect_from:
     <div class="cv-info-item">
       <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (1800+ ★ en oct 2025)
     </div>
+    <div class="cv-info-item">
+      <strong>Généré le:</strong> {{ site.time | date: "%d %b %Y" }}
+    </div>
   </div>
 </div>
 
