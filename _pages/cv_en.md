@@ -20,7 +20,7 @@ redirect_from:
   <h1>Olivier Cornelis</h1>
   <div class="cv-info">
     <div class="cv-info-item">
-      <strong>Email:</strong> cv@oliviercornelis.fr
+      <strong>Email:</strong> <a href="mailto:cv@oliviercornelis.fr">cv@oliviercornelis.fr</a>
     </div>
     <div class="cv-info-item">
       <strong>Website:</strong> <a href="https://olicorne.org">olicorne.org</a>
@@ -33,6 +33,9 @@ redirect_from:
     </div>
     <div class="cv-info-item">
       <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (1800+ ★ as of Oct 2025)
+    </div>
+    <div class="cv-info-item">
+      <strong>Generated:</strong> {{ site.time | date: "%d %b %Y" }}
     </div>
   </div>
 </div>
@@ -66,7 +69,7 @@ redirect_from:
 * **Machine Learning and big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization)
 * Proficiency in **collaboration software** (git, Jupyter Notebook, markdown)
 * Strong commitment to **Free/Open Source Software** (1800+ ★ on Github, Data For Good, InterHop)
-* Knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
+* Web stack and knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
 * Hardware knowledge (soldering, server assembly), embedded systems (micropython, smartwatch)
 
 ## Language
@@ -91,3 +94,6 @@ redirect_from:
     * *Python 3: From Fundamentals to Advanced Language Concepts*
 * **HuggingFace** : *Natural Language Processing Machine Learning Course* - 2021
 
+# Personal Interests
+- Organizer of in-person meetups for an online community focused on AI risks and rationality
+- Cinema enthusiast, locks, film photography, sports

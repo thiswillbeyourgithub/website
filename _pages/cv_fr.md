@@ -19,7 +19,7 @@ redirect_from:
   <h1>Olivier Cornelis</h1>
   <div class="cv-info">
     <div class="cv-info-item">
-      <strong>Email:</strong> cv@oliviercornelis.fr
+      <strong>Email:</strong> <a href="mailto:cv@oliviercornelis.fr">cv@oliviercornelis.fr</a>
     </div>
     <div class="cv-info-item">
       <strong>Website:</strong> <a href="https://olicorne.org">olicorne.org</a>
@@ -32,6 +32,9 @@ redirect_from:
     </div>
     <div class="cv-info-item">
       <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (1800+ ★ en oct 2025)
+    </div>
+    <div class="cv-info-item">
+      <strong>Généré le:</strong> {{ site.time | date: "%d %b %Y" }}
     </div>
   </div>
 </div>
@@ -65,7 +68,7 @@ redirect_from:
 * **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
 * Maitrise de **logiciels de collaboration** (git, Jupyter Notebook, markdown)
 * Fort engagement envers les **Logiciels Libre** (1800+ :stars: sur Github, Data For Good, InterHop)
-* Notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
+* Technologies du web et notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
 
 ## Linguistiques
@@ -90,3 +93,6 @@ redirect_from:
     * *Python 3 : des fondamentaux aux concepts avancés du langage*
 * **HuggingFace** : *Natural Language Processing Machine Learning Course* - 2021
 
+# Extra professionnel
+- Organisateur de rencontre physique d'une communauté en ligne sur les risques inhérents à l'IA et la rationalité
+- Cinéphile, serrurerie, photographie argentique, sport

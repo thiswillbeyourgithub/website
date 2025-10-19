@@ -35,12 +35,13 @@ I'm excited about how AI research will advance psychiatry research, improving pa
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
 ## Things I love
-- [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware.
+- [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware ([even this website](https://github.com/thiswillbeyourgithub/website])).
 - When building blocks I participated in have positive compounding effects.
 - Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
 - Repairing stuff.
 - Robust, distributed and resilient systems.
 - Encryption-by-default and privacy respecting tech.
+- [Self hosting](https://en.wikipedia.org/wiki/Self-hosting_(web_services)) my own services.
 
 
 

@@ -90,7 +90,7 @@ ul ul, ol ul, ul ol, ol ol {
   /* Force light mode for links */
   a, a:link, a:visited {
     color: black !important;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   /* Override any dark mode specific elements */
