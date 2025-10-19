@@ -41,6 +41,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 - Repairing stuff.
 - Robust, distributed and resilient systems.
 - Encryption-by-default and privacy respecting tech.
+- Self hosting my own services.
 
 
 
