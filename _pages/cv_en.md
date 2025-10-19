@@ -91,3 +91,6 @@ redirect_from:
     * *Python 3: From Fundamentals to Advanced Language Concepts*
 * **HuggingFace** : *Natural Language Processing Machine Learning Course* - 2021
 
+# Personal Interests
+- Organizer of in-person meetups for an online community focused on AI risks and rationality
+- Cinema enthusiast, locks, film photography, sports
