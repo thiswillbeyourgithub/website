@@ -82,15 +82,6 @@ ul ul, ol ul, ul ol, ol ol {
     padding-top: 0 !important;
   }
 
-  /* Set page margins for print */
-  @page {
-    margin-top: 0.2cm;  /* Adjust this value as needed */
-    margin-bottom: 0. cm;
-    margin-left: 1cm;
-    margin-right: 1cm;
-  }
-
-
   /* Force light mode colors for all elements */
   body, html, .page, .page__content, .masthead, .sidebar, * {
     background: white !important;
@@ -133,6 +124,19 @@ ul ul, ol ul, ul ol, ol ol {
 
   .cv-info {
     font-size: 0.85rem;
+  }
+
+  /* Keep list items and paragraphs together when possible */
+  p, li {
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Remove bottom padding/margin that might cause overflow */
+  body, html, .page, .page__content {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
 
