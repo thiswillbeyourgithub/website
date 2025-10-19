@@ -20,7 +20,7 @@ redirect_from:
   <h1>Olivier Cornelis</h1>
   <div class="cv-info">
     <div class="cv-info-item">
-      <strong>Email:</strong> cv@oliviercornelis.fr
+      <strong>Email:</strong> <a href="mailto:cv@oliviercornelis.fr">cv@oliviercornelis.fr</a>
     </div>
     <div class="cv-info-item">
       <strong>Website:</strong> <a href="https://olicorne.org">olicorne.org</a>
