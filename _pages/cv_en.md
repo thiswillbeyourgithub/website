@@ -35,7 +35,7 @@ redirect_from:
       <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (>1.8k :stars: as of Oct 2025)
     </div>
     <div class="cv-info-item">
-      <strong>Generated:</strong> {{ site.time | date: "%d %b %Y" }}
+      <strong>Generated on:</strong> {{ site.time | date: "%d %b %Y" }}
     </div>
   </div>
 </div>
