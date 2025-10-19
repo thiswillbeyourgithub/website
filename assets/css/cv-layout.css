@@ -23,7 +23,7 @@ h2 {
 }
 
 /* Remove extra spacing from nested lists */
-ul ul, ol ul, ul ol, ol ol {
+ul ul, ol ul, ul ol, ol ol, ul li {
   margin-top: 0.0rem;
   margin-bottom: 0.0rem;
   padding-top: 0.0rem;
