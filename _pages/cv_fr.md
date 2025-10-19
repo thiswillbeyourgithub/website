@@ -90,3 +90,6 @@ redirect_from:
     * *Python 3 : des fondamentaux aux concepts avancés du langage*
 * **HuggingFace** : *Natural Language Processing Machine Learning Course* - 2021
 
+# Extra professionnel
+- Organisateur de rencontre physique d'une communauté en ligne sur les risques inhérents à l'IA et la rationalité
+- Cinéphile, serrurerie, photographie argentique, sport
