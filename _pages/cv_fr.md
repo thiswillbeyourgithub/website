@@ -82,7 +82,7 @@ redirect_from:
 * Permis B - 2015
 
 # Publication
-  <ul>{% for post in site.publications reversed %}
+  <ul class="publications">{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 

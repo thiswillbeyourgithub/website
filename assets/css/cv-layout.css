@@ -1,3 +1,9 @@
+/* Text justification for CV content */
+p, li, div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Reduce space around headers and bullet points */
 h1 {
   margin-top: 0.3rem;
@@ -10,6 +16,11 @@ h2 {
   padding-left: 0.8rem;
 }
 
+/*the h3 level is used for the publications*/
+.publications, h3 {
+  margin-top: 0.3rem !important;
+  margin-bottom: 0.0rem !important;
+}
 
 /* Remove extra spacing from nested lists */
 ul ul, ol ul, ul ol, ol ol {
@@ -73,8 +84,8 @@ ul ul, ol ul, ul ol, ol ol {
 
   /* Set page margins for print */
   @page {
-    margin-top: 0.3cm;  /* Adjust this value as needed */
-    margin-bottom: 0.3cm;
+    margin-top: 0.2cm;  /* Adjust this value as needed */
+    margin-bottom: 0. cm;
     margin-left: 1cm;
     margin-right: 1cm;
   }

@@ -83,7 +83,7 @@ redirect_from:
 * Driver's license (category B) - 2015
 
 # Publication
-  <ul>{% for post in site.publications reversed %}
+  <ul class="publications">{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
