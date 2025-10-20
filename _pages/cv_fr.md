@@ -74,7 +74,7 @@ redirect_from:
 ## Linguistiques
 - Français natif
 * Anglais niveau C1/C2 (plus de 3 mois cumulés en Amérique du Nord)
-* Espagnol niveau A2-B1
+* Espagnol niveau A2
 * Allemand niveau A1-A2
 
 ## Autre

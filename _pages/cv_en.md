@@ -75,7 +75,7 @@ redirect_from:
 ## Language
 - French native
 * English level C1/C2 (more than 3 cumulative months in North America)
-* Spanish level A2-B1
+* Spanish level A2
 * German level A1-A2
 
 ## Other
