@@ -42,6 +42,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 - Robust, distributed and resilient systems.
 - Encryption-by-default and privacy respecting tech.
 - [Self hosting](https://en.wikipedia.org/wiki/Self-hosting_(web_services)) my own services.
+- Reading [HackerNews](https://news.ycombinator.com/).
 
 
 
