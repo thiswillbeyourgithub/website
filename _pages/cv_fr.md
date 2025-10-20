@@ -10,9 +10,9 @@ redirect_from:
 {% include base_path %}
 
 <p class="no-print">
-  <a href="#" onclick="window.print(); return false;">Télécharger le PDF</a>
+  <a href="#" onclick="window.print(); return false;" data-umami-events="cv_fr_download_link">>Télécharger le PDF</a>
   |
-  <a href="../cv_en">English version here / Version en anglais ici</a>
+  <a href="../cv_en" data-umami-events="cv_fr_to_en_link">English version here / Version en anglais ici</a>
 </p>
 
 <div class="cv-header">
