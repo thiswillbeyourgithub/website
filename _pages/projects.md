@@ -115,6 +115,7 @@ Authorship disclaimer:
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Misc Tools
+- [Umami Data Fetcher](https://github.com/thiswillbeyourgithub/umami_data_fetcher): A CLI tool to backup and save [Umami](https://umami.is) analytics data in multiple formats with automatic resume, logging, and multi-website support. This was made to store the privacy preserving analytics for olicorne.org, as umami.is deletes data after 6 months.
 - [Home Assistant CalDAV client](https://github.com/thiswillbeyourgithub/Home-Assistant-CalDAV-client): A CalDAV client for automating task management with Home Assistant, Nextcloud, and voice commands.
 - [LiteLLM Proxy OpenRouter Price Updater](https://github.com/thiswillbeyourgithub/litellm_proxy_openrouter_price_updater): CLI tool for updating [LiteLLM](https://github.com/BerriAI/litellm) proxy pricing configurations using [OpenRouter](https://openrouter.ai/) API data.
 - [OpenRouter to Langfuse Model Pricing Sync](https://github.com/thiswillbeyourgithub/openrouter_cost_into_langfuse/): A Python script that automatically syncs model pricing data from [OpenRouter](https://openrouter.ai/) to Langfuse's pricing page.
