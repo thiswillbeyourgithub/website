@@ -87,6 +87,7 @@ Authorship disclaimer:
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.
     - [LiTOY](https://github.com/thiswillbeyourgithub/LiTOY-aka-List-that-Outlives-You): Smart prioritization tool utilizing pairwise comparisons and ELO ratings to rank personal goals based on importance and time investment.
 - [BrownieCutter](https://github.com/thiswillbeyourgithub/BrownieCutter): Template generator for Python projects that automates boilerplate code creation and project structure setup with customizable configurations.
+    - Archived because my main setup now involves [aider](https://aider.chat) instead.
 - [zsh-ai](https://github.com/thiswillbeyourgithub/zsh-ai): Terminal companion that leverages AI language models to suggest and explain shell commands based on natural language queries with fuzzy-finder integration.
 - [HAL](https://github.com/thiswillbeyourgithub/HAL): Email summarization and labeling tool that processes daily incoming messages, leveraging LLMs to generate concise summaries and assign categorization labels while maintaining robust security measures and cost controls.
 - [github_discussion_parser](https://github.com/thiswillbeyourgithub/github_discussion_parser): Parser tool that extracts and formats GitHub repository discussions into XML-like Markdown files optimized for Large Language Model processing.
