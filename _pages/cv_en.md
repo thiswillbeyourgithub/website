@@ -11,9 +11,9 @@ redirect_from:
 {% include base_path %}
 
 <p class="no-print">
-  <a href="#" onclick="window.print(); return false;">Download PDF</a>
+  <a href="#" onclick="window.print(); return false;" data-umami-events="cv_en_download_link">Download PDF</a>
   |
-  <a href="../cv_fr">French version here / Version en français ici</a>
+  <a href="../cv_fr" data-umami-events="cv_en_to_fr_link">French version here / Version en français ici</a>
 </p>
 
 <div class="cv-header">
@@ -32,10 +32,10 @@ redirect_from:
       <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
-      <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (1800+ ★ as of Oct 2025)
+      <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (>1.8k :stars: as of Oct 2025)
     </div>
     <div class="cv-info-item">
-      <strong>Generated:</strong> {{ site.time | date: "%d %b %Y" }}
+      <strong>Generated on:</strong> {{ site.time | date: "%d %b %Y" }}
     </div>
   </div>
 </div>
@@ -68,14 +68,14 @@ redirect_from:
 * **AI** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interpretability (representation engineering), embedding-based search (RAG, wdoc), image generation
 * **Machine Learning and big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization)
 * Proficiency in **collaboration software** (git, Jupyter Notebook, markdown)
-* Strong commitment to **Free/Open Source Software** (1800+ ★ on Github, Data For Good, InterHop)
+* Strong commitment to **Free/Open Source Software** (>1.8k :stars: on Github, Data For Good, InterHop)
 * Web stack and knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
 * Hardware knowledge (soldering, server assembly), embedded systems (micropython, smartwatch)
 
 ## Language
 - French native
 * English level C1/C2 (more than 3 cumulative months in North America)
-* Spanish level A2-B1
+* Spanish level A2
 * German level A1-A2
 
 ## Other
@@ -83,7 +83,7 @@ redirect_from:
 * Driver's license (category B) - 2015
 
 # Publication
-  <ul>{% for post in site.publications reversed %}
+  <ul class="publications">{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 

@@ -10,9 +10,9 @@ redirect_from:
 {% include base_path %}
 
 <p class="no-print">
-  <a href="#" onclick="window.print(); return false;">Télécharger le PDF</a>
+  <a href="#" onclick="window.print(); return false;" data-umami-events="cv_fr_download_link">Télécharger le PDF</a>
   |
-  <a href="../cv_en">English version here / Version en anglais ici</a>
+  <a href="../cv_en" data-umami-events="cv_fr_to_en_link">English version here / Version en anglais ici</a>
 </p>
 
 <div class="cv-header">
@@ -31,7 +31,7 @@ redirect_from:
       <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
-      <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (1800+ ★ en oct 2025)
+      <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (>1.8k :stars: en oct 2025)
     </div>
     <div class="cv-info-item">
       <strong>Généré le:</strong> {{ site.time | date: "%d %b %Y" }}
@@ -67,14 +67,14 @@ redirect_from:
 * **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image
 * **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
 * Maitrise de **logiciels de collaboration** (git, Jupyter Notebook, markdown)
-* Fort engagement envers les **Logiciels Libre** (1800+ :stars: sur Github, Data For Good, InterHop)
+* Fort engagement envers les **Logiciels Libre** (>1.8k :stars: sur Github, Data For Good, InterHop)
 * Technologies du web et notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
 
 ## Linguistiques
 - Français natif
 * Anglais niveau C1/C2 (plus de 3 mois cumulés en Amérique du Nord)
-* Espagnol niveau A2-B1
+* Espagnol niveau A2
 * Allemand niveau A1-A2
 
 ## Autre
@@ -82,7 +82,7 @@ redirect_from:
 * Permis B - 2015
 
 # Publication
-  <ul>{% for post in site.publications reversed %}
+  <ul class="publications">{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 

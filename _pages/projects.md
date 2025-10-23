@@ -87,6 +87,7 @@ Authorship disclaimer:
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.
     - [LiTOY](https://github.com/thiswillbeyourgithub/LiTOY-aka-List-that-Outlives-You): Smart prioritization tool utilizing pairwise comparisons and ELO ratings to rank personal goals based on importance and time investment.
 - [BrownieCutter](https://github.com/thiswillbeyourgithub/BrownieCutter): Template generator for Python projects that automates boilerplate code creation and project structure setup with customizable configurations.
+    - Archived because my main setup now involves [aider](https://aider.chat) instead.
 - [zsh-ai](https://github.com/thiswillbeyourgithub/zsh-ai): Terminal companion that leverages AI language models to suggest and explain shell commands based on natural language queries with fuzzy-finder integration.
 - [HAL](https://github.com/thiswillbeyourgithub/HAL): Email summarization and labeling tool that processes daily incoming messages, leveraging LLMs to generate concise summaries and assign categorization labels while maintaining robust security measures and cost controls.
 - [github_discussion_parser](https://github.com/thiswillbeyourgithub/github_discussion_parser): Parser tool that extracts and formats GitHub repository discussions into XML-like Markdown files optimized for Large Language Model processing.
@@ -115,6 +116,8 @@ Authorship disclaimer:
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Misc Tools
+- [autopassad](https://github.com/thiswillbeyourgithub/autopassad): A (hopefully) cross platform python script to automatically click on 'skip' or 'continue' on ads.
+- [Umami Data Fetcher](https://github.com/thiswillbeyourgithub/umami_data_fetcher): A CLI tool to backup and save [Umami](https://umami.is) analytics data in multiple formats with automatic resume, logging, and multi-website support. This was made to store the privacy preserving analytics for olicorne.org, as umami.is deletes data after 6 months.
 - [Home Assistant CalDAV client](https://github.com/thiswillbeyourgithub/Home-Assistant-CalDAV-client): A CalDAV client for automating task management with Home Assistant, Nextcloud, and voice commands.
 - [LiteLLM Proxy OpenRouter Price Updater](https://github.com/thiswillbeyourgithub/litellm_proxy_openrouter_price_updater): CLI tool for updating [LiteLLM](https://github.com/BerriAI/litellm) proxy pricing configurations using [OpenRouter](https://openrouter.ai/) API data.
 - [OpenRouter to Langfuse Model Pricing Sync](https://github.com/thiswillbeyourgithub/openrouter_cost_into_langfuse/): A Python script that automatically syncs model pricing data from [OpenRouter](https://openrouter.ai/) to Langfuse's pricing page.
