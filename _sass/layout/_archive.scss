@@ -17,6 +17,10 @@
   a {
     // text-decoration: underline;
     text-decoration: none;
+    // Add subtle underline in light mode only
+    html:not([data-theme="dark"]) & {
+      border-bottom: 1px dotted var(--global-link-color);
+    }
 
     &:hover {
       text-decoration: underline;
