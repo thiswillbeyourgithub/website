@@ -32,8 +32,8 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Blog"
-    url: /year-archive/
+  # - title: "Blog"
+  #   url: /year-archive/
 
   - title: "Contact"
     url: /contact/
