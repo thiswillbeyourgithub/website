@@ -92,7 +92,7 @@ publication_category:
 teaser                   : profile.png # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
@@ -252,6 +252,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      comments: true
+      share: true
   # # _teaching
   # - scope:
   #     path: ""
@@ -271,14 +273,14 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
   # # _talks
   # - scope:
   #     path: ""
