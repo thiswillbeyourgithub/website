@@ -40,7 +40,15 @@ At the same time, clinical observations from psychiatry could inform more robust
 - When building blocks I participated in have positive compounding effects.
 - Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
 - Repairing stuff.
-- Robust, distributed and resilient systems.
+- [Robust](https://en.wikipedia.org/wiki/Antifragility), [distributed](https://en.wikipedia.org/wiki/Distributed_computing), [decentralized](https://en.wikipedia.org/wiki/Decentralized_computing) systems.
+    - <details><summary>More</summary>
+            <ul>
+                <li>I have a deep fascination for <a href="https://en.wikipedia.org/wiki/Emergence">emergence</a> and <a href="https://en.wikipedia.org/wiki/Self-organization">self-organization</a></li>
+                <li>The former essential, I think, to understand counsciousness. And the latter is very connected to my interest in distributed and decentralized systems (e.g. <a href="https://en.wikipedia.org/wiki/AT_Protocol">AT Protocol</a>, <a href="https://github.com/markqvist/Reticulum/">Reticulum</a>, <a href="https://github.com/PrimeIntellect-ai/prime-iroh/">PRIME-IROH</a>, <a href="https://github.com/mudler/edgevpn">edgevpn</a>, <a href="https://nostr.com/">Nostr</a>, <a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">Conflict-Free-Replicated-Data-Type</a>, ...).</li>
+                <li>In my view, both are deeply linked to neuroscience and will be useful to help patients.</li>
+            </ul>
+        </details>
+
 - Encryption-by-default and privacy respecting tech.
 - [Self hosting](https://en.wikipedia.org/wiki/Self-hosting_(web_services)) my own services.
 - Reading [HackerNews](https://news.ycombinator.com/).
