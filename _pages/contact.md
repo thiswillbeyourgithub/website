@@ -9,7 +9,7 @@ redirect_from:
 
 I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. A notable exception is [Bluesky](https://en.wikipedia.org/wiki/Bluesky) that I sometimes use so you can DM me at [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social).
 
-You can email me at <a href="mailto:mail@oliviercornelis.fr">mail@oliviercornelis.fr</a>.
+You can email me at <a href="mailto:mail@oliviercornelis.fr">mail@oliviercornelis.fr</a>. As exposing my email on a webpage like this makes me receive a lot of spam, consider reaching out on my bluesky.
 
 You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) public key here: [PGP Public Key](../files/PGP_public_key) or copy it from below:
 
