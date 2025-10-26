@@ -11,6 +11,8 @@ redirect_from:
   - /project.html
 ---
 
+In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
+
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](./projects)
