@@ -4,7 +4,11 @@ title: "Projects"
 author_profile: true
 redirect_from:
   - /projects/
+  - /projects
   - /projects.html
+  - /project/
+  - /project
+  - /project.html
 ---
 
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
