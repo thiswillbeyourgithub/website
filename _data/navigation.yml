@@ -26,14 +26,14 @@ main:
   # - title: "Guide"
   #   url: /markdown/
 
-  - title: "Publications"
+  - title: "PUBLICATIONS"
     url: /publications
 
-  - title: "Projects"
+  - title: "PROJECTS"
     url: /projects
 
-  # - title: "Blog"
+  # - title: "BLOG"
   #   url: /year-archive/
 
-  - title: "Contact"
+  - title: "CONTACT"
     url: /contact
