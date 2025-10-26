@@ -10,6 +10,8 @@ redirect_from:
 
 I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer / data scientist.
 
+This page is an informal introduction to me and what I'm up to. A more formal introduction can be found in [CV](./cv_en).
+
 ## Education
 
 I took advanced math/physics/chemistry classes in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then went to [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) during which I did a 2 months master research internship (french: "stage de M1") at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin) creating from scratch a cluster plotting and benchmarking library for neuroscience. In 2025 I started [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in psychiatry in Paris, France.
