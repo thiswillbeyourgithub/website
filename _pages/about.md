@@ -43,7 +43,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 ## Things I love
 - Medicine, obviously.
 - [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware ([even this website](https://github.com/thiswillbeyourgithub/website])).
-- When building blocks I participated in have positive compounding effects.
+- When building blocks I've participated in have positive compounding effects.
 - Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
 - Repairing stuff.
 - [Robust](https://en.wikipedia.org/wiki/Antifragility), [distributed](https://en.wikipedia.org/wiki/Distributed_computing), [decentralized](https://en.wikipedia.org/wiki/Decentralized_computing) systems.
