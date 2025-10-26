@@ -2,6 +2,7 @@
 permalink: /
 title: "Hi there 👋"
 author_profile: true
+layout: single_noshare
 ---
 
 
