@@ -14,9 +14,10 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](./projects)
 
-<details><summary>A note on authorship</summary>
+
+<details><summary><i>A note on authorship</i></summary>
 <ul>
-    <li>Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, when I want AI-based assistance I almost exclusively use <a href="https://aider.chat/">aider</a> with the <b>--attribute-author</b> argument so you can see which projects and commits where done with or without it.</li>
+    <li><i>Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, when I want AI-based assistance I almost exclusively use <a href="https://aider.chat/">aider</a> with the <b>--attribute-author</b> argument so you can see which projects and commits where done with or without it.</i></li>
 </ul>
 </details>
 
