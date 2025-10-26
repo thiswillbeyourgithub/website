@@ -19,6 +19,11 @@ I started coding when I was about 12. I'm passionate about open source - most of
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](./projects)
 
+<details>
+<summary><i>What do these stats mean?</i></summary>
+<ul><li><i>S (top 1%), A+ (12.5%), A (25%), A- (37.5%), B+ (50%), B (62.5%), B- (75%), C+ (87.5%) and C (everyone). From <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a></i></li></ul>
+</details>
+
 I have experience working in collaboration and autonomously: I had the opportunity to build innovative solutions from scratch and make them freely available. Examples of my self-motivation include:
 - To search across my diverse medical corpus dataset with natural language query I created [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). The innovative summarizer feature was added to save me time catching up on the news.
 - Tinkering with [high dimensional embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) led me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) and pitch it to renowned researchers. The goal being to uncover hidden patterns in medical questionnaires allowing to unify partially disjointed medical datasets.
