@@ -7,7 +7,7 @@ redirect_from:
   - /contact.html
 ---
 
-I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. A notable exception is [Bluesky](https://en.wikipedia.org/wiki/Bluesky) that I sometimes use so you can DM me at [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social). I can also be found on [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne](https://mastodon.pirateparty.be/@olicorne).
+I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. Notable exceptions are [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social) and [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne](https://mastodon.pirateparty.be/@olicorne). You can DM me there, although I use them occasionally.
 
 You can email me at "`mail` @ `oliviercornelis.fr`". As exposing my email on a webpage like this makes me receive a lot of spam, consider reaching out on my socials.
 
