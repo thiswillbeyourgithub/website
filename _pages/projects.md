@@ -3,12 +3,9 @@ permalink: /projects
 title: "Projects"
 author_profile: true
 redirect_from:
-  - /projects/
   - /Projects
-  - /projects.html
-  - /project/
+  - /Project
   - /project
-  - /project.html
 ---
 
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.

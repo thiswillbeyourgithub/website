@@ -1,10 +1,10 @@
 ---
-permalink: /contact/
+permalink: /contact
 title: "Get in touch"
 author_profile: true
 redirect_from:
-  - /contact
-  - /contact.html
+  - /info
+  - /contacts
 ---
 
 I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. Notable exceptions are [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social) and [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne](https://mastodon.pirateparty.be/@olicorne). You can DM me there, although I use them occasionally.

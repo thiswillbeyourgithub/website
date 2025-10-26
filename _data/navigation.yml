@@ -18,7 +18,7 @@ main:
   #   url: /portfolio/
         
   - title: "CV"
-    url: /cv_en/
+    url: /cv_en
     
   # - title: "CV"
   #   url: /cv-json/
@@ -27,13 +27,13 @@ main:
   #   url: /markdown/
 
   - title: "Publications"
-    url: /publications/
+    url: /publications
 
   - title: "Projects"
-    url: /projects/
+    url: /projects
 
   # - title: "Blog"
   #   url: /year-archive/
 
   - title: "Contact"
-    url: /contact/
+    url: /contact
