@@ -1,15 +1,11 @@
 ---
-permalink: /
-title: "Hi there 👋"
+permalink: /about
+title: "About me"
 author_profile: true
-redirect_from:
-  - /about
 ---
 
 
-I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer / data scientist.
-
-This page is an informal introduction to me and what I'm up to. A more formal introduction can be found in [CV](./cv_en).
+This page is an informal introduction to me and what I'm up to. A more formal introduction can be found in [CV](./cv_en) (French version: [CV_FR](./cv_fr)).
 
 ## Education
 
