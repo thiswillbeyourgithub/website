@@ -20,5 +20,3 @@ package-lock.json
 .vscode/
 
 .aider*
-
-update_vps.sh
