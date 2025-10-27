@@ -6,7 +6,8 @@ services:
     volumes: [ .:/usr/src/app ]
     ports: [ 4999:4000/tcp ]
     user: 1000:1000
-    environment: [ JEKYLL_ENV=docker ]
+    environment:
+      - JEKYLL_ENV=docker
     # arguments: https://jekyllrb.com/docs/configuration/options/
     command: jekyll serve -H 0.0.0.0 --incremental --config _config.yml,_config_docker.yml
     labels: ["com.centurylinklabs.watchtower.scope=autoupdate"]
