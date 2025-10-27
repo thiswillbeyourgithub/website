@@ -9,4 +9,7 @@ services:
     environment: [ JEKYLL_ENV=docker ]
     command: jekyll serve -H 0.0.0.0 -w --config _config.yml,_config_docker.yml
     labels: ["com.centurylinklabs.watchtower.scope=autoupdate"]
+    security_opt:
+    - no-new-privileges:true
+    pull_policy: always
 
