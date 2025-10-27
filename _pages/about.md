@@ -6,6 +6,7 @@ author_profile: true
 
 
 This page is an informal introduction to me and what I'm up to.
+
 For a formal resume, the international version is at [CV](./cv_en) and the French version at [CV_FR](./cv_fr).
 
 ## Education
