@@ -16,7 +16,7 @@ I took advanced math/physics/chemistry classes in [classe prépa](https://en.wik
 
 I started coding when I was about 12. I'm passionate about open source - most of my code is publicly available on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 
-[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](./projects)
+[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
 <details>
 <summary><i>What do these stats mean?</i></summary>

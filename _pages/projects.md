@@ -12,7 +12,7 @@ In this page, you can read the exhaustive list of coding projects I've created o
 
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
-[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent)](./projects)
+[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 <details>
 <summary><i>What do these stats mean?</i></summary>
 <ul><li><i>S (top 1%), A+ (12.5%), A (25%), A- (37.5%), B+ (50%), B (62.5%), B- (75%), C+ (87.5%) and C (everyone). From <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a></i></li></ul>
