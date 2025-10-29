@@ -10,4 +10,5 @@ I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer /
 
 To read an informal introduction and what I'm up to, go to [ABOUT](./about).
 
-For a formal resume, the international version is at [CV](./cv_en) and the French version at [CV_FR](./cv_fr).
+For my formal CV, check out the [English](./cv_en) or [French](./cv_fr) version.
+
