@@ -46,5 +46,5 @@ X+JEP0Pzmy8cTmKIPgTC9jM5cbUS6ciiksw0+ZrsgA8=
 Ranked by best way to reach me first:
 
 - Ping me using `@thiswillbeyourgithub` in any github issue or discussion, I'll receive a priority e-mail to take a look. If you mind this communication being public, you can invite me to a private repo to chat via issues or discussions.
-- On [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [@olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social) 
+- On [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [@olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social).
 - On [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne](https://mastodon.piratepart.y.be/@olicorne).
