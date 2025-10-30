@@ -51,7 +51,7 @@ At the same time, clinical observations from psychiatry could inform more robust
         </details>
 
 - Encryption-by-default and privacy respecting tech.
-- [Self hosting](https://en.wikipedia.org/wiki/Self-hosting_(web_services)) my own services (including [this very website](https://github.com/thiswillbeyourgithub/website)).
+- [Self hosting](https://en.wikipedia.org/wiki/Self-hosting_(web_services)) services for me and people around me (including [this very website](https://github.com/thiswillbeyourgithub/website)).
 - Reading [HackerNews](https://news.ycombinator.com/).
 
 
