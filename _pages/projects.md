@@ -123,6 +123,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Misc Tools
+- [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): Simple script for creating compressed tar backups on a VPS with automatic rotation and timestamping.
 - [iroh_send](https://github.com/thiswillbeyourgithub/iroh-send): a script using [iroh](https://github.com/n0-computer/iroh) to easily send files or directories from one device to another.
 - [adb_newpipe_exporter](https://github.com/thiswillbeyourgithub/adb_newpipe_exporter): An adb script to automatically export your [NewPipe](https://github.com/TeamNewPipe/NewPipe) db.
 - [autopassad](https://github.com/thiswillbeyourgithub/autopassad): A (hopefully) cross platform python script to automatically click on 'skip' or 'continue' on ads.
