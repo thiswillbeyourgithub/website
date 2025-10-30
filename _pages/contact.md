@@ -7,9 +7,15 @@ redirect_from:
   - /contacts
 ---
 
-I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate. I don't use [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism), nor most social networks etc. Notable exceptions are [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social) and [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne](https://mastodon.pirateparty.be/@olicorne). You can DM me there, although I use them occasionally. Lastly, if you mention me using `@thiswillbeyourgithub` in any github issue or discussion, I'll receive a priority e-mail so you can use that (if you don't mind the communication being public).
+I almost exclusively use [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email to communicate.
 
-You can email me at "`mail` the @ symbol `oliviercornelis.fr`". As exposing my email on a webpage like this makes me receive a lot of spam, consider reaching out on my socials.
+{% include toc %}
+
+## By mail
+Use "`mail` the @ symbol `oliviercornelis.fr`".
+
+As exposing this address on this webpage invites lots of spam, consider reaching out via other means.
+
 
 You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) public key here: [PGP Public Key](../files/PGP_public_key) or copy it from below:
 
@@ -35,3 +41,10 @@ X+JEP0Pzmy8cTmKIPgTC9jM5cbUS6ciiksw0+ZrsgA8=
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+## Other means
+
+Ranked by best way to reach me first:
+
+- Ping me using `@thiswillbeyourgithub` in any github issue or discussion, I'll receive a priority e-mail to take a look. If you mind this communication being public, you can invite me to a private repo to chat via issues or discussions.
+- On [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [@olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social) 
+- On [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne](https://mastodon.piratepart.y.be/@olicorne).
