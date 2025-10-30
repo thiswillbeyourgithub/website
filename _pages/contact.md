@@ -43,7 +43,7 @@ X+JEP0Pzmy8cTmKIPgTC9jM5cbUS6ciiksw0+ZrsgA8=
 
 ## Other means
 
-Ranked by best way to reach me first:
+Ranked by "highest probability I'll see your message" first:
 
 - Ping me using `@thiswillbeyourgithub` in any github issue or discussion, I'll receive a priority e-mail to take a look. If you mind this communication being public, you can invite me to a private repo to chat via issues or discussions.
 - On [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [@olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social).
