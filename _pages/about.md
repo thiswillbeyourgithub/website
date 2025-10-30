@@ -12,7 +12,7 @@ For my formal CV, check out the [English](./cv_en) or [French](./cv_fr) version.
 
 ## Education
 
-I took advanced math/physics/chemistry classes in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then went to [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) during which I did a 2 months master research internship (french: "stage de M1") at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin) creating from scratch a cluster plotting and benchmarking library for neuroscience. In 2025 I started [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in psychiatry in Paris, France.
+I took advanced math/physics/chemistry classes in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then went to [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) during which I did a 2 months master research internship (French: "stage de M1") at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin) creating from scratch a cluster plotting and benchmarking library for neuroscience. In 2025 I started [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in psychiatry in Paris, France. The same year, I created `oliCorp`, a one-person company (French: "auto-entreprise"). This was necessary for legal reasons when providing services to a French non-profit.
 
 I started coding when I was about 12. I'm passionate about open source - most of my code is publicly available on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 
