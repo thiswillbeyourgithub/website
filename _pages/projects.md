@@ -24,6 +24,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {% include toc %}
 
 ## Medicine & Computer Science
+- [PrevMed](https://github.com/PrevMedOrg/PrevMed): A minimalist platform enabling non-technical users to create clinical questionnaires without storing personal data.
 - [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA): Research project merging numerical survey responses with semantic question embeddings to enhance patient data analysis and uncover hidden patterns in medical questionnaires.
 - [wdoc](https://github.com/thiswillbeyourgithub/wdoc): Multi-modal document querying and summarization system integrating diverse content types with advanced [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) capabilities and LLM-powered semantic processing for comprehensive information extraction.
     - [OmniQA](https://github.com/thiswillbeyourgithub/OmniQA): Document indexing tool for seamless querying of any file format using large language models and vector search technology. Was superseeded by **wdoc**.
