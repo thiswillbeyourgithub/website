@@ -179,6 +179,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 *1 project so far*
 - [FUTOmeter](https://github.com/thiswillbeyourgithub/FUTOmeter): Library suite for privacy-preserving usage tracking and context-aware donation prompts in FOSS applications, enabling sustainable funding through data-driven user engagement metrics.
 
+---
+
 # Code Contributions
 This is a short list of some projects I contributed to. It can be code, documentation, ideas, etc. It can be anything from small contributions to large projects to many small contributions.
 *Some of those contributions ended up not merged for various reasons but I still think it is a contribution.*
