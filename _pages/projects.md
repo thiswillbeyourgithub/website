@@ -139,7 +139,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [weather_notifier](https://github.com/thiswillbeyourgithub/weather_notifier): Weather notification system that monitors rainfall forecasts and temperature variations while delivering mobile alerts through ntfy.sh integration.
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
-## Misc Tools
+## Miscellaneous Tools
 *32 projects so far*
 - [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): Simple script for creating compressed tar backups on a VPS with automatic rotation and timestamping.
 - [iroh_send](https://github.com/thiswillbeyourgithub/iroh-send): a script using [iroh](https://github.com/n0-computer/iroh) to easily send files or directories from one device to another.
