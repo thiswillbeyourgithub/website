@@ -25,6 +25,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 {% include toc %}
 
+*Individual project count on this page: 94*
+
 ## Medicine & Computer Science
 *13 projects so far*
 - [PrevMed](https://github.com/PrevMedOrg/PrevMed): A minimalist platform enabling non-technical users to create clinical questionnaires without storing personal data.
