@@ -24,6 +24,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {% include toc %}
 
 ## Medicine & Computer Science
+*13 projects so far*
 - [PrevMed](https://github.com/PrevMedOrg/PrevMed): A minimalist platform enabling non-technical users to create clinical questionnaires without storing personal data.
 - [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA): Research project merging numerical survey responses with semantic question embeddings to enhance patient data analysis and uncover hidden patterns in medical questionnaires.
 - [wdoc](https://github.com/thiswillbeyourgithub/wdoc): Multi-modal document querying and summarization system integrating diverse content types with advanced [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) capabilities and LLM-powered semantic processing for comprehensive information extraction.
@@ -40,6 +41,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Anki
 *[Anki](https://github.com/ankitects/anki/) is an open source flashcard/spaced repetition memorization system*
+*14 projects so far*
 
 - [Stahl Ankifier](https://github.com/thiswillbeyourgithub/StahlAnkifier): *See above*
 - [Voice2Anki](https://github.com/thiswillbeyourgithub/Voice2Anki): Universal language learning tool combining speech recognition and AI to automatically generate and manage personalized flashcards from voice recordings with adaptive formatting and intelligent memory features.
@@ -58,6 +60,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Karakeep
 *[Karakeep](https://github.com/karakeep-app/karakeep) is an open source read it later app*
+*3 projects so far*
 
 - [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): Python interface and command-line tool providing comprehensive access to Karakeep's bookmarking API with automated testing, data validation, and community-contributed scripts.
 - [Karanki](https://github.com/thiswillbeyourgithub/Karanki): Bidirectional synchronization tool for automating flashcard creation from highlights with color-coded retention levels and intelligent state tracking capabilities.
@@ -65,6 +68,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Logseq
 *[Logseq](https://github.com/logseq/logseq) is an open source PKM (Personal Knowledge Management) app*
+*4 projects so far*
 
 - [LogseqMarkdownParser](https://github.com/thiswillbeyourgithub/LogseqMarkdownParser): Parser and utility library supporting seamless reading, manipulation and export of Logseq markdown files with properties and blocks.
 - [wallabag_to_logseq_and_omnivore](https://github.com/thiswillbeyourgithub/wallabag_to_logseq_and_omnivore): Python script for seamless migration of articles and highlights from Wallabag to Logseq and Omnivore reading platforms, ensuring continuity of reading history and annotations.
@@ -73,17 +77,20 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Open-WebUI
 *[Open-WebUI](https://github.com/open-webui/open-webui/issues) is a self hosted AI platform*
+*1 project so far*
 
 - [openwebui_custom_pipes_filters](https://github.com/thiswillbeyourgithub/openwebui_custom_pipes_filters): Comprehensive suite of custom filters, tools, and pipes designed to enhance OpenWebUI's functionality with message tracking, cost monitoring, and extended chat capabilities.
 
 ## Smartwatch
 *Mainly for [wasp-os](https://github.com/wasp-os/wasp-os) on the [pinetime](https://pine64.org/devices/pinetime/)*
+*2 projects so far*
 
 - [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): Privacy-oriented sleep tracking and smart alarm system utilizing accelerometer and heart rate data to optimize wake-up times based on sleep cycle analysis and gradual wake-up patterns.
 - [pomodoro_wasp_os](https://github.com/thiswillbeyourgithub/Pomodoro-wasp-os): Customizable Pomodoro timer application for PineTime smartwatches featuring multiple presets, vibration patterns, and persistent settings.
 
 ## API
 *I made my own "reference" libraries to make my other projects more interoperable*
+*4 projects so far*
 
 - [freshrss_python_api](https://github.com/thiswillbeyourgithub/freshrss_python_api): Python wrapper and API client for the FreshRSS Fever API, enabling programmatic management of RSS feeds, items, and categories with robust error handling and type safety.
 - [caldav_tasks_api](https://github.com/thiswillbeyourgithub/Caldav-Tasks-API): Python library and CLI tool for advanced CalDAV task management with features like task synchronization, ELO-based prioritization, and comprehensive task manipulation capabilities.
@@ -92,6 +99,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Productivity
 *Tools I use, used or made*
+*13 projects so far*
 
 - [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Advanced command-line tool for automated webpage archival to PDF with metadata extraction and seamless integration into Zotero's reference management system across multiple devices.
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.
@@ -109,6 +117,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## "Rot" tools
 *Tools leveraging deterministic time-based codes*
+*3 projects so far*
 
 - [wormrot.sh](https://github.com/thiswillbeyourgithub/wormrot.sh): Secure file transfer automation system using time-synchronized codes and a shared secret for seamless transmission between trusted devices.
 - [fowlrot.sh](https://github.com/thiswillbeyourgithub/fowlrot.sh): Time-based code generation system for secure peer-to-peer connections using synchronized, deterministic codes derived from pre-shared secrets.
@@ -116,6 +125,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Ntfy
 *[ntfy.sh](https://ntfy.sh) makes it easy to send and receive notifications, I use it a lot for monitoring*
+*7 projects so far*
 
 - [Daily_Fact_Ntfy](https://github.com/thiswillbeyourgithub/Daily_Fact_Ntfy): Notification system that generates and delivers AI-powered interesting facts about user-specified topics through ntfy.sh at randomized intervals.
 - [Ntfy_CSV_Reminders](https://github.com/thiswillbeyourgithub/Ntfy_CSV_Reminders): Probability-based notification system for managing recurring tasks with randomized timing to prevent notification fatigue.
@@ -126,6 +136,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Misc Tools
+*32 projects so far*
 - [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): Simple script for creating compressed tar backups on a VPS with automatic rotation and timestamping.
 - [iroh_send](https://github.com/thiswillbeyourgithub/iroh-send): a script using [iroh](https://github.com/n0-computer/iroh) to easily send files or directories from one device to another.
 - [adb_newpipe_exporter](https://github.com/thiswillbeyourgithub/adb_newpipe_exporter): An adb script to automatically export your [NewPipe](https://github.com/TeamNewPipe/NewPipe) db.
@@ -161,4 +172,5 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [pdfannots](https://github.com/thiswillbeyourgithub/pdfannots): Text extraction tool for PDF documents that processes annotations, highlights, and comments into formatted Markdown, JSON, or EDN outputs for academic paper reviews and document analysis.
 
 ## Others
+*1 project so far*
 - [FUTOmeter](https://github.com/thiswillbeyourgithub/FUTOmeter): Library suite for privacy-preserving usage tracking and context-aware donation prompts in FOSS applications, enabling sustainable funding through data-driven user engagement metrics.
