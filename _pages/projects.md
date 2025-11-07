@@ -16,6 +16,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
+*Individual project count on this page: 94*
+
 
 <details><summary><i>A note on authorship</i></summary>
 <ul>
@@ -23,9 +25,9 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 </ul>
 </details>
 
-{% include toc %}
+<br>
 
-*Individual project count on this page: 94*
+{% include toc %}
 
 ## Medicine & Computer Science
 *13 projects so far*
