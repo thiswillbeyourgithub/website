@@ -32,7 +32,7 @@ redirect_from:
       <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
-      <strong>Github:</strong> <a href="https://thiswillbeyourgithub.github.io/">@thiswillbeyourgithub</a> (top 2.6% in 2025)
+      <strong>Github:</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (top 2.6% in 2025)
     </div>
     <div class="cv-info-item">
       <strong>Generated on:</strong> {{ site.time | date: "%d %b %Y" }}
