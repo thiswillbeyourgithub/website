@@ -17,8 +17,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
         - [https://drug-interactions.medicine.iu.edu/main-table](https://drug-interactions.medicine.iu.edu/main-table)
         - [https://drug-interactions.medicine.iu.edu/search](https://drug-interactions.medicine.iu.edu/search)
 - In French from switzerland:
-    - Good table, was often recommended to me:
-        - [Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine (Pgp)](https://www.hug.ch/sites/interhug/files/structures/pharmacologie_et_toxicologie_cliniques/a5_cytochromes_6_2.pdf)
+    - Good table, was often recommended to me, 2017: [Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine (Pgp)](https://www.hug.ch/sites/interhug/files/structures/pharmacologie_et_toxicologie_cliniques/a5_cytochromes_6_2.pdf)
     - Only about antidepressants, 2013: [Dosage plasmatique des médicaments antidépresseurs](https://www.revmed.ch/revue-medicale-suisse/2013/revue-medicale-suisse-377/dosage-plasmatique-des-medicaments-antidepresseurs)
 - This research website seemed to contain promising tools but they seemed to handle pretty badly their HTTPS certificates:
     - [https://insilico-cyp.charite.de/SuperCYPsPred/](https://insilico-cyp.charite.de/SuperCYPsPred/)
