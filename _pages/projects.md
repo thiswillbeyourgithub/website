@@ -16,7 +16,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
-*Individual project count on this page: 95*
+*Individual project count on this page: 96*
 
 
 <details><summary><i>A note on authorship</i></summary>
@@ -142,7 +142,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*33 projects so far*
+*34 projects so far*
+- [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): A Gradio GUI tool for searching FAISS vector databases.
 - [systemd_last_run](https://github.com/thiswillbeyourgithub/systemd_last_run): Command-line tool for querying and displaying the last run times of systemd units with sorting options.
 - [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): Simple script for creating compressed tar backups on a VPS with automatic rotation and timestamping.
 - [iroh_send](https://github.com/thiswillbeyourgithub/iroh-send): a script using [iroh](https://github.com/n0-computer/iroh) to easily send files or directories from one device to another.
