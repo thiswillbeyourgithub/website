@@ -19,5 +19,5 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - En français, de Suisse :
     - Bon tableau, m'a souvent été recommandé, 2017 : [Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine (Pgp)](https://www.hug.ch/sites/interhug/files/structures/pharmacologie_et_toxicologie_cliniques/a5_cytochromes_6_2.pdf)
     - Uniquement sur les antidépresseurs, 2013 : [Dosage plasmatique des médicaments antidépresseurs](https://www.revmed.ch/revue-medicale-suisse/2013/revue-medicale-suisse-377/dosage-plasmatique-des-medicaments-antidepresseurs)
-- Ce site web de recherche semblait contenir des outils prometteurs mais ils semblaient mal gérer leurs certificats HTTPS :
+- Ce site web de recherche semblait contenir des outils prometteurs mais ils semblaient mal gérer leurs certificats HTTPS, 2020 :
     - [https://insilico-cyp.charite.de/SuperCYPsPred/](https://insilico-cyp.charite.de/SuperCYPsPred/)
