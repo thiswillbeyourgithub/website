@@ -12,7 +12,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 {% include toc %}
 
 # Enzymatic interaction:
-- Pretty promising, seems to cite sources extensively but not yet sure about exhaustivity:
+- Pretty promising, seems to cite sources extensively but not yet sure about exhaustivity, 2021 initially but updated twice a year apparently:
     - [Drug Interaction Flockhart Table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
         - [https://drug-interactions.medicine.iu.edu/main-table](https://drug-interactions.medicine.iu.edu/main-table)
         - [https://drug-interactions.medicine.iu.edu/search](https://drug-interactions.medicine.iu.edu/search)
