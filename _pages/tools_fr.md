@@ -13,7 +13,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 # Interactions enzymatiques :
 - Très prometteur, semble citer les sources de manière systématique mais pas encore sûr de l'exhaustivité :
-    - [https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
+    - [Drug Interaction Flockhart Table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
         - [https://drug-interactions.medicine.iu.edu/main-table](https://drug-interactions.medicine.iu.edu/main-table)
         - [https://drug-interactions.medicine.iu.edu/search](https://drug-interactions.medicine.iu.edu/search)
 - En français, de Suisse :

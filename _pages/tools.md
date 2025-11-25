@@ -13,7 +13,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 
 # Enzymatic interaction:
 - Pretty promising, seems to cite sources extensively but not yet sure about exhaustivity:
-    - [https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
+    - [Drug Interaction Flockhart Table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
         - [https://drug-interactions.medicine.iu.edu/main-table](https://drug-interactions.medicine.iu.edu/main-table)
         - [https://drug-interactions.medicine.iu.edu/search](https://drug-interactions.medicine.iu.edu/search)
 - In French from switzerland:
