@@ -22,3 +22,4 @@ package-lock.json
 .aider*
 
 deploy.sh
+.env
