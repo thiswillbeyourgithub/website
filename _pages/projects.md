@@ -14,7 +14,7 @@ Note I count as "project" only what I made myself. Hence it does not include my 
 
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
-[![Olivier Cornelis's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
+[![Olivier Cornelis's GitHub stats](https://gitstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
 *Individual project count on this page: 97*
 
