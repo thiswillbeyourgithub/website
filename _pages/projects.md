@@ -16,7 +16,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![Olivier Cornelis's GitHub stats](https://gitstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
-*Individual project count on this page: 97*
+*Individual project count on this page: 98*
 
 
 <details><summary><i>A note on authorship</i></summary>
@@ -37,7 +37,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {% include toc %}
 
 ## Medicine & Computer Science
-*14 projects so far*
+*15 projects so far*
 - [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): **WIP** voice transcription directly inside the browser (no data sent to any server). Working on a french medical finetuned model.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convert ICD-11 data into langchain Document objects for enhanced retrieval and search applications. To make a [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher)-based search engine for ICD-11 classification codes.
 - [PrevMed](https://github.com/PrevMedOrg/PrevMed): A minimalist platform enabling non-technical users to create clinical questionnaires without storing personal data. *Note: I was paid to design then build this solution.*
