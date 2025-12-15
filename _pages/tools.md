@@ -25,3 +25,9 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
     - Only about antidepressants, 2013: [Dosage plasmatique des médicaments antidépresseurs](https://www.revmed.ch/revue-medicale-suisse/2013/revue-medicale-suisse-377/dosage-plasmatique-des-medicaments-antidepresseurs)
 - This research website seemed to contain promising tools but they seemed to handle pretty badly their HTTPS certificates, 2020:
     - [https://insilico-cyp.charite.de/SuperCYPsPred/](https://insilico-cyp.charite.de/SuperCYPsPred/)
+
+
+# General drug information
+- [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/) ([described above](#enzymatic-interaction)).
+- The `Resume des Caracteristiques du Produit` accessed through the [Base de donnee publique du medicament](https://base-donnees-publique.medicaments.gouv.fr/).
+- [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
