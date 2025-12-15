@@ -12,6 +12,9 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 {% include toc %}
 
 # Interactions enzymatiques :
+- Semble plutôt complet et m'a été recommandé : [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/).
+    - J'ai remarqué au moins une fois une simplification assez importante : le texte sur ClinPGx mentionnait un cytochrome comme étant le principal, alors que la source expliquait en fait que celui-ci était celui qui se liait le plus à la molécule mais comme il était moins présent, il n'était en fait pas le principal métaboliseur du médicament donné.
+    - Ma conclusion est que la manière la plus fiable de vérifier les voies enzymatiques des médicaments est d'utiliser ClinPGx pour raisonner mais ensuite de lire tous les résumés des sources sous-jacentes pour réduire les chances que cela se reproduise.
 - Très prometteur, semble citer les sources de manière systématique mais pas encore sûr de l'exhaustivité, 2021 initialement mais serait mis a jour 2 fois par an:
     - Mais: ne mentionne pas par exemple la lamotrigine, ou que une partie des interaction enzymatiques connue de la venlafaxine.
     - [Drug Interaction Flockhart Table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
