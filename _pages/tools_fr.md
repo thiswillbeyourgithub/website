@@ -11,7 +11,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 {% include toc %}
 
-# Interactions enzymatiques :
+# Interactions enzymatiques
 - Semble plutôt complet et m'a été recommandé : [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/).
     - J'ai remarqué au moins une fois une simplification assez importante : le texte sur ClinPGx mentionnait un cytochrome comme étant le principal, alors que la source expliquait en fait que celui-ci était celui qui se liait le plus à la molécule mais comme il était moins présent, il n'était en fait pas le principal métaboliseur du médicament donné.
     - Ma conclusion est que la manière la plus fiable de vérifier les voies enzymatiques des médicaments est d'utiliser ClinPGx pour raisonner mais ensuite de lire tous les résumés des sources sous-jacentes pour réduire les chances que cela se reproduise.
@@ -28,6 +28,6 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 
 # Informations générales sur les médicaments
-- [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/) ([décrit ci-dessus](#interactions-enzymatiques-)).
+- [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/) ([décrit ci-dessus](#interactions-enzymatiques)).
 - Le `Résumé des Caractéristiques du Produit` accessible via la [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
 - [Vidal](https://www.vidal.fr/) ainsi que [Hoptimal Vidal](https://hoptimal.vidal.fr/) (version « hôpital »).
