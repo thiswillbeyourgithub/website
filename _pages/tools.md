@@ -12,6 +12,9 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 {% include toc %}
 
 # Enzymatic interaction:
+- Seems rather complete and was recommended to me: [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/).
+    - I noticed at least once a pretty wild oversimplification: the text on ClinPGx mentioned one cytochrome as being the main one, while the source actually explained that this one was actually the one that bound to the molecule the most but because it was less present it was actually not the main metabolizer of the given drug.
+    - My conclusion is that the most reliable way to check enzymatic drug pathways is to use ClinPGx to reason but then read all the underlying sources's abstracts to reduce the chances of this happening again.
 - Pretty promising, seems to cite sources extensively but not yet sure about exhaustivity, 2021 initially but updated twice a year apparently:
     - But: does not mention lamotrigin, and only a subset of the known venlafaxin interactions.
     - [Drug Interaction Flockhart Table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
