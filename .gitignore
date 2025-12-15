@@ -24,3 +24,4 @@ package-lock.json
 deploy.sh
 .env
 .jekyll-metadata
+.env
