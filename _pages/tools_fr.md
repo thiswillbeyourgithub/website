@@ -25,3 +25,9 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
     - Uniquement sur les antidépresseurs, 2013 : [Dosage plasmatique des médicaments antidépresseurs](https://www.revmed.ch/revue-medicale-suisse/2013/revue-medicale-suisse-377/dosage-plasmatique-des-medicaments-antidepresseurs)
 - Ce site web de recherche semblait contenir des outils prometteurs mais ils semblaient mal gérer leurs certificats HTTPS, 2020 :
     - [https://insilico-cyp.charite.de/SuperCYPsPred/](https://insilico-cyp.charite.de/SuperCYPsPred/)
+
+
+# Informations générales sur les médicaments
+- [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/) ([décrit ci-dessus](#interactions-enzymatiques-)).
+- Le `Résumé des Caractéristiques du Produit` accessible via la [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
+- [Vidal](https://www.vidal.fr/) ainsi que [Hoptimal Vidal](https://hoptimal.vidal.fr/) (version « hôpital »).
