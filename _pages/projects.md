@@ -28,7 +28,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 <details><summary><i>A note on licensing</i></summary>
 <ul>
-    <li><i>Most if not all of my projects are released under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 license</a>.</i></li>
+    <li><i>Most if not all of my projects are released under the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPLv3 license</a>.</i></li>. Peviously I used almost exclusively the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 license</a>.</i></li>
 </ul>
 </details>
 
