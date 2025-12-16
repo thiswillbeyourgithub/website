@@ -22,6 +22,5 @@ package-lock.json
 .aider*
 
 deploy.sh
-.env
 .jekyll-metadata
 .env
