@@ -31,3 +31,8 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 - [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/) ([described above](#enzymatic-interaction)).
 - The `Resume des Caracteristiques du Produit` accessed through the [Base de donnee publique du medicament](https://base-donnees-publique.medicaments.gouv.fr/).
 - [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
+
+# Formulas and Scores
+
+- [medicalcul](https://medicalcul.mgdsoft.fr/)
+    - QTc for example: [QTc](https://medicalcul.mgdsoft.fr/qtcorrige.html)
