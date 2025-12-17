@@ -8,6 +8,8 @@ redirect_from:
   - /project
 ---
 
+*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/projects.md)]*
+
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
 
 Note I count as "project" only what I made myself. Hence it does not include my code contributions to other projects. See at [the bottom](#code-contributions) if you want to read some of my contributions.

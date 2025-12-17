@@ -7,6 +7,8 @@ redirect_from:
   - /resume_fr
 ---
 
+*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/cv_fr.md)]*
+
 {% include base_path %}
 
 <p class="no-print">
