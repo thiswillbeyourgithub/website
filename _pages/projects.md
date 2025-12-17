@@ -196,7 +196,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 # Code Contributions
 This is a short list of some projects I contributed to. It can be code, documentation, ideas, etc. It can be anything from small contributions to large projects to many small contributions.
-*Some of those contributions ended up not merged for various reasons but I still think it is a contribution.*
+*Disclaimer: In some cases I counted contributions that were not merged because it helped the project one way or another.*
 
 - [openai](https://github.com/openai/openai-python/pull/733/files): fixed a long standing bug related to whisper when given some type of audio files.
 - [joblib](https://github.com/joblib/joblib/pull/1613): fixed and clarified some behaviors related to cache expiration
