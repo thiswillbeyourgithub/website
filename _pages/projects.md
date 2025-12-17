@@ -18,7 +18,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![Olivier Cornelis's GitHub stats](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
-*Individual project count on this page: 98*
+*Individual project count on this page: 99*
 
 
 <details><summary><i>A note on authorship</i></summary>
@@ -142,8 +142,9 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Ntfy
 *[ntfy.sh](https://ntfy.sh) makes it easy to send and receive notifications, I use it a lot for monitoring*
-*7 projects so far*
+*8 projects so far*
 
+- [ntfy_nmap_watcher](https://github.com/thiswillbeyourgithub/ntfy_nmap_watcher): Monitor external server ports with automated nmap scans and instant notifications for UFW configuration changes.
 - [Daily_Fact_Ntfy](https://github.com/thiswillbeyourgithub/Daily_Fact_Ntfy): Notification system that generates and delivers AI-powered interesting facts about user-specified topics through ntfy.sh at randomized intervals.
 - [Ntfy_CSV_Reminders](https://github.com/thiswillbeyourgithub/Ntfy_CSV_Reminders): Probability-based notification system for managing recurring tasks with randomized timing to prevent notification fatigue.
 - [ntfy_systemd](https://github.com/thiswillbeyourgithub/ntfy_systemd): Monitoring system that tracks systemd service failures and sends instant notifications through ntfy with detailed status reports.
