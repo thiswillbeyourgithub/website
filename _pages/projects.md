@@ -21,7 +21,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 <details><summary><i>A note on authorship</i></summary>
 <ul>
-    <li><i>Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, when I want AI-based assistance I almost exclusively use <a href="https://aider.chat/">aider</a> with the <b>--attribute-author</b> argument so you can see which projects and commits where done with or without it.</i></li>
+    <li><i>Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, when I want AI-based assistance I almost exclusively use <a href="https://aider.chat/">aider</a> with the <b>--attribute-author</b> argument so you can see which projects and commits where done with or without it.</i></li> As of December 2025 aider seems to have been unmaintained for months but I'm not sure which replacement to use in the future.
     <li><i>I would never have been able to write code without the open source movement, the countless tutorials shared freely online, and the culture of publishing source code and scripts. I am deeply grateful to everyone who has contributed to making programming knowledge accessible. These projects are my attempt to give back and help others on their journey, just as so many have helped me.</i></li>
 </ul>
 </details>
