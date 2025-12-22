@@ -7,11 +7,11 @@ redirect_from:
   - /resume_fr
 ---
 
-*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/cv_fr.md)]*
-
 {% include base_path %}
 
 <p class="no-print">
+  <i><a href="https://github.com/thiswillbeyourgithub/website/blob/master/_pages/cv_fr.md">Code Source</a></i>
+  |
   <a href="#" onclick="window.print(); return false;" data-umami-events="cv_fr_download_link">Télécharger le PDF</a>
   |
   <a href="../cv_en" data-umami-events="cv_fr_to_en_link">English version here / Version en anglais ici</a>
