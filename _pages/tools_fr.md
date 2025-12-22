@@ -33,6 +33,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/) ([décrit ci-dessus](#interactions-enzymatiques)).
 - Le `Résumé des Caractéristiques du Produit` accessible via la [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
 - [Vidal](https://www.vidal.fr/) ainsi que [Hoptimal Vidal](https://hoptimal.vidal.fr/) (version « hôpital »).
+- Pour savoir quels médicaments sont indisponibles aux patients : [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
 
 # Formules et Scores
 
