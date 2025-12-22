@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <p class="no-print">
-  <i><a href="https://github.com/thiswillbeyourgithub/website/blob/master/_pages/cv_fr.md">Code Source</a></i>
+  <a href="https://github.com/thiswillbeyourgithub/website/blob/master/_pages/cv_fr.md">Code Source</a>
   |
   <a href="#" onclick="window.print(); return false;" data-umami-events="cv_fr_download_link">Télécharger le PDF</a>
   |
