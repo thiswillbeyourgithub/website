@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "dirt" # Currently available options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "contrast" # Currently available options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "OLIVIER CORNELIS"
 title_separator          : "-"
 name                     : &name "Olivier Cornelis"
