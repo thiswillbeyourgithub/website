@@ -17,6 +17,7 @@ I took advanced math/physics/chemistry classes in [classe prépa](https://en.wik
 
 I started coding when I was about 12. I'm passionate about open source - most of my code is publicly available on [my github](https://github.com/thiswillbeyourgithub/). Here are my stats:
 
+<!-- remember to edit the crontab line that loads the cache if you edit that url -->
 [![Olivier Cornelis's GitHub stats](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
 I have experience working in collaboration and autonomously: I had the opportunity to build innovative solutions from scratch and make them freely available. Examples of my self-motivation include:

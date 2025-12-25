@@ -16,6 +16,7 @@ Note I count as "project" only what I made myself. Hence it does not include my 
 
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
+<!-- remember to edit the crontab line that loads the cache if you edit that url -->
 [![Olivier Cornelis's GitHub stats](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
 *Individual project count on this page: 99*
