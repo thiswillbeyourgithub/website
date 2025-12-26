@@ -196,8 +196,8 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: var(--global-base-color);
-    color: #fff;
+    background-color: var(--global-bg-color);
+    color: var(--global-text-color);
     cursor: pointer;
     z-index: 100;
   }
