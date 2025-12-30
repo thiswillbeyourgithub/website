@@ -19,7 +19,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 <!-- remember to edit the crontab line that loads the cache if you edit that url -->
 [![Olivier Cornelis' GitHub stats](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
-*Individual project count on this page: 100*
+*Individual project count on this page: 101*
 
 
 <details><summary><i>A note on authorship</i></summary>
@@ -155,7 +155,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*35 projects so far*
+*36 projects so far*
+- [srt_ai_translator](https://github.com/thiswillbeyourgithub/srt_ai_translator): A subtitle translator leveraging OpenAI-compatible APIs for context-aware and efficient SRT translations.
 - [GPU Docker Monitor](https://github.com/thiswillbeyourgithub/nvidia-smi-docker-matcher): Efficiently map GPU processes to Docker containers for easier resource management.
 - [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): A Gradio GUI tool for searching FAISS vector databases.
 - [systemd_last_run](https://github.com/thiswillbeyourgithub/systemd_last_run): Command-line tool for querying and displaying the last run times of systemd units with sorting options.
