@@ -156,6 +156,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Miscellaneous Tools
 *34 projects so far*
+- [GPU Docker Monitor](https://github.com/thiswillbeyourgithub/nvidia-smi-docker-matcher): Efficiently map GPU processes to Docker containers for easier resource management.
 - [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): A Gradio GUI tool for searching FAISS vector databases.
 - [systemd_last_run](https://github.com/thiswillbeyourgithub/systemd_last_run): Command-line tool for querying and displaying the last run times of systemd units with sorting options.
 - [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): Simple script for creating compressed tar backups on a VPS with automatic rotation and timestamping.
