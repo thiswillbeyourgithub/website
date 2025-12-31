@@ -10,7 +10,7 @@ This page is an informal introduction to me and what I'm up to.
 
 For my formal CV, check out the [English](./cv_en) or [French](./cv_fr) version.
 
-I maintain a page listing the tools I use during my psychiatry residency: [Tools](./tools) (also available in French: [Outils](./tools_fr)).
+I maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools_en) (also available in French: [OUTILS](./tools_fr)).
 
 
 ## Education
