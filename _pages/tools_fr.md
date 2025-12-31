@@ -7,7 +7,7 @@ permalink: /tools_fr
 
 {% include base_path %}
 
-<a href="../tools" data-umami-events="tools_fr_to_tools_link">English version here / Version en anglais ici</a>
+<a href="../tools_en" data-umami-events="tools_fr_to_tools_en_link">English version here / Version en anglais ici</a>
 
 Sur cette page, j'essaie de garder une trace des ressources qui peuvent être utiles aux internes en psychiatrie. Dans chaque section, je fais de mon mieux pour ordonner par ordre d'importance.
 

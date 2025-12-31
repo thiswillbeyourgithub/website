@@ -1,15 +1,15 @@
 ---
 title: "Tools"
-permalink: /tools
+permalink: /tools_en
 redirect_from:
-  - /tools_en
+  - /tools
 ---
 
-*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools.md)]*
+*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools_en.md)]*
 
 {% include base_path %}
 
-<a href="../tools_fr" data-umami-events="tools_to_tools_fr_link">French version here / Version en français ici</a>
+<a href="../tools_fr" data-umami-events="tools_en_to_tools_fr_link">French version here / Version en français ici</a>
 
 On this page, I try to keep track of resource I think can be useful to psychiatry residents. In each section, I try my best to order by most important first.
 
