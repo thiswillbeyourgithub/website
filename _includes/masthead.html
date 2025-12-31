@@ -15,9 +15,20 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-            </li>
+            {% if link.multi %}
+              <li class="masthead__menu-item has-dropdown">
+                <a href="#" class="dropdown-toggle">{{ link.title }} <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                  {% for sublink in link.multi %}
+                    <li><a href="{{ domain }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endif %}
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
@@ -28,3 +39,37 @@
     </div>
   </div>
 </div>
+
+<script>
+// Handle dropdown menu interactions for touch devices and clicks
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdowns = document.querySelectorAll('.has-dropdown');
+  
+  dropdowns.forEach(function(dropdown) {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    
+    // Toggle dropdown on click
+    toggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Close other dropdowns
+      dropdowns.forEach(function(other) {
+        if (other !== dropdown) {
+          other.classList.remove('active');
+        }
+      });
+      
+      // Toggle this dropdown
+      dropdown.classList.toggle('active');
+    });
+  });
+  
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', function() {
+    dropdowns.forEach(function(dropdown) {
+      dropdown.classList.remove('active');
+    });
+  });
+});
+</script>

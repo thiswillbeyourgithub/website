@@ -79,3 +79,92 @@
   border-bottom: 2px solid var(--global-base-color);
   /* No need to repeat pointer-events and cursor here */
 }
+
+/* Dropdown menu styles */
+.masthead__menu-item.has-dropdown {
+  position: relative;
+}
+
+.masthead__menu-item.has-dropdown .dropdown-toggle {
+  cursor: pointer;
+}
+
+.masthead__menu-item.has-dropdown .dropdown-toggle i {
+  font-size: 0.8em;
+  margin-left: 0.25em;
+  transition: transform 0.2s ease;
+}
+
+.masthead__menu-item.has-dropdown.active .dropdown-toggle i,
+.masthead__menu-item.has-dropdown:hover .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0.5em 0;
+  list-style: none;
+  background-color: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-width: 150px;
+  z-index: 100;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition-delay: 0s;
+}
+
+.masthead__menu-item.has-dropdown:hover .dropdown-menu,
+.masthead__menu-item.has-dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+
+.dropdown-menu li {
+  display: block !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  flex: none !important;
+  text-align: center;
+}
+
+.dropdown-menu a {
+  display: block;
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 0 !important;
+  color: var(--global-text-color);
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: none !important;
+  font-weight: normal !important;
+  position: relative;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  border-bottom: none !important;
+}
+
+/* Ensure no border-bottom is applied to dropdown items from other styles */
+.masthead__menu-item.has-dropdown .dropdown-menu a,
+.masthead__menu-item.has-dropdown .dropdown-menu a:hover,
+.masthead__menu-item.has-dropdown .dropdown-menu a:active,
+.masthead__menu-item.has-dropdown .dropdown-menu a:focus {
+  border-bottom: none !important;
+}

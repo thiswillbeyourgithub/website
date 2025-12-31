@@ -21,7 +21,11 @@ main:
     url: /about
 
   - title: "CV"
-    url: /cv_en
+    multi:
+      - title: "ENGLISH"
+        url: /cv_en
+      - title: "FRENCH"
+        url: /cv_fr
     
   # - title: "CV"
   #   url: /cv-json/
