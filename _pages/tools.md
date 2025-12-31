@@ -1,6 +1,8 @@
 ---
 title: "Tools"
 permalink: /tools
+redirect_from:
+  - /tools_en
 ---
 
 *[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools.md)]*
