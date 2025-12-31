@@ -46,4 +46,8 @@ main:
     url: /contact
 
   - title: "TOOLS"
-    url: /tools
+    multi:
+      - title: ENGLISH
+        url: /tools_en
+      - title: FRENCH
+        url: /tools_fr
