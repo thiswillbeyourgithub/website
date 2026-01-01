@@ -18,8 +18,8 @@ main:
       - title: "FRENCH"
         url: /cv_fr
 
-  - title: "PUBLICATIONS"
-    url: /publications
+  - title: "PAPERS"
+    url: /papers
 
   - title: "PROJECTS"
     url: /projects
