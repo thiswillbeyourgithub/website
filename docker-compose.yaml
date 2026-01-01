@@ -3,8 +3,8 @@ services:
     container_name: jekyll
     image: jekyll-site
     build: .
-    volumes: [ .:/usr/src/app ]
     ports: [ 4999:4000/tcp ]
+    volumes: .:/usr/src/app
     user: 1000:1000
     environment:
       - JEKYLL_ENV=docker
