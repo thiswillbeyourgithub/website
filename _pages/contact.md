@@ -7,7 +7,7 @@ redirect_from:
   - /contacts
 ---
 
-*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/contact.md)]*
+*[[page source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/contact.md)]*
 
 I communicate almost exclusively using [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email.
 

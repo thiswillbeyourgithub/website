@@ -8,7 +8,7 @@ redirect_from:
   - /project
 ---
 
-*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/projects.md)]*
+*[[page source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/projects.md)]*
 
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
 

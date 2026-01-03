@@ -5,7 +5,7 @@ redirect_from:
   - /tools
 ---
 
-*[[source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools_en.md)]*
+*[[page source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools_en.md)]*
 
 {% include base_path %}
 

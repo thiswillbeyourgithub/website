@@ -3,7 +3,7 @@ title: "Outils"
 permalink: /tools_fr
 ---
 
-*[[code source](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools_fr.md)]*
+*[[page code source](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools_fr.md)]*
 
 {% include base_path %}
 
