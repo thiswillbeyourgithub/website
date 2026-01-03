@@ -4,8 +4,6 @@ title: "About me"
 author_profile: true
 ---
 
-*[[page source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/about.md)]*
-
 This page is an informal introduction to me and what I'm up to.
 
 For my formal CV, check out the [English](./cv_en) or [French](./cv_fr) version.

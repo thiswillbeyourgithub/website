@@ -5,8 +5,6 @@ author_profile: true
 layout: single_noshare
 ---
 
-*[[page source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/start.md)]*
-
 
 I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer / data scientist.
 

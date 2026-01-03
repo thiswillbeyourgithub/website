@@ -3,8 +3,6 @@ title: "Outils"
 permalink: /tools_fr
 ---
 
-*[[page code source](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools_fr.md)]*
-
 {% include base_path %}
 
 <a href="../tools_en" data-umami-events="tools_fr_to_tools_en_link">English version here / Version en anglais ici</a>

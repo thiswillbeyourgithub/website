@@ -5,8 +5,6 @@ redirect_from:
   - /tools
 ---
 
-*[[page source code](https://github.com/thiswillbeyourgithub/website/blob/master/_pages/tools_en.md)]*
-
 {% include base_path %}
 
 <a href="../tools_fr" data-umami-events="tools_en_to_tools_fr_link">French version here / Version en français ici</a>
