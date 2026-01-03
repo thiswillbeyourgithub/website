@@ -35,7 +35,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 <br>
 
-{% include toc %}
+{% include toc_wide %}
 
 ## Medicine & Computer Science
 *15 projects so far*
