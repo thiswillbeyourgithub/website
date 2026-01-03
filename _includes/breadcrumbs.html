@@ -31,9 +31,9 @@
       {% if forloop.last %}
         <li class="current">{{ page.title }}</li>
 
-        {% if site.page_code_source_link_prefix != "" and site.page_code_source_link_prefix != nil %}
+        {% if site.repository != "" and site.repository != nil %}
             <li>
-                <a href="{{ site.page_code_source_link_prefix }}{{ page.path }}" class="page-source-link">
+                <a href="https://github.com/{{ site.repository }}/blob/{{ site.branch }}/{{ page.path }}" class="page-source-link">
                     <i class="fa fa-code" aria-hidden="true"></i>View page source
                 </a>
             </li>
