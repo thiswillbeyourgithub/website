@@ -1,7 +1,7 @@
 services:
   jekyll:
     container_name: jekyll
-    image: jekyll-site
+    # image: jekyll-site
     build: .
     volumes:
       - .:/usr/src/app
