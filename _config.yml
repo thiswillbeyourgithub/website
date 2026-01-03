@@ -91,6 +91,7 @@ publication_category:
 # Site Settings
 teaser                   : profile.png # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : true # true, false (default)
+page_code_source_link_prefix : "https://github.com/thiswillbeyourgithub/website/blob/master/" # Prefix for page source code links, leave empty to disable
 words_per_minute         : 160
 future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
