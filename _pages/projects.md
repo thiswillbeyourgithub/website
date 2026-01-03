@@ -10,14 +10,14 @@ redirect_from:
 
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
 
-Note I count as "project" only what I made myself. Hence it does not include my code contributions to other projects. See at [the bottom](#code-contributions) if you want to read some of my contributions.
-
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
 <!-- remember to edit the crontab line that loads the cache if you edit that url -->
 [![Olivier Cornelis' GitHub stats](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
 *Individual project count on this page: 101*
+
+*Note: I count as "project" only what I made myself. Hence it does not include my code contributions to other projects. See at [the bottom](#code-contributions) if you want to read some of my contributions.*
 
 
 <details><summary><i>A note on authorship</i></summary>
