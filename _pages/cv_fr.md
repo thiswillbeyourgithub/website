@@ -66,7 +66,7 @@ redirect_from:
 # Compétences
 ## Informatiques
 * Maîtrise de l’environnement **Unix** (GNU/Linux, OSX), complexité algorithimique, notions avancées du shell (zsh/bash), vi/vim/neovim, des regexp, sysadmin (self hosting, databases), Interfaces (GUI/CLI)
-* **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image
+* **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image, ASR/STT finetuning
 * **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
 * Maitrise de **logiciels de collaboration** (git, Jupyter Notebook, markdown)
 * Fort engagement envers les **Logiciels Libre** (top 2.6% sur Github en 2025, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
