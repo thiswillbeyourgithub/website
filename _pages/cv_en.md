@@ -71,7 +71,7 @@ redirect_from:
 * **AI** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interpretability (representation engineering), embedding-based search (RAG, wdoc), image generation
 * **Machine Learning and big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization)
 * Proficiency in **collaboration software** (git, Jupyter Notebook, markdown)
-* Strong commitment to **Free/Open Source Software** (top 2.6% on Github as of 2025, Data For Good, InterHop)
+* Strong commitment to **Free/Open Source Software** (top 2.6% on Github as of 2025, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * Web stack and knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
 * Hardware knowledge (soldering, server assembly), embedded systems (micropython, smartwatch)
 
