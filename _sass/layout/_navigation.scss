@@ -18,9 +18,6 @@
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.30s;
           animation-delay: 0.30s;
-  display: flex;
-  align-items: center;
-  gap: 1em;
 
   @include breakpoint($large) {
     padding-left: 1em;
