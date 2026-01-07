@@ -14,4 +14,4 @@ For my formal CV, check out the [English](./cv_en) or [French](./cv_fr) version.
 
 If interested in hiring me, you should know that I often work for free depending on the cause. I nonetheless own a registered a business entity to allow invoicing if required. See [CONTACT](./contact.md) page.
 
-I maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools_en) (or in French: [OUTILS](./tools_fr)).
+I try my best to maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools_en) (or in French: [OUTILS](./tools_fr)).
