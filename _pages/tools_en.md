@@ -38,5 +38,4 @@ des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-san
 
 # Formulas and Scores
 
-- [medicalcul](https://medicalcul.mgdsoft.fr/)
-    - QTc for example: [QTc](https://medicalcul.mgdsoft.fr/qtcorrige.html)
+- [QTc calculation](https://www.psychopharma.fr/qtc) by [PsychoPharma.fr](https://www.psychopharma.fr).
