@@ -35,5 +35,4 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 # Formules et Scores
 
-- [medicalcul](https://medicalcul.mgdsoft.fr/)
-    - QTc par exemple: [QTc](https://medicalcul.mgdsoft.fr/qtcorrige.html)
+- [Calcul du QTc](https://www.psychopharma.fr/qtc) by [PsychoPharma.fr](https://www.psychopharma.fr).
