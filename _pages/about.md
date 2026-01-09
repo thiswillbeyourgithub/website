@@ -39,7 +39,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 
 ## Things I love
 - Medicine, obviously.
-- [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware ([including this very website](https://github.com/thiswillbeyourgithub/website)).
+- [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware ([including this very website](https://github.com/thiswillbeyourgithub/website)). I am part of [InterHop](https://interhop.org/nous/) (and donator as well!).
 - When building blocks I've participated in have positive compounding effects.
 - Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
 - Repairing stuff.
