@@ -30,6 +30,19 @@
               </li>
             {% endif %}
           {% endfor %}
+          <li class="masthead__menu-item persist tail has-dropdown" id="lang-selector">
+            <a href="#" class="dropdown-toggle">{{ page.lang | upcase }} <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+              {% for post in posts %}
+                <li><a href="{{ base_path }}{{ post.url }}" class="{{ post.lang }}" {% if post.lang == page.lang %}aria-current="page"{% endif %}>{{ post.lang | upcase }}</a></li>
+              {% endfor %}
+              {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+              {% for p in pages %}
+                <li><a href="{{ base_path }}{{ p.url }}" class="{{ p.lang }}" {% if p.lang == page.lang %}aria-current="page"{% endif %}>{{ p.lang | upcase }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
