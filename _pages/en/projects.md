@@ -1,11 +1,8 @@
 ---
-permalink: /projects
+ref: /projects
 title: "Projects"
 author_profile: true
-redirect_from:
-  - /Projects
-  - /Project
-  - /project
+lang: en
 ---
 
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.

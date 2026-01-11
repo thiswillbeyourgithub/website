@@ -1,10 +1,9 @@
 ---
 layout: cv-layout
 title: "CV Français"
-permalink: /cv_fr
 author_profile: false
-redirect_from:
-  - /resume_fr
+lang: fr
+ref: cv
 ---
 
 {% include base_path %}
