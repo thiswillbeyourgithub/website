@@ -7,8 +7,6 @@ redirect_from:
 
 {% include base_path %}
 
-<a href="../tools_fr" data-umami-events="tools_en_to_tools_fr_link">French version here / Version en français ici</a>
-
 On this page, I try to keep track of resource I think can be useful to psychiatry residents. In each section, I try my best to order by most important first.
 
 {% include toc %}
