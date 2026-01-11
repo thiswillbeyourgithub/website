@@ -1,0 +1,26 @@
+# English navigation menu
+main:
+  - title: "ABOUT"
+    url: /about
+
+  - title: "CV"
+    multi:
+      - title: "ENGLISH"
+        url: /cv_en
+      - title: "FRENCH"
+        url: /cv_fr
+
+  - title: "PAPERS"
+    url: /papers
+
+  - title: "PROJECTS"
+    url: /projects
+
+  # - title: "BLOG"
+  #   url: /year-archive/
+
+  - title: "CONTACT"
+    url: /contact
+
+  - title: "TOOLS"
+    url: /en/tools
