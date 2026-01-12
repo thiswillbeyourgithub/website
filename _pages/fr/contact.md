@@ -1,10 +1,8 @@
 ---
 ref: contact
+permalink: /fr/contact
 title: "Me contacter"
 author_profile: true
-redirect_from:
-  - /info
-  - /contacts
 lang: fr
 ---
 

@@ -1,9 +1,12 @@
 ---
 layout: archive
 title: "Sitemap"
-ref: /sitemap
+ref: sitemap
+permalink: /en/sitemap
 author_profile: true
 lang: en
+redirect_from:
+    - /sitemap
 ---
 
 {% include base_path %}

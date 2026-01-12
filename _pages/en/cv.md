@@ -2,8 +2,11 @@
 layout: cv-layout
 title: "International CV"
 ref: cv
+permalink: /en/cv
 author_profile: false
 lang: en
+redirect_from:
+    - /cv
 ---
 
 

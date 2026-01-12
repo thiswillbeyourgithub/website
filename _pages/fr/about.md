@@ -3,6 +3,7 @@ title: "À propos de moi"
 ref: about
 author_profile: true
 lang: fr
+permalink: /fr/about
 ---
 
 Cette page est une introduction informelle à qui je suis et ce que je fais.

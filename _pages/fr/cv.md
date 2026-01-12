@@ -4,6 +4,7 @@ title: "CV Français"
 author_profile: false
 lang: fr
 ref: cv
+permalink: /fr/cv
 ---
 
 {% include base_path %}

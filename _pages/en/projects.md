@@ -1,5 +1,6 @@
 ---
-ref: /projects
+ref: projects
+permalink: /en/projects
 title: "Projects"
 author_profile: true
 lang: en

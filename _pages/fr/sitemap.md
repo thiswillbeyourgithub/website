@@ -1,7 +1,8 @@
 ---
 layout: archive
 title: "Plan du site"
-ref: /sitemap
+ref: sitemap
+permalink: /fr/sitemap
 author_profile: true
 lang: fr
 ---

@@ -2,7 +2,10 @@
 title: "Outils"
 lang: fr
 ref: tools
-permalink: /fr/tools/
+permalink: /fr/tools
+redirect_from:
+    - /outils
+    - /fr/outils
 ---
 
 {% include base_path %}

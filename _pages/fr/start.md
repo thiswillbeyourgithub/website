@@ -1,5 +1,6 @@
 ---
-ref: /
+ref: start
+permalink: /fr
 title: "Salut 👋"
 author_profile: true
 layout: single_noshare
