@@ -206,6 +206,7 @@ This is a short list of some projects I contributed to. It can be code, document
 - [karakeep](https://github.com/karakeep-app/karakeep/pulls?q=author%3Athiswillbeyourgithub+): backend, frontend, bounties, bug reports, doc, ...
 - [i3](https://github.com/i3/i3/pull/6438): bugfix that was spamming my logs and hurting my SSDs.
 - [mwmbl](https://github.com/mwmbl/mwmbl/pulls?q=author%3Athiswillbeyourgithub+): Documentation and code mostly related to backend (changing the entire db to [LMDB](https://en.wikipedia.org/wiki/Lightning_Memory-Mapped_Database), improving performance by changing various libs, ideas about decentralizing, ...)
+- [academicpages.github.io](https://github.com/academicpages/academicpages.github.io/issues?q=thiswillbeyourgithub): This entire website is a fork of academicpages. I contributed somewhat over time.
 - ...
 
 If you're interested in all the issues I created: [click here](https://github.com/search?q=author%3Athiswillbeyourgithub+&type=issues&query=author%3Athiswillbeyourgithub+is%3Aissue&s=created&o=desc).
