@@ -6,7 +6,11 @@ permalink: /en/cv
 author_profile: false
 lang: en
 redirect_from:
+    - /resume
+    - /en/resume
     - /cv
+    - /cv_en
+    - /en/cv_en
 ---
 
 

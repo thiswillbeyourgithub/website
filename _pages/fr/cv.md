@@ -5,6 +5,9 @@ author_profile: false
 lang: fr
 ref: cv
 permalink: /fr/cv
+redirect_from:
+    - /cv_fr
+    - /fr/cv_fr
 ---
 
 {% include base_path %}
