@@ -21,7 +21,7 @@ redirect_from:
   |
   <a href="#" onclick="window.print(); return false;" data-umami-events="cv_en_download_link">Download PDF</a>
   |
-  <a href="../cv_fr" data-umami-events="cv_en_to_fr_link">French version here / Version en français ici</a>
+  <a href="../../fr/cv" data-umami-events="cv_en_to_fr_link">French version here / Version en français ici</a>
 </p>
 
 <div class="cv-header">
