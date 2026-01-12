@@ -8,8 +8,6 @@ redirect_from:
     - /fr/outils
 ---
 
-**Note :** Ce site web est actuellement en cours de migration multilingue. Le contenu original et à jour est en anglais. Les pages françaises n'ont pas encore été mises à jour. En attendant, il est recommandé de consulter [la version anglaise](../en). Merci de votre patience !
-{: .notice--info}
 
 {% include base_path %}
 
