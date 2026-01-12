@@ -19,7 +19,7 @@ Utilisez "`mail` le symbole @ `oliviercornelis.fr`".
 Comme afficher cette adresse sur cette page web invite beaucoup de spam, envisagez de me contacter par d'autres moyens.
 
 
-Vous pouvez télécharger ma clé publique [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) ici : [Clé publique PGP](../files/PGP_public_key)  (empreinte de la clé publique : `2d865b11d32836fdf346cb4cdd066352a75a462b`).
+Vous pouvez télécharger ma clé publique [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) ici : [Clé publique PGP](../files/PGP_public_key)  (empreinte : `2d865b11d32836fdf346cb4cdd066352a75a462b`).
 
 
 ## Autres moyens

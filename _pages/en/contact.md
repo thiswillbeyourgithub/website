@@ -19,7 +19,7 @@ Use "`mail` the @ symbol `oliviercornelis.fr`".
 As exposing this address on this webpage invites lots of spam, consider reaching out via other means.
 
 
-You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) public key here: [PGP Public Key](../files/PGP_public_key) (public key fingerprint: `2d865b11d32836fdf346cb4cdd066352a75a462b`).
+You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) public key here: [PGP Public Key](../files/PGP_public_key) (fingerprint: `2d865b11d32836fdf346cb4cdd066352a75a462b`).
 
 
 ## Other means
