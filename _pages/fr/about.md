@@ -6,6 +6,9 @@ lang: fr
 permalink: /fr/about
 ---
 
+**Note :** Ce site web est actuellement en cours de migration multilingue. Le contenu original et à jour est en anglais. Les pages françaises n'ont pas encore été mises à jour. En attendant, il est recommandé de consulter [la version anglaise](../en). Merci de votre patience !
+{: .notice--info}
+
 Cette page est une introduction informelle à qui je suis et ce que je fais.
 
 Pour mon CV formel, consultez la version [Anglaise](./cv_en) ou [Française](./cv_fr).
