@@ -18,10 +18,15 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 *Nombre de projets individuels sur cette page : 101*
 
-*Note : Je compte comme "projet" uniquement ce que j'ai créé moi-même. Cela n'inclut donc pas mes contributions à d'autres projets. Consultez [le bas de la page](#contributions-au-code) si vous souhaitez lire quelques-unes de mes contributions.*
 
 *Je n'aurais jamais pu écrire du code sans le mouvement open source, les innombrables tutoriels partagés librement en ligne et la culture de publication du code source et des scripts. Je suis profondément reconnaissant envers tous ceux qui ont contribué à rendre les connaissances en programmation accessibles. Ces projets sont ma tentative de rendre la pareille et d'aider les autres dans leur parcours, tout comme tant de personnes m'ont aidé.<
 {: .notice--info}
+
+<details><summary><i>A note on what I call "projects"</i></summary>
+<ul>
+    <li><i>Je compte comme "projet" uniquement ce que j'ai créé moi-même. Cela n'inclut donc pas mes contributions à d'autres projets. Consultez [le bas de la page](#contributions-au-code) si vous souhaitez lire quelques-unes de mes contributions.</i></li>
+</ul>
+</details>
 
 <details><summary><i>Une note sur la paternité</i></summary>
 <ul>
