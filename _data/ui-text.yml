@@ -43,6 +43,9 @@ en: &DEFAULT_EN
   privacy_analytics          : "Privacy preserving analytics by a self hosted umami.is instance"
   open_source                : "This website is open source"
   fork_of                    : "a fork of"
+  author_bio                 : "Psychiatry resident & self-taught developer / data scientist."
+  author_location            : "Paris, France"
+  author_employer            : "AP-HP"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -139,6 +142,9 @@ fr: &DEFAULT_FR
   privacy_analytics          : "Analyses respectueuses de la vie privée par une instance umami.is auto-hébergée"
   open_source                : "Ce site web est open source"
   fork_of                    : "un fork de"
+  author_bio                 : "Médecin Psychiatre (interne) & développeur / data scientist autodidacte."
+  author_location            : "Paris, France"
+  author_employer            : "AP-HP"
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
