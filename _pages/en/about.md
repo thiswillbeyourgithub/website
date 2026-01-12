@@ -1,7 +1,9 @@
 ---
-permalink: /about
 title: "About me"
+ref: about
+permalink: /en/about
 author_profile: true
+lang: en
 ---
 
 This page is an informal introduction to me and what I'm up to.

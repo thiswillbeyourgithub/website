@@ -1,22 +1,27 @@
 ---
 layout: cv-layout
 title: "International CV"
-permalink: /cv_en
+ref: cv
+permalink: /en/cv
 author_profile: false
+lang: en
 redirect_from:
-  - /resume
-  - /resume_en
+    - /resume
+    - /en/resume
+    - /cv
+    - /cv_en
+    - /en/cv_en
 ---
 
 
 {% include base_path %}
 
 <p class="no-print">
-  <a href="https://github.com/thiswillbeyourgithub/website/blob/master/_pages/cv_en.md">Page Source Code</a>
+  <a href="https://github.com/thiswillbeyourgithub/website/blob/master/_pages/en/cv.md">Page Source Code</a>
   |
   <a href="#" onclick="window.print(); return false;" data-umami-events="cv_en_download_link">Download PDF</a>
   |
-  <a href="../cv_fr" data-umami-events="cv_en_to_fr_link">French version here / Version en français ici</a>
+  <a href="../../fr/cv" data-umami-events="cv_en_to_fr_link">French version here / Version en français ici</a>
 </p>
 
 <div class="cv-header">

@@ -1,20 +1,23 @@
 ---
 layout: cv-layout
 title: "CV Français"
-permalink: /cv_fr
 author_profile: false
+lang: fr
+ref: cv
+permalink: /fr/cv
 redirect_from:
-  - /resume_fr
+    - /cv_fr
+    - /fr/cv_fr
 ---
 
 {% include base_path %}
 
 <p class="no-print">
-  <a href="https://github.com/thiswillbeyourgithub/website/blob/master/_pages/cv_fr.md">Code Source de cette Page</a>
+  <a href="https://github.com/thiswillbeyourgithub/website/blob/master/_pages/fr/cv.md">Code Source de cette Page</a>
   |
   <a href="#" onclick="window.print(); return false;" data-umami-events="cv_fr_download_link">Télécharger le PDF</a>
   |
-  <a href="../cv_en" data-umami-events="cv_fr_to_en_link">English version here / Version en anglais ici</a>
+  <a href="../../en/cv" data-umami-events="cv_fr_to_en_link">English version here / Version en anglais ici</a>
 </p>
 
 <div class="cv-header">

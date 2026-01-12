@@ -45,22 +45,22 @@
 {% endif %}
 
 {% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: '/index.html', '/' }}">
 {% endif %}
 
 {% if site.twitter.username %}
-  <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
+  <meta name="twitter:site" content="@{{ site.twitter.username | replace: '@', '' }}">
   <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:url" content="{{ canonical_url }}">
 
   {% if page.header.image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.header.image contains '://' %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: '/images/' | prepend: base_path }}{% endif %}">
   {% else %}
     <meta name="twitter:card" content="summary">
     {% if site.og_image %}
-      <meta name="twitter:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
+      <meta name="twitter:image" content="{{ site.og_image | prepend: '/images/' | prepend: base_path }}">
     {% endif %}
   {% endif %}
 
@@ -110,10 +110,20 @@
 {% if site.yandex_site_verification %}
   <meta name="yandex-verification" content="{{ site.yandex_site_verification }}">
 {% endif %}
+
+<!-- Language alternatives for multilingual SEO -->
+{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+{% for post in posts %}
+  <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url | prepend: seo_url }}" />
+{% endfor %}
+{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+{% for p in pages %}
+  <link rel="alternate" hreflang="{{ p.lang }}" href="{{ p.url | prepend: seo_url }}" />
+{% endfor %}
 <!-- end SEO -->
 
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
-<meta property="og:locale" content="{{ site.locale | default: "en" }}">
+<meta property="og:locale" content="{{ site.locale | default: 'en' }}">
 <meta property="og:site_name" content="{{ site.title }}"> 
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 {% if page.date %}
@@ -125,7 +135,7 @@
   <meta property="og:description" name="description" content="{{ site.og_description }}">
 {% endif %}
 {% if seo_url %}
-  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: '/index.html', '/' }}">
 {% endif %}
 
 {% if site.og_image %}
@@ -140,8 +150,8 @@
 {% endif %}
 
 {% if page.header.image %}
-  <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+  <meta property="og:image" content="{% if page.header.image contains '://' %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: '/images/' | prepend: base_path }}{% endif %}">
 {% elsif page.header.overlay_image %}
-  <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+  <meta property="og:image" content="{% if page.header.overlay_image contains '://' %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: '/images/' | prepend: base_path }}{% endif %}">
 {% endif %}
 <!-- end Open Graph protocol -->

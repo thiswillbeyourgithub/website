@@ -1,10 +1,12 @@
 ---
-permalink: /contact
+ref: contact
 title: "Get in touch"
 author_profile: true
+permalink: /en/contact
 redirect_from:
   - /info
   - /contacts
+lang: en
 ---
 
 I communicate almost exclusively using [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email.

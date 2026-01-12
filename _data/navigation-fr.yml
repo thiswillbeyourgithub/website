@@ -1,0 +1,22 @@
+# French navigation menu
+main:
+  - title: "À PROPOS"
+    url: /fr/about
+
+  - title: "CV"
+    url: /fr/cv
+
+  - title: "PUBLI"
+    url: /fr/papers
+
+  - title: "PROJETS"
+    url: /fr/projects
+
+  - title: "BLOG"
+    url: /fr/blog
+
+  - title: "CONTACT"
+    url: /fr/contact
+
+  - title: "OUTILS"
+    url: /fr/tools

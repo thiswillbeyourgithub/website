@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Page Archive"
+ref: page_archive
+permalink: /en/page_archive
+author_profile: false
+lang: en
+---
+
+{% include base_path %}
+{% for post in site.pages %}
+  {% include archive-single.html %}
+{% endfor %}

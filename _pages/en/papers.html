@@ -1,12 +1,10 @@
 ---
 layout: archive
 title: "Papers"
-permalink: /papers
+ref: papers
+permalink: /en/papers
 author_profile: true
-redirect_from:
-  - /publications
-  - /publication
-  - /paper
+lang: en
 ---
 
 {% if site.author.googlescholar %}
@@ -19,7 +17,8 @@ redirect_from:
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% assign filtered_posts = site.publications | where:"lang", page.lang | reverse %}
+    {% for post in filtered_posts %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -31,7 +30,8 @@ redirect_from:
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% assign filtered_posts = site.publications | where:"lang", page.lang | reverse %}
+  {% for post in filtered_posts %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
