@@ -12,11 +12,11 @@ lang: fr
 
 [This website also exists in English](../en/)
 
-Je suis Olivier Cornelis, résident en psychiatrie français et développeur / data scientist autodidacte.
+Je suis Olivier Cornelis, médecin psychiatre (interne) français et développeur / data scientist autodidacte.
 
 Pour lire une présentation informelle et ce que je fais actuellement, allez sur [À PROPOS](./about).
 
-Mon CV plus formel peut être trouvé sur [cette page](./cv).
+Ma présentation plus formelle est à [CV](./cv).
 
 Si vous souhaitez m'engager, sachez que je travaille souvent gratuitement selon la cause. Je possède néanmoins une entreprise enregistrée pour permettre la facturation si nécessaire. Voir la page [CONTACT](./contact).
 

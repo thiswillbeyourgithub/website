@@ -19,7 +19,7 @@ I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer /
 
 To read an informal introduction and what I'm up to, go to [ABOUT](./about).
 
-My more formal CV can be found on [that page](./cv).
+A more formal introduction is at [CV](./cv).
 
 If interested in hiring me, you should know that I often work for free depending on the cause. I nonetheless own a registered a business entity to allow invoicing if required. See [CONTACT](./contact) page.
 
