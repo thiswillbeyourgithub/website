@@ -10,6 +10,7 @@ redirect_from:
     - /start
 ---
 
+[Ce site existe aussi en français](../fr/)
 
 I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer / data scientist.
 
