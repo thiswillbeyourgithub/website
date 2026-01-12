@@ -8,9 +8,9 @@ lang: en
 
 This page is an informal introduction to me and what I'm up to.
 
-For my formal CV, check out the [English](./cv_en) or [French](./cv_fr) version.
+A more formal introduction is at [CV](../en/cv).
 
-I try my best to maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools_en) (or in French: [OUTILS](./tools_fr)).
+I try my best to maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools).
 
 
 ## Education
@@ -40,7 +40,7 @@ I'm excited about how AI research will advance psychiatry research, improving pa
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
 ## Things I love
-- Medicine, obviously.
+- Medicine. Both to help others and to [know thyself](https://en.wikipedia.org/wiki/Know_thyself).
 - [Open source](https://en.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software) software/hardware ([including this very website](https://github.com/thiswillbeyourgithub/website)). I am part of [InterHop](https://interhop.org/nous/) (and donator as well!).
 - When building blocks I've participated in have positive compounding effects.
 - Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).

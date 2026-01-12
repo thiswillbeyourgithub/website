@@ -11,9 +11,9 @@ permalink: /fr/about
 
 Cette page est une introduction informelle à qui je suis et ce que je fais.
 
-Pour mon CV formel, consultez la version [Anglaise](./cv_en) ou [Française](./cv_fr).
+Ma présentation plus formelle est à [CV](../fr/cv).
 
-Je fais de mon mieux pour maintenir une page listant les outils que j'utilise durant mon internat de psychiatrie : [OUTILS](./tools_fr) (ou en anglais : [TOOLS](./tools_en)).
+Je fais de mon mieux pour maintenir une page listant les outils que j'utilise pendant mon internat de psychiatrie : [OUTILS](./tools).
 
 
 ## Formation
@@ -43,7 +43,7 @@ Je suis enthousiaste quant à la façon dont la recherche en IA fera progresser 
 En même temps, les observations cliniques de la psychiatrie pourraient éclairer des systèmes d'IA plus robustes et interprétables qui servent mieux les besoins humains.
 
 ## Choses que j'aime
-- La médecine, évidemment.
+- La médecine. À la fois pour aider les autres et pour [mieux se connaitre](https://fr.wikipedia.org/wiki/Gnothi_seauton).
 - Les logiciels/matériels [open source](https://fr.wikipedia.org/wiki/Comparaison_entre_logiciel_libre_et_logiciel_propri%C3%A9taire) ([y compris ce site web](https://github.com/thiswillbeyourgithub/website)). Je fais partie d'[InterHop](https://interhop.org/nous/) (et je suis aussi donateur !).
 - Quand les briques auxquelles j'ai participé ont des effets composés positifs.
 - Appliquer la [Règle d'Or](https://fr.wikipedia.org/wiki/R%C3%A8gle_d%27or_(morale)).
