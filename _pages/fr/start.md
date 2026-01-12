@@ -14,8 +14,6 @@ lang: fr
 
 Je suis Olivier Cornelis, résident en psychiatrie français et développeur / data scientist autodidacte.
 
-Je fais de mon mieux pour maintenir ce site web à la fois en [français](../fr) et en [anglais](../en). Utilisez le sélecteur de langue en haut pour changer de langue.
-
 Pour lire une présentation informelle et ce que je fais actuellement, allez sur [À PROPOS](./about).
 
 Mon CV plus formel peut être trouvé sur [cette page](./cv).

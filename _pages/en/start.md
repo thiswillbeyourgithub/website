@@ -17,8 +17,6 @@ redirect_from:
 
 I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer / data scientist.
 
-I try my best to maintain this website in both [French](../fr) and [English](../en). Use the language picker at the top to switch language.
-
 To read an informal introduction and what I'm up to, go to [ABOUT](./about).
 
 My more formal CV can be found on [that page](./cv).
