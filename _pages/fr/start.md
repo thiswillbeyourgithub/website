@@ -7,6 +7,9 @@ layout: single_noshare
 lang: fr
 ---
 
+**Note :** Ce site web est actuellement en cours de migration multilingue. Le contenu original et à jour est en anglais. Les pages françaises n'ont pas encore été mises à jour. En attendant, il est recommandé de consulter [la version anglaise](../en). Merci de votre patience !
+{: .notice--info}
+
 [This website also exists in English](../en/)
 
 Je suis Olivier Cornelis, résident en psychiatrie français et développeur / data scientist autodidacte.
