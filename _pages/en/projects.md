@@ -15,7 +15,11 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 *Individual project count on this page: 101*
 
-*Note: I count as "project" only what I made myself. Hence it does not include my code contributions to other projects. See at [the bottom](#code-contributions) if you want to read some of my contributions.*
+<details><summary><i>A note on what I call "projects"</i></summary>
+<ul>
+    <li><i>I count as "project" only what I made myself. Hence it does not include my code contributions to other projects. See at <a href="#code-contributions">the bottom</a> if you want to read some of my contributions.</i></li>
+</ul>
+</details>
 
 *I would never have been able to write code without the open source movement, the countless tutorials shared freely online, and the culture of publishing source code and scripts. I am deeply grateful to everyone who has contributed to making programming knowledge accessible. These projects are my attempt to give back and help others on their journey, just as so many have helped me.*
 {: .notice--info}
