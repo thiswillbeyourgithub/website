@@ -23,7 +23,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 <details><summary><i>Une note sur la paternité</i></summary>
 <ul>
-    <li><i>Bien que j'utilise l'IA depuis de nombreuses années, je ne l'ai pas utilisée pour coder avant environ 2024. Depuis, lorsque je veux une assistance basée sur l'IA, j'utilise presque exclusivement <a href="https://aider.chat/">aider</a> avec l'argument <b>--attribute-author</b> afin que vous puissiez voir quels projets et commits ont été réalisés avec ou sans.</i></li> Depuis décembre 2025, aider semble ne plus être maintenu depuis des mois, mais je ne suis pas sûr quel remplacement utiliser à l'avenir.
+    <li><i>Bien que j'utilise l'IA depuis de nombreuses années, je ne l'ai pas utilisée pour coder avant environ 2024. Depuis, lorsque je veux une assistance basée sur l'IA, j'utilise presque exclusivement <a href="https://aider.chat/">aider</a> avec l'argument <b>--attribute-author</b> afin que vous puissiez voir quels projets et commits ont été réalisés avec ou sans.</i></li>
+    <li><i>Depuis décembre 2025, aider semble ne plus être maintenu depuis des mois, mais je ne suis pas sûr quel remplacement utiliser à l'avenir.</i></li>
     <li><i>Je n'aurais jamais pu écrire du code sans le mouvement open source, les innombrables tutoriels partagés librement en ligne et la culture de publication du code source et des scripts. Je suis profondément reconnaissant envers tous ceux qui ont contribué à rendre les connaissances en programmation accessibles. Ces projets sont ma tentative de rendre la pareille et d'aider les autres dans leur parcours, tout comme tant de personnes m'ont aidé.</i></li>
 </ul>
 </details>
