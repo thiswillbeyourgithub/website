@@ -27,7 +27,7 @@ I have experience working in collaboration and autonomously: I had the opportuni
 - Tinkering with [high dimensional embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) led me to create [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) and pitch it to renowned researchers. The goal being to uncover hidden patterns in medical questionnaires allowing to unify partially disjointed medical datasets.
 - Tinkering with [AI interpretability](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) led me to fork the [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) library to test various high dimensional vector modification techniques to steer its behavior.
 - Getting frustrated with my sleep, I created from scratch [SleepTk](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker), a sleep tracker app for an [open source smartwatch](https://pine64.org/devices/pinetime/) with an innovative pattern-based vibration alarm to wake me up gently and without waking up my partner. After years of use I organized a bug bounty to rewrite it in C on an optimized OS to get a much better battery life. Still using it every night.
--  More at [PROJECTS](./projects).
+-  More at [PROJECTS](../projects).
 
 
 ## Interests
