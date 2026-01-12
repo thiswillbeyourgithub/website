@@ -17,7 +17,8 @@ lang: fr
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% assign filtered_posts = site.publications | where:"lang", page.lang | reverse %}
+    {% for post in filtered_posts %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -29,7 +30,8 @@ lang: fr
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% assign filtered_posts = site.publications | where:"lang", page.lang | reverse %}
+  {% for post in filtered_posts %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
