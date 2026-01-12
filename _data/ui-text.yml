@@ -39,6 +39,10 @@ en: &DEFAULT_EN
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
+  site_last_updated          : "Site last updated"
+  privacy_analytics          : "Privacy preserving analytics by a self hosted umami.is instance"
+  open_source                : "This website is open source"
+  fork_of                    : "a fork of"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -131,6 +135,10 @@ fr: &DEFAULT_FR
   comment_success_msg        :
   comment_error_msg          :
   loading_label              :
+  site_last_updated          : "Site mis à jour le"
+  privacy_analytics          : "Analyses respectueuses de la vie privée par une instance umami.is auto-hébergée"
+  open_source                : "Ce site web est open source"
+  fork_of                    : "un fork de"
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
