@@ -7,9 +7,9 @@ services:
       - .:/usr/src/app
     ports:
       # for prod:
-      # - 127.0.0.1:4999:4000/tcp
+      - 127.0.0.1:4999:4000/tcp
       # for dev:
-      - 4999:4000/tcp
+      # - 4999:4000/tcp
     user: 1000:1000
     environment:
       - JEKYLL_ENV=docker
