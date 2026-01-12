@@ -1,0 +1,28 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Detect browser language and redirect to appropriate version
+        (function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var lang = userLang.toLowerCase().substring(0, 2);
+            
+            // Redirect based on detected language
+            if (lang === 'fr') {
+                window.location.href = '/about/';  // Will be handled by French version if it exists
+            } else {
+                window.location.href = '/about/';  // Default to English
+            }
+        })();
+    </script>
+    <meta http-equiv="refresh" content="0; url=/about/">
+</head>
+<body>
+    <p>Redirecting to <a href="/about/">main page</a>...</p>
+</body>
+</html>
