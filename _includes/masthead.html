@@ -36,7 +36,8 @@
           {% comment %}Build language selector by deduplicating translations{% endcomment %}
           {% assign posts=site.posts | where:"ref", page.ref %}
           {% assign pages=site.pages | where:"ref", page.ref %}
-          {% assign all_translations = posts | concat: pages %}
+          {% assign publications=site.publications | where:"ref", page.ref %}
+          {% assign all_translations = posts | concat: pages | concat: publications %}
           {% assign by_lang = all_translations | group_by: 'lang' | sort: 'name' %}
           {% assign valid_langs = 0 %}
           {% for lang_group in by_lang %}
