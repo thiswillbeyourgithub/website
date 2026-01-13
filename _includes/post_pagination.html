@@ -1,14 +1,35 @@
 {% include base_path %}
 
-{% if page.previous or page.next %}
+{% comment %}Filter posts by current page language to ensure navigation stays within the same language{% endcomment %}
+{% assign page_lang = page.lang | default: 'en' %}
+{% assign lang_posts = site.posts | where: "lang", page_lang %}
+
+{% comment %}Find current post's position in language-filtered posts (site.posts is ordered newest to oldest){% endcomment %}
+{% assign prev_post = nil %}
+{% assign next_post = nil %}
+{% assign found_current = false %}
+
+{% for post in lang_posts %}
+  {% if found_current %}
+    {% assign prev_post = post %}
+    {% break %}
+  {% endif %}
+  {% if post.url == page.url %}
+    {% assign found_current = true %}
+  {% else %}
+    {% assign next_post = post %}
+  {% endif %}
+{% endfor %}
+
+{% if prev_post or next_post %}
   <nav class="pagination">
-    {% if page.previous %}
-      <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% if prev_post %}
+      <a href="{{ base_path }}{{ prev_post.url }}" class="pagination--pager" title="{{ prev_post.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% endif %}
-    {% if page.next %}
-      <a href="{{ base_path }}{{ page.next.url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% if next_post %}
+      <a href="{{ base_path }}{{ next_post.url }}" class="pagination--pager" title="{{ next_post.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %}
