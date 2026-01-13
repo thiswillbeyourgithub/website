@@ -21,7 +21,13 @@
   {% endif %}
 {% endfor %}
 
-{% if prev_post or next_post %}
+{% comment %}Only show pagination on blog posts (URLs matching /en/blog/* or /fr/blog/*){% endcomment %}
+{% assign is_blog_post = false %}
+{% if page.url contains '/en/blog/' or page.url contains '/fr/blog/' %}
+  {% assign is_blog_post = true %}
+{% endif %}
+
+{% if is_blog_post and (prev_post or next_post) %}
   <nav class="pagination">
     {% if prev_post %}
       <a href="{{ base_path }}{{ prev_post.url }}" class="pagination--pager" title="{{ prev_post.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
