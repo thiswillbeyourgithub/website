@@ -27,7 +27,7 @@ J'ai commencé à coder vers l'âge de 12 ans. J'ai toujours été profondément
 J'ai de l'expérience en travail collaboratif et en autonomie : j'ai eu l'opportunité de construire des solutions innovantes de zéro et de les rendre librement disponibles. Quelques exemples pour illustrer mon auto-motivation :
 - Pour chercher des réponses à des questions techniques formulées en langage naturel à partir de base de donnée de documents médicaux accumulés, j'ai créé [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). La fonctionnalité innovante de résumé de texte a été ajoutée pour me tenir au courant de l'actualité tout en préparant le concours de l'internat.
 - Expérimenter avec les [embeddings haute dimension](https://fr.wikipedia.org/wiki/Plongement_lexical) m'a conduit à créer [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) et à le présenter à des chercheurs renommés. L'objectif étant de découvrir des motifs cachés dans les questionnaires médicaux permettant d'unifier des jeux de données partiellement disjoints.
-- Expérimenter avec l'[interprétabilité de l'IA](https://fr.wikipedia.org/wiki/Intelligence_artificielle_explicable) m'a conduit à forker la bibliothèque [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) pour tester diverses techniques de modification de vecteurs haute dimension pour orienter son comportement.
+- Expérimenter avec l'[interprétabilité de l'IA](https://en.wikipedia.org/wiki/Explainable_artificial_intelligenchttps://en.wikipedia.org/wiki/Explainable_artificial_intelligencee) m'a conduit à forker la bibliothèque [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) pour tester diverses techniques de modification de vecteurs haute dimension pour orienter son comportement.
 - Frustré par mon sommeil, j'ai créé de zéro [SleepTk](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker), une application de suivi du sommeil pour une [montre intelligente open source](https://pine64.org/devices/pinetime/) avec un système innovant d'alarme par vibration basée sur des motifs pour me réveiller en douceur et sans réveiller ma partenaire. Après des années d'utilisation quotidienne, j'ai organisé une bug bounty pour la réécrire en C sur un OS optimisé afin d'obtenir une bien meilleure autonomie de batterie. Je l'utilise toujours chaque nuit.
 - Plus d'exemples à [PROJETS](./projects).
 
@@ -43,7 +43,7 @@ En même temps, les observations cliniques de la psychiatrie pourraient éclaire
 
 ## Choses que j'aime
 - La médecine. À la fois pour aider les autres et pour [mieux se connaitre](https://fr.wikipedia.org/wiki/Gnothi_seauton).
-- Les logiciels/matériels [open source](https://fr.wikipedia.org/wiki/Comparaison_entre_logiciel_libre_et_logiciel_propri%C3%A9taire) ([y compris ce site web](https://github.com/thiswillbeyourgithub/website)). Je fais partie d'[InterHop](https://interhop.org/nous/) (et suis aussi donateur !).
+- Les logiciels/matériels [open source](https://en.wikipedia.org/wiki/Free_and_open-source_software) ([y compris ce site web](https://github.com/thiswillbeyourgithub/website)). Je fais partie d'[InterHop](https://interhop.org/nous/) (et suis aussi donateur !).
 - Quand les briques auxquelles j'ai participé ont des [intérêts composés](https://fr.wikipedia.org/wiki/Int%C3%A9r%C3%AAts_compos%C3%A9s) positifs.
 - Appliquer la [Règle d'Or](https://fr.wikipedia.org/wiki/R%C3%A8gle_d%27or).
 - Réparer des choses.
