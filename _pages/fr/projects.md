@@ -6,8 +6,7 @@ author_profile: true
 lang: fr
 ---
 
-**Note :** Ce site web est actuellement en cours de migration multilingue. Le contenu original et à jour est en anglais. Les pages françaises n'ont pas encore été mises à jour. En attendant, il est recommandé de consulter [la version anglaise](../en). Merci de votre patience !
-{: .notice--info}
+{% include french_translation_disclaimer.md %}
 
 Sur cette page, vous pouvez lire la liste exhaustive des projets de programmation que j'ai créés au fil des années. Elle est assez longue, utilisez donc la table des matières ci-dessous pour naviguer.
 
