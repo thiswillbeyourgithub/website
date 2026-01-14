@@ -6,6 +6,7 @@ permalink: /en/contact
 redirect_from:
   - /info
   - /contacts
+  - /contact
 lang: en
 ---
 
