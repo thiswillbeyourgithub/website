@@ -92,7 +92,9 @@ redirect_from:
 
 # Publication
   <ul class="publications">{% for post in site.publications reversed %}
+    {% if post.lang == page.lang %}
     {% include archive-single-cv.html %}
+    {% endif %}
   {% endfor %}</ul>
 
 # Online Training
