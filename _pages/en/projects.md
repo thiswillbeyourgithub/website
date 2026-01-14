@@ -13,7 +13,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 <!-- remember to edit the crontab line that loads the cache if you edit that url -->
 [![Olivier Cornelis' GitHub stats](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
-*Individual project count on this page: 101*
+*Individual project count on this page: 102*
 
 
 *I would never have been able to write code without the open source movement, the countless tutorials shared freely online, and the culture of publishing source code and scripts. I am deeply grateful to everyone who has contributed to making programming knowledge accessible. These projects are my attempt to give back and help others on their journey, just as so many have helped me.*
@@ -158,7 +158,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*36 projects so far*
+*37 projects so far*
+- [Website Link Checker](https://github.com/thiswillbeyourgithub/website_link_checker): Python CLI tool for crawling websites to identify and report broken links, with features like rate limiting and regex filtering.
 - [srt_ai_translator](https://github.com/thiswillbeyourgithub/srt_ai_translator): A subtitle translator leveraging OpenAI-compatible APIs for context-aware and efficient SRT translations.
 - [GPU Docker Monitor](https://github.com/thiswillbeyourgithub/nvidia-smi-docker-matcher): Efficiently map GPU processes to Docker containers for easier resource management.
 - [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): A Gradio GUI tool for searching FAISS vector databases.
