@@ -8,6 +8,7 @@ redirect_from:
     - /fr/outils
 ---
 
+{% include french_translation_disclaimer.md %}
 
 {% include base_path %}
 
