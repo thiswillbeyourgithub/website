@@ -14,7 +14,7 @@ In this page, you can read the exhaustive list of coding projects I've created o
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
 <!-- remember to edit the crontab line that loads the cache if you edit that url -->
-[![Olivier Cornelis' GitHub stats](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
+[![Olivier Cornelis' GitHub stats](https://gstats.olicorne.org)](./projects)
 
 *Individual project count on this page: 102*
 

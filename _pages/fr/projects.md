@@ -13,7 +13,7 @@ Sur cette page, vous pouvez lire la liste exhaustive des projets de programmatio
 Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbeyourgithub/):
 
 <!-- remember to edit the crontab line that loads the cache if you edit that url -->
-[![Statistiques GitHub d'Olivier Cornelis](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
+[![Statistiques GitHub d'Olivier Cornelis](https://gstats.olicorne.org)](./projects)
 
 *Nombre de projets individuels sur cette page : 102*
 
