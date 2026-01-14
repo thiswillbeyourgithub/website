@@ -30,7 +30,7 @@ J'ai de l'expérience en travail collaboratif et en autonomie : j'ai eu l'opport
 - Expérimenter avec les [embeddings haute dimension](https://fr.wikipedia.org/wiki/Plongement_lexical) m'a conduit à créer [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA) et à le présenter à des chercheurs renommés. L'objectif étant de découvrir des motifs cachés dans les questionnaires médicaux permettant d'unifier des jeux de données partiellement disjoints.
 - Expérimenter avec l'[interprétabilité de l'IA](https://fr.wikipedia.org/wiki/Intelligence_artificielle_explicable) m'a conduit à forker la bibliothèque [repeng](https://github.com/thiswillbeyourgithub/repeng-research-fork) pour tester diverses techniques de modification de vecteurs haute dimension pour orienter son comportement.
 - Frustré par mon sommeil, j'ai créé de zéro [SleepTk](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker), une application de suivi du sommeil pour une [montre intelligente open source](https://pine64.org/devices/pinetime/) avec un système innovant d'alarme par vibration basée sur des motifs pour me réveiller en douceur et sans réveiller ma partenaire. Après des années d'utilisation quotidienne, j'ai organisé une bug bounty pour la réécrire en C sur un OS optimisé afin d'obtenir une bien meilleure autonomie de batterie. Je l'utilise toujours chaque nuit.
-- Plus d'exemples à [PROJETS](../projects).
+- Plus d'exemples à [PROJETS](./projects).
 
 
 ## Intérêts
