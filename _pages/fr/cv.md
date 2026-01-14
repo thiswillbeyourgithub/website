@@ -36,7 +36,7 @@ redirect_from:
       <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
-      <strong>Github:</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (top 2.6%, 2025)
+      <strong>Github:</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (top 2.3%, 2025)
     </div>
     <div class="cv-info-item">
       <strong>Généré le:</strong> {{ site.time | date: "%d %b %Y" }}
@@ -72,7 +72,7 @@ redirect_from:
 * **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image, ASR/STT finetuning
 * **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
 * Maitrise de **logiciels de collaboration** (git, Jupyter Notebook, markdown)
-* Fort engagement envers les **Logiciels Libre** (top 2.6% sur Github en 2025, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
+* Fort engagement envers les **Logiciels Libre** (top 2.3% sur Github en 2025, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * Technologies du web et notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
 
