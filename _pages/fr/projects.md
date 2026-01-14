@@ -15,7 +15,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 <!-- remember to edit the crontab line that loads the cache if you edit that url -->
 [![Statistiques GitHub d'Olivier Cornelis](https://gstats.olicorne.org/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile)](./projects)
 
-*Nombre de projets individuels sur cette page : 101*
+*Nombre de projets individuels sur cette page : 102*
 
 
 *Je n'aurais jamais pu écrire du code sans le mouvement open source, les innombrables tutoriels partagés librement en ligne et la culture de publication du code source et des scripts. Je suis profondément reconnaissant envers tous ceux qui ont contribué à rendre les connaissances en programmation accessibles. Ces projets sont ma tentative de rendre la pareille et d'aider les autres dans leur parcours, tout comme tant de personnes m'ont aidé.<
@@ -160,7 +160,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Outil de surveillance de films qui vérifie automatiquement les listes de cinéma pour des films spécifiques et envoie des notifications lorsqu'ils deviennent disponibles.
 
 ## Outils Divers
-*36 projets jusqu'à présent*
+*37 projets jusqu'à présent*
+- [Website Link Checker](https://github.com/thiswillbeyourgithub/website_link_checker): Outil CLI Python pour parcourir les sites Web afin d'identifier et signaler les liens cassés, avec des fonctionnalités comme la limitation de débit et le filtrage par regex.
 - [srt_ai_translator](https://github.com/thiswillbeyourgithub/srt_ai_translator): Un traducteur de sous-titres exploitant les API compatibles OpenAI pour des traductions SRT contextuelles et efficaces.
 - [GPU Docker Monitor](https://github.com/thiswillbeyourgithub/nvidia-smi-docker-matcher): Mapper efficacement les processus GPU aux conteneurs Docker pour une gestion des ressources plus facile.
 - [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): Un outil GUI Gradio pour rechercher dans les bases de données vectorielles FAISS.
