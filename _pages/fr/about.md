@@ -21,8 +21,7 @@ J'ai suivi les cours avancés de maths/physique/chimie en [classe prépa](https:
 
 J'ai commencé à coder vers l'âge de 12 ans. J'ai toujours été profondément engagé envers l'open source - chaque fois que possible je rends mon code publiquement disponible sur [mon github](https://github.com/thiswillbeyourgithub/). Voici mes statistiques :
 
-<!-- pensez à modifier la ligne crontab qui charge le cache si vous modifiez cette url -->
-[![Statistiques GitHub d'Olivier Cornelis](https://gstats.olicorne.org)](./projects)
+[![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
 J'ai de l'expérience en travail collaboratif et en autonomie : j'ai eu l'opportunité de construire des solutions innovantes de zéro et de les rendre librement disponibles. Quelques exemples pour illustrer mon auto-motivation :
 - Pour chercher des réponses à des questions techniques formulées en langage naturel à partir de base de donnée de documents médicaux accumulés, j'ai créé [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). La fonctionnalité innovante de résumé de texte a été ajoutée pour me tenir au courant de l'actualité tout en préparant le concours de l'internat.
