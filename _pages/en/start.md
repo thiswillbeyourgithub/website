@@ -10,9 +10,6 @@ redirect_from:
     - /start
 ---
 
-**Note:** This website is currently being made multilingual. The English content is the original and up-to-date version. Some links or pages might be broken or incomplete while I'm reviewing everything. Thank you for your patience!
-{: .notice--info}
-
 [Ce site existe aussi en français](../fr/)
 
 I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer / data scientist.
