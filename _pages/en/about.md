@@ -15,6 +15,12 @@ A more formal introduction is at [CV](../en/cv).
 I try my best to maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools).
 
 
+## Context
+
+Since I was about 10, I've wanted to do *psy-something*. A few years later, that crystallized: *psychiatrist* was my ultimate dream job.
+
+But I couldn't give up computer science. So, considering the quirks of the French education system, I decided to combine both *my way*.
+
 ## Education
 
 I took advanced math/physics/chemistry classes in [classe prépa](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), then went to [medical school](https://en.wikipedia.org/wiki/Paris_Cit%C3%A9_University) during which I did a 2 months master research internship (French: "stage de M1") at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin) creating from scratch a cluster plotting and benchmarking library for neuroscience. In 2025 I started [medical residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) in psychiatry in Paris, France. The same year, I created `oliCorp`, a one-person company (French: "auto-entreprise"). This was necessary for legal reasons when providing services to a French non-profit.
