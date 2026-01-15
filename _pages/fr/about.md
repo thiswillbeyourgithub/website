@@ -15,6 +15,12 @@ Ma présentation plus formelle est à [CV](../fr/cv).
 Je fais de mon mieux pour maintenir une page listant les outils que j'utilise pendant mon internat de psychiatrie : [OUTILS](./tools).
 
 
+## Contexte
+
+Depuis mes 10 ans environ, je voulais faire quelque chose en *psy*. Quelques années plus tard, cela s'est cristallisé : *psychiatre* était mon métier de rêve ultime.
+
+Mais je ne pouvais pas abandonner l'informatique. Donc, compte tenu des particularités du système éducatif français, j'ai décidé de combiner les deux *à ma façon*.
+
 ## Formation
 
 J'ai suivi les cours avancés de maths/physique/chimie en [classe prépa](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), puis je suis allé en [fac de médecine](https://fr.wikipedia.org/wiki/Universit%C3%A9_Paris_Cit%C3%A9) durant laquelle j'ai effectué un stage de recherche de M1 de 2 mois à [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin) créant de zéro une bibliothèque de visualisation et d'évaluation de clusters pour les neurosciences. En 2025 j'ai commencé mon [internat de médecine](https://fr.wikipedia.org/wiki/Interne_des_h%C3%B4pitaux_en_France) en psychiatrie à Paris, France. La même année, j'ai créé `oliCorp`, une entreprise unipersonnelle (auto-entreprise). Cela était nécessaire pour des raisons légales lors de la fourniture de services à une association française.
