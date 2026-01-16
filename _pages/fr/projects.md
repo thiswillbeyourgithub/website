@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 102*
+*Nombre de projets individuels sur cette page : 103*
 
 
 *Je n'aurais jamais pu écrire du code sans le mouvement open source, les innombrables tutoriels partagés librement en ligne et la culture de publication du code source et des scripts. Je suis profondément reconnaissant envers tous ceux qui ont contribué à rendre les connaissances en programmation accessibles. Ces projets sont ma tentative de rendre la pareille et d'aider les autres dans leur parcours, tout comme tant de personnes m'ont aidé.*
@@ -44,7 +44,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine & Informatique
-*15 projets jusqu'à présent*
+*16 projets jusqu'à présent*
+- [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronise zotero ou un répertoire vers une base de connaissances dans [OpenWebUI](https://docs.openwebui.com/). Pour être plus efficace lors de la mise à jour sur la recherche récente en psychiatrie.
 - [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): **EN COURS** transcription vocale directement dans le navigateur (aucune donnée envoyée à un serveur). Travail sur un modèle affiné pour le français médical.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convertit les données ICD-11 en objets Document langchain pour des applications de recherche et récupération améliorées. Pour créer un moteur de recherche basé sur [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher) pour les codes de classification ICD-11.
 - [PrevMed](https://github.com/PrevMedOrg/PrevMed) (abréviation de *Preventive Medicine*): Une plateforme minimaliste permettant aux utilisateurs non techniques de créer des questionnaires cliniques sans stocker de données personnelles. *Note : J'ai été payé pour concevoir puis construire cette solution.*
