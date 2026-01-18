@@ -14,7 +14,7 @@ services:
     environment:
       - JEKYLL_ENV=docker
     # arguments: https://jekyllrb.com/docs/configuration/options/
-    command: jekyll serve -H 0.0.0.0 --incremental --config _config.yml,_config_docker.yml
+    command: jekyll serve -H 0.0.0.0 --incremental --config _config.yml,_config_docker.yml --strict_front_matter --trace
     labels: ["com.centurylinklabs.watchtower.scope=autoupdate"]
     security_opt:
     - no-new-privileges:true
