@@ -30,3 +30,18 @@
   {{ site.data.ui-text[page_lang].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, {{ site.data.ui-text[page_lang].fork_of | default: "a fork of" }} <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> | {{ site.data.ui-text[page_lang].site_last_updated | default: "Site last updated" }} {{ "now" | date: '%Y-%m-%d' }} |
   <a href="https://cloud.umami.is">{{ site.data.ui-text[page_lang].privacy_analytics | default: "Privacy preserving analytics by a self hosted umami.is instance" }}</a> | <a href="https://github.com/thiswillbeyourgithub/website">{{ site.data.ui-text[page_lang].open_source | default: "This website is open source" }}</a>
 </div>
+
+<!-- add umami into all outbound url
+https://umami.is/docs/track-outbound-links
+-->
+<script type="text/javascript">
+  (() => {
+    const name = 'outbound-link-click';
+    document.querySelectorAll('a').forEach(a => {
+      if (a.host !== window.location.host && !a.getAttribute('data-umami-event')) {
+        a.setAttribute('data-umami-event', name);
+        a.setAttribute('data-umami-event-url', a.href);
+      }
+    });
+  })();
+</script>
