@@ -22,7 +22,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 <details><summary><i>Une note sur le terme "Projet"</i></summary>
 <ul>
-    <li><i>Je compte comme "projet" uniquement ce que j'ai créé moi-même. Cela n'inclut donc pas mes contributions à d'autres projets. Consultez [le bas de la page](#contributions-au-code) si vous souhaitez lire quelques-unes de mes contributions.</i></li>
+    <li><i>Je compte comme "projet" uniquement ce que j'ai créé moi-même. Cela n'inclut donc pas mes contributions à d'autres projets. Consultez <a href="#contributions-au-code">le bas de la page</a> si vous souhaitez lire quelques-unes de mes contributions.</i></li>
 </ul>
 </details>
 
