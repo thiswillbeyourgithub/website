@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 103*
+*Nombre de projets individuels sur cette page : 104*
 
 
 *Je n'aurais jamais pu écrire du code sans le mouvement open source, les innombrables tutoriels partagés librement en ligne et la culture de publication du code source et des scripts. Je suis profondément reconnaissant envers tous ceux qui ont contribué à rendre les connaissances en programmation accessibles. Ces projets sont ma tentative de rendre la pareille et d'aider les autres dans leur parcours, tout comme tant de personnes m'ont aidé.*
@@ -122,8 +122,9 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 ## Productivité
 *Outils que j'utilise, ai utilisés ou créés*
-*13 projets jusqu'à présent*
+*14 projets jusqu'à présent*
 
+- [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): Enregistrer, stocker et rejouer des séquences d'automatisation de la souris avec OCR intégré.
 - [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Outil en ligne de commande avancé pour l'archivage automatisé de pages Web en PDF avec extraction de métadonnées et intégration transparente dans le système de gestion de références Zotero sur plusieurs appareils.
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Implémentation minimaliste de l'algorithme de priorisation de tâches basé sur ELO, permettant le classement automatisé des listes de tâches par comparaisons interactives et calculs de scores.
     - [LiTOY](https://github.com/thiswillbeyourgithub/LiTOY-aka-List-that-Outlives-You): Outil de priorisation intelligent utilisant des comparaisons par paires et des classements ELO pour hiérarchiser les objectifs personnels en fonction de l'importance et de l'investissement en temps.

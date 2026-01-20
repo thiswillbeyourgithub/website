@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 103*
+*Individual project count on this page: 104*
 
 
 *I would never have been able to write code without the open source movement, the countless tutorials shared freely online, and the culture of publishing source code and scripts. I am deeply grateful to everyone who has contributed to making programming knowledge accessible. These projects are my attempt to give back and help others on their journey, just as so many have helped me.*
@@ -123,8 +123,9 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Productivity
 *Tools I use, used or made*
-*13 projects so far*
+*14 projects so far*
 
+- [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): Record, store, and replay mouse automation sequences with integrated OCR.
 - [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Advanced command-line tool for automated webpage archival to PDF with metadata extraction and seamless integration into Zotero's reference management system across multiple devices.
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.
     - [LiTOY](https://github.com/thiswillbeyourgithub/LiTOY-aka-List-that-Outlives-You): Smart prioritization tool utilizing pairwise comparisons and ELO ratings to rank personal goals based on importance and time investment.
