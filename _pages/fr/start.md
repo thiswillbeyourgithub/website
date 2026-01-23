@@ -9,7 +9,7 @@ lang: fr
 
 {% include french_translation_disclaimer.md %}
 
-[This website also exists in English](../en/)
+[This website also exists in English.](../en/)
 
 Je suis Olivier Cornelis, médecin psychiatre (interne) français et développeur / data scientist autodidacte.
 
