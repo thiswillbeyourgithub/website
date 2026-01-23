@@ -14,9 +14,9 @@ redirect_from:
 
 I'm Olivier Cornelis, a French psychiatry resident and a self-taught developer / data scientist.
 
-To read an informal introduction and what I'm up to, go to [ABOUT](./about).
-
 A more formal introduction is at [CV](./cv).
+
+To read an informal introduction and what I'm up to, go to [ABOUT](./about).
 
 A list of my projects is at [PROJECTS](./projects).
 

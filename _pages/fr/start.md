@@ -13,9 +13,9 @@ lang: fr
 
 Je suis Olivier Cornelis, médecin psychiatre (interne) français et développeur / data scientist autodidacte.
 
-Pour lire une présentation informelle et ce que je fais actuellement, allez sur [À PROPOS](./about).
-
 Ma présentation plus formelle est à [CV](./cv).
+
+Pour lire une présentation informelle et ce que je fais actuellement, allez sur [À PROPOS](./about).
 
 Une liste de mes projets est à [PROJETS](./projects).
 
