@@ -19,6 +19,4 @@ Ma présentation plus formelle est à [CV](./cv).
 
 Une liste de mes projets est à [PROJETS](./projects).
 
-Si vous souhaitez m'engager, sachez que je travaille souvent gratuitement selon la cause. Je possède néanmoins une entreprise enregistrée pour permettre la facturation si nécessaire. Voir la page [CONTACT](./contact).
-
 Je fais de mon mieux pour maintenir une page listant les outils que j'utilise pendant mon internat de psychiatrie : [OUTILS](./tools).
