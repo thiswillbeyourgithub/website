@@ -15,6 +15,41 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
+<!-- make sure the referer is in an appropriate format for umami
+source: https://gist.github.com/ColourfulField/a40a7081414299e64930d2a7ff3069cc -->
+<script>
+    const queryParams = new URLSearchParams(window.location.search);
+    function normalizeHostname(input) {
+        // Remove protocol, www, and any path
+        let hostname = input.replace(/^(https?:\/\/)?(www\.)?/, '').split('/')[0];
+
+        // Remove invalid characters, keep only alphanumeric, dots, and hyphens
+        hostname = hostname.replace(/[^a-zA-Z0-9.-]/g, '');
+
+        // Ensure it starts and ends with alphanumeric
+        hostname = hostname.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, '');
+
+        if (!hostname.includes('http://')) {
+            hostname = 'http://' + hostname;
+        }
+
+        return hostname;
+    }
+
+    var initialRef = document.referrer;
+    Object.defineProperty(document, "referrer", {
+        get:
+            function () {
+                let refFromQuery = queryParams.get('ref') || queryParams.get('referer') || queryParams.get('referrer') || queryParams.get('utm_source');
+                refFromQuery = normalizeHostname(refFromQuery);
+                let ref = refFromQuery || initialRef;
+                console.log(ref);
+                return ref;
+
+            }
+    });
+</script>
+
 <!-- Privacy preserving analytics by umami -->
 <script
         defer
