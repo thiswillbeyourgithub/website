@@ -72,7 +72,7 @@ redirect_from:
 
 # Skills
 ## Computer Science
-* Proficiency in **Unix** environment (GNU/Linux, OSX), algorithmic complexity, advanced shell concepts (zsh/bash), vi/vim/neovim, regexp, sysadmin (self hosting, databases), Interfaces (GUI/CLI)
+* Proficiency in **Unix** environment (GNU/Linux, OSX), algorithmic complexity, advanced shell concepts (zsh/bash), vi/vim/neovim, regexp, sysadmin (self hosting, databases, sizing, resource estimation, specifications), Interfaces (GUI/CLI)
 * **AI** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interpretability (representation engineering), embedding-based search (RAG, wdoc), image generation, ASR/STT finetuning
 * **Machine Learning and big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization)
 * Proficiency in **collaboration software** (git, Jupyter Notebook, markdown)
