@@ -44,7 +44,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine & Informatique
-*16 projets jusqu'à présent*
+*17 projets jusqu'à présent*
 - [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronise zotero ou un répertoire vers une base de connaissances dans [OpenWebUI](https://docs.openwebui.com/). Pour être plus efficace lors de la mise à jour sur la recherche récente en psychiatrie.
 - [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): **EN COURS** transcription vocale directement dans le navigateur (aucune donnée envoyée à un serveur). Travail sur un modèle affiné pour le français médical.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convertit les données ICD-11 en objets Document langchain pour des applications de recherche et récupération améliorées. Pour créer un moteur de recherche basé sur [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher) pour les codes de classification ICD-11.
@@ -54,6 +54,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
     - [OmniQA](https://github.com/thiswillbeyourgithub/OmniQA): Outil d'indexation de documents pour interroger de manière transparente tout format de fichier à l'aide de grands modèles de langage et de la technologie de recherche vectorielle. A été remplacé par **wdoc**.
 - [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): fork de [repeng](https://github.com/vgel/repeng/) par [@vgel](https://github.com/vgel), pour tenter d'investiguer des théories personnelles sur les LLM. Ceci est pertinent pour l'interprétabilité des LLM.
 - `NOM ANONYMISÉ`: Un dépôt privé (mais espérons-le plus tard open source) bibliothèque pour utiliser de manière exhaustive *toutes* les techniques de clustering de [scikit-learn](https://scikit-learn.org/) sur n'importe quelles données puis exécuter *toutes* les métriques avec des pipelines de tracé complexes pour choisir les meilleurs résultats. C'est moins facile qu'il n'y paraît car les clustering ont des types de sorties variables, tous ne permettent pas l'inférence, certaines métriques sont intrinsèques tandis que d'autres sont basées sur des étiquettes, les clusters peuvent être flous, doivent être fusionnés ou divisés, doivent être remappés, etc. Sujet de mon stage de M1 à [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin).
+- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): Application de montre connectée pour des schémas de vibration de réveil optimaux pour se réveiller en forme. J'utilise ceci chaque nuit depuis des années (depuis environ 2021, en 2026).
 - [Stahl Ankifier](https://github.com/thiswillbeyourgithub/StahlAnkifier): Convertit le PDF du livre `Prescriber's Guide - Stahl's Essential Psychopharmacology` en [cartes mémoire Anki](https://apps.ankiweb.net/) pour former de meilleurs psychiatres.
 - [gradio_pharmacokinetic_simulator](https://github.com/thiswillbeyourgithub/gradio_pharmacokinetic_simulator): Outil de simulation pharmacocinétique pour m'aider à améliorer mon intuition sur l'accumulation des médicaments.
     - [med-pharmacokinetic-simulator](https://github.com/thiswillbeyourgithub/Med-pharmacokinetic-simulator): Son prédécesseur de nombreuses années auparavant. L'un de mes tout premiers projets de programmation !
@@ -108,7 +109,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 *Principalement pour [wasp-os](https://github.com/wasp-os/wasp-os) sur la [pinetime](https://pine64.org/devices/pinetime/)*
 *2 projets jusqu'à présent*
 
-- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): Système de suivi du sommeil et d'alarme intelligente axé sur la confidentialité utilisant des données d'accéléromètre et de fréquence cardiaque pour optimiser les heures de réveil en fonction de l'analyse du cycle de sommeil et des modèles de réveil progressif.
+- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): *Voir ci-dessus*
 - [pomodoro_wasp_os](https://github.com/thiswillbeyourgithub/Pomodoro-wasp-os): Application de minuteur Pomodoro personnalisable pour les montres intelligentes PineTime avec plusieurs préréglages, modèles de vibration et paramètres persistants.
 
 ## API

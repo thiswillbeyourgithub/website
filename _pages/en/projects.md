@@ -45,7 +45,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {% include toc_wide %}
 
 ## Medicine & Computer Science
-*16 projects so far*
+*17 projects so far*
 - [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronizes zotero or a directory to a knowledge base in [OpenWebUI](https://docs.openwebui.com/). To be more efficient when catching up on recent psychiatry research.
 - [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): **WIP** voice transcription directly inside the browser (no data sent to any server). Working on a french medical finetuned model.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convert ICD-11 data into langchain Document objects for enhanced retrieval and search applications. To make a [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher)-based search engine for ICD-11 classification codes.
@@ -55,6 +55,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
     - [OmniQA](https://github.com/thiswillbeyourgithub/OmniQA): Document indexing tool for seamless querying of any file format using large language models and vector search technology. Was superseeded by **wdoc**.
 - [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): fork of [repeng](https://github.com/vgel/repeng/) by [@vgel](https://github.com/vgel), to try to investigate personal theories about LLMs. This is relevant for LLM interpretability.
 - `REDACTED NAME`: A private repo (but hopefully later open source) library to comprehensively use *all* of [scikit-learn](https://scikit-learn.org/)'s clustering techniques on any data then running *all* metrics with a complex plot pipelines to pick the best results. This is less easy than it sounds because clustering have varying types of outputs, not all allow inference, some metrics are intrinsic while others are based on labels, clusters can be fuzzy, can have to be merged or split, need to be remapped etc. Subject of my M1 internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin).
+- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): Smartwatch app for optimal wake up vibration patterns to wake up feeling fresh. Been using this every night for years (since about 2021, as of 2026).
 - [Stahl Ankifier](https://github.com/thiswillbeyourgithub/StahlAnkifier): Convert the book `Prescriber's Guide - Stahl's Essential Psychopharmacology` PDF into [Anki flashcards](https://apps.ankiweb.net/) to make better psychiatrists.
 - [gradio_pharmacokinetic_simulator](https://github.com/thiswillbeyourgithub/gradio_pharmacokinetic_simulator): Pharmacokinetic simulation tool to help me improve my intuition about drug accumulation.
     - [med-pharmacokinetic-simulator](https://github.com/thiswillbeyourgithub/Med-pharmacokinetic-simulator): Its predecessor many years prior. One of my very first coding projects!
@@ -109,7 +110,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 *Mainly for [wasp-os](https://github.com/wasp-os/wasp-os) on the [pinetime](https://pine64.org/devices/pinetime/)*
 *2 projects so far*
 
-- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): Privacy-oriented sleep tracking and smart alarm system utilizing accelerometer and heart rate data to optimize wake-up times based on sleep cycle analysis and gradual wake-up patterns.
+- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker):  *See above*
 - [pomodoro_wasp_os](https://github.com/thiswillbeyourgithub/Pomodoro-wasp-os): Customizable Pomodoro timer application for PineTime smartwatches featuring multiple presets, vibration patterns, and persistent settings.
 
 ## API
