@@ -46,3 +46,23 @@ https://umami.is/docs/track-outbound-links
      });
    });
  </script>
+
+
+<!-- Track subdomain to umami, -->
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof umami !== 'undefined') {
+        const hostname = window.location.hostname;
+            const subdomain = hostname.split('.')[0];
+
+            // Only track if it's actually a subdomain (not bare domain)
+            if (hostname.split('.').length > 2) {
+            umami.track('signature-visit', {
+                campaign: subdomain,
+                referrer: document.referrer || 'none',
+                page: window.location.pathname
+            });
+        }
+    }
+  });
+</script>
