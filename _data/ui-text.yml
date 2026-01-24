@@ -46,6 +46,7 @@ en: &DEFAULT_EN
   author_bio                 : "Psychiatry resident & self-taught developer / data scientist."
   author_location            : "Paris, France"
   author_employer            : "AP-HP"
+  hosted_europe              : "Hosted in Europe"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -94,6 +95,7 @@ es: &DEFAULT_ES
   comment_success_msg        : "¡Gracias por tu comentario! Aparecerá en la página cuando sea aprobado." 
   comment_error_msg          : "Lo sentimos, ha habido un error con tu solicitud. Por favor, asegúrate de rellenar todos los campos obligatorios e inténtalo de nuevo."
   loading_label              : "Cargando..."
+  hosted_europe              : "Alojado en Europa"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
@@ -145,6 +147,7 @@ fr: &DEFAULT_FR
   author_bio                 : "Médecin Psychiatre (interne) & développeur / data scientist autodidacte."
   author_location            : "Paris, France"
   author_employer            : "AP-HP"
+  hosted_europe              : "Hébergé en Europe"
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
@@ -191,6 +194,7 @@ tr: &DEFAULT_TR
   comment_success_msg        :
   comment_error_msg          :
   loading_label              :
+  hosted_europe              : "Avrupa'da barındırılıyor"
 tr-TR:
   <<: *DEFAULT_TR
 
@@ -233,6 +237,7 @@ pt: &DEFAULT_PT
   comment_success_msg        : "Obrigado por seu comentário! Ele será exibido no site depois de aprovado."
   comment_error_msg          : "Desculpe, houve um erro com o seu envio. Certifique-se de que todos os campos obrigatórios foram preenchidos e tente novamente."
   loading_label              : "Carregando..."
+  hosted_europe              : "Hospedado na Europa"
 pt-BR:
   <<: *DEFAULT_PT
 pt-PT:
@@ -277,6 +282,7 @@ it: &DEFAULT_IT
   comment_success_msg        :
   comment_error_msg          :
   loading_label              :
+  hosted_europe              : "Ospitato in Europa"
 it-IT:
   <<: *DEFAULT_IT
 
@@ -319,6 +325,7 @@ zh: &DEFAULT_ZH
   comment_success_msg        : "感谢您的评论！审核通过后会显示在网站上。"
   comment_error_msg          : "抱歉，提交时出错。请确保所有必填项已完成，并重试。"
   loading_label              : "加载中..."
+  hosted_europe              : "托管于欧洲"
 zh-CN:
   <<: *DEFAULT_ZH
 
@@ -361,6 +368,7 @@ zh-HK: &DEFAULT_ZH_HK
   comment_success_msg        : "感謝您的評論！審核通過後會顯示在網站上。"
   comment_error_msg          : "抱歉，提交時出錯。請確保所有必填項已完成，並重試。"
   loading_label              : "加載中..."
+  hosted_europe              : "託管於歐洲"
 zh-TW:
   <<: *DEFAULT_ZH_HK
 

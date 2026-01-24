@@ -28,7 +28,7 @@
   {% assign page_lang = page.lang | default: 'en' %}
   <!-- {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, -->
   {{ site.data.ui-text[page_lang].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, {{ site.data.ui-text[page_lang].fork_of | default: "a fork of" }} <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> | {{ site.data.ui-text[page_lang].site_last_updated | default: "Site last updated" }} {{ "now" | date: '%Y-%m-%d' }} |
-  <a href="https://cloud.umami.is">{{ site.data.ui-text[page_lang].privacy_analytics | default: "Privacy preserving analytics by a self hosted umami.is instance" }}</a> | <a href="https://github.com/thiswillbeyourgithub/website">{{ site.data.ui-text[page_lang].open_source | default: "This website is open source" }}</a>
+  <a href="https://cloud.umami.is">{{ site.data.ui-text[page_lang].privacy_analytics | default: "Privacy preserving analytics by a self hosted umami.is instance" }}</a> | <a href="https://github.com/thiswillbeyourgithub/website">{{ site.data.ui-text[page_lang].open_source | default: "This website is open source" }}</a> | {{ site.data.ui-text[page_lang].hosted_europe | default: "Hosted in Europe" }}
 </div>
 
 <!-- add umami into all outbound url
