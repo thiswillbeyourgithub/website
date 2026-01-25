@@ -51,6 +51,7 @@ At the same time, clinical observations from psychiatry could inform more robust
 - [Open source](https://en.wikipedia.org/wiki/Free_and_open-source_software) software/hardware ([including this very website](https://github.com/thiswillbeyourgithub/website)). I am part of [InterHop](https://interhop.org/nous/) (and donator as well!).
 - When building blocks I've participated in have positive [compounding effects](https://en.wikipedia.org/wiki/Compound_interest).
 - Applying the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule).
+- [Bayesian thinking](https://en.wikipedia.org/wiki/Bayesian_probability) (see [Julia Galef's explainer video](https://www.youtube.com/watch?v=BrK7X_XlGB8)).
 - Repairing stuff.
 - [Robust](https://en.wikipedia.org/wiki/Antifragility), [distributed](https://en.wikipedia.org/wiki/Distributed_computing), [decentralized](https://en.wikipedia.org/wiki/Decentralized_computing) systems.
     - <details><summary>More</summary>

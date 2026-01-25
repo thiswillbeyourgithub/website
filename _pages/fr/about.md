@@ -51,6 +51,7 @@ En même temps, les observations cliniques de la psychiatrie pourraient éclaire
 - Les logiciels/matériels [open source](https://en.wikipedia.org/wiki/Free_and_open-source_software) ([y compris ce site web](https://github.com/thiswillbeyourgithub/website)). Je fais partie d'[InterHop](https://interhop.org/nous/) (et suis aussi donateur !).
 - Quand les briques auxquelles j'ai participé ont des [intérêts composés](https://fr.wikipedia.org/wiki/Int%C3%A9r%C3%AAts_compos%C3%A9s) positifs.
 - Appliquer la [Règle d'Or](https://fr.wikipedia.org/wiki/R%C3%A8gle_d%27or).
+- Les [raisonnements bayésiens](https://fr.wikipedia.org/wiki/Probabilit%C3%A9_bay%C3%A9sienne) (cf [vidéo de Julia Galef](https://www.youtube.com/watch?v=BrK7X_XlGB8)).
 - Réparer des choses.
 - Les systèmes [robustes](https://fr.wikipedia.org/wiki/Antifragilit%C3%A9), [distribués](https://fr.wikipedia.org/wiki/Calcul_distribu%C3%A9), [décentralisés](https://fr.wikipedia.org/wiki/Architecture_distribu%C3%A9e).
     - <details><summary>Plus</summary>
