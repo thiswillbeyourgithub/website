@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 104*
+*Individual project count on this page: 105*
 
 
 *I would never have been able to write code without the open source movement, the countless tutorials shared freely online, and the culture of publishing source code and scripts. I am deeply grateful to everyone who has contributed to making programming knowledge accessible. These projects are my attempt to give back and help others on their journey, just as so many have helped me.*
@@ -163,7 +163,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*37 projects so far*
+*38 projects so far*
+- [Umami Apprise Notifier](https://github.com/thiswillbeyourgithub/umami_apprise_notifier): A Python script that notifies you of recent Umami analytics visitors via Apprise notifications.
 - [Website Link Checker](https://github.com/thiswillbeyourgithub/website_link_checker): Python CLI tool for crawling websites to identify and report broken links, with features like rate limiting and regex filtering.
 - [srt_ai_translator](https://github.com/thiswillbeyourgithub/srt_ai_translator): A subtitle translator leveraging OpenAI-compatible APIs for context-aware and efficient SRT translations.
 - [GPU Docker Monitor](https://github.com/thiswillbeyourgithub/nvidia-smi-docker-matcher): Efficiently map GPU processes to Docker containers for easier resource management.
