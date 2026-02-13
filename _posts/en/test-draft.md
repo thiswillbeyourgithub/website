@@ -1,7 +1,8 @@
 ---
 title:  "Draft Post"
 draft: true
-categories: 
+sitemap: false
+categories:
   - drafts
 tags:
   - drafts
