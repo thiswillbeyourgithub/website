@@ -24,3 +24,5 @@ package-lock.json
 deploy.sh
 .jekyll-metadata
 .env
+
+_drafts
