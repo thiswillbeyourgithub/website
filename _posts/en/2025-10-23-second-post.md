@@ -10,4 +10,4 @@ permalink: /en/blog/test2
 #   - test
 ---
 
-This is my first blog post. Bear with me while I get the hang of it.
+This is my second blog post. Bear with me while I get the hang of it.

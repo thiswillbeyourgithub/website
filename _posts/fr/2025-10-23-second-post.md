@@ -10,4 +10,4 @@ permalink: /fr/blog/test2
 #   - test
 ---
 
-Ceci est mon premier article de blog. Soyez patient pendant que je m'y habitue.
+Ceci est mon deuxieme article de blog. Soyez patient pendant que je m'y habitue.
