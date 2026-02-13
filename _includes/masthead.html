@@ -28,7 +28,8 @@
                 </ul>
               </li>
             {% else %}
-              <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+              {% comment %}Only mark as selected on exact match, not on child pages like blog posts{% endcomment %}
+              <li class="masthead__menu-item {% if page.url == link.url %}selected{% endif %}">
                 <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
               </li>
             {% endif %}
