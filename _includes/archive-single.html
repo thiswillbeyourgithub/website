@@ -3,7 +3,7 @@
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
-  {% assign teaser = site.teaser %}
+  {% assign teaser = nil %}
 {% endif %}
 
 {% if post.id %}
