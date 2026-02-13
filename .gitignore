@@ -26,3 +26,4 @@ deploy.sh
 .env
 
 _drafts
+_posts/*/*draft*.md
