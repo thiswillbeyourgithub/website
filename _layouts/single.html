@@ -104,7 +104,10 @@ layout: default
         <h4 class="page__related-title">{{ site.data.ui-text[page_lang].related_label | default: "You May Also Enjoy" }}</h4>
       {% endif %}
       <div class="grid__wrapper">
+        <!-- {% assign related_posts = site.related_posts | where: "lang", page_lang %} -->
         {% assign related_posts = site.related_posts | where: "lang", page_lang %}
+        {% assign related_posts = related_posts | where_exp: "post", "post.draft != true" %}
+        {% assign related_posts = related_posts | where_exp: "post", "post.sitemap != false" %}
         {% for post in related_posts limit:4 %}
           {% include archive-single.html type="grid" %}
         {% endfor %}
