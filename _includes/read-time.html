@@ -4,14 +4,15 @@
   {% assign words = page.content | strip_html | number_of_words %}
 {% endif %}
 
+{% assign page_lang = page.lang | default: site.locale | default: 'en' %}
 {% if site.words_per_minute %}
   {% if words < 180 %}
-	  {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	  {{ site.data.ui-text[page_lang].less_than | default: "less than" }} 1 {{ site.data.ui-text[page_lang].minute_read | default: "minute read" }}
 	{% elsif words < 360 %}
-	  1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	  1 {{ site.data.ui-text[page_lang].minute_read | default: "minute read" }}
 	{% else %}
-	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[page_lang].minute_read | default: "minute read" }}
 	{% endif %}
 {% else %}
-  {{ site.data.ui-text[site.locale].undefined_wpm | "Undefined parameter words_per_minute at _config.yml" }}
+  {{ site.data.ui-text[page_lang].undefined_wpm | "Undefined parameter words_per_minute at _config.yml" }}
 {% endif %}

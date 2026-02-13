@@ -1,7 +1,6 @@
 {% include base_path %}
 
-{% include base_path %}
-
+{% assign page_lang = page.lang | default: site.locale | default: 'en' %}
 {% case site.category_archive.type %}
   {% when "liquid" %}
     {% assign path_type = "#" %}
@@ -18,7 +17,7 @@
   {% assign category_hashes = (page_categories | split: ',' | sort:0) %}
 
   <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[page_lang].categories_label | default: "Categories:" }} </strong>
     <span itemprop="keywords">
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '#' %}

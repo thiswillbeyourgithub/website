@@ -4,8 +4,8 @@
 <div class="page__footer-follow">
 <!--
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% if site.data.ui-text[page_lang].follow_label %}
+      <li><strong>{{ site.data.ui-text[page_lang].follow_label }}</strong></li>
     {% endif %}
     {% if site.author.github %}
       <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
@@ -17,7 +17,7 @@
       <li><a href="https://bsky.app/profile/{{ site.author.bluesky }}"><i class="fab fa-bluesky" aria-hidden="true"></i> Bluesky</a></li>
     {% endif %}
     {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[page_lang].feed_label | default: "Feed" }}</a></li>
     {% endif %}
   </ul>
   -->
