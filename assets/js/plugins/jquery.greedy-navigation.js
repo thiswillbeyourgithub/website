@@ -78,9 +78,18 @@ screen.orientation.addEventListener("change", function () {
   updateNav();
 });
 
-$btn.on('click', function () {
+$btn.on('click', function (e) {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  e.stopPropagation();
+});
+
+// Close hamburger menu when clicking outside of it
+$(document).on('click', function (e) {
+  if (!$hlinks.hasClass('hidden') && !$(e.target).closest('.hidden-links').length) {
+    $hlinks.addClass('hidden');
+    $btn.removeClass('close');
+  }
 });
 
 updateNav();
