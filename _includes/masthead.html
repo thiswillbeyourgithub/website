@@ -6,10 +6,10 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
           {% assign page_lang = page.lang | default: 'en' %}
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
+            <a href="{{ base_path }}/{{ page_lang }}/">{{ site.title }}</a>
+          </li>
           {% assign nav_file = 'navigation-' | append: page_lang %}
           {% assign nav_data = site.data[nav_file] %}
           {% for link in nav_data.main %}
