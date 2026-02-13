@@ -1,5 +1,6 @@
 ---
 title:  "Draft Post"
+draft: true
 categories: 
   - drafts
 tags:
