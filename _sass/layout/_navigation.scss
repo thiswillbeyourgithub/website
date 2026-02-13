@@ -211,11 +211,15 @@
   }
 
   .visible-links {
-    display: table;
+    /* Use flex-wrap so nav items can flow into 2 rows before
+       overflowing into the hamburger menu */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
+      /* Flex items don't need table-cell; they wrap naturally */
+      flex-shrink: 0;
 
       &:first-child {
         font-weight: bold;
