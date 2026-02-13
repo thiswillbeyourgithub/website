@@ -1,5 +1,5 @@
 ---
-title: 'Test post #2'
+title: 'Post de test #2'
 date: 2025-10-23
 lang: fr
 permalink: /fr/blog/test2
@@ -10,4 +10,4 @@ permalink: /fr/blog/test2
 #   - test
 ---
 
-This is my first blog post. Bear with me while I get the hang of it.
+Ceci est mon premier article de blog. Soyez patient pendant que je m'y habitue.
