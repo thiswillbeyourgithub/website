@@ -70,7 +70,8 @@ html[data-theme="dark"] ::-moz-selection {
 
 /* Override notice colors for high contrast in dark mode */
 html[data-theme="dark"] {
-  .page__content {
+  .page__content,
+  .archive {
     .notice {
       background-color: mix($background, $notice-color, 85%);
       color: #{$text};

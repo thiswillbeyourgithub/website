@@ -73,7 +73,8 @@ $sidebar-screen-min-width   : 1024px;
 }
 
 /* Override notice colors for high contrast */
-.page__content {
+.page__content,
+.archive {
   .notice,
   .notice--primary,
   .notice--info,
