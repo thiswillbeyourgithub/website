@@ -10,8 +10,8 @@ en: &DEFAULT_EN
   breadcrumb_separator       : "/"
   toc_label                  : "Table of Contents"
   ext_link_label             : "Direct Link"
-  less_than                  : "less than"
-  minute_read                : "minute read"
+  less_than                  : "<"
+  minute_read                : "min."
   share_on_label             : "Share on"
   meta_label                 :
   tags_label                 : "Tags:"
@@ -111,8 +111,8 @@ fr: &DEFAULT_FR
   breadcrumb_separator       : "/"
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
-  less_than                  : "plus petit que"
-  minute_read                : "minute de lecture"
+  less_than                  : "<"
+  minute_read                : "min."
   share_on_label             : "Partager sur"
   meta_label                 :
   tags_label                 : "Tags :"
