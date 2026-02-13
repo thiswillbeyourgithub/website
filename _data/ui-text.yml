@@ -46,6 +46,7 @@ en: &DEFAULT_EN
   author_bio                 : "Psychiatry resident & self-taught developer / data scientist."
   author_location            : "Paris, France"
   author_employer            : "AP-HP"
+  view_page_source           : "View page source"
   hosted_europe              : "Hosted in Europe"
 en-US:
   <<: *DEFAULT_EN
@@ -147,6 +148,7 @@ fr: &DEFAULT_FR
   author_bio                 : "Médecin Psychiatre (interne) & développeur / data scientist autodidacte."
   author_location            : "Paris, France"
   author_employer            : "AP-HP"
+  view_page_source           : "Voir le code source"
   hosted_europe              : "Hébergé en Europe"
 fr-FR:
   <<: *DEFAULT_FR

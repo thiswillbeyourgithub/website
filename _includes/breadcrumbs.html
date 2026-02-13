@@ -37,7 +37,7 @@
           {% if site.repository != "" and site.repository != nil %}
               <li>
                   <a href="https://github.com/{{ site.repository }}/blob/{{ site.branch }}/{{ page.path }}" class="page-source-link">
-                      <i class="fa fa-code" aria-hidden="true"></i>View page source
+                      <i class="fa fa-code" aria-hidden="true"></i>{{ site.data.ui-text[page_lang].view_page_source | default: "View page source" }}
                   </a>
               </li>
           {% endif %}
