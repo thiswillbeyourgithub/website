@@ -26,5 +26,5 @@ deploy.sh
 .env
 
 _drafts
-_posts/*/*draft*.md
+_posts/*/*draft.md
 CLAUDE.md
