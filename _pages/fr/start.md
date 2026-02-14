@@ -13,10 +13,10 @@ lang: fr
 
 Je suis Olivier Cornelis, médecin psychiatre (interne) et développeur / data scientist autodidacte basé à Paris (France).
 
-Ma présentation plus formelle est à [CV](./cv).
+Pour une présentation formelle : [CV](./cv).
 
-Pour lire une présentation informelle et ce que je fais actuellement, allez sur [À PROPOS](./about).
+Pour une présentation informelle et ce que je fais actuellement : [À PROPOS](./about).
 
-Une liste de mes projets est à [PROJETS](./projects).
+Pour une iste de mes projets : [PROJETS](./projects).
 
-Je fais de mon mieux pour maintenir une page listant les outils que j'utilise pendant mon internat de psychiatrie : [OUTILS](./tools).
+Pour une liste des outils potentiellement utiles pendant mon internat de psychiatre : [OUTILS](./tools).

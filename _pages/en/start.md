@@ -14,10 +14,10 @@ redirect_from:
 
 I'm Olivier Cornelis, a psychiatry resident and a self-taught developer / data scientist in Paris, France.
 
-A more formal introduction is at [CV](./cv).
+For a formal introduction: [CV](./cv).
 
-To read an informal introduction and what I'm up to, go to [ABOUT](./about).
+For an informal introduction and what I've been up to: [ABOUT](./about).
 
-A list of my projects is at [PROJECTS](./projects).
+For a list of my projects: [PROJECTS](./projects).
 
-I try my best to maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools).
+For the list of tools I found useful during my psychiatry residency: [TOOLS](./tools).
