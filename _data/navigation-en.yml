@@ -12,8 +12,8 @@ main:
   - title: "PROJECTS"
     url: /en/projects
 
-  - title: "BLOG"
-    url: /en/blog
+  # - title: "BLOG"
+  #   url: /en/blog
 
   - title: "CONTACT"
     url: /en/contact
