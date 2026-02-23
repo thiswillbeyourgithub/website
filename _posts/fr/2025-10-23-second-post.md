@@ -9,6 +9,7 @@ permalink: /fr/blog/test2
 # author_profile: false
 # tags:
 #   - test
+#bluesky_post_id:
 ---
 
 Ceci est mon deuxieme article de blog. Soyez patient pendant que je m'y habitue.

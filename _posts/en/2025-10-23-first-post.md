@@ -9,6 +9,7 @@ permalink: /en/blog/test1
 # author_profile: false
 # tags:
 #   - test
+#bluesky_post_id:
 ---
 
 This is my first blog post. Bear with me while I get the hang of it.
