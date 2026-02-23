@@ -47,7 +47,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 ## Medicine & Computer Science
 *17 projects so far*
 - [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronizes zotero or a directory to a knowledge base in [OpenWebUI](https://docs.openwebui.com/). To be more efficient when catching up on recent psychiatry research.
-- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): **WIP** voice transcription directly inside the browser (no data sent to any server). Working on a french medical finetuned model.
+- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): voice transcription directly inside the browser (no data sent to any server). I have an instance running at [pw.olicorne.org](pw.olicorne.org). I'm also working on a medical finetune.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convert ICD-11 data into langchain Document objects for enhanced retrieval and search applications. To make a [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher)-based search engine for ICD-11 classification codes.
 - [PrevMed](https://github.com/PrevMedOrg/PrevMed) (short for *Preventive Medicine*): A minimalist platform enabling non-technical users to create clinical questionnaires without storing personal data. *Note: I was paid to design then build this solution.*
 - [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA): Research project merging numerical survey responses with semantic question embeddings to enhance patient data analysis and uncover hidden patterns in medical questionnaires.
