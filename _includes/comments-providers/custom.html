@@ -1,3 +1,26 @@
 <!-- start custom comments snippet -->
+{% if page.bluesky_post_id %}
+<link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.9.0/dist/bluesky-comments.css">
+<script type="module">
+  try {
+    const [{ default: React }, { default: ReactDOM }, { BlueskyComments }] = await Promise.all([
+      import('https://esm.sh/stable/react@18.2.0/es2022/react.mjs'),
+      import('https://esm.sh/stable/react-dom@18.2.0/es2022/react-dom.mjs'),
+      import('https://unpkg.com/bluesky-comments@0.9.0/dist/bluesky-comments.es.js')
+    ]);
 
+    const container = document.getElementById('comments');
+    if (container) {
+      const uri = "https://bsky.app/profile/{{ site.author.bluesky }}/post/{{ page.bluesky_post_id }}";
+      const element = React.createElement(BlueskyComments, {
+        uri: uri,
+        author: "{{ site.author.bluesky }}"
+      });
+      ReactDOM.createRoot(container).render(element);
+    }
+  } catch (error) {
+    console.error('Failed to load Bluesky comments:', error);
+  }
+</script>
+{% endif %}
 <!-- end custom comments snippet -->
