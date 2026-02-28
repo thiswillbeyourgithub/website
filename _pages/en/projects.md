@@ -30,7 +30,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 <details><summary><i>A note on authorship</i></summary>
 <ul>
     <li><i>Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, when I want AI-based assistance I almost exclusively use <a href="https://aider.chat/">aider</a> with the <b>--attribute-author</b> argument so you can see which projects and commits where done with or without it.</i></li>
-    <li><i>As of December 2025 aider seems to have been unmaintained for months but I'm not sure which replacement to use in the future.</i></li>
+    <li><i>As of December 2025 aider seems to have been unmaintained for months. Since early 2026 I've switched to <a href="https://github.com/anthropics/claude-code">Claude Code</a> and it has (once again) revolutionized my productivity. Not only because I can now be truly ambitious with code, but more importantly because it's no longer just about coding. Managing many other things becomes automatable. The term "assistant" is now more appropriate than just "developer aid" as far as I'm concerned.</i></li>
 </ul>
 </details>
 

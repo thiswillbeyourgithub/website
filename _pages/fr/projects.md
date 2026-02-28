@@ -29,7 +29,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 <details><summary><i>Une note sur la paternité</i></summary>
 <ul>
     <li><i>Bien que j'utilise l'IA depuis de nombreuses années, je ne l'ai pas utilisée pour coder avant environ 2024. Depuis, lorsque je veux une assistance basée sur l'IA, j'utilise presque exclusivement <a href="https://aider.chat/">aider</a> avec l'argument <b>--attribute-author</b> afin que vous puissiez voir quels projets et commits ont été réalisés avec ou sans.</i></li>
-    <li><i>Depuis décembre 2025, aider semble ne plus être maintenu depuis des mois, mais je ne suis pas sûr quel remplacement utiliser à l'avenir.</i></li>
+    <li><i>Depuis décembre 2025, aider semble ne plus être maintenu depuis des mois. Depuis début 2026, je suis passé à <a href="https://github.com/anthropics/claude-code">Claude Code</a> et cela a (à nouveau) révolutionné ma productivité. Non seulement parce que je peux désormais être réellement ambitieux dans le code, mais surtout parce qu'il ne s'agit plus uniquement de code. La gestion de beaucoup d'autres choses devient automatisable. Le terme « assistant » est désormais plus approprié que simplement « aide au développeur » en ce qui me concerne.</i></li>
 </ul>
 </details>
 
