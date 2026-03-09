@@ -76,7 +76,7 @@ redirect_from:
 * **Machine Learning and big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization)
 * **Unix proficiency** (GNU/Linux, OSX), algorithmic complexity, advanced shell concepts (zsh/bash), vi/vim/neovim, regexp, sysadmin (self hosting, databases, sizing, resource estimation, specifications), Interfaces (GUI/CLI)
 * **Collaboration software proficiency** (git, Jupyter Notebook, markdown)
-* Strong commitment to **Free/Open Source Software** (top 2.3% on Github as of 2025, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
+* Strong commitment to **Free/Open Source Software** (top 2.3% on Github as of 2025, 7k+ PyPI downloads/month, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * Web stack and knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
 * Hardware knowledge (soldering, server assembly), embedded systems (micropython, smartwatch)
 
