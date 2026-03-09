@@ -17,6 +17,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 *Individual project count on this page: 105*
 
+*Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
+
 
 *I would never have been able to write code without the open source movement, the countless tutorials shared freely online, and the culture of publishing source code and scripts. I am deeply grateful to everyone who has contributed to making programming knowledge accessible. These projects are my attempt to give back and help others on their journey, just as so many have helped me.*
 {: .notice--info}
