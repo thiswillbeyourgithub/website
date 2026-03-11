@@ -16,6 +16,9 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 {% include toc %}
 
+# Outils pratiques
+- [ImageSecureSend](https://github.com/thiswillbeyourgithub/ImageSecureSend) (créé par moi) : Scanner de documents sécurisé en peer-to-peer pour envoyer des photos entre appareils (par ex. d'un smartphone vers un ordinateur professionnel) avec recadrage, rotation et chiffrement de bout en bout via WebRTC. Aucune donnée ne transite par des serveurs non chiffrés. Je fais tourner une instance à [imagesecuresend.olicorne.org](https://imagesecuresend.olicorne.org/).
+
 # Interactions enzymatiques
 - Semble plutôt complet et m'a été recommandé : [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/).
     - J'ai remarqué au moins une fois une simplification assez importante : le texte sur ClinPGx mentionnait un cytochrome comme étant le principal, alors que la source expliquait en fait que celui-ci était celui qui se liait le plus à la molécule mais comme il était moins présent, il n'était en fait pas le principal métaboliseur du médicament donné.

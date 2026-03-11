@@ -13,6 +13,9 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 
 {% include toc %}
 
+# Helper tools
+- [ImageSecureSend](https://github.com/thiswillbeyourgithub/ImageSecureSend) (made by me): Secure peer-to-peer document scanner to send photos between devices (e.g. from a smartphone to a corporate computer) with cropping, rotation, and end-to-end encryption via WebRTC. No data ever passes through unencrypted servers. I run an instance at [imagesecuresend.olicorne.org](https://imagesecuresend.olicorne.org/).
+
 # Enzymatic interaction
 - Seems rather complete and was recommended to me: [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/).
     - I noticed at least once a pretty wild oversimplification: the text on ClinPGx mentioned one cytochrome as being the main one, while the source actually explained that this one was actually the one that bound to the molecule the most but because it was less present it was actually not the main metabolizer of the given drug.
