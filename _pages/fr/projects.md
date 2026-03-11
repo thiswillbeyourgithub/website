@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 106*
+*Nombre de projets individuels sur cette page : 107*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -46,7 +46,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine & Informatique
-*17 projets jusqu'à présent*
+*18 projets jusqu'à présent*
+- [ImageSecureSend](https://github.com/thiswillbeyourgithub/ImageSecureSend): Scanner de documents sécurisé en peer-to-peer qui chiffre les photos directement entre appareils via WebRTC, garantissant que les données sensibles ne transitent jamais par des serveurs non chiffrés.
 - [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronise zotero ou un répertoire vers une base de connaissances dans [OpenWebUI](https://docs.openwebui.com/). Pour être plus efficace lors de la mise à jour sur la recherche récente en psychiatrie.
 - [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): transcription vocale directement dans le navigateur (aucune donnée envoyée à un serveur). J'ai une instance disponible sur [pw.olicorne.org](pw.olicorne.org). Je travaille également sur un modèle affiné médical.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convertit les données ICD-11 en objets Document langchain pour des applications de recherche et récupération améliorées. Pour créer un moteur de recherche basé sur [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher) pour les codes de classification ICD-11.
