@@ -46,7 +46,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 {% include toc_wide %}
 
-## Medicine & Computer Science
+## Medicine / Computer Science / Larger projects
 *18 projects so far*
 - [ImageSecureSend](https://github.com/thiswillbeyourgithub/ImageSecureSend): Secure peer-to-peer document scanner that encrypts photos directly between devices using WebRTC, ensuring sensitive data never passes through unencrypted servers.
 - [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronizes zotero or a directory to a knowledge base in [OpenWebUI](https://docs.openwebui.com/). To be more efficient when catching up on recent psychiatry research.

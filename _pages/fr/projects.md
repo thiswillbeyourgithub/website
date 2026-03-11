@@ -45,7 +45,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 {% include toc_wide %}
 
-## Médecine & Informatique
+## Médecine / Science Informatique / Gros projets
 *18 projets jusqu'à présent*
 - [ImageSecureSend](https://github.com/thiswillbeyourgithub/ImageSecureSend): Scanner de documents sécurisé en peer-to-peer qui chiffre les photos directement entre appareils via WebRTC, garantissant que les données sensibles ne transitent jamais par des serveurs non chiffrés.
 - [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronise zotero ou un répertoire vers une base de connaissances dans [OpenWebUI](https://docs.openwebui.com/). Pour être plus efficace lors de la mise à jour sur la recherche récente en psychiatrie.
