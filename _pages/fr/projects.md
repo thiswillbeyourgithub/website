@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 105*
+*Nombre de projets individuels sur cette page : 106*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -164,7 +164,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Outil de surveillance de films qui vérifie automatiquement les listes de cinéma pour des films spécifiques et envoie des notifications lorsqu'ils deviennent disponibles.
 
 ## Outils Divers
-*38 projets jusqu'à présent*
+*39 projets jusqu'à présent*
+- [Sanoid Docker Snapshots Cleanup](https://github.com/thiswillbeyourgithub/sanoid_docker_snapshots_cleanup): Automatise le nettoyage des snapshots ZFS orphelins de conteneurs Docker dans les pools de sauvegarde en utilisant Sanoid et Syncoid.
 - [Umami Apprise Notifier](https://github.com/thiswillbeyourgithub/umami_apprise_notifier): Un script Python qui vous notifie des récents visiteurs de l'analytique Umami via les notifications Apprise.
 - [Website Link Checker](https://github.com/thiswillbeyourgithub/website_link_checker): Outil CLI Python pour parcourir les sites Web afin d'identifier et signaler les liens cassés, avec des fonctionnalités comme la limitation de débit et le filtrage par regex.
 - [srt_ai_translator](https://github.com/thiswillbeyourgithub/srt_ai_translator): Un traducteur de sous-titres exploitant les API compatibles OpenAI pour des traductions SRT contextuelles et efficaces.
