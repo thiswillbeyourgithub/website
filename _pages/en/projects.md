@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 107*
+*Individual project count on this page: 108*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -166,7 +166,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*39 projects so far*
+*40 projects so far*
+- [ntrig-calib](https://github.com/thiswillbeyourgithub/ntrig-calib): Reverse engineering tool to restore Surface Pro 3 touchscreen by modifying N-Trig calibration binaries.
 - [Sanoid Docker Snapshots Cleanup](https://github.com/thiswillbeyourgithub/sanoid_docker_snapshots_cleanup): Automate the cleanup of orphaned Docker container ZFS snapshots in backup pools using Sanoid and Syncoid.
 - [Umami Apprise Notifier](https://github.com/thiswillbeyourgithub/umami_apprise_notifier): A Python script that notifies you of recent Umami analytics visitors via Apprise notifications.
 - [Website Link Checker](https://github.com/thiswillbeyourgithub/website_link_checker): Python CLI tool for crawling websites to identify and report broken links, with features like rate limiting and regex filtering.
