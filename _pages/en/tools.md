@@ -14,7 +14,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 {% include toc %}
 
 # Helper tools
-- [ImageSecureSend](https://github.com/thiswillbeyourgithub/ImageSecureSend) (made by me): Secure peer-to-peer document scanner to send photos between devices (e.g. from a smartphone to a corporate computer) with cropping, rotation, and end-to-end encryption via WebRTC. No data ever passes through unencrypted servers. I run an instance at [imagesecuresend.olicorne.org](https://imagesecuresend.olicorne.org/).
+- [WebSend](https://github.com/thiswillbeyourgithub/WebSend) (made by me): Secure peer-to-peer document scanner to send photos between devices (e.g. from a smartphone to a corporate computer) with cropping, rotation, and end-to-end encryption via WebRTC. No data ever passes through unencrypted servers. I run an instance at [websend.olicorne.org](https://websend.olicorne.org/).
 
 # Enzymatic interaction
 - Seems rather complete and was recommended to me: [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/).
