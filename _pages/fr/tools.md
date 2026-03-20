@@ -17,7 +17,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 {% include toc %}
 
 # Outils pratiques
-- [WebSend](https://github.com/thiswillbeyourgithub/WebSend) (créé par moi) : Scanner de documents sécurisé en peer-to-peer pour envoyer des photos entre appareils (par ex. d'un smartphone vers un ordinateur professionnel) avec recadrage, rotation et chiffrement de bout en bout via WebRTC. Aucune donnée ne transite par des serveurs non chiffrés. Je fais tourner une instance à [websend.olicorne.org](https://websend.olicorne.org/).
+J'ai créé [WebSend](https://websend.olicorne.org) : un scanner de documents dans le navigateur, sans installation, qui permet de transférer instantanément des photos de votre smartphone vers n'importe quel ordinateur derrière un pare-feu. Ouvrez la page sur les deux appareils, scannez, c'est fait. Pas d'application, pas de cloud, aucune trace laissée. Sous le capot : chiffrement de bout en bout via WebRTC, traversée de pare-feux d'entreprise par STUN/TURN/TURNS, et recadrage intégré. Le serveur agit soit comme un simple relais de signalisation (sans jamais toucher vos données), soit, lorsque la connexion pair-à-pair directe est impossible, retransmet uniquement des blobs entièrement chiffrés qu'il ne peut pas lire. Les coûts de fonctionnement sont négligeables, il existe donc une instance publique gratuite sur [websend.olicorne.org](https://websend.olicorne.org) — et le code source est sur [GitHub](https://github.com/thiswillbeyourgithub/WebSend).
 
 # Interactions enzymatiques
 - Semble plutôt complet et m'a été recommandé : [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/).
