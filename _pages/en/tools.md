@@ -14,7 +14,8 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 {% include toc %}
 
 # Helper tools
-- [WebSend](https://github.com/thiswillbeyourgithub/WebSend) (made by me): Secure peer-to-peer document scanner to send photos between devices (e.g. from a smartphone to a corporate computer) with cropping, rotation, and end-to-end encryption via WebRTC. No data ever passes through unencrypted servers. I run an instance at [websend.olicorne.org](https://websend.olicorne.org/).
+I made [WebSend](https://websend.olicorne.org): a browser-based, zero-install document scanner that lets you instantly transfer photos from your smartphone to any firewalled computer. Open the page on both devices, scan, done. No app, no cloud, no trace left behind. Under the hood: WebRTC end-to-end encryption, STUN/TURN/TURNS hole punching through corporate firewalls, and built-in cropping. The server either acts as a pure signaling relay (never touching your data) or, when direct peer-to-peer is impossible, forwards only fully encrypted blobs it cannot read. Running costs are negligible, so there's a free public instance at [websend.olicorne.org](https://websend.olicorne.org) — and the source is on [GitHub](https://github.com/thiswillbeyourgithub/WebSend).
+
 
 # Enzymatic interaction
 - Seems rather complete and was recommended to me: [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/).
