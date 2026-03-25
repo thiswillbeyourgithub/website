@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 109*
+*Individual project count on this page: 110*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -166,7 +166,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*41 projects so far*
+*42 projects so far*
+- [envlocker](https://github.com/thiswillbeyourgithub/envlocker): Securely encrypt and decrypt environment variables with a simple shell script for enhanced privacy.
 - [ufw-docker-recap](https://github.com/thiswillbeyourgithub/ufw-docker-recap): Analyze and cross-reference Docker container port exposures with `ufw-docker` rules to enhance security.
 - [ntrig-calib](https://github.com/thiswillbeyourgithub/ntrig-calib): Reverse engineering tool to restore Surface Pro 3 touchscreen by modifying N-Trig calibration binaries.
 - [Sanoid Docker Snapshots Cleanup](https://github.com/thiswillbeyourgithub/sanoid_docker_snapshots_cleanup): Automate the cleanup of orphaned Docker container ZFS snapshots in backup pools using Sanoid and Syncoid.
