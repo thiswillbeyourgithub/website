@@ -14,7 +14,7 @@ redirect_from:
 
 Sur cette page, j'essaie de garder une trace des ressources qui peuvent être utiles aux internes en psychiatrie. Dans chaque section, je fais de mon mieux pour ordonner par ordre d'importance.
 
-{% include toc %}
+{% include toc_wide %}
 
 # Outils pratiques
 J'ai créé [WebSend](https://websend.olicorne.org) : un scanner de documents dans le navigateur, sans installation, qui permet de transférer instantanément des photos de votre smartphone vers n'importe quel ordinateur derrière un pare-feu. Ouvrez la page sur les deux appareils, scannez, c'est fait. Pas d'application, pas de cloud, aucune trace laissée. Sous le capot : chiffrement de bout en bout via WebRTC, traversée de pare-feux d'entreprise par STUN/TURN/TURNS, et recadrage intégré. Le serveur agit soit comme un simple relais de signalisation (sans jamais toucher vos données), soit, lorsque la connexion pair-à-pair directe est impossible, retransmet uniquement des blobs entièrement chiffrés qu'il ne peut pas lire. Les coûts de fonctionnement sont négligeables, il existe donc une instance publique gratuite sur [websend.olicorne.org](https://websend.olicorne.org) — et le code source est sur [GitHub](https://github.com/thiswillbeyourgithub/WebSend).

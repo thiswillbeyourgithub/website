@@ -11,7 +11,7 @@ redirect_from:
 
 On this page, I try to keep track of resource I think can be useful to psychiatry residents. In each section, I try my best to order by most important first.
 
-{% include toc %}
+{% include toc_wide %}
 
 # Helper tools
 I made [WebSend](https://websend.olicorne.org): a browser-based, zero-install document scanner that lets you instantly transfer photos from your smartphone to any firewalled computer. Open the page on both devices, scan, done. No app, no cloud, no trace left behind. Under the hood: WebRTC end-to-end encryption, STUN/TURN/TURNS hole punching through corporate firewalls, and built-in cropping. The server either acts as a pure signaling relay (never touching your data) or, when direct peer-to-peer is impossible, forwards only fully encrypted blobs it cannot read. Running costs are negligible, so there's a free public instance at [websend.olicorne.org](https://websend.olicorne.org) — and the source is on [GitHub](https://github.com/thiswillbeyourgithub/WebSend).
