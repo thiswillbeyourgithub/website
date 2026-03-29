@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 110*
+*Nombre de projets individuels sur cette page : 111*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -46,10 +46,11 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine / Science Informatique / Gros projets
-*18 projets jusqu'à présent*
+*19 projets jusqu'à présent*
+- [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd): Une plateforme collaborative permettant à des volontaires d'enregistrer des échantillons audio pour améliorer les jeux de données ASR en utilisant Gradio.
 - [WebSend](https://github.com/thiswillbeyourgithub/WebSend): Scanner de documents basé sur le navigateur, sans installation, qui permet de transférer instantanément des photos de votre smartphone vers n'importe quel ordinateur derrière un pare-feu. Pas d'application, pas de cloud, aucune trace laissée. En coulisses : chiffrement de bout en bout WebRTC, traversée de pare-feux d'entreprise via STUN/TURN/TURNS, et recadrage intégré. Le serveur agit comme un relais de signalisation pur (sans jamais toucher vos données), ou lorsqu'une connexion peer-to-peer directe est impossible, il ne transfère que des blobs entièrement chiffrés qu'il ne peut pas lire. Je fais tourner une instance publique gratuite sur [websend.olicorne.org](https://websend.olicorne.org).
 - [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronise zotero ou un répertoire vers une base de connaissances dans [OpenWebUI](https://docs.openwebui.com/). Pour être plus efficace lors de la mise à jour sur la recherche récente en psychiatrie.
-- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): transcription vocale directement dans le navigateur (aucune donnée envoyée à un serveur). J'ai une instance disponible sur [pw.olicorne.org](https://pw.olicorne.org). Je travaille également sur un modèle affiné médical.
+- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): transcription vocale directement dans le navigateur (aucune donnée envoyée à un serveur). J'ai une instance disponible sur [pw.olicorne.org](https://pw.olicorne.org). Je travaille également sur un modèle affiné médical (voir [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd) pour la collecte de données).
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convertit les données ICD-11 en objets Document langchain pour des applications de recherche et récupération améliorées. Pour créer un moteur de recherche basé sur [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher) pour les codes de classification ICD-11.
 - [PrevMed](https://github.com/PrevMedOrg/PrevMed) (abréviation de *Preventive Medicine*): Une plateforme minimaliste permettant aux utilisateurs non techniques de créer des questionnaires cliniques sans stocker de données personnelles. *Note : J'ai été payé pour concevoir puis construire cette solution.*
 - [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA): Projet de recherche fusionnant les réponses numériques aux enquêtes avec les embeddings sémantiques des questions pour améliorer l'analyse des données des patients et découvrir des modèles cachés dans les questionnaires médicaux.
