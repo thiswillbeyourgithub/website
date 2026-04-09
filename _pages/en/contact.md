@@ -27,7 +27,7 @@ You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) pub
 
 Ranked by "highest probability I'll see your message" first:
 
-- Ping me using `@thiswillbeyourgithub` in any github issue or discussion, I'll receive a priority e-mail to take a look. If you mind this communication being public, you can invite me to a private repo to chat via issues or discussions.
+- On [Github](https://github.com) you can ping me using `@thiswillbeyourgithub` in any Github issue or discussion. I'll receive a priority e-mail to take a look. If you mind this communication being public, you can invite me to a private repo to chat via issues or discussions.
 - On [Bluesky](https://en.wikipedia.org/wiki/Bluesky) as [@olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social)
 - On [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne@mastodon.pirateparty.be](https://mastodon.pirateparty.be/@olicorne)
 - On [simplex-chat](https://github.com/simplex-chat/simplex-chat) via [this link](https://smp8.simplex.im/a#zhJ22L47TjVY2dY_SsMv8v0JqsSwzQ-Qp0kbGO1nUo4) or [this QR Code](https://olicorne.org/images/simplex.png).
