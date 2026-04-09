@@ -27,5 +27,5 @@ Classés par "probabilité la plus élevée que je voie votre message" en premie
 
 - Contactez-moi en utilisant `@thiswillbeyourgithub` dans n'importe quel issue ou discussion github, je recevrai un e-mail prioritaire pour y jeter un œil. Si vous ne souhaitez pas que notre conversation soit publique, vous pouvez m'inviter dans un dépôt privé pour discuter via des issues ou discussions.
 - Sur [Bluesky](https://en.wikipedia.org/wiki/Bluesky) en tant que [@olicorne.bsky.social](https://bsky.app/profile/olicorne.bsky.social)
-- Sur [simplex-chat](https://github.com/simplex-chat/simplex-chat) via [ce lien](https://smp8.simplex.im/a#zhJ22L47TjVY2dY_SsMv8v0JqsSwzQ-Qp0kbGO1nUo4) ou [ce QR Code](https://olicorne.org/images/simplex.png).
 - Sur [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) en tant que [@olicorne@mastodon.pirateparty.be](https://mastodon.pirateparty.be/@olicorne)
+- Sur [simplex-chat](https://github.com/simplex-chat/simplex-chat) via [ce lien](https://smp8.simplex.im/a#zhJ22L47TjVY2dY_SsMv8v0JqsSwzQ-Qp0kbGO1nUo4) ou [ce QR Code](https://olicorne.org/images/simplex.png).
