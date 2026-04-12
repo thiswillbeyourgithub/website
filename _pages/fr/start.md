@@ -17,6 +17,6 @@ Pour une présentation formelle : [CV](./cv).
 
 Pour une présentation informelle et ce que je fais actuellement : [À PROPOS](./about).
 
-Pour une iste de mes projets : [PROJETS](./projects).
+Pour une liste de mes projets : [PROJETS](./projects).
 
 Pour une liste des outils potentiellement utiles pendant mon internat de psychiatre : [OUTILS](./tools).
