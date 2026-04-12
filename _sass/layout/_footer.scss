@@ -13,8 +13,11 @@
   width: 100%;
   clear: both;
 
-  /* keep footer in normal document flow so custom widgets do not overlap content */
+  /* sticky footer fix start */
+  position: absolute;
+  bottom: 0em;
   height: auto;
+  /* sticky footer fix end */
 
   margin-top: 3em;
 
