@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 112*
+*Nombre de projets individuels sur cette page : 113*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -46,7 +46,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine / Science Informatique / Gros projets
-*20 projets jusqu'à présent*
+*21 projets jusqu'à présent*
+- [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): Une API basée sur FastAPI pour l'anonymisation des PII (Personally Identifiable Information, soit les informations personnelles identifiables) utilisant des LLM locaux ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) avec compatibilité [Presidio](https://microsoft.github.io/presidio/) et une flexibilité améliorée de définition des entités.
 - [SAM3-Skin-HeartRate](https://github.com/thiswillbeyourgithub/SAM3-Skin-HeartRate): Visualisation du flux sanguin à partir d'un flux caméra par photopléthysmographie à distance et segmentation automatique de la peau via SAM 3.
 - [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd): Une plateforme collaborative permettant à des volontaires d'enregistrer des échantillons audio pour améliorer les jeux de données ASR en utilisant Gradio.
 - [WebSend](https://github.com/thiswillbeyourgithub/WebSend): Scanner de documents basé sur le navigateur, sans installation, qui permet de transférer instantanément des photos de votre smartphone vers n'importe quel ordinateur derrière un pare-feu. Pas d'application, pas de cloud, aucune trace laissée. En coulisses : chiffrement de bout en bout WebRTC, traversée de pare-feux d'entreprise via STUN/TURN/TURNS, et recadrage intégré. Le serveur agit comme un relais de signalisation pur (sans jamais toucher vos données), ou lorsqu'une connexion peer-to-peer directe est impossible, il ne transfère que des blobs entièrement chiffrés qu'il ne peut pas lire. Je fais tourner une instance publique gratuite sur [websend.olicorne.org](https://websend.olicorne.org).

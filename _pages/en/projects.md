@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 112*
+*Individual project count on this page: 113*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -47,7 +47,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {% include toc_wide %}
 
 ## Medicine / Computer Science / Larger projects
-*20 projects so far*
+*21 projects so far*
+- [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): A FastAPI-based API for PII (Personally Identifiable Information) anonymization using local LLMs ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) with [Presidio](https://microsoft.github.io/presidio/) compatibility and enhanced entity definition flexibility.
 - [SAM3-Skin-HeartRate](https://github.com/thiswillbeyourgithub/SAM3-Skin-HeartRate): Visualizing blood flow from a camera feed using remote photoplethysmography and automatic skin segmentation powered by SAM 3.
 - [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd): A collaborative platform enabling volunteers to record audio samples for improving ASR datasets using Gradio.
 - [WebSend](https://github.com/thiswillbeyourgithub/WebSend): Browser-based, zero-install document scanner that lets you instantly transfer photos from your smartphone to any firewalled computer. No app, no cloud, no trace left behind. Under the hood: WebRTC end-to-end encryption, STUN/TURN/TURNS hole punching through corporate firewalls, and built-in cropping. The server acts as a pure signaling relay (never touching your data), or when direct peer-to-peer is impossible, forwards only fully encrypted blobs it cannot read. I run a free public instance at [websend.olicorne.org](https://websend.olicorne.org).
