@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 113*
+*Individual project count on this page: 114*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -131,8 +131,9 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Productivity
 *Tools I use, used or made*
-*14 projects so far*
+*15 projects so far*
 
+- [claude_usage](https://github.com/thiswillbeyourgithub/claude_usage): Small Python script that fetches your Claude.ai plan usage (the same data shown by Claude Code's `/usage` command) and prints it as JSON, ready to pipe into `jq`, dashboards or status bars.
 - [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): Record, store, and replay mouse automation sequences with integrated OCR.
 - [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Advanced command-line tool for automated webpage archival to PDF with metadata extraction and seamless integration into Zotero's reference management system across multiple devices.
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.

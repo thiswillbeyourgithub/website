@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 113*
+*Nombre de projets individuels sur cette page : 114*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -130,8 +130,9 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 ## Productivité
 *Outils que j'utilise, ai utilisés ou créés*
-*14 projets jusqu'à présent*
+*15 projets jusqu'à présent*
 
+- [claude_usage](https://github.com/thiswillbeyourgithub/claude_usage): Petit script Python qui récupère l'utilisation de votre plan Claude.ai (les mêmes données affichées par la commande `/usage` de Claude Code) et l'affiche en JSON, prêt à être passé dans `jq`, des tableaux de bord ou des barres de statut.
 - [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): Enregistrer, stocker et rejouer des séquences d'automatisation de la souris avec OCR intégré.
 - [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Outil en ligne de commande avancé pour l'archivage automatisé de pages Web en PDF avec extraction de métadonnées et intégration transparente dans le système de gestion de références Zotero sur plusieurs appareils.
 - [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Implémentation minimaliste de l'algorithme de priorisation de tâches basé sur ELO, permettant le classement automatisé des listes de tâches par comparaisons interactives et calculs de scores.
