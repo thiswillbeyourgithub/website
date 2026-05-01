@@ -77,7 +77,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 - [Stahl Ankifier](https://github.com/thiswillbeyourgithub/StahlAnkifier): *See above*
 - [Voice2Anki](https://github.com/thiswillbeyourgithub/Voice2Anki): Universal language learning tool combining speech recognition and AI to automatically generate and manage personalized flashcards from voice recordings with adaptive formatting and intelligent memory features.
-- [AnkiAiUtils](https://github.com/thiswillbeyourgithub/AnkiAIUtils)): Advanced toolkit that enhances Anki flashcards through automated AI-powered generation of explanations, mnemonics, illustrations and reformulations, with support for personalized memory systems and semantic similarity matching.
+- [AnkiAiUtils](https://github.com/thiswillbeyourgithub/AnkiAIUtils): Advanced toolkit that enhances Anki flashcards through automated AI-powered generation of explanations, mnemonics, illustrations and reformulations, with support for personalized memory systems and semantic similarity matching.
 - [AnnA_anki_neuronal_Appendix](https://github.com/thiswillbeyourgithub/AnnA_Anki_neuronal_Appendix): Machine learning system that optimizes Anki flashcard review order by analyzing semantic similarities to prevent reviewing related cards together, improving retention while reducing daily workload.
 - [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): Library that simplifies interaction with Anki flashcard software through its AnkiConnect API, offering both command-line and Python interfaces.
 - [AnkiAutoMindmap](https://github.com/thiswillbeyourgithub/AnkiAutoMindmap): Tool for automated generation of mindmaps and mermaid diagrams based on Anki flashcard content and tag hierarchies.
