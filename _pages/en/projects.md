@@ -29,6 +29,12 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 </ul>
 </details>
 
+<details><summary><i>A note on "vibecoding"</i></summary>
+<ul>
+    <li><i>I am not <a href="https://simonwillison.net/2025/Mar/19/vibe-coding/">vibecoding</a> these projects. I don't generate them hands-free and ship whatever the model produces. I write careful technical specifications and take responsibility for every design decision behind the code. AI is a tool I drive, not an autopilot.</i></li>
+</ul>
+</details>
+
 <details><summary><i>A note on authorship</i></summary>
 <ul>
     <li><i>Although I've been using AI for many years, I didn't use it for coding until circa 2024. Since then, when I want AI-based assistance I almost exclusively use <a href="https://aider.chat/">aider</a> with the <b>--attribute-author</b> argument so you can see which projects and commits where done with or without it.</i></li>

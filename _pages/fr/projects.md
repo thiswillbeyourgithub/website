@@ -28,6 +28,12 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 </ul>
 </details>
 
+<details><summary><i>Une note sur le "vibecoding"</i></summary>
+<ul>
+    <li><i>Je ne fais pas de <a href="https://simonwillison.net/2025/Mar/19/vibe-coding/">vibecoding</a> sur ces projets. Je ne les génère pas en mode mains libres en publiant ce que le modèle produit. J'écris des spécifications techniques soignées et j'assume la responsabilité de chaque décision de conception derrière le code. L'IA est un outil que je pilote, pas un pilote automatique.</i></li>
+</ul>
+</details>
+
 <details><summary><i>Une note sur la paternité</i></summary>
 <ul>
     <li><i>Bien que j'utilise l'IA depuis de nombreuses années, je ne l'ai pas utilisée pour coder avant environ 2024. Depuis, lorsque je veux une assistance basée sur l'IA, j'utilise presque exclusivement <a href="https://aider.chat/">aider</a> avec l'argument <b>--attribute-author</b> afin que vous puissiez voir quels projets et commits ont été réalisés avec ou sans.</i></li>
