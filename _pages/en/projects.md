@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 114*
+*Individual project count on this page: 115*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -177,7 +177,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*42 projects so far*
+*43 projects so far*
+- [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): A small script that flattens both legacy and threaded `.xlsx` cell comments directly into each cell's text, so they remain visible in viewers (like Nextcloud's mobile renderer) that don't display threaded comments.
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): Securely encrypt and decrypt environment variables with a simple shell script for enhanced privacy.
 - [ufw-docker-recap](https://github.com/thiswillbeyourgithub/ufw-docker-recap): Analyze and cross-reference Docker container port exposures with `ufw-docker` rules to enhance security.
 - [ntrig-calib](https://github.com/thiswillbeyourgithub/ntrig-calib): Reverse engineering tool to restore Surface Pro 3 touchscreen by modifying N-Trig calibration binaries.

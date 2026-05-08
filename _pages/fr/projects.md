@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 114*
+*Nombre de projets individuels sur cette page : 115*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -176,7 +176,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Outil de surveillance de films qui vérifie automatiquement les listes de cinéma pour des films spécifiques et envoie des notifications lorsqu'ils deviennent disponibles.
 
 ## Outils Divers
-*42 projets jusqu'à présent*
+*43 projets jusqu'à présent*
+- [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): Un petit script qui aplatit les commentaires de cellules `.xlsx` (anciens et fils de discussion) directement dans le texte de chaque cellule, afin qu'ils restent visibles dans les visionneuses (comme le rendu mobile de Nextcloud) qui n'affichent pas les commentaires en fil.
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): Chiffrez et déchiffrez en toute sécurité vos variables d'environnement avec un simple script shell pour une confidentialité renforcée.
 - [ufw-docker-recap](https://github.com/thiswillbeyourgithub/ufw-docker-recap): Analyser et recouper les expositions de ports des conteneurs Docker avec les règles `ufw-docker` pour améliorer la sécurité.
 - [ntrig-calib](https://github.com/thiswillbeyourgithub/ntrig-calib): Outil d'ingénierie inverse pour restaurer l'écran tactile du Surface Pro 3 en modifiant les binaires d'étalonnage N-Trig.
