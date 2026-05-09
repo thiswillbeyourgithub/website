@@ -14,6 +14,9 @@ Ma présentation plus formelle est à [CV](../fr/cv).
 
 Je fais de mon mieux pour maintenir une page listant les outils que j'utilise pendant mon internat de psychiatrie : [OUTILS](./tools).
 
+*Si quelque chose sur cette page vous parle, n'hésitez pas à [me contacter](./contact). Je suis ouvert à toutes sortes de collaborations : rémunérées ou bénévoles, petites questions ponctuelles ou vrais projets de recherche, et tout ce qui se trouve entre les deux. Mon « expertise » est en grande partie autodidacte, mais je préfère entendre votre idée et vous le dire honnêtement plutôt que vous ne demandiez pas.*
+{: .notice--info}
+
 
 ## Contexte
 
