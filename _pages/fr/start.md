@@ -20,3 +20,6 @@ Pour une présentation informelle et ce que je fais actuellement : [À PROPOS](.
 Pour une liste de mes projets : [PROJETS](./projects).
 
 Pour une liste des outils potentiellement utiles pendant mon internat de psychiatre : [OUTILS](./tools).
+
+*Quelle que soit la raison de votre passage ici, n'hésitez pas à [me contacter](./contact). Je suis vraiment ouvert à toutes sortes de collaborations : rémunérées ou bénévoles, modestes ou ambitieuses, vrais projets de recherche ou simplement un deuxième avis sur quelque chose qui vous bloque. Mon « expertise » est en grande partie autodidacte, mais si je peux vous aider, ce sera avec plaisir.*
+{: .notice--info}
