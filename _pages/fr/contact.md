@@ -8,6 +8,9 @@ lang: fr
 
 {% include french_translation_disclaimer.md %}
 
+**Ouvert aux collaborations.** *Si vous êtes arrivé ici depuis une autre page de ce site, n'hésitez surtout pas à me contacter. Je suis vraiment ouvert à toutes sortes de collaborations : rémunérées ou bénévoles, petites questions ponctuelles ou vrais projets de recherche, et tout ce qui se trouve entre les deux. Mon « expertise » est en grande partie autodidacte, mais je préfère entendre votre idée et vous le dire honnêtement plutôt que vous ne demandiez pas.*
+{: .notice--purple}
+
 Je communique presque exclusivement par [Signal](https://en.wikipedia.org/wiki/Signal_(software)) et e-mail.
 
 {% include toc %}

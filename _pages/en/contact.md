@@ -10,6 +10,9 @@ redirect_from:
 lang: en
 ---
 
+**Open for collaborations.** *If you landed here from somewhere on this site, please don't hesitate to reach out. I'm genuinely open to all sorts of collaborations: paid or pro bono, small one-off questions or full-blown research projects, and everything in between. My "expertise" is largely self-taught, but I'd rather hear about your idea and tell you honestly than have you not ask.*
+{: .notice--purple}
+
 I communicate almost exclusively using [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and email.
 
 {% include toc %}
