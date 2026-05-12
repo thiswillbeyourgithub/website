@@ -50,6 +50,9 @@ Je suis enthousiaste quant à la façon dont la recherche en IA fera progresser 
 En même temps, les observations cliniques de la psychiatrie pourraient éclairer des systèmes d'IA plus robustes et interprétables qui servent mieux les besoins humains.
 
 ## Choses que j'aime
+
+*Sans ordre particulier :*
+
 - L'[innovation frugale](https://fr.wikipedia.org/wiki/Innovation_frugale). L'idée que des personnes [agiles](https://fr.wikipedia.org/wiki/M%C3%A9thode_agile) et polyvalentes puissent parfois construire des choses utiles avec peu de moyens.
 - La médecine. À la fois pour aider les autres et pour [mieux se connaitre](https://fr.wikipedia.org/wiki/Gnothi_seauton).
 - Les logiciels/matériels [open source](https://en.wikipedia.org/wiki/Free_and_open-source_software) ([y compris ce site web](https://github.com/thiswillbeyourgithub/website)). Je fais partie d'[InterHop](https://interhop.org/nous/) (et suis aussi donateur !).
