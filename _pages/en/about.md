@@ -14,8 +14,8 @@ A more formal introduction is at [CV](../en/cv).
 
 I try my best to maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools).
 
-*If anything on this page resonates, please [get in touch](./contact). I'm open to all sorts of collaborations: paid or pro bono, small one-off questions or full-blown research projects, and everything in between. My "expertise" is largely self-taught, but I'd rather hear about your idea and tell you honestly than have you not ask.*
-{: .notice--info}
+**Open for collaborations.** *If anything on this page resonates, please [get in touch](./contact). I'm open to all sorts of collaborations: paid or pro bono, small one-off questions or full-blown research projects, and everything in between. My "expertise" is largely self-taught, but I'd rather hear about your idea and tell you honestly than have you not ask.*
+{: .notice--purple}
 
 
 ## Context
