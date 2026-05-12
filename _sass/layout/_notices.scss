@@ -98,3 +98,10 @@
 .notice--danger {
   @include notice($danger-color);
 }
+
+/* Purple notice (slick left-border callout) */
+
+.notice--purple {
+  @include notice(#4b0082);
+  border-left: 4px solid #4b0082;
+}

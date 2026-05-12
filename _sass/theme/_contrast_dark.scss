@@ -107,6 +107,12 @@ html[data-theme="dark"] {
       color: #{$text};
       border-color: #{$text};
     }
+
+    .notice--purple {
+      background-color: mix($background, #4b0082, 80%);
+      color: #{$text};
+      border-left: 4px solid #b39ddb;
+    }
   }
 
   .page__footer {

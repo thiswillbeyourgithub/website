@@ -80,9 +80,14 @@ $sidebar-screen-min-width   : 1024px;
   .notice--info,
   .notice--warning,
   .notice--success,
-  .notice--danger {
+  .notice--danger,
+  .notice--purple {
     color: #{$text};
     border-color: #{$text};
+  }
+
+  .notice--purple {
+    border-left: 4px solid #4b0082;
   }
 }
 
