@@ -50,6 +50,7 @@ I'm excited about how AI research will advance psychiatry research, improving pa
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
 ## Things I love
+- [Frugal innovation](https://en.wikipedia.org/wiki/Frugal_innovation). The idea that small, [agile](https://en.wikipedia.org/wiki/Agile_software_development), multitasking people can occasionally build useful things with limited means.
 - Medicine. Both to help others and to [know thyself](https://en.wikipedia.org/wiki/Know_thyself).
 - [Open source](https://en.wikipedia.org/wiki/Free_and_open-source_software) software/hardware ([including this very website](https://github.com/thiswillbeyourgithub/website)). I am part of [InterHop](https://interhop.org/nous/) (and donator as well!).
 - When building blocks I've participated in have positive [compounding effects](https://en.wikipedia.org/wiki/Compound_interest).
