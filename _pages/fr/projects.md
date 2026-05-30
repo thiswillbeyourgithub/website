@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 115*
+*Nombre de projets individuels sur cette page : 116*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -52,7 +52,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine / Science Informatique / Gros projets
-*22 projets jusqu'à présent*
+*23 projets jusqu'à présent*
+- [AiFormParser](https://github.com/thiswillbeyourgithub/AiFormParser): Application web respectueuse de la vie privée qui extrait des questionnaires cliniques papier vers des fichiers .csv ou Excel entièrement dans le navigateur, en utilisant [pdf.js](https://mozilla.github.io/pdf.js/), [tesseract.js](https://github.com/naptha/tesseract.js) et [wllama](https://github.com/ngxson/wllama) pour l'OCR et le traitement LLM côté client. Un administrateur définit des modèles de questionnaires via des boîtes englobantes, puis les chercheurs téléversent les formulaires remplis pour obtenir des exports de données structurées. Les données patient ne quittent jamais le navigateur, le serveur ne stocke que les modèles vierges.
 - [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): Une API basée sur FastAPI pour l'anonymisation des PII (Personally Identifiable Information, soit les informations personnelles identifiables) utilisant des LLM locaux ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) avec compatibilité [Presidio](https://microsoft.github.io/presidio/) et une flexibilité améliorée de définition des entités.
     - [PII French Medical Test Suite](https://github.com/thiswillbeyourgithub/PII_french_medical_test_suite): Un outil de test en Python pour évaluer la détection de données personnelles (PII) par Microsoft Presidio dans des textes médicaux français, avec analyse détaillée et métriques.
 - [SAM3-Skin-HeartRate](https://github.com/thiswillbeyourgithub/SAM3-Skin-HeartRate): Visualisation du flux sanguin à partir d'un flux caméra par photopléthysmographie à distance et segmentation automatique de la peau via SAM 3.

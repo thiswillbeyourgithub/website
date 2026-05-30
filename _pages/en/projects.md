@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 115*
+*Individual project count on this page: 116*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -53,7 +53,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {% include toc_wide %}
 
 ## Medicine / Computer Science / Larger projects
-*22 projects so far*
+*23 projects so far*
+- [AiFormParser](https://github.com/thiswillbeyourgithub/AiFormParser): Privacy-preserving web app that extracts paper clinical surveys into .csv or Excel files entirely in the browser, using [pdf.js](https://mozilla.github.io/pdf.js/), [tesseract.js](https://github.com/naptha/tesseract.js) and [wllama](https://github.com/ngxson/wllama) for client-side OCR and LLM processing. An administrator defines survey templates via bounding boxes, then researchers upload completed forms to get structured data exports. Patient data never leaves the browser, the server only stores the blank templates.
 - [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): A FastAPI-based API for PII (Personally Identifiable Information) anonymization using local LLMs ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) with [Presidio](https://microsoft.github.io/presidio/) compatibility and enhanced entity definition flexibility.
     - [PII French Medical Test Suite](https://github.com/thiswillbeyourgithub/PII_french_medical_test_suite): A Python-based test runner for assessing Microsoft Presidio's PII detection in French medical text, complete with detailed analysis and metrics.
 - [SAM3-Skin-HeartRate](https://github.com/thiswillbeyourgithub/SAM3-Skin-HeartRate): Visualizing blood flow from a camera feed using remote photoplethysmography and automatic skin segmentation powered by SAM 3.
