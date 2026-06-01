@@ -126,13 +126,26 @@ blockquote {
 /* links */
 
 a {
-  &:focus {
-    @extend %tab-focus;
-  }
-
   &:hover,
   &:active {
     outline: 0;
+  }
+}
+
+/* Visible keyboard focus indicator: a clear, high-contrast ring shown to
+   keyboard and assistive-tech users on every interactive element. Uses the
+   theme text colour so it always contrasts against the background, in every
+   theme. :focus-visible keeps the ring off mouse and touch interactions. */
+a,
+button,
+input,
+textarea,
+select,
+summary,
+[tabindex] {
+  &:focus-visible {
+    outline: 3px solid var(--global-text-color);
+    outline-offset: 2px;
   }
 }
 

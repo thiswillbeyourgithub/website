@@ -222,6 +222,12 @@ textarea[readonly] {
 input:focus,
 textarea:focus {
   border-color: var(--global-border-color);
+}
+
+/* Only suppress the outline for pointer focus; keyboard focus keeps the
+   global :focus-visible ring defined in _base.scss. */
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
   outline: 0;
   outline: thin dotted \9;
 }
