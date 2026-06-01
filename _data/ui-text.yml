@@ -3,6 +3,7 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+  skip_to_content            : "Skip to main content"
   page                       : "Page"
   pagination_previous        : "Previous"
   pagination_next            : "Next"
@@ -105,6 +106,7 @@ es-CO:
 # French
 # -----------------
 fr: &DEFAULT_FR
+  skip_to_content            : "Aller au contenu principal"
   page                       : "Page"
   pagination_previous        : "Précédent"
   pagination_next            : "Suivant"

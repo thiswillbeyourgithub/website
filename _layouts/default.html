@@ -13,6 +13,9 @@ layout: compress
 
   <body>
 
+    {% assign page_lang = page.lang | default: site.locale | slice: 0,2 | default: 'en' %}
+    <a class="skip-link" href="#main">{{ site.data.ui-text[page_lang].skip_to_content | default: "Skip to main content" }}</a>
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 

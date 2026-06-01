@@ -345,6 +345,25 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   transition: $global-transition;
 }
 
+/* Skip link: off-screen until it receives keyboard focus, so keyboard and
+   screen-reader users can jump past the repeated navigation. */
+.skip-link {
+  position: absolute;
+  top: -4em;
+  left: 0.5em;
+  z-index: 1000;
+  padding: 0.5em 1em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.2s ease;
+
+  &:focus {
+    top: 0;
+  }
+}
+
 /* Respect the user's reduced-motion preference: cut animation and smooth
    scrolling for people who get motion sickness or seizures from it. */
 @media (prefers-reduced-motion: reduce) {
