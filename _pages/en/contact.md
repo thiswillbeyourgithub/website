@@ -31,6 +31,6 @@ You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) pub
 Ranked by "highest probability I'll see your message" first:
 
 - On [Github](https://github.com) you can ping me using `@thiswillbeyourgithub` in any Github issue or discussion. I'll receive a priority e-mail to take a look. If you mind this communication being public, you can invite me to a private repo to chat via issues or discussions.
-- On [~~Bluesky~~ Eurosky](https://en.wikipedia.org/wiki/Bluesky) as [@olicorne.eurosky.social](https://bsky.app/profile/olicorne.eurosky.social). To migrate from Bluesky to Eurosky in a few minutes: [Click here](https://eurosky.tech/accounts/migrate).
+- On [~~Bluesky~~ Eurosky](https://en.wikipedia.org/wiki/Bluesky) as [@olicorne.eurosky.social](https://bsky.app/profile/olicorne.eurosky.social). To migrate from Bluesky to Eurosky in a few minutes, use the [Eurosky migration tool](https://eurosky.tech/accounts/migrate).
 - On [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)) as [@olicorne@mastodon.pirateparty.be](https://mastodon.pirateparty.be/@olicorne)
-- On [simplex-chat](https://github.com/simplex-chat/simplex-chat) via [this link](https://smp8.simplex.im/a#zhJ22L47TjVY2dY_SsMv8v0JqsSwzQ-Qp0kbGO1nUo4) or [this QR Code](https://olicorne.org/images/simplex.png).
+- On [simplex-chat](https://github.com/simplex-chat/simplex-chat) via [my SimpleX invite link](https://smp8.simplex.im/a#zhJ22L47TjVY2dY_SsMv8v0JqsSwzQ-Qp0kbGO1nUo4) or [its QR code](https://olicorne.org/images/simplex.png).

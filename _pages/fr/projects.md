@@ -242,6 +242,6 @@ Voici une courte liste de certains projets auxquels j'ai contribué. Il peut s'a
 - [academicpages.github.io](https://github.com/academicpages/academicpages.github.io/issues?q=thiswillbeyourgithub): Ce site est un fork de academicpages. J'ai fait plusieurs contributions au cours du temps.
 - ...
 
-Si vous êtes intéressé par tous les issues Github que j'ai créés : [cliquez ici](https://github.com/search?q=author%3Athiswillbeyourgithub+&type=issues&query=author%3Athiswillbeyourgithub+is%3Aissue&s=created&o=desc).
+Vous pouvez consulter [tous les issues Github que j'ai créés](https://github.com/search?q=author%3Athiswillbeyourgithub+&type=issues&query=author%3Athiswillbeyourgithub+is%3Aissue&s=created&o=desc).
 
-Si vous êtes intéressé par toutes les pull requests que j'ai créées : [cliquez ici](https://github.com/search?q=author%3Athiswillbeyourgithub+&type=pullrequests&query=author%3Athiswillbeyourgithub+is%3Aissue&s=created&o=desc).
+Vous pouvez consulter [toutes les pull requests que j'ai créées](https://github.com/search?q=author%3Athiswillbeyourgithub+&type=pullrequests&query=author%3Athiswillbeyourgithub+is%3Aissue&s=created&o=desc).
