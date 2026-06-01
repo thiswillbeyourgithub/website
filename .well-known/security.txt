@@ -1,0 +1,7 @@
+# Security contact information for olicorne.org
+# Format: RFC 9116 (https://securitytxt.org)
+
+Contact: https://olicorne.org/en/contact
+Expires: 2027-06-01T00:00:00.000Z
+Preferred-Languages: en, fr
+Canonical: https://olicorne.org/.well-known/security.txt
