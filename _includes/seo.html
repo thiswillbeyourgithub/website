@@ -124,16 +124,21 @@
 <!-- end SEO -->
 
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
-<meta property="og:locale" content="{{ site.locale | default: 'en' }}">
-<meta property="og:site_name" content="{{ site.title }}"> 
+{% case page.lang %}
+  {% when 'fr' %}{% assign og_locale = 'fr_FR' %}
+  {% when 'en' %}{% assign og_locale = 'en_US' %}
+  {% else %}{% assign og_locale = site.locale | replace: '-', '_' | default: 'en_US' %}
+{% endcase %}
+<meta property="og:locale" content="{{ og_locale }}">
+<meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 {% if page.date %}
   <meta property="og:type" content="article">
+{% else %}
+  <meta property="og:type" content="website">
 {% endif %}
-{% if page.excerpt %}
-  <meta property="og:description" name="description" content="{{ seo_description }}">
-{% elsif site.og_description %}
-  <meta property="og:description" name="description" content="{{ site.og_description }}">
+{% if seo_description %}
+  <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 {% if seo_url %}
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: '/index.html', '/' }}">
@@ -154,5 +159,9 @@
   <meta property="og:image" content="{% if page.header.image contains '://' %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: '/images/' | prepend: base_path }}{% endif %}">
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains '://' %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: '/images/' | prepend: base_path }}{% endif %}">
+{% elsif site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | prepend: '/images/' | prepend: base_path }}">
+{% else %}
+  <meta property="og:image" content="{{ '/images/profile.png' | prepend: base_path }}">
 {% endif %}
 <!-- end Open Graph protocol -->
