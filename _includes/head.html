@@ -8,6 +8,28 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Resolve the analytics origin's DNS early; the script itself is deferred and non-critical -->
+<link rel="dns-prefetch" href="https://u.olicorne.org">
+
+<!-- Speculation Rules: prefetch same-origin pages on hover/pointerdown so
+     navigation feels instant. Ignored by browsers that don't support it. -->
+<script type="speculationrules">
+{
+  "prefetch": [
+    {
+      "where": {
+        "and": [
+          { "href_matches": "/*" },
+          { "not": { "href_matches": "/files/*" } },
+          { "not": { "href_matches": "/assets/*" } }
+        ]
+      },
+      "eagerness": "moderate"
+    }
+  ]
+}
+</script>
+
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
