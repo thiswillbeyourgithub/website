@@ -201,7 +201,9 @@
      button nested inside the links list. */
   > button {
     position: absolute;
-    height: 2.5rem;
+    /* WCAG 2.2 target size: comfortable 44x44 tap area. */
+    min-width: 2.75rem;
+    min-height: 2.75rem;
     right: 0;
     padding: 0 0.5rem;
     border: 0;
@@ -243,7 +245,10 @@
       button {
         margin: 0 1rem;
         padding: 0.5rem 0;
-        width: 25px;
+        /* WCAG 2.2 target size: comfortable 44x44 tap area for this icon-only
+           control. */
+        min-width: 2.75rem;
+        min-height: 2.75rem;
         display: flex;
         align-items: center;
         justify-content: center;
