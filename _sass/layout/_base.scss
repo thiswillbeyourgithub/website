@@ -5,6 +5,17 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+
+  /* Reserve space for the scrollbar so layout doesn't shift between pages
+     that overflow vertically and pages that don't. */
+  scrollbar-gutter: stable;
+}
+
+/* Cross-document View Transitions: animate navigation between pages with a
+   browser cross-fade. Progressive enhancement, ignored by browsers that
+   don't support it. Disabled below for prefers-reduced-motion users. */
+@view-transition {
+  navigation: auto;
 }
 
 body {
@@ -374,6 +385,14 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+
+  /* The universal selector above does not reach view-transition
+     pseudo-elements, so cut their cross-fade animation explicitly. */
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
   }
 }
 
