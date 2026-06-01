@@ -4,7 +4,8 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        {% assign masthead_lang = page.lang | default: 'en' %}
+        <button type="button" aria-label="{{ site.data.ui-text[masthead_lang].menu_toggle_label | default: 'Toggle menu' }}"><div class="navicon"></div></button>
         <ul class="visible-links">
           {% assign page_lang = page.lang | default: 'en' %}
           <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
