@@ -395,3 +395,35 @@ select:focus {
 #goog-wm-sb {
   @extend .btn;
 }
+
+
+/*
+   Comment form state feedback
+   Express validation and focus state in CSS using state and relational
+   selectors instead of JS class toggling. Only renders when the staticman
+   comment form is present.
+   ========================================================================== */
+
+.page__comments-form {
+  /* Highlight the label of the field group the user is working in. */
+  fieldset:focus-within label {
+    color: var(--global-link-color);
+  }
+
+  /* :user-invalid / :user-valid (unlike :invalid) only apply after the user
+     has interacted with and left the field, so errors don't show prematurely. */
+  input:user-invalid,
+  textarea:user-invalid {
+    border-color: $danger-color;
+  }
+
+  input:user-valid,
+  textarea:user-valid {
+    border-color: $success-color;
+  }
+
+  /* Emphasise labels of required fields via a relational selector. */
+  fieldset:has(input[required], textarea[required]) label {
+    font-weight: bold;
+  }
+}
