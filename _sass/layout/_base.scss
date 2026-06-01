@@ -345,6 +345,19 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   transition: $global-transition;
 }
 
+/* Respect the user's reduced-motion preference: cut animation and smooth
+   scrolling for people who get motion sickness or seizures from it. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ==========================================================================
    PRINT STYLES
    ========================================================================== */
