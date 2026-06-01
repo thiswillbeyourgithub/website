@@ -1,0 +1,25 @@
+---
+permalink: /llms.txt
+sitemap: false
+---
+# Olivier Cornelis
+
+> Psychiatry resident and self-taught developer / data scientist based in Paris, France. This site is his academic and personal portfolio, available in English and French.
+
+## Main pages (English)
+
+- [About]({{ site.url }}/en/about): Background, training, and clinical and technical interests.
+- [CV]({{ site.url }}/en/cv): International curriculum vitae.
+- [Papers]({{ site.url }}/en/papers): Academic publications.
+- [Projects]({{ site.url }}/en/projects): Open-source software and data-science projects.
+- [Tools]({{ site.url }}/en/tools): Small tools and utilities.
+- [Contact]({{ site.url }}/en/contact): How to get in touch.
+
+## French versions
+
+Every page above has a French translation under {{ site.url }}/fr/ (for example {{ site.url }}/fr/about).
+
+## Feeds and metadata
+
+- [Atom feed]({{ site.url }}/feed.xml): Latest posts.
+- [Sitemap]({{ site.url }}/sitemap.xml): All indexable URLs.
