@@ -1,5 +1,22 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<!-- Accessible tables: kramdown emits <th> without a scope attribute. Add
+     scope="col" to header-row cells and scope="row" to any leading row header
+     so screen readers announce row and column relationships. No-op on pages
+     with no tables. -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.page__content table').forEach(function (table) {
+    table.querySelectorAll('thead th').forEach(function (th) {
+      if (!th.hasAttribute('scope')) { th.setAttribute('scope', 'col'); }
+    });
+    table.querySelectorAll('tbody tr > th:first-child').forEach(function (th) {
+      if (!th.hasAttribute('scope')) { th.setAttribute('scope', 'row'); }
+    });
+  });
+});
+</script>
+
 {% include analytics.html %}
 
 <!-- https://github.com/academicpages/academicpages.github.io/pull/3567/changes/ -->
