@@ -197,7 +197,9 @@
     }
   }
 
-  button {
+  /* Direct child only: this is the hamburger toggle, not the theme-toggle
+     button nested inside the links list. */
+  > button {
     position: absolute;
     height: 2.5rem;
     right: 0;
@@ -237,11 +239,23 @@
     }
 
     #theme-toggle {
-      a {
+      /* Native <button>, reset to look like the surrounding nav links. */
+      button {
+        margin: 0 1rem;
+        padding: 0.5rem 0;
         width: 25px;
         display: flex;
+        align-items: center;
         justify-content: center;
+        background: none;
+        border: 0;
+        color: var(--global-masthead-link-color);
+        font-size: inherit;
         cursor: pointer;
+
+        &:hover {
+          color: var(--global-masthead-link-color-hover);
+        }
       }
     }
 

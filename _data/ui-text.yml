@@ -5,6 +5,7 @@
 en: &DEFAULT_EN
   skip_to_content            : "Skip to main content"
   menu_toggle_label          : "Toggle menu"
+  theme_toggle_label         : "Toggle light or dark theme"
   page                       : "Page"
   pagination_previous        : "Previous"
   pagination_next            : "Next"
@@ -109,6 +110,7 @@ es-CO:
 fr: &DEFAULT_FR
   skip_to_content            : "Aller au contenu principal"
   menu_toggle_label          : "Afficher le menu"
+  theme_toggle_label         : "Basculer le thème clair ou sombre"
   page                       : "Page"
   pagination_previous        : "Précédent"
   pagination_next            : "Suivant"
