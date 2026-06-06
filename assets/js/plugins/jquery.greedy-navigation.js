@@ -10,7 +10,11 @@
 */
 
 var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
+// Direct child only: the hamburger toggle. The theme-toggle is now a native
+// <button> nested inside .visible-links, so an unscoped '#site-nav button'
+// selector would also match it and hide it (and its sun/moon icon) whenever
+// updateNav() adds the 'hidden' class.
+var $btn = $('#site-nav > button');
 var $vlinks = $('#site-nav .visible-links');
 var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
 var $hlinks = $('#site-nav .hidden-links');
