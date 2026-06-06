@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 116*
+*Nombre de projets individuels sur cette page : 117*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -52,7 +52,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine / Science Informatique / Gros projets
-*23 projets jusqu'à présent*
+*24 projets jusqu'à présent*
+- [parakeet-tdt-0.6b-v3-smoothquant-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-smoothquant-onnx): Export ONNX quantifié avec SmoothQuant du modèle de reconnaissance vocale [Parakeet TDT 0.6b v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) de NVIDIA, hébergé sur [HuggingFace](https://huggingface.co/). Une version plus petite et plus rapide à exécuter, destinée à la transcription dans le navigateur (voir [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web) ci-dessous).
 - [AiFormParser](https://github.com/thiswillbeyourgithub/AiFormParser): Application web respectueuse de la vie privée qui extrait des questionnaires cliniques papier vers des fichiers .csv ou Excel entièrement dans le navigateur, en utilisant [pdf.js](https://mozilla.github.io/pdf.js/), [tesseract.js](https://github.com/naptha/tesseract.js) et [wllama](https://github.com/ngxson/wllama) pour l'OCR et le traitement LLM côté client. Un administrateur définit des modèles de questionnaires via des boîtes englobantes, puis les chercheurs téléversent les formulaires remplis pour obtenir des exports de données structurées. Les données patient ne quittent jamais le navigateur, le serveur ne stocke que les modèles vierges.
 - [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): Une API basée sur FastAPI pour l'anonymisation des PII (Personally Identifiable Information, soit les informations personnelles identifiables) utilisant des LLM locaux ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) avec compatibilité [Presidio](https://microsoft.github.io/presidio/) et une flexibilité améliorée de définition des entités.
     - [PII French Medical Test Suite](https://github.com/thiswillbeyourgithub/PII_french_medical_test_suite): Un outil de test en Python pour évaluer la détection de données personnelles (PII) par Microsoft Presidio dans des textes médicaux français, avec analyse détaillée et métriques.
