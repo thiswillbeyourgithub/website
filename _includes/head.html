@@ -8,6 +8,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Controls how much URL info is leaked in the Referer header on outbound
+     navigations and subresources. Does not affect umami: its script reads
+     document.referrer in JS and sends it in the request body, not the header. -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
 <!-- Resolve the analytics origin's DNS early; the script itself is deferred and non-critical -->
 <link rel="dns-prefetch" href="https://u.olicorne.org">
 
