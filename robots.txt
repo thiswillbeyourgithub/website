@@ -1,0 +1,59 @@
+# robots.txt for olicorne.org
+# jekyll-sitemap only generates robots.txt when one does not already exist, so
+# it will NOT inject the Sitemap line into this file. Keep the line below by hand.
+
+# Default: everything is crawlable.
+User-agent: *
+Allow: /
+
+Sitemap: https://olicorne.org/sitemap.xml
+
+# Content signals (IETF AI Preferences / IAB Tech Lab proposal).
+# Declares how crawlers may use this content: all uses permitted.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+# Named AI crawlers, declared explicitly and allowed.
+# Listing each one makes the allow stance unambiguous for agents that
+# look for their own user-agent group rather than falling back to "*".
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
