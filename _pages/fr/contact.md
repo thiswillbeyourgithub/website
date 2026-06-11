@@ -20,6 +20,8 @@ Utilisez "`mail` le symbole @ `oliviercornelis.fr`".
 
 Comme afficher cette adresse sur cette page web invite beaucoup de spam, envisagez de me contacter par d'autres moyens.
 
+Pour ceux qui, comme moi, sont soucieux de leur vie privée : mon adresse est actuellement hébergée chez [Proton Mail](https://proton.me/mail), donc si vous m'écrivez depuis un compte Proton (un compte gratuit suffit), toute la conversation est automatiquement chiffrée de bout en bout, sans acrobaties PGP.
+
 
 Vous pouvez télécharger ma clé publique [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) ici : [Clé publique PGP](../files/PGP_public_key)  (empreinte : `2d865b11d32836fdf346cb4cdd066352a75a462b`).
 

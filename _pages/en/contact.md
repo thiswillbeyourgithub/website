@@ -22,6 +22,8 @@ Use "`mail` the @ symbol `oliviercornelis.fr`".
 
 As exposing this address on this webpage invites lots of spam, consider reaching out via other means.
 
+For the privacy-minded like me: my address is currently hosted at [Proton Mail](https://proton.me/mail), so if you email me from a Proton account (a free one is fine), the whole conversation is end-to-end encrypted automatically, no PGP gymnastics required.
+
 
 You can download my [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) public key here: [PGP Public Key](../files/PGP_public_key) (fingerprint: `2d865b11d32836fdf346cb4cdd066352a75a462b`).
 
