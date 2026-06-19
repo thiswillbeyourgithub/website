@@ -15,7 +15,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 117*
+*Individual project count on this page: 118*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -53,7 +53,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {% include toc_wide %}
 
 ## Medicine / Computer Science / Larger projects
-*24 projects so far*
+*25 projects so far*
+- [neurarium](https://github.com/thiswillbeyourgithub/neurarium): An interactive 3D brain visualization for exploring neuroanatomy and connectivity directly in the browser. Brain regions appear as 3D shapes and their projections as color-coded arrows (excitatory, inhibitory, dopaminergic), with controls for rotation, zoom, transparency slicing and region separation. Built without a framework or build process: vanilla JavaScript, locally vendored [three.js](https://threejs.org/), Python-generated data, and a security-hardened Caddy deployment with a strict CSP.
 - [parakeet-tdt-0.6b-v3-smoothquant-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-smoothquant-onnx): A faster, more accurate and more compact [SmoothQuant](https://github.com/mit-han-lab/smoothquant) quantization of NVIDIA's [Parakeet TDT 0.6b v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) speech recognition model, improving on the widely used [reference ONNX export](https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx) by [@istupakov](https://huggingface.co/istupakov). Meant for in-browser transcription (see [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web) and [murmure](https://github.com/Kieirra/murmure) below).
 - [AiFormParser](https://github.com/thiswillbeyourgithub/AiFormParser): Privacy-preserving web app that extracts paper clinical surveys into .csv or Excel files entirely in the browser, using [pdf.js](https://mozilla.github.io/pdf.js/), [tesseract.js](https://github.com/naptha/tesseract.js) and [wllama](https://github.com/ngxson/wllama) for client-side OCR and LLM processing. An administrator defines survey templates via bounding boxes, then researchers upload completed forms to get structured data exports. Patient data never leaves the browser, the server only stores the blank templates.
 - [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): A FastAPI-based API for PII (Personally Identifiable Information) anonymization using local LLMs ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) with [Presidio](https://microsoft.github.io/presidio/) compatibility and enhanced entity definition flexibility.

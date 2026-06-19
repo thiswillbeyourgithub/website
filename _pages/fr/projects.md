@@ -14,7 +14,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 117*
+*Nombre de projets individuels sur cette page : 118*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -52,7 +52,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 {% include toc_wide %}
 
 ## Médecine / Science Informatique / Gros projets
-*24 projets jusqu'à présent*
+*25 projets jusqu'à présent*
+- [neurarium](https://github.com/thiswillbeyourgithub/neurarium): Une visualisation 3D interactive du cerveau pour explorer la neuroanatomie et la connectivité directement dans le navigateur. Les régions cérébrales apparaissent sous forme de formes 3D et leurs projections sous forme de flèches colorées selon le type de neurone (excitateur, inhibiteur, dopaminergique), avec des contrôles pour la rotation, le zoom, la coupe par transparence et la séparation des régions. Conçu sans framework ni étape de build : JavaScript vanilla, [three.js](https://threejs.org/) intégré localement, données générées par des scripts Python, et un déploiement Caddy renforcé sur le plan de la sécurité avec une CSP stricte.
 - [parakeet-tdt-0.6b-v3-smoothquant-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-smoothquant-onnx): Une quantification [SmoothQuant](https://github.com/mit-han-lab/smoothquant) plus rapide, plus précise et plus compacte du modèle de reconnaissance vocale [Parakeet TDT 0.6b v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) de NVIDIA, qui améliore l'[export ONNX de référence](https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx) largement utilisé de [@istupakov](https://huggingface.co/istupakov). Destinée à la transcription dans le navigateur (voir [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web) et [murmure](https://github.com/Kieirra/murmure) ci-dessous).
 - [AiFormParser](https://github.com/thiswillbeyourgithub/AiFormParser): Application web respectueuse de la vie privée qui extrait des questionnaires cliniques papier vers des fichiers .csv ou Excel entièrement dans le navigateur, en utilisant [pdf.js](https://mozilla.github.io/pdf.js/), [tesseract.js](https://github.com/naptha/tesseract.js) et [wllama](https://github.com/ngxson/wllama) pour l'OCR et le traitement LLM côté client. Un administrateur définit des modèles de questionnaires via des boîtes englobantes, puis les chercheurs téléversent les formulaires remplis pour obtenir des exports de données structurées. Les données patient ne quittent jamais le navigateur, le serveur ne stocke que les modèles vierges.
 - [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): Une API basée sur FastAPI pour l'anonymisation des PII (Personally Identifiable Information, soit les informations personnelles identifiables) utilisant des LLM locaux ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) avec compatibilité [Presidio](https://microsoft.github.io/presidio/) et une flexibilité améliorée de définition des entités.
