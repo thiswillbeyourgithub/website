@@ -48,7 +48,7 @@ en: &DEFAULT_EN
   fork_of                    : "a fork of"
   author_bio                 : "Psychiatry resident & self-taught developer / data scientist."
   author_location            : "Paris, France"
-  author_employer            : "AP-HP"
+  author_employer            : "Paris hospitals (6-month rotations)"
   view_page_source           : "View page source"
   hosted_location              : "Hosted in France"
 en-US:
@@ -153,7 +153,7 @@ fr: &DEFAULT_FR
   fork_of                    : "un fork de"
   author_bio                 : "Médecin Psychiatre (interne) & développeur / data scientist autodidacte."
   author_location            : "Paris, France"
-  author_employer            : "AP-HP"
+  author_employer            : "Hôpitaux parisiens (par semestre)"
   view_page_source           : "Voir le code source"
   hosted_location              : "Hébergé en France"
 fr-FR:
