@@ -10,6 +10,8 @@ lang: fr
 
 Sur cette page, vous pouvez lire la liste exhaustive des projets de programmation que j'ai créés au fil des années. Elle est assez longue, utilisez donc la table des matières ci-dessous pour naviguer.
 
+Si vous êtes curieux de mes compétences avant l'IA, mon projet « manuel » le plus ambitieux est sans doute [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). D'autres exemples sont [AnnA_Anki_neuronal_Appendix](https://github.com/thiswillbeyourgithub/AnnA_Anki_neuronal_Appendix) et [AnkiAIUtils](https://github.com/thiswillbeyourgithub/AnkiAIUtils).
+
 Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbeyourgithub/):
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)

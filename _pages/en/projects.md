@@ -11,6 +11,8 @@ redirect_from:
 
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
 
+If you're curious about my skills before AI, my most ambitious "manual" project is arguably [wdoc](https://github.com/thiswillbeyourgithub/wdoc/). Other examples are [AnnA_Anki_neuronal_Appendix](https://github.com/thiswillbeyourgithub/AnnA_Anki_neuronal_Appendix) and [AnkiAIUtils](https://github.com/thiswillbeyourgithub/AnkiAIUtils).
+
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
