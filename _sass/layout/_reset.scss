@@ -66,11 +66,7 @@ audio:not([controls]) {
   display: none;
 }
 
-a,
-a:visited {
-  /* Keep visited links the same theme-aware blue as unvisited ones, so they
-     stay legible in dark mode instead of falling back to the browser's default
-     deep-purple :visited colour. */
+a {
   color: var(--global-link-color);
 }
 
