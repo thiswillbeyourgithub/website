@@ -49,6 +49,7 @@ redirect_from:
 # Formation
 * Diplôme d'Étude Spécialisée (DES) de psychiatrie - depuis 2025
     * Université Paris Cité, psychiatrie Paris
+    * Validation du séminaire optionnel de neuropsychiatrie « Approche neuro-psychiatrique des troubles du comportement », Pr Philippe Fossati, Groupe Hospitalier Pitié-Salpêtrière (Paris) - 2026
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
     * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
