@@ -45,10 +45,13 @@
   }
 
   a {
-    color: $notice-color;
+    /* Use the theme link colour (light/dark aware) instead of the notice's own
+       colour, so links stay legible on every notice background, e.g. the
+       deep-purple .notice--purple block in dark mode. */
+    color: var(--global-link-color);
 
     &:hover {
-      color: mix(#000, $notice-color, 40%);
+      color: var(--global-link-color-hover);
     }
   }
 
