@@ -28,3 +28,6 @@ deploy.sh
 _drafts
 _posts/*/*draft.md
 CLAUDE.md
+.serena
+.tokensave
+TODO.md
