@@ -16,7 +16,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 119*
+*Nombre de projets individuels sur cette page : 120*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -126,8 +126,10 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 ## Smartwatch
 *Principalement pour [wasp-os](https://github.com/wasp-os/wasp-os) sur la [pinetime](https://pine64.org/devices/pinetime/)*
-*2 projets jusqu'à présent*
+*3 projets jusqu'à présent*
 
+- [InfiniSleep-tracking](https://github.com/thiswillbeyourgithub/InfiniSleep-tracking): Mon propre fork d'[InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime), le firmware C++ de la [PineTime](https://www.pine64.org/pinetime/). Il embarque [la PR InfiniSleep de cyberneel](https://github.com/InfiniTimeOrg/InfiniTime/pull/2174) (elle-même issue d'une prime que j'ai payée pour porter [SleepTk](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker) de micropython vers C++) ainsi que mes propres modifications pour exporter les données de sommeil.
+    - J'utilise [ce fork de Gadgetbridge](https://codeberg.org/thiswillbeyourgithub/Gadgetbridge-infinisleep-tracking) pour récupérer les données depuis la montre.
 - [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): *Voir ci-dessus*
 - [pomodoro_wasp_os](https://github.com/thiswillbeyourgithub/Pomodoro-wasp-os): Application de minuteur Pomodoro personnalisable pour les montres intelligentes PineTime avec plusieurs préréglages, modèles de vibration et paramètres persistants.
 
