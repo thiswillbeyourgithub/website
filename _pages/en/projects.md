@@ -126,7 +126,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [openwebui_custom_pipes_filters](https://github.com/thiswillbeyourgithub/openwebui_custom_pipes_filters): Comprehensive suite of custom filters, tools, and pipes designed to enhance OpenWebUI's functionality with message tracking, cost monitoring, and extended chat capabilities.
 
 ## Smartwatch
-*Mainly for [wasp-os](https://github.com/wasp-os/wasp-os) on the [pinetime](https://pine64.org/devices/pinetime/)*
+*Mainly for [wasp-os](https://github.com/wasp-os/wasp-os) and [InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime) on the [pinetime](https://pine64.org/devices/pinetime/)*
 *3 projects so far*
 
 - [InfiniSleep-tracking](https://github.com/thiswillbeyourgithub/InfiniSleep-tracking): My own fork of [InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime), the C++ firmware for the [PineTime](https://www.pine64.org/pinetime/). It carries [cyberneel's InfiniSleep PR](https://github.com/InfiniTimeOrg/InfiniTime/pull/2174) (itself the result of a bounty I paid to port [SleepTk](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker) from micropython to C++) plus my own changes to export the sleep data.
