@@ -17,7 +17,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 120*
+*Individual project count on this page: 121*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -186,7 +186,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*43 projects so far*
+*44 projects so far*
+- [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan): Linux daemon that drives NVIDIA fan speeds from the GDDR6X memory junction temperature instead of just the core, because the stock driver curve ignores VRAM that can run 25C hotter than the GPU. Includes hysteresis and step limits to avoid thermal cycling, a minimum fan floor, an optional power limit, and fail-safe behavior that pushes fans to 100% on any sensor or watchdog failure.
 - [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): A small script that flattens both legacy and threaded `.xlsx` cell comments directly into each cell's text, so they remain visible in viewers (like Nextcloud's mobile renderer) that don't display threaded comments.
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): Securely encrypt and decrypt environment variables with a simple shell script for enhanced privacy.
 - [ufw-docker-recap](https://github.com/thiswillbeyourgithub/ufw-docker-recap): Analyze and cross-reference Docker container port exposures with `ufw-docker` rules to enhance security.
