@@ -12,7 +12,7 @@ redirect_from:
 
 [Ce site existe aussi en français.](../fr/)
 
-I'm Olivier Cornelis, a psychiatry resident and a self-taught developer / data scientist in Paris, France.
+I'm Olivier Cornelis, a psychiatry resident in Paris, France. I also write a lot of code, most of it open source.
 
 For a formal introduction: [CV](./cv).
 

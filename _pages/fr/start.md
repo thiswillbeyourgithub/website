@@ -11,7 +11,7 @@ lang: fr
 
 [This website also exists in English.](../en/)
 
-Je suis Olivier Cornelis, médecin psychiatre (interne) et développeur / data scientist autodidacte basé à Paris (France).
+Je suis Olivier Cornelis, médecin psychiatre (interne) à Paris (France). J'écris aussi beaucoup de code, en grande partie open source.
 
 Pour une présentation formelle : [CV](./cv).
 
