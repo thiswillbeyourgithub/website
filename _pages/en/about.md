@@ -22,7 +22,7 @@ I try my best to maintain a page listing the tools I use during my psychiatry re
 
 Since I was about 10, I've wanted to do *psy-something*. A few years later, that crystallized: *psychiatrist* was my ultimate dream job.
 
-But I couldn't give up computer science. So, considering the quirks of the French education system, I decided to combine both *my way*.
+I wanted both, not as a strategy but because I genuinely love both. Since no French curriculum lets you do that, I built up the second one on my own time.
 
 ## Education
 

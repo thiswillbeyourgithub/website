@@ -22,7 +22,7 @@ Je fais de mon mieux pour maintenir une page listant les outils que j'utilise pe
 
 Depuis mes 10 ans environ, je voulais faire quelque chose en *psy*. Quelques années plus tard, cela s'est cristallisé : *psychiatre* était mon métier de rêve ultime.
 
-Mais je ne pouvais pas abandonner l'informatique. Donc, compte tenu des particularités du système éducatif français, j'ai décidé de combiner les deux *à ma façon*.
+Je voulais les deux, non par stratégie mais parce que j'aime sincèrement les deux. Comme aucun cursus français ne le permet, j'ai construit le second sur mon temps libre.
 
 ## Formation
 
