@@ -22,5 +22,5 @@ For a list of my projects: [PROJECTS](./projects).
 
 For the list of tools I found useful during my psychiatry residency: [TOOLS](./tools).
 
-**Open for collaborations.** *Whatever brings you here, feel free to [reach out](./contact). As of 2026 I have some time alongside my residency and I'm glad to help where I can, paid or otherwise. In the future I'm interested in pursuing a master's and then a PhD, so I'd be glad to hear from any interested lab or team too. I have no formal CS training, just a long habit of writing code and publishing it.*
+**Open for collaborations.** *Whatever brings you here, feel free to [reach out](./contact). As of 2026 I have some time alongside my residency and I'm glad to help where I can, paid or otherwise. In the future I'm interested in pursuing a master's and then a PhD, so I'd be glad to hear from any interested lab or team too.*
 {: .notice--purple}

@@ -21,5 +21,5 @@ Pour une liste de mes projets : [PROJETS](./projects).
 
 Pour une liste des outils potentiellement utiles pendant mon internat de psychiatre : [OUTILS](./tools).
 
-**Ouvert aux collaborations.** *Quelle que soit la raison de votre passage ici, n'hésitez pas à [me contacter](./contact). En 2026, mon internat me laisse un peu de temps et je suis content de rendre service quand je peux, de façon rémunérée ou non. À l'avenir, j'aimerais faire un master puis une thèse, donc je serais également ravi d'avoir des nouvelles d'un laboratoire ou d'une équipe que cela intéresserait. Je n'ai pas de formation universitaire en informatique, juste une longue habitude d'écrire du code et de le publier.*
+**Ouvert aux collaborations.** *Quelle que soit la raison de votre passage ici, n'hésitez pas à [me contacter](./contact). En 2026, mon internat me laisse un peu de temps et je suis content de rendre service quand je peux, de façon rémunérée ou non. À l'avenir, j'aimerais faire un master puis une thèse, donc je serais également ravi d'avoir des nouvelles d'un laboratoire ou d'une équipe que cela intéresserait.*
 {: .notice--purple}

@@ -14,7 +14,7 @@ Ma présentation plus formelle est à [CV](../fr/cv).
 
 Je fais de mon mieux pour maintenir une page listant les outils que j'utilise pendant mon internat de psychiatrie : [OUTILS](./tools).
 
-**Ouvert aux collaborations.** *Si quelque chose sur cette page vous parle, n'hésitez pas à [me contacter](./contact). En 2026, mon internat me laisse un peu de temps et je suis content de rendre service quand je peux, de façon rémunérée ou non. À l'avenir, j'aimerais faire un master puis une thèse, donc je serais également ravi d'avoir des nouvelles d'un laboratoire ou d'une équipe que cela intéresserait. Je n'ai pas de formation universitaire en informatique, juste une longue habitude d'écrire du code et de le publier.*
+**Ouvert aux collaborations.** *Si quelque chose sur cette page vous parle, n'hésitez pas à [me contacter](./contact). En 2026, mon internat me laisse un peu de temps et je suis content de rendre service quand je peux, de façon rémunérée ou non. À l'avenir, j'aimerais faire un master puis une thèse, donc je serais également ravi d'avoir des nouvelles d'un laboratoire ou d'une équipe que cela intéresserait.*
 {: .notice--purple}
 
 
