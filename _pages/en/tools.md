@@ -14,7 +14,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 {% include toc_wide %}
 
 # Helper tools
-*Some of these are tools I made; fuller descriptions are on [PROJECTS](./projects).*
+*Some of these are tools I made; fuller descriptions are on [PROJECTS](./projects). (To be clear: no patient data is ever involved, not even anonymized, and not even on servers I run myself.)*
 
 - I made [neurarium](https://neurarium.olicorne.org/?lang=en), a 3D neuroanatomy atlas covering regions, projections, receptors and psychiatric drugs, with a provenance grade on every entry so you can tell what is solid and what is not. [Public instance](https://neurarium.olicorne.org/?lang=en), [source](https://github.com/thiswillbeyourgithub/neurarium).
 

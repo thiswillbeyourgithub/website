@@ -17,7 +17,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 {% include toc_wide %}
 
 # Outils pratiques
-*Certains de ces outils sont de moi ; leurs descriptions complètes sont sur [PROJETS](./projects).*
+*Certains de ces outils sont de moi ; leurs descriptions complètes sont sur [PROJETS](./projects). (Pour être clair : aucune donnée de patient n'est jamais impliquée, pas même anonymisée, et pas même sur des serveurs que j'héberge moi-même.)*
 
 - J'ai fait [neurarium](https://neurarium.olicorne.org/?lang=fr), un atlas de neuroanatomie en 3D couvrant les régions, les projections, les récepteurs et les psychotropes, avec un niveau de sourçage indiqué sur chaque entrée pour savoir ce qui est solide et ce qui l'est moins. [Instance publique](https://neurarium.olicorne.org/?lang=fr), [code source](https://github.com/thiswillbeyourgithub/neurarium).
 
