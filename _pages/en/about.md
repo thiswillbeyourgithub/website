@@ -22,7 +22,7 @@ I try my best to maintain a page listing the tools I use during my psychiatry re
 
 Since I was about 10, I've wanted to do *psy-something*. A few years later, that crystallized: *psychiatrist* was my ultimate dream job.
 
-I wanted both, not as a strategy but because I genuinely love both. Since no French curriculum lets you do that, I built up the second one on my own time.
+I wanted medicine and computer science both, not as a strategy but because I genuinely love both. Since no French curriculum lets you do that, I built up the coding side on my own time.
 
 ## Education
 
