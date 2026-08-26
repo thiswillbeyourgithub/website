@@ -17,7 +17,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 121*
+*Individual project count on this page: 129*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -56,7 +56,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Medicine / Computer Science / Larger projects
 {: #larger-projects}
-*26 projects so far*
+*27 projects so far*
 - [justelesRCP](https://justelesrcp.olicorne.org): a fast, ad-free static site that makes the official French drug reference sheets (RCP, résumés des caractéristiques du produit, the regulator-approved documents describing each medication's indications, dosage and side effects) easier to consult, primarily for health professionals. Built from the public ANSM/BDPM open data, it covers roughly 15,600 medications, each a precomputed page with instant, free, privacy-respecting natural-language search, no ads, no accounts, no tracking, served from a security-hardened, read-only Caddy container and hosted in France. There's a public instance at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org) and the source is on [GitHub](https://github.com/thiswillbeyourgithub/justelesRCP).
 - [neurarium](https://neurarium.olicorne.org/?lang=en): What started as a 3D neuroanatomy viewer is now an interactive, source-graded atlas of the human brain, mapping anatomy, wiring, receptors and psychiatric/recreational drugs onto one rotatable, searchable model. Explode and peel the anatomy, trace neuron projections as color-coded arrows (excitatory, inhibitory, dopaminergic), and see how a given drug or receptor lights up and animates the structures it touches, with each detail panel linking outward to related nodes. A single search covers regions, pathways, receptors and drugs at once, every view is shareable as a deep link, and every node carries a provenance grade indicating its sourcing. Built without a framework or build process: vanilla JavaScript, locally vendored [three.js](https://threejs.org/), Python-generated data, and a security-hardened Caddy deployment with a strict CSP. There's a public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en) and the source is on [GitHub](https://github.com/thiswillbeyourgithub/neurarium).
 - [parakeet-tdt-0.6b-v3-smoothquant-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-smoothquant-onnx): A faster, more accurate and more compact [SmoothQuant](https://github.com/mit-han-lab/smoothquant) quantization of NVIDIA's [Parakeet TDT 0.6b v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) speech recognition model, improving on the widely used [reference ONNX export](https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx) by [@istupakov](https://huggingface.co/istupakov). Meant for in-browser transcription (see [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web) and [murmure](https://github.com/Kieirra/murmure) below).
@@ -147,7 +147,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Productivity
 *Tools I use, used or made*
-*15 projects so far*
+*14 projects so far*
 
 - [claude_usage](https://github.com/thiswillbeyourgithub/claude_usage): Small Python script that fetches your Claude.ai plan usage (the same data shown by Claude Code's `/usage` command) and prints it as JSON, ready to pipe into `jq`, dashboards or status bars.
 - [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): Record, store, and replay mouse automation sequences with integrated OCR.
@@ -187,7 +187,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
 
 ## Miscellaneous Tools
-*44 projects so far*
+*45 projects so far*
 - [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan): Linux daemon that drives NVIDIA fan speeds from the GDDR6X memory junction temperature instead of just the core, because the stock driver curve ignores VRAM that can run 25C hotter than the GPU. Includes hysteresis and step limits to avoid thermal cycling, a minimum fan floor, an optional power limit, and fail-safe behavior that pushes fans to 100% on any sensor or watchdog failure.
 - [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): A small script that flattens both legacy and threaded `.xlsx` cell comments directly into each cell's text, so they remain visible in viewers (like Nextcloud's mobile renderer) that don't display threaded comments.
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): Securely encrypt and decrypt environment variables with a simple shell script for enhanced privacy.
@@ -235,7 +235,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 - [pdfannots](https://github.com/thiswillbeyourgithub/pdfannots): Text extraction tool for PDF documents that processes annotations, highlights, and comments into formatted Markdown, JSON, or EDN outputs for academic paper reviews and document analysis.
 
 ## Others
-*1 project so far*
+*8 projects so far*
 - [FUTOmeter](https://github.com/thiswillbeyourgithub/FUTOmeter): Library suite for privacy-preserving usage tracking and context-aware donation prompts in FOSS applications, enabling sustainable funding through data-driven user engagement metrics.
 
 ---

@@ -16,7 +16,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 121*
+*Nombre de projets individuels sur cette page : 129*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -55,7 +55,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 ## Médecine / Science Informatique / Gros projets
 {: #larger-projects}
-*26 projets jusqu'à présent*
+*27 projets jusqu'à présent*
 - [justelesRCP](https://justelesrcp.olicorne.org) : un site statique rapide et sans publicité qui rend plus faciles à consulter les résumés des caractéristiques du produit (RCP) officiels français, les documents de référence validés par l'autorité de santé qui décrivent chaque médicament (indications, posologie, effets indésirables), principalement pour les professionnels de santé. Construit à partir des données ouvertes publiques de l'ANSM/BDPM, il couvre environ 15 600 médicaments, chacun sous forme de page précalculée avec recherche en langage naturel instantanée, gratuite et respectueuse de la vie privée, sans publicité, sans compte, sans pistage, servi depuis un conteneur Caddy renforcé sur le plan de la sécurité et en lecture seule, hébergé en France. Une instance publique est disponible sur [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org) et le code source est sur [GitHub](https://github.com/thiswillbeyourgithub/justelesRCP).
 - [neurarium](https://neurarium.olicorne.org/?lang=fr): Ce qui a commencé comme un visualiseur 3D de neuroanatomie est devenu un atlas interactif du cerveau humain à sources notées, qui cartographie l'anatomie, le câblage, les récepteurs et les médicaments psychiatriques/récréatifs sur un même modèle rotatif et interrogeable. Écartez et épluchez l'anatomie, suivez les projections neuronales sous forme de flèches colorées (excitateur, inhibiteur, dopaminergique), et voyez comment un médicament ou un récepteur donné illumine et anime les structures qu'il touche, chaque panneau de détail renvoyant vers les nœuds liés. Une seule recherche couvre à la fois les régions, les voies, les récepteurs et les médicaments, chaque vue est partageable via un lien direct, et chaque nœud porte une note de provenance indiquant son sourçage. Conçu sans framework ni étape de build : JavaScript vanilla, [three.js](https://threejs.org/) intégré localement, données générées par des scripts Python, et un déploiement Caddy renforcé sur le plan de la sécurité avec une CSP stricte. Une instance publique est disponible sur [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=fr) et le code source est sur [GitHub](https://github.com/thiswillbeyourgithub/neurarium).
 - [parakeet-tdt-0.6b-v3-smoothquant-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-smoothquant-onnx): Une quantification [SmoothQuant](https://github.com/mit-han-lab/smoothquant) plus rapide, plus précise et plus compacte du modèle de reconnaissance vocale [Parakeet TDT 0.6b v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) de NVIDIA, qui améliore l'[export ONNX de référence](https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx) largement utilisé de [@istupakov](https://huggingface.co/istupakov). Destinée à la transcription dans le navigateur (voir [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web) et [murmure](https://github.com/Kieirra/murmure) ci-dessous).
@@ -146,7 +146,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 ## Productivité
 *Outils que j'utilise, ai utilisés ou créés*
-*15 projets jusqu'à présent*
+*14 projets jusqu'à présent*
 
 - [claude_usage](https://github.com/thiswillbeyourgithub/claude_usage): Petit script Python qui récupère l'utilisation de votre plan Claude.ai (les mêmes données affichées par la commande `/usage` de Claude Code) et l'affiche en JSON, prêt à être passé dans `jq`, des tableaux de bord ou des barres de statut.
 - [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): Enregistrer, stocker et rejouer des séquences d'automatisation de la souris avec OCR intégré.
@@ -186,7 +186,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Outil de surveillance de films qui vérifie automatiquement les listes de cinéma pour des films spécifiques et envoie des notifications lorsqu'ils deviennent disponibles.
 
 ## Outils Divers
-*44 projets jusqu'à présent*
+*45 projets jusqu'à présent*
 - [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan): Démon Linux qui pilote la vitesse des ventilateurs NVIDIA à partir de la température de jonction de la mémoire GDDR6X plutôt que du seul cœur GPU, car la courbe du pilote d'origine ignore la VRAM qui peut être 25C plus chaude que le cœur. Il inclut une hystérésis et une limitation des paliers pour éviter le cyclage thermique, un plancher de vitesse de ventilation, une limite de puissance optionnelle, et un comportement de sécurité qui pousse les ventilateurs à 100% en cas de défaillance d'un capteur ou du watchdog.
 - [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): Un petit script qui aplatit les commentaires de cellules `.xlsx` (anciens et fils de discussion) directement dans le texte de chaque cellule, afin qu'ils restent visibles dans les visionneuses (comme le rendu mobile de Nextcloud) qui n'affichent pas les commentaires en fil.
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): Chiffrez et déchiffrez en toute sécurité vos variables d'environnement avec un simple script shell pour une confidentialité renforcée.
@@ -234,7 +234,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 - [pdfannots](https://github.com/thiswillbeyourgithub/pdfannots): Outil d'extraction de texte pour documents PDF qui traite les annotations, surlignages et commentaires en sorties Markdown, JSON ou EDN formatées pour les revues d'articles académiques et l'analyse de documents.
 
 ## Autres
-*1 projet jusqu'à présent*
+*8 projets jusqu'à présent*
 - [FUTOmeter](https://github.com/thiswillbeyourgithub/FUTOmeter): Suite de bibliothèques pour le suivi d'utilisation respectueux de la vie privée et les invites de don contextuelles dans les applications FOSS, permettant un financement durable grâce à des métriques d'engagement utilisateur basées sur les données.
 
 ---
