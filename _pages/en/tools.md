@@ -23,7 +23,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 - I made [WebSend](https://websend.olicorne.org) to scan documents without a flatbed scanner: open the page on your phone and on the computer, and the photo transfers directly between the two, end-to-end encrypted. [Public instance](https://websend.olicorne.org), [source](https://github.com/thiswillbeyourgithub/WebSend).
 
 
-- I made [Parakeet Web](https://parakeetweb.olicorne.org) to turn speech into text on locked-down machines: the model runs in the browser itself, so nothing is sent anywhere. A version with medical vocabulary is in progress.
+- I made [Parakeet Web](https://parakeetweb.olicorne.org) to turn speech into text on locked-down machines: the model runs in the browser itself, so nothing is sent anywhere. A version with medical vocabulary is in progress. [Public instance](https://parakeetweb.olicorne.org), [source](https://github.com/thiswillbeyourgithub/parakeet_web).
 
 - I made [justelesRCP](https://justelesrcp.olicorne.org) to look up drug data faster: the official French RCP sheets (ANSM/BDPM/EMA open data, around 15,600 medications) as a fast, ad-free site with AI-based plain-language search. [Source](https://github.com/thiswillbeyourgithub/justelesRCP).
 

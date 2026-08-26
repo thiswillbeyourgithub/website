@@ -25,7 +25,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 - J'ai fait [WebSend](https://websend.olicorne.org) pour numériser des documents sans scanner à plat : ouvrez la page sur votre téléphone et sur l'ordinateur, et la photo passe directement de l'un à l'autre, chiffrée de bout en bout. [Instance publique](https://websend.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/WebSend).
 
-- J'ai fait [Parakeet Web](https://parakeetweb.olicorne.org) pour transcrire la parole en texte sur des machines verrouillées : le modèle tourne dans le navigateur lui-même, donc rien n'est envoyé nulle part. Une version avec du vocabulaire médical est en cours.
+- J'ai fait [Parakeet Web](https://parakeetweb.olicorne.org) pour transcrire la parole en texte sur des machines verrouillées : le modèle tourne dans le navigateur lui-même, donc rien n'est envoyé nulle part. Une version avec du vocabulaire médical est en cours. [Instance publique](https://parakeetweb.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/parakeet_web).
 
 - J'ai fait [justelesRCP](https://justelesrcp.olicorne.org) pour consulter plus vite les données des médicaments : les RCP officiels (données ouvertes ANSM/BDPM/EMA, environ 15 600 médicaments) sur un site rapide et sans publicité, avec une recherche en langage naturel basée sur l'IA. [Code source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
