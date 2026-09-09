@@ -52,40 +52,39 @@ redirect_from:
 
 # Education
 * Specialized Studies Diploma (DES) in Psychiatry - since 2025
-    * Paris Cité University, Paris psychiatry
-    * Validation of the optional neuropsychiatry seminar "Neuro-psychiatric approach to behavioral disorders", Pr Philippe Fossati, Pitié-Salpêtrière University Hospital (Paris) - 2026
+    * Paris Cité University, Paris psychiatry, Coordination: Pr Caroline DUBERTRET
+    * Validation of the optional neuropsychiatry seminar "Neuro-psychiatric approach to behavioral disorders", Pr Philippe FOSSATI, Pitié-Salpêtrière University Hospital (Paris) - 2026
 * Master's degree (M1), 2019-2025
     * Health Research Track, Neuroscience, Genetics, R programming, Paris Cité University
-    * Reviewers: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
+    * Reviewers: Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
 * General and Advanced Medical Sciences Degree - 2016-2025
-    * Paris Cité University
+    * Paris Cité University, Bichat site
 * Preparatory Class for Grandes Écoles - 2015-2016
     * Carnot High School, Physics Chemistry section (PCSI-PC)
 
 
 
 # Internships & Experience
-* *NeuroSpin*, UNICOG team of Pr Stanislas Dehaene, subteam led by Pr Béchir Jarraya, Gif-Sur-Yvettes, France - 2022
-    * Master's internship: computational modeling of consciousness states via fMRI, Python library development, Machine learning, High-dimensional data clustering
-* *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH USA - 2015
+* *NeuroSpin*, UNICOG team of Pr Stanislas DEHAENE, subteam led by Pr Béchir JARRAYA, Gif-Sur-Yvettes, France - 2022
+    * Master's internship: Computational modeling of consciousness states via fMRI, Python library development, Machine learning, High-dimensional data clustering
+* *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH, USA - 2015
     * One-month internship at *Geisel School of Medicine*, R programming, cf publication
 
 
 # Skills
 ## Computer Science
-* **AI** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interpretability (representation engineering), embedding-based search (RAG, wdoc), image generation, ASR/STT finetuning and training-dataset creation, model quantization and ONNX export for offline on-device inference
-* **Speech recognition** openly released [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1), a 3,105-hour French medical speech dataset, and a Parakeet finetune trained on it with a single consumer GPU (7-8x fewer errors on technical medical text), optimized for offline use on CPU and in the browser
-* **Machine Learning and big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization)
-* **Unix proficiency** (GNU/Linux, OSX), algorithmic complexity, advanced shell concepts (zsh/bash), vi/vim/neovim, regexp, sysadmin (self hosting, databases, sizing, resource estimation, specifications), Interfaces (GUI/CLI)
-* **Collaboration software proficiency** (git, Jupyter Notebook, markdown)
-* Strong commitment to **Free/Open Source Software** ([top ~2.3% on Github](https://github-stats-extended.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile), 2024-26 pre- & post-AI, 7k+ PyPI downloads/month, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
+* **AI** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interpretability (*representation engineering*), embedding-based search (RAG, wdoc), image generation, ASR/STT *finetuning* and training-dataset creation, optimizations for offline medical inference
+* **Speech recognition** openly released [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1), a 3,105-hour French medical speech dataset and a Parakeet-v3 finetune trained on it with a single consumer GPU (8x fewer errors on technical medical text), optimized for offline use on CPU in the browser
+* **Machine Learning and big data** PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization
+* **Unix proficiency** (GNU/Linux, OSX), system administration (remote server management and self hosting, deployment), algorithmic complexity, advanced shell concepts (zsh/bash) and regexp, user interfaces (WebUI/GUI/CLI), vi/vim/neovim, Web development
+* **Collaboration software proficiency** git, Jupyter Notebook, markdown
+* **Free/Open Source Software** strong commitment ([top ~2.3% on Github](https://github-stats-extended.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile), 2024-26 pre- & post-AI, 7k+ PyPI downloads/month, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * **Healthcare related websites** made multiple websites for colleagues and patients, always free and open source (drug information, document transfer, audio transcription, ...)
-* Web stack and knowledge in other languages and domains (SQL, Javascript, lua, HTML/CSS)
-* Hardware knowledge (soldering, server assembly), embedded systems (micropython, smartwatch)
+* **Hardware knowledge** soldering, software/hardware sizing and resource optimization, server assembly, embedded systems (micropython, smartwatch)
 
 ## Language
 - French native
-* English level C1/C2 (more than 3 cumulative months in North America)
+* English level C1/C2 (3 cumulative months in North America)
 * Spanish level A2
 * German level A1-A2
 

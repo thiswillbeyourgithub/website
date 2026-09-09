@@ -47,45 +47,44 @@ redirect_from:
 
 
 # Formation
-* Diplôme d'Étude Spécialisée (DES) de psychiatrie - depuis 2025
-    * Université Paris Cité, psychiatrie Paris
-    * Validation du séminaire optionnel de neuropsychiatrie « Approche neuro-psychiatrique des troubles du comportement », Pr Philippe Fossati, Groupe Hospitalier Pitié-Salpêtrière (Paris) - 2026
+* Diplôme d'Études Spécialisées (DES) de Psychiatrie - depuis 2025
+    * Université Paris Cité, psychiatrie Paris, Coordination : Pre Caroline DUBERTRET
+    * Validation du séminaire optionnel de neuropsychiatrie « Approche neuro-psychiatrique des troubles du comportement », Pr Philippe FOSSATI, Groupe Hospitalier Pitié-Salpêtrière (Paris) - 2026
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
-    * Rapporteurs: Dr Anton Iftimovici (MD-PhD), Dr Estelle Pruvost-Robieux (MD-PhD), Dr Adeline Alice Bonnard (MD)
+    * Rapporteurs: Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
 * Diplôme de Formation Générale et Approfondie en Sciences Médicales - 2016-2025
-    * Université Paris Cité
+    * Université Paris Cité, site Bichat
 * Classe Préparatoire aux Grandes Écoles - 2015-2016
     * Lycée Général Carnot, section Physique Chimie (PCSI-PC)
 
 
 
 # Stages & Expériences
-* *NeuroSpin*, équipe UNICOG du Pr Stanislas Dehaene, sous-équipe dirigée par le Pr Béchir Jarraya, Gif-Sur-Yvettes, France - 2022
-    * Stage de M1: modélisation computationnelle des états de conscience via IRMf, Développement de bibliothèques Python, Apprentissage automatique, Clustering de données de haute dimension
-* *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH USA - 2015
-    * Stage d’un mois à la *Geisel School of Medicine*, programation en R, cf publication
+* *NeuroSpin*, équipe UNICOG du Pr Stanislas DEHAENE, sous-équipe dirigée par le Pr Béchir JARRAYA, Gif-Sur-Yvettes, France - 2022
+    * Stage de M1: Modélisation computationnelle des états de conscience via IRMf, Développement de bibliothèques Python, Apprentissage automatique, Clustering de données de haute dimension
+* *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH, USA - 2015
+    * Stage d’un mois à la *Geisel School of Medicine*, programmation en R, cf publication
 
 
 # Compétences
 ## Informatiques
-* **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (representation engineering), recherche par *embeddings* (RAG, wdoc), generation d'image, finetuning ASR/STT et création de jeux de données d'entraînement, quantification de modèles et export ONNX pour l'inférence hors ligne sur l'appareil
-* **Reconnaissance vocale** publication en libre accès de [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1), un jeu de données de 3 105 heures de parole médicale française, et d'un affinage de Parakeet entraîné dessus avec un seul GPU grand public (7-8x moins d'erreurs sur du texte médical technique), optimisé pour un usage hors ligne sur CPU et dans le navigateur
-* **Machine Learning et big data** (PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation)
-* **Environnement Unix** (GNU/Linux, OSX), complexité algorithimique, notions avancées du shell (zsh/bash), vi/vim/neovim, des regexp, sysadmin (self hosting, databases, dimensionnement, estimation de ressources, cahier des charges), Interfaces (GUI/CLI)
-* **Logiciels de collaboration** (git, Jupyter Notebook, markdown)
-* Fort engagement envers les **Logiciels Libre** ([top ~2.3% sur Github](https://github-stats-extended.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile), 2024-26 pré- & post-IA, 7k+ téléchargements PyPI/mois, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
+* **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (*representation engineering*), recherche par *embeddings* (RAG, wdoc), génération d'image, *finetuning* ASR/STT et création de jeux de données d'entraînement, optimisations pour l'inférence médicale hors ligne
+* **Reconnaissance vocale** publication en libre accès de [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1), un jeu de données de 3 105 heures de parole médicale française et d'un affinage de Parakeet-v3 entraîné dessus avec un seul GPU grand public (8 fois moins d'erreurs sur du texte médical technique), optimisé pour un usage hors ligne sur CPU dans un navigateur
+* **Machine Learning et big data** PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation
+* **Environnement Unix** (GNU/Linux, OSX), administration système (gestion de serveurs distants et self hosting, déploiement), complexité algorithmique, notions avancées du shell (zsh/bash) et regexp, interface utilisateur (WebUI/GUI/CLI), vi/vim/neovim, développement Web
+* **Logiciels de collaboration** git, Jupyter Notebook, markdown
+* **Logiciels Libres** engagement fort ([top ~2.3% sur Github](https://github-stats-extended.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile), 2024-26 pré- & post-IA, 7k+ téléchargements PyPI/mois, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * **Sites web liés à la santé** plusieurs sites réalisés pour des collègues et des patients, toujours gratuits et open source (informations sur les médicaments, transfert de documents, transcription audio, ...)
-* Technologies du web et notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
-* Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
+* **Notions de hardware** soudure, dimensionnement software/hardware et optimisations de ressources, assemblage de serveurs, embarqué (micropython, montre connectée)
 
 ## Linguistiques
 - Français natif
-* Anglais niveau C1/C2 (plus de 3 mois cumulés en Amérique du Nord)
+* Anglais niveau C1/C2 (3 mois cumulés en Amérique du Nord)
 * Espagnol niveau A2
 * Allemand niveau A1-A2
 
-## Autre
+## Autres
 * Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - depuis 2024
 * Permis B - 2015
 
@@ -96,7 +95,7 @@ redirect_from:
     {% endif %}
   {% endfor %}</ul>
 
-# Formation en ligne
+# Formations en ligne
 * **Inria** - 2021
     * *Recherche reproductible : principes méthodologiques pour une science transparente*
     * *Bioinformatique : algorithmes et génomes*
@@ -104,5 +103,5 @@ redirect_from:
 * **HuggingFace** : *Natural Language Processing Machine Learning Course* - 2021
 
 # Extra professionnel
-- Organisateur de rencontre physique d'une communauté en ligne sur les risques inhérents à l'IA et la rationalité
+- Organisateur de rencontres physiques d'une communauté en ligne sur les risques inhérents à l'IA et la rationalité
 - Cinéphile, serrurerie, photographie argentique, sport
