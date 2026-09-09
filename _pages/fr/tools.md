@@ -30,6 +30,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - J'ai fait [justelesRCP](https://justelesrcp.olicorne.org) pour consulter plus vite les données des médicaments : les RCP officiels (données ouvertes ANSM/BDPM/EMA, environ 15 600 médicaments) sur un site rapide et sans publicité, avec une recherche en langage naturel basée sur l'IA. [Code source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
 # Interactions enzymatiques
+- [PharmFreq](https://pharmfreq.com/) : de jolis widgets qui cartographient la fréquence mondiale des variants pharmacogénétiques. Pratique pour estimer la probabilité d'un phénotype métaboliseur donné chez un patient selon l'origine géographique de sa famille.
 - M'a été recommandé : [DDI-Predictor](https://www.ddi-predictor.org/), par les Hospices Civils de Lyon et / ou l'Université Claude Bernard Lyon I, Lyon, France.
 - Semble plutôt complet et m'a été recommandé : [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/).
     - J'ai remarqué au moins une fois une simplification assez importante : le texte sur ClinPGx mentionnait un cytochrome comme étant le principal, alors que la source expliquait en fait que celui-ci était celui qui se liait le plus à la molécule mais comme il était moins présent, il n'était en fait pas le principal métaboliseur du médicament donné.

@@ -28,6 +28,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 - I made [justelesRCP](https://justelesrcp.olicorne.org) to look up drug data faster: the official French RCP sheets (ANSM/BDPM/EMA open data, around 15,600 medications) as a fast, ad-free site with AI-based plain-language search. [Source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
 # Enzymatic interaction
+- [PharmFreq](https://pharmfreq.com/): nice widgets mapping the worldwide frequency of pharmacogenetic variants. Handy to weigh how likely a given metabolizer phenotype is for a patient depending on where their family comes from.
 - Was recommended to me: [DDI-Predictor](https://www.ddi-predictor.org/), by the Hospices Civils de Lyon and / or University Claude Bernard Lyon I, Lyon, France.
 - Seems rather complete and was recommended to me: [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/).
     - I noticed at least once a pretty wild oversimplification: the text on ClinPGx mentioned one cytochrome as being the main one, while the source actually explained that this one was actually the one that bound to the molecule the most but because it was less present it was actually not the main metabolizer of the given drug.
