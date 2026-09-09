@@ -75,6 +75,7 @@ redirect_from:
 * **Environnement Unix** (GNU/Linux, OSX), complexité algorithimique, notions avancées du shell (zsh/bash), vi/vim/neovim, des regexp, sysadmin (self hosting, databases, dimensionnement, estimation de ressources, cahier des charges), Interfaces (GUI/CLI)
 * **Logiciels de collaboration** (git, Jupyter Notebook, markdown)
 * Fort engagement envers les **Logiciels Libre** ([top ~2.3% sur Github](https://github-stats-extended.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile), 2024-26 pré- & post-IA, 7k+ téléchargements PyPI/mois, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
+* **Sites web liés à la santé** plusieurs sites réalisés pour des collègues et des patients, toujours gratuits et open source (informations sur les médicaments, transfert de documents, transcription audio, ...)
 * Technologies du web et notions dans d’autres langages et domaines (SQL, Javascript, lua, HTML/CSS)
 * Notion de hardware (soudure, assemblage de serveurs), embarqué (micropython, montre connectée)
 
