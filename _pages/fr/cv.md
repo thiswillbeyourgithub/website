@@ -48,7 +48,7 @@ redirect_from:
 
 # Formation
 * Diplôme d'Études Spécialisées (DES) de Psychiatrie - depuis 2025
-    * Université Paris Cité, psychiatrie Paris, Coordination : Pre Caroline DUBERTRET
+    * Université Paris Cité, Psychiatrie Paris, Coordination : Pre Caroline DUBERTRET
     * Validation du séminaire optionnel de neuropsychiatrie « Approche neuro-psychiatrique des troubles du comportement », Pr Philippe FOSSATI, Groupe Hospitalier Pitié-Salpêtrière (Paris) - 2026
 * Master 1, 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité

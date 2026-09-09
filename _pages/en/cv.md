@@ -52,7 +52,7 @@ redirect_from:
 
 # Education
 * Specialized Studies Diploma (DES) in Psychiatry - since 2025
-    * Paris Cité University, Paris psychiatry, Coordination: Pr Caroline DUBERTRET
+    * Paris Cité University, Paris Psychiatry, Coordination: Pr Caroline DUBERTRET
     * Validation of the optional neuropsychiatry seminar "Neuro-psychiatric approach to behavioral disorders", Pr Philippe FOSSATI, Pitié-Salpêtrière University Hospital (Paris) - 2026
 * Master's degree (M1), 2019-2025
     * Health Research Track, Neuroscience, Genetics, R programming, Paris Cité University
