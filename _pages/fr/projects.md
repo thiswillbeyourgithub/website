@@ -16,7 +16,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 134*
+*Nombre de projets individuels sur cette page : 135*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -142,10 +142,11 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 ## API
 *J'ai créé mes propres bibliothèques de "référence" pour rendre mes autres projets plus interopérables*
-*4 projets jusqu'à présent*
+*5 projets jusqu'à présent*
 
 - [freshrss_python_api](https://github.com/thiswillbeyourgithub/freshrss_python_api): Wrapper Python et client API pour l'API Fever de FreshRSS, permettant la gestion programmatique des flux RSS, des éléments et des catégories avec gestion robuste des erreurs et sécurité de type.
 - [caldav_tasks_api](https://github.com/thiswillbeyourgithub/Caldav-Tasks-API): Bibliothèque Python et outil CLI pour la gestion avancée des tâches CalDAV avec des fonctionnalités telles que la synchronisation des tâches, la priorisation basée sur ELO et des capacités complètes de manipulation des tâches.
+    - [caldav_cal_api](https://github.com/thiswillbeyourgithub/Caldav-Cal-API) : la même idée appliquée aux événements de calendrier plutôt qu'aux tâches.
 - [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): *Voir ci-dessus*
 - [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): *Voir ci-dessus*
 

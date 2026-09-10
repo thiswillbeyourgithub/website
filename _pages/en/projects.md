@@ -17,7 +17,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 134*
+*Individual project count on this page: 135*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -143,10 +143,11 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## API
 *I made my own "reference" libraries to make my other projects more interoperable*
-*4 projects so far*
+*5 projects so far*
 
 - [freshrss_python_api](https://github.com/thiswillbeyourgithub/freshrss_python_api): Python wrapper and API client for the FreshRSS Fever API, enabling programmatic management of RSS feeds, items, and categories with robust error handling and type safety.
 - [caldav_tasks_api](https://github.com/thiswillbeyourgithub/Caldav-Tasks-API): Python library and CLI tool for advanced CalDAV task management with features like task synchronization, ELO-based prioritization, and comprehensive task manipulation capabilities.
+    - [caldav_cal_api](https://github.com/thiswillbeyourgithub/Caldav-Cal-API): the same idea applied to calendar events instead of tasks.
 - [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): *See above*
 - [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): *See above*
 
