@@ -49,6 +49,8 @@ Je suis enthousiaste quant à la façon dont la recherche en IA fera progresser 
 
 En même temps, les observations cliniques de la psychiatrie pourraient éclairer des systèmes d'IA plus robustes et interprétables qui servent mieux les besoins humains.
 
+En ce moment, je suis particulièrement intéressé par les approches [big data](https://fr.wikipedia.org/wiki/Big_data) et [datascience](https://fr.wikipedia.org/wiki/Science_des_donn%C3%A9es) appliquées aux questions de [nosographie](https://fr.wikipedia.org/wiki/Nosographie) en [psychiatrie de précision](https://fr.wikipedia.org/wiki/M%C3%A9decine_de_pr%C3%A9cision) (approches [dimensionnelles ou catégorielles](https://fr.wikipedia.org/wiki/Classification_des_troubles_mentaux), phénotypage computationnel, [HiTOP](https://en.wikipedia.org/wiki/Hierarchical_Taxonomy_of_Psychopathology), normative modelling, ...).
+
 ## Choses que j'aime (en plus de prendre soin de mes patients)
 
 *Sans ordre particulier :*
