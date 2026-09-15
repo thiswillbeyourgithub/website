@@ -49,7 +49,7 @@ I'm excited about how AI research will advance psychiatry research, improving pa
 
 At the same time, clinical observations from psychiatry could inform more robust and interpretable AI systems that better serve human needs.
 
-Right now I'm particularly interested in what [big data](https://en.wikipedia.org/wiki/Big_data) and [data science](https://en.wikipedia.org/wiki/Data_science) approaches can bring to [nosological](https://en.wikipedia.org/wiki/Nosology) questions in [precision psychiatry](https://en.wikipedia.org/wiki/Precision_medicine) ([dimensional versus categorical](https://en.wikipedia.org/wiki/Classification_of_mental_disorders) approaches, computational phenotyping, [HiTOP](https://en.wikipedia.org/wiki/Hierarchical_Taxonomy_of_Psychopathology), normative modelling, ...).
+Right now I'm particularly interested in what [big data](https://en.wikipedia.org/wiki/Big_data) and [data science](https://en.wikipedia.org/wiki/Data_science) approaches can bring to [nosological](https://en.wikipedia.org/wiki/Nosology) questions in [precision psychiatry](https://en.wikipedia.org/wiki/Precision_medicine) ([dimensional versus categorical](https://en.wikipedia.org/wiki/Classification_of_mental_disorders) approaches, [computational phenotyping](https://pmc.ncbi.nlm.nih.gov/articles/PMC7219680/), [HiTOP](https://en.wikipedia.org/wiki/Hierarchical_taxonomy_of_psychopathology), [RDoC](https://en.wikipedia.org/wiki/Research_Domain_Criteria), [B-SNIP](https://www.nimh.nih.gov/news/science-updates/2015/biomarkers-outperform-symptoms-in-parsing-psychosis-subgroups), [normative modelling](https://www.nature.com/articles/s41596-022-00696-5), ...).
 
 ## Things I love (besides caring for my patients)
 
