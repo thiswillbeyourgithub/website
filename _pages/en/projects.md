@@ -214,12 +214,12 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): I needed to keep API keys out of my `.zshrc` in plain text without adding a secrets manager.
 - [ufw-docker-recap](https://github.com/thiswillbeyourgithub/ufw-docker-recap): I needed to double-check which container ports my firewall really exposed.
 - [ntrig-calib](https://github.com/thiswillbeyourgithub/ntrig-calib): I needed to fix a dead touchscreen zone on a Surface Pro 3 under Linux (reverse-engineered with Claude from the Windows calibration tool).
-- [Sanoid Docker Snapshots Cleanup](https://github.com/thiswillbeyourgithub/sanoid_docker_snapshots_cleanup): Automate the cleanup of orphaned Docker container ZFS snapshots in backup pools using Sanoid and Syncoid.
-- [Umami Apprise Notifier](https://github.com/thiswillbeyourgithub/umami_apprise_notifier): A Python script that notifies you of recent Umami analytics visitors via Apprise notifications.
-- [Website Link Checker](https://github.com/thiswillbeyourgithub/website_link_checker): Python CLI tool for crawling websites to identify and report broken links, with features like rate limiting and regex filtering.
-- [srt_ai_translator](https://github.com/thiswillbeyourgithub/srt_ai_translator): A subtitle translator leveraging OpenAI-compatible APIs for context-aware and efficient SRT translations.
+- [Sanoid Docker Snapshots Cleanup](https://github.com/thiswillbeyourgithub/sanoid_docker_snapshots_cleanup): I needed to reclaim the backup space taken by ZFS snapshots of Docker containers that no longer existed.
+- [Umami Apprise Notifier](https://github.com/thiswillbeyourgithub/umami_apprise_notifier): I needed to know when someone visited my website without checking the analytics dashboard myself.
+- [Website Link Checker](https://github.com/thiswillbeyourgithub/website_link_checker): I needed to find the broken links on this website before visitors did.
+- [srt_ai_translator](https://github.com/thiswillbeyourgithub/srt_ai_translator): I needed subtitles in a language that no one had translated them into.
 - [GPU Docker Monitor](https://github.com/thiswillbeyourgithub/nvidia-smi-docker-matcher): I needed to know which container was taking up VRAM before restarting anything.
-- [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): A Gradio GUI tool for searching FAISS vector databases.
+- [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): *[Unfinished]* I needed a simple interface to look inside the vector databases built by [wdoc](#wdoc).
 - [systemd_last_run](https://github.com/thiswillbeyourgithub/systemd_last_run): I needed to spot systemd timers that had silently stopped running.
 - [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): Simple script for creating compressed tar backups on a VPS with automatic rotation and timestamping.
 - [iroh_send](https://github.com/thiswillbeyourgithub/iroh-send): a script using [iroh](https://github.com/n0-computer/iroh) to easily send files or directories from one device to another.
