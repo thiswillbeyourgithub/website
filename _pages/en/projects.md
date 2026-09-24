@@ -221,12 +221,12 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [GPU Docker Monitor](https://github.com/thiswillbeyourgithub/nvidia-smi-docker-matcher): I needed to know which container was taking up VRAM before restarting anything.
 - [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher): *[Unfinished]* I needed a simple interface to look inside the vector databases built by [wdoc](#wdoc).
 - [systemd_last_run](https://github.com/thiswillbeyourgithub/systemd_last_run): I needed to spot systemd timers that had silently stopped running.
-- [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): Simple script for creating compressed tar backups on a VPS with automatic rotation and timestamping.
-- [iroh_send](https://github.com/thiswillbeyourgithub/iroh-send): a script using [iroh](https://github.com/n0-computer/iroh) to easily send files or directories from one device to another.
-- [adb_newpipe_exporter](https://github.com/thiswillbeyourgithub/adb_newpipe_exporter): An adb script to automatically export your [NewPipe](https://github.com/TeamNewPipe/NewPipe) db.
-- [autopassad](https://github.com/thiswillbeyourgithub/autopassad): A (hopefully) cross platform python script to automatically click on 'skip' or 'continue' on ads.
+- [vps-backup](https://github.com/thiswillbeyourgithub/vps_backup): I needed compressed, timestamped backups of my VPS that only keep the last few copies.
+- [iroh_send](https://github.com/thiswillbeyourgithub/iroh-send): I needed to send files and folders directly from one machine to another, with no intermediary server.
+- [adb_newpipe_exporter](https://github.com/thiswillbeyourgithub/adb_newpipe_exporter): I needed to back up NewPipe's database from my computer, so this script drives the app's export menus over ADB.
+- [autopassad](https://github.com/thiswillbeyourgithub/autopassad): I needed a script that spots "continue" or "skip" on screen with OCR and clicks it.
 - [Umami Data Fetcher](https://github.com/thiswillbeyourgithub/umami_data_fetcher): A CLI tool to backup and save [Umami](https://umami.is) analytics data in multiple formats with automatic resume, logging, and multi-website support. This was made to store the privacy preserving analytics for olicorne.org, as umami.is deletes data after 6 months.
-- [Home Assistant CalDAV client](https://github.com/thiswillbeyourgithub/Home-Assistant-CalDAV-client): A CalDAV client for automating task management with Home Assistant, Nextcloud, and voice commands.
+- [Home Assistant CalDAV client](https://github.com/thiswillbeyourgithub/Home-Assistant-CalDAV-client): I needed to say "I have to do the dishes" to Home Assistant and have it appear in my Nextcloud tasks.
 - [LiteLLM Proxy OpenRouter Price Updater](https://github.com/thiswillbeyourgithub/litellm_proxy_openrouter_price_updater): CLI tool for updating [LiteLLM](https://github.com/BerriAI/litellm) proxy pricing configurations using [OpenRouter](https://openrouter.ai/) API data.
 - [OpenRouter to Langfuse Model Pricing Sync](https://github.com/thiswillbeyourgithub/openrouter_cost_into_langfuse/): A Python script that automatically syncs model pricing data from [OpenRouter](https://openrouter.ai/) to Langfuse's pricing page.
 - [git_scripts_keeper](https://github.com/thiswillbeyourgithub/git_scripts_keeper): Automated version control utility for tracking and committing changes across multiple Git repositories through periodic monitoring and auto-generated commit messages.
