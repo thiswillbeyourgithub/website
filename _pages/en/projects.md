@@ -169,10 +169,10 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 *Tools I use, used or made*
 *14 projects so far*
 
-- [claude_usage](https://github.com/thiswillbeyourgithub/claude_usage): Small Python script that fetches your Claude.ai plan usage (the same data shown by Claude Code's `/usage` command) and prints it as JSON, ready to pipe into `jq`, dashboards or status bars.
-- [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): Record, store, and replay mouse automation sequences with integrated OCR.
-- [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): Advanced command-line tool for automated webpage archival to PDF with metadata extraction and seamless integration into Zotero's reference management system across multiple devices.
-- [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): Minimalist implementation of the ELO-based task prioritization algorithm, enabling automated ranking of to-do lists through interactive comparisons and score calculations.
+- [claude_usage](https://github.com/thiswillbeyourgithub/claude_usage): I needed to read my Claude.ai plan usage from the command line, and a skill that lets Claude Code wait out the 5-hour limit and then resume on its own.
+- [MacroMaker](https://github.com/thiswillbeyourgithub/MacroMaker): *[Unfinished]* I needed to record mouse sequences as readable YAML files and replay them, using OCR to find where to click.
+- [save_to_zotero](https://github.com/thiswillbeyourgithub/save_to_zotero): I needed to turn web pages into clean PDFs with proper metadata in Zotero, so I could read and annotate them on every device after [Omnivore](https://github.com/omnivore-app/omnivore) shut down.
+- [mini_LiTOY](https://github.com/thiswillbeyourgithub/mini_LiTOY): I needed to rank my to-do list by pairwise ELO comparisons ("which matters more?"), in a minimal library that other tools could build on.
     - [LiTOY](https://github.com/thiswillbeyourgithub/LiTOY-aka-List-that-Outlives-You): Smart prioritization tool utilizing pairwise comparisons and ELO ratings to rank personal goals based on importance and time investment.
 - [BrownieCutter](https://github.com/thiswillbeyourgithub/BrownieCutter): Template generator for Python projects that automates boilerplate code creation and project structure setup with customizable configurations.
     - Archived because my main setup now involves [aider](https://aider.chat) instead.
@@ -191,7 +191,7 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 
 - [wormrot.sh](https://github.com/thiswillbeyourgithub/wormrot.sh): I needed [magic-wormhole](https://magic-wormhole.readthedocs.io/) codes that both computers derive from the time and a shared secret, so I never have to pass one along.
 - [fowlrot.sh](https://github.com/thiswillbeyourgithub/fowlrot.sh): I needed the same time-based code rotation as [wormrot.sh](https://github.com/thiswillbeyourgithub/wormrot.sh), applied to [fowl](https://github.com/meejah/fowl/) connections.
-- [knockd_rotator](https://github.com/thiswillbeyourgithub/knockd_rotator): Security enhancement to port knocking via time-based sequence rotation and synchronization between client and server, leveraging shared secrets and deterministic generation to prevent replay attacks.
+- [knockd_rotator](https://github.com/thiswillbeyourgithub/knockd_rotator): I needed [knockd](https://github.com/jvinet/knock) sequences that the client and the server both derive from the time and a shared secret, to prevent replay attacks.
 
 ## Ntfy
 *[ntfy.sh](https://ntfy.sh) makes it easy to send and receive notifications, I use it a lot for monitoring*
