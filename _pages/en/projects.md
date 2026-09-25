@@ -189,8 +189,8 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 *Tools leveraging deterministic time-based codes*
 *3 projects so far*
 
-- [wormrot.sh](https://github.com/thiswillbeyourgithub/wormrot.sh): Secure file transfer automation system using time-synchronized codes and a shared secret for seamless transmission between trusted devices.
-- [fowlrot.sh](https://github.com/thiswillbeyourgithub/fowlrot.sh): Time-based code generation system for secure peer-to-peer connections using synchronized, deterministic codes derived from pre-shared secrets.
+- [wormrot.sh](https://github.com/thiswillbeyourgithub/wormrot.sh): I needed [magic-wormhole](https://magic-wormhole.readthedocs.io/) codes that both computers derive from the time and a shared secret, so I never have to pass one along.
+- [fowlrot.sh](https://github.com/thiswillbeyourgithub/fowlrot.sh): I needed the same time-based code rotation as [wormrot.sh](https://github.com/thiswillbeyourgithub/wormrot.sh), applied to [fowl](https://github.com/meejah/fowl/) connections.
 - [knockd_rotator](https://github.com/thiswillbeyourgithub/knockd_rotator): Security enhancement to port knocking via time-based sequence rotation and synchronization between client and server, leveraging shared secrets and deterministic generation to prevent replay attacks.
 
 ## Ntfy
@@ -202,9 +202,9 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [Ntfy_CSV_Reminders](https://github.com/thiswillbeyourgithub/Ntfy_CSV_Reminders): I needed reminders for recurring tasks, each sent with a 1/n chance per day, to avoid notification fatigue.
 - [ntfy_systemd](https://github.com/thiswillbeyourgithub/ntfy_systemd): I needed a phone notification with the unit's status whenever a systemd service failed or became degraded.
 - [ntfy_syncthing_conflict_checker](https://github.com/thiswillbeyourgithub/ntfy_syncthing_conflict_checker): I needed to scan all my Syncthing folders for conflict files and get notified when some appeared.
-- [ntfy_fail2ban](https://github.com/thiswillbeyourgithub/ntfy_fail2ban): Security monitoring tool that integrates Fail2Ban with ntfy.sh to deliver real-time notifications about potential intrusion attempts and IP blocks.
-- [weather_notifier](https://github.com/thiswillbeyourgithub/weather_notifier): Weather notification system that monitors rainfall forecasts and temperature variations while delivering mobile alerts through ntfy.sh integration.
-- [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
+- [ntfy_fail2ban](https://github.com/thiswillbeyourgithub/ntfy_fail2ban): I needed a periodic summary of the IPs found, banned or blocked by Fail2Ban and UFW, sent to my phone.
+- [weather_notifier](https://github.com/thiswillbeyourgithub/weather_notifier): I needed a phone alert when rain was forecast or when the next days would be warmer or colder than usual.
+- [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): I needed an alert when old films like *Stalker* or *Solaris* were screened in theaters around me.
 
 ## Miscellaneous Tools
 *46 projects so far*
