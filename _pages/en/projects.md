@@ -197,11 +197,11 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 *[ntfy.sh](https://ntfy.sh) makes it easy to send and receive notifications, I use it a lot for monitoring*
 *8 projects so far*
 
-- [ntfy_nmap_watcher](https://github.com/thiswillbeyourgithub/ntfy_nmap_watcher): Monitor external server ports with automated nmap scans and instant notifications for UFW configuration changes.
-- [Daily_Fact_Ntfy](https://github.com/thiswillbeyourgithub/Daily_Fact_Ntfy): Notification system that generates and delivers AI-powered interesting facts about user-specified topics through ntfy.sh at randomized intervals.
-- [Ntfy_CSV_Reminders](https://github.com/thiswillbeyourgithub/Ntfy_CSV_Reminders): Probability-based notification system for managing recurring tasks with randomized timing to prevent notification fatigue.
-- [ntfy_systemd](https://github.com/thiswillbeyourgithub/ntfy_systemd): Monitoring system that tracks systemd service failures and sends instant notifications through ntfy with detailed status reports.
-- [ntfy_syncthing_conflict_checker](https://github.com/thiswillbeyourgithub/ntfy_syncthing_conflict_checker): Monitoring tool for detecting and reporting file conflicts in Syncthing shared folders with support for local and remote notifications.
+- [ntfy_nmap_watcher](https://github.com/thiswillbeyourgithub/ntfy_nmap_watcher): I needed to scan my servers from the outside to catch outdated [ufw-docker](https://github.com/chaifeng/ufw-docker) rules that left services exposed by mistake.
+- [Daily_Fact_Ntfy](https://github.com/thiswillbeyourgithub/Daily_Fact_Ntfy): I wanted an LLM to send me an interesting fact about a chosen topic at a random time of day.
+- [Ntfy_CSV_Reminders](https://github.com/thiswillbeyourgithub/Ntfy_CSV_Reminders): I needed reminders for recurring tasks, each sent with a 1/n chance per day, to avoid notification fatigue.
+- [ntfy_systemd](https://github.com/thiswillbeyourgithub/ntfy_systemd): I needed a phone notification with the unit's status whenever a systemd service failed or became degraded.
+- [ntfy_syncthing_conflict_checker](https://github.com/thiswillbeyourgithub/ntfy_syncthing_conflict_checker): I needed to scan all my Syncthing folders for conflict files and get notified when some appeared.
 - [ntfy_fail2ban](https://github.com/thiswillbeyourgithub/ntfy_fail2ban): Security monitoring tool that integrates Fail2Ban with ntfy.sh to deliver real-time notifications about potential intrusion attempts and IP blocks.
 - [weather_notifier](https://github.com/thiswillbeyourgithub/weather_notifier): Weather notification system that monitors rainfall forecasts and temperature variations while delivering mobile alerts through ntfy.sh integration.
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): Movie monitoring tool that automatically checks theater listings for specific films and sends notifications when they become available.
