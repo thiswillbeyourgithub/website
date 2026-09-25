@@ -208,9 +208,9 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 
 ## Miscellaneous Tools
 *46 projects so far*
-- [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): Convert ICD-11 data into langchain Document objects for enhanced retrieval and search applications. To make a [gradioSearcher](https://github.com/thiswillbeyourgithub/GradioSearcher)-based search engine for ICD-11 classification codes.
+- [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): I needed to search ICD-11 codes by meaning rather than by exact keywords.
 - [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan): Linux daemon that drives NVIDIA fan speeds from the GDDR6X memory junction temperature instead of just the core, because the stock driver curve ignores VRAM that can run 25C hotter than the GPU. Includes hysteresis and step limits to avoid thermal cycling, a minimum fan floor, an optional power limit, and fail-safe behavior that pushes fans to 100% on any sensor or watchdog failure.
-- [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): A small script that flattens both legacy and threaded `.xlsx` cell comments directly into each cell's text, so they remain visible in viewers (like Nextcloud's mobile renderer) that don't display threaded comments.
+- [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): Comments in some `.xlsx` files were invisible in Nextcloud's mobile viewer, so this script moves them into the cells.
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): I needed to keep API keys out of my `.zshrc` in plain text without adding a secrets manager.
 - [ufw-docker-recap](https://github.com/thiswillbeyourgithub/ufw-docker-recap): I needed to double-check which container ports my firewall really exposed.
 - [ntrig-calib](https://github.com/thiswillbeyourgithub/ntrig-calib): I needed to fix a dead touchscreen zone on a Surface Pro 3 under Linux (reverse-engineered with Claude from the Windows calibration tool).
@@ -250,10 +250,10 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [MediaDurationRecursiveChecker](https://github.com/thiswillbeyourgithub/MediaDurationRecursiveChecker): My partner, who works in video production, needed to know the total duration of the footage on a hard drive.
 - [MediaMetadataExtractor](https://github.com/thiswillbeyourgithub/MediaMetadataExtractor): My partner also needed the technical metadata of large batches of video files, without opening them one by one.
 - [MediaSizeOrHashMatcher](https://github.com/thiswillbeyourgithub/MediaSizeOrHashMatcher): I needed to find which video files in one folder already existed in another, even under a different name.
-- [llm_agent](https://github.com/thiswillbeyourgithub/llm_agent): Plugin system enabling intelligent task automation through multiple search engines, autonomous web browsing, file manipulation, and shell access with built-in safety controls and persistent memory capabilities.
+- [llm_agent](https://github.com/thiswillbeyourgithub/llm_agent): *[Archived]* I wanted to see whether a simple LangChain agent could be added to Simon Willison's [llm](https://llm.datasette.io/) command-line tool.
 - [fancontrol_autohealing_config](https://github.com/thiswillbeyourgithub/fancontrol_autohealing_config): My fan control stopped working after reboots because Linux renumbered the hwmon devices.
-- [prompt_GPT3](https://github.com/thiswillbeyourgithub/prompt_GPT3): Command-line interface for OpenAI's GPT-3 featuring conversation logging, vim mode, and specialized modes for flashcard creation and translation tasks.
-- [pdfannots](https://github.com/thiswillbeyourgithub/pdfannots): Text extraction tool for PDF documents that processes annotations, highlights, and comments into formatted Markdown, JSON, or EDN outputs for academic paper reviews and document analysis.
+- [prompt_GPT3](https://github.com/thiswillbeyourgithub/prompt_GPT3): *[Archived]* I needed a quick way to create Anki cloze cards and translations from the terminal with GPT-3.
+- [pdfannots](https://github.com/thiswillbeyourgithub/pdfannots): A fork I made to adapt the extraction of PDF highlights and comments to my own note-taking.
 
 ## Others
 *8 projects so far*
