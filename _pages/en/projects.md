@@ -236,11 +236,11 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [whisper_audio_splitter](https://github.com/thiswillbeyourgithub/whisper_audio_splitter): I needed to record Anki cards out loud in one session, saying "stop" between each, and get one audio file per card.
 - [corpus_matcher](https://github.com/thiswillbeyourgithub/corpus_matcher): I needed a library to find where a slightly altered piece of text came from in a large corpus.
 - [speech.sh](https://github.com/thiswillbeyourgithub/speech.sh): I needed to type and have it read aloud when I suddenly lost my voice (made in 30 minutes).
-- [OpenrouterModelFilter](https://github.com/thiswillbeyourgithub/OpenrouterModelFilter): Command-line utility for filtering and sorting OpenRouter API models based on customizable criteria such as pricing, context length, and model characteristics.
-- [iptables_rate_limit_modifier](https://github.com/thiswillbeyourgithub/iptables_rate_limit_modifier): Network management tool that automatically adjusts rate-limiting thresholds in iptables rules to prevent false positives while maintaining security against malicious traffic.
-- [Load_Average_Balancer.sh](https://github.com/thiswillbeyourgithub/load_average_balancer): System resource management tool for delaying CPU-intensive tasks until optimal load conditions are met, integrating with backup solutions like restic.
-- [PDF_batch_decryptor](https://github.com/thiswillbeyourgithub/PDF_batch_decryptor): Command-line tool for automated decryption of multiple password-protected PDF files using qpdf and pdfinfo utilities.
-- [Spotify_tts](https://github.com/thiswillbeyourgithub/Spotify_tts): Music player companion that announces currently playing tracks using either basic or AI-powered text-to-speech synthesis.
+- [OpenrouterModelFilter](https://github.com/thiswillbeyourgithub/OpenrouterModelFilter): I needed a filtered list of OpenRouter models.
+- [iptables_rate_limit_modifier](https://github.com/thiswillbeyourgithub/iptables_rate_limit_modifier): I needed less aggressive rate limiting in UFW.
+- [Load_Average_Balancer.sh](https://github.com/thiswillbeyourgithub/load_average_balancer): I needed to delay heavy tasks while the CPU was busy.
+- [PDF_batch_decryptor](https://github.com/thiswillbeyourgithub/PDF_batch_decryptor): I needed to decrypt many PDFs in bulk.
+- [Spotify_tts](https://github.com/thiswillbeyourgithub/Spotify_tts): I wanted to learn the titles of the songs I was listening to without looking at the screen.
 - [ufw_auto_ssh_whitelist](https://github.com/thiswillbeyourgithub/ufw_auto_ssh_whitelist): Automated firewall management system for SSH connections with dynamic whitelisting and rule cleanup capabilities.
 - [ufw_block_analyzer](https://github.com/thiswillbeyourgithub/ufw_block_analyzer): Real-time monitoring and analysis system for UFW firewall logs with Docker network context enrichment and structured TOML output.
 - [btrfs_cow_disabler](https://github.com/thiswillbeyourgithub/BTRFS_CoW_Disabler): Command-line utility for disabling Copy-on-Write functionality on Btrfs filesystems through atomic file operations and checksum verification.
