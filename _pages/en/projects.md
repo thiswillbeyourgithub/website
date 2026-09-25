@@ -153,15 +153,15 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 
 - [InfiniSleep-tracking](https://github.com/thiswillbeyourgithub/InfiniSleep-tracking): *See above*
 - [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker):  *See above*
-- [pomodoro_wasp_os](https://github.com/thiswillbeyourgithub/Pomodoro-wasp-os): Customizable Pomodoro timer application for PineTime smartwatches featuring multiple presets, vibration patterns, and persistent settings.
+- [pomodoro_wasp_os](https://github.com/thiswillbeyourgithub/Pomodoro-wasp-os): I needed a Pomodoro app for [wasp-os](https://github.com/wasp-os/wasp-os) with presets, configurable vibration patterns and settings that persist between sessions.
 
 ## API
 *I made my own "reference" libraries to make my other projects more interoperable*
 *5 projects so far*
 
-- [freshrss_python_api](https://github.com/thiswillbeyourgithub/freshrss_python_api): Python wrapper and API client for the FreshRSS Fever API, enabling programmatic management of RSS feeds, items, and categories with robust error handling and type safety.
-- [caldav_tasks_api](https://github.com/thiswillbeyourgithub/Caldav-Tasks-API): Python library and CLI tool for advanced CalDAV task management with features like task synchronization, ELO-based prioritization, and comprehensive task manipulation capabilities.
-    - [caldav_cal_api](https://github.com/thiswillbeyourgithub/Caldav-Cal-API): the same idea applied to calendar events instead of tasks.
+- [freshrss_python_api](https://github.com/thiswillbeyourgithub/freshrss_python_api): I needed a typed Python wrapper around the FreshRSS Fever API to fetch, mark and organize feed items from scripts.
+- [caldav_tasks_api](https://github.com/thiswillbeyourgithub/Caldav-Tasks-API): I needed a library and CLI to create, fetch and delete CalDAV tasks, which my Home Assistant voice setup and other tools build on.
+    - [caldav_cal_api](https://github.com/thiswillbeyourgithub/Caldav-Cal-API): I needed for calendar events (VEVENTs) what caldav_tasks_api gives me for tasks, with the same layout and naming.
 - [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): *See above*
 - [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): *See above*
 
@@ -182,7 +182,7 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [SAIC (SimpleAICommits)](https://github.com/thiswillbeyourgithub/SimpleAICcommits): I needed commit messages suggested from my staged diff that follow my own past commits, and let me pick one with fzf.
 - [Quick_Whisper_Typer](https://github.com/thiswillbeyourgithub/Quick-Whisper-Typer): I needed to press a key, speak, and have the transcription typed wherever my cursor was, as a minimal alternative to [AquaVoice](https://withaqua.com/).
 - [simple_voice_chat](https://github.com/thiswillbeyourgithub/simple_voice_chat): I needed a voice chat interface where I can freely combine speech-to-text, LLM and text-to-speech providers, built on [fastrtc](https://github.com/gradio-app/fastrtc).
-- [AiderBuilder](https://github.com/thiswillbeyourgithub/AiderBuilder): Minimal script and prompt to give [aider.chat](https://aider.chat/) some autonomy by running in a loop and coordinating with itself using a text file.
+- [AiderBuilder](https://github.com/thiswillbeyourgithub/AiderBuilder): *[Archived]* I needed a minimal zsh script that turns [aider](https://aider.chat/) into a recursive agent, which I used to build several of the smaller tools on this page.
 
 ## "Rot" tools
 *Tools leveraging deterministic time-based codes*
