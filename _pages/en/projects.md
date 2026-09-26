@@ -135,17 +135,17 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 *[Logseq](https://github.com/logseq/logseq) is an open source PKM (Personal Knowledge Management) app*
 *4 projects so far*
 
-- [LogseqMarkdownParser](https://github.com/thiswillbeyourgithub/LogseqMarkdownParser): Parser and utility library supporting seamless reading, manipulation and export of Logseq markdown files with properties and blocks.
-- [wallabag_to_logseq_and_omnivore](https://github.com/thiswillbeyourgithub/wallabag_to_logseq_and_omnivore): Python script for seamless migration of articles and highlights from Wallabag to Logseq and Omnivore reading platforms, ensuring continuity of reading history and annotations.
-- [LogseqPDFImporter](https://github.com/thiswillbeyourgithub/LogseqPDFImporter): Tool for importing and converting PDF annotations from various PDF readers into Logseq's native format, preserving highlights, colors, and area annotations.
+- [LogseqMarkdownParser](https://github.com/thiswillbeyourgithub/LogseqMarkdownParser): I needed a small library and CLI to access the properties of Logseq blocks, with JSON output to use with `jq`.
+- [wallabag_to_logseq_and_omnivore](https://github.com/thiswillbeyourgithub/wallabag_to_logseq_and_omnivore): *[Archived]* I needed to import my read Wallabag articles and highlights into Logseq, and send the unread ones to Omnivore.
+- [LogseqPDFImporter](https://github.com/thiswillbeyourgithub/LogseqPDFImporter): I needed to import PDFs annotated in other readers into Logseq, keeping highlight colors and area highlights as images.
 - [MdXLogseqTODOSync](https://github.com/thiswillbeyourgithub/MdXLogseqTODOSync): Synchronization tool for maintaining TODO items across different markdown file formats with support for pattern filtering, custom delimiters, and nested bullet point preservation.
 
 ## Open-WebUI
 *[Open-WebUI](https://github.com/open-webui/open-webui/issues) is a self hosted AI platform*
 *2 projects so far*
 
-- [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): synchronizes zotero or a directory to a knowledge base in [OpenWebUI](https://docs.openwebui.com/). To be more efficient when catching up on recent psychiatry research.
-- [openwebui_custom_pipes_filters](https://github.com/thiswillbeyourgithub/openwebui_custom_pipes_filters): Comprehensive suite of custom filters, tools, and pipes designed to enhance OpenWebUI's functionality with message tracking, cost monitoring, and extended chat capabilities.
+- [Open-WebUI Knowledge Zotero Sync](https://github.com/thiswillbeyourgithub/openwebui-knowledge-zotero-sync): I needed to sync my Zotero library into an Open WebUI knowledge base (a fork of [stoerr/openwebui-knowledgesync](https://github.com/stoerr/openwebui-knowledgesync), to be retired once my Zotero connector lands in the official [oikb](https://github.com/open-webui/oikb)).
+- [openwebui_custom_pipes_filters](https://github.com/thiswillbeyourgithub/openwebui_custom_pipes_filters): I needed my own collection of Open WebUI filters, tools and templates, for example to pass user metadata to Langfuse or to limit chat length.
 
 ## Smartwatch
 *Mainly for [wasp-os](https://github.com/wasp-os/wasp-os) and [InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime) on the [pinetime](https://pine64.org/devices/pinetime/)*
