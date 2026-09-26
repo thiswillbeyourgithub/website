@@ -112,16 +112,16 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [Voice2Anki](https://github.com/thiswillbeyourgithub/Voice2Anki): Universal language learning tool combining speech recognition and AI to automatically generate and manage personalized flashcards from voice recordings with adaptive formatting and intelligent memory features.
 - [AnkiAiUtils](https://github.com/thiswillbeyourgithub/AnkiAIUtils){: #ankiaiutils}: Advanced toolkit that enhances Anki flashcards through automated AI-powered generation of explanations, mnemonics, illustrations and reformulations, with support for personalized memory systems and semantic similarity matching.
 - [AnnA_anki_neuronal_Appendix](https://github.com/thiswillbeyourgithub/AnnA_Anki_neuronal_Appendix){: #anna}: Machine learning system that optimizes Anki flashcard review order by analyzing semantic similarities to prevent reviewing related cards together, improving retention while reducing daily workload.
-- [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): Library that simplifies interaction with Anki flashcard software through its AnkiConnect API, offering both command-line and Python interfaces.
-- [AnkiAutoMindmap](https://github.com/thiswillbeyourgithub/AnkiAutoMindmap): Tool for automated generation of mindmaps and mermaid diagrams based on Anki flashcard content and tag hierarchies.
+- [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): I needed a simple way to talk to Anki from my Python projects and from the command line.
+- [AnkiAutoMindmap](https://github.com/thiswillbeyourgithub/AnkiAutoMindmap): I needed an overview of everything I had written on a topic (for example headaches), as mind maps built from my cards.
 - [i3_seach_anki_collection](https://github.com/thiswillbeyourgithub/i3_search_anki_collection): I needed an i3 key binding that opens a search prompt and shows the matching cards in Anki's browser.
 - [HapaxPredator](https://github.com/thiswillbeyourgithub/HapaxPredator): I needed an add-on that lists every word in the selected cards by frequency, so that rare words (often misspellings) stand out.
 - [IndexableAnki](https://github.com/thiswillbeyourgithub/IndexableAnki): *[Archived]* I needed to export each Anki card as a text file so that [Recoll](https://www.lesbonscomptes.com/recoll/) could index it (since superseded by [wdoc](#wdoc)'s Anki parser).
 - [anki_PrioriTag](https://github.com/thiswillbeyourgithub/anki_Prioritag): I needed a filtered deck built from the tags that contain the most forgotten cards.
 - [anki_autobury_added_today](https://github.com/thiswillbeyourgithub/anki_autobury_added_today): I needed to bury the cards I created today so they would not come up for review before the next day.
-- [Anki Semantic Search](https://github.com/thiswillbeyourgithub/Anki-Semantic-Search): Semantic search engine utilizing fastText's multilingual word vectors to intelligently search through Anki flashcard collections based on meaning rather than exact matches.
-- [pdf2anki](https://github.com/thiswillbeyourgithub/pdf2anki): Tool for batch-converting PDF documents into Anki flashcards with searchable text and page images, enabling multi-keyword search across PDF content within Anki's interface.
-- [clozolkor](https://github.com/thiswillbeyourgithub/Clozolkor): Advanced spaced repetition flashcard template enabling sequential reveal of cloze deletions with customizable hints, shortcuts, and cross-platform compatibility.
+- [Anki Semantic Search](https://github.com/thiswillbeyourgithub/Anki-Semantic-Search): *[Archived]* I needed to find cards by meaning, not only by the exact words they contain.
+- [pdf2anki](https://github.com/thiswillbeyourgithub/pdf2anki): I needed to search inside my PDFs with Anki's search, which handles several keywords and partial words well.
+- [clozolkor](https://github.com/thiswillbeyourgithub/Clozolkor): I needed to reveal long cloze cards (lists, steps) one item at a time, instead of all at once.
 
 ## Karakeep
 *[Karakeep](https://github.com/karakeep-app/karakeep) is an open source read it later app*
