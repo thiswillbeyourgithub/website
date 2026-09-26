@@ -127,9 +127,9 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 *[Karakeep](https://github.com/karakeep-app/karakeep) is an open source read it later app*
 *3 projects so far*
 
-- [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): Python interface and command-line tool providing comprehensive access to Karakeep's bookmarking API with automated testing, data validation, and community-contributed scripts.
-- [Karanki](https://github.com/thiswillbeyourgithub/Karanki): Bidirectional synchronization tool for automating flashcard creation from highlights with color-coded retention levels and intelligent state tracking capabilities.
-- [freshrss_to_karakeep](https://github.com/thiswillbeyourgithub/freshrss_to_karakeep): Integration tool connecting FreshRSS RSS reader with Karakeep bookmarking service for automated content curation and seamless article transfer between platforms.
+- [karakeep_python_api](https://github.com/thiswillbeyourgithub/karakeep_python_api): I needed an unofficial Python client and CLI for the [Karakeep](https://karakeep.app/) API, which my Karakeep tools build on.
+- [Karanki](https://github.com/thiswillbeyourgithub/Karanki): *[Unfinished]* I needed to sync my Karakeep highlights with Anki both ways, with each highlight color mapped to a deck with its own target retention.
+- [freshrss_to_karakeep](https://github.com/thiswillbeyourgithub/freshrss_to_karakeep): I needed a scheduled job that sends the items I mark as favorites in [FreshRSS](https://github.com/FreshRSS/FreshRSS) to Karakeep with a "freshrss" tag.
 
 ## Logseq
 *[Logseq](https://github.com/logseq/logseq) is an open source PKM (Personal Knowledge Management) app*
@@ -138,7 +138,7 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [LogseqMarkdownParser](https://github.com/thiswillbeyourgithub/LogseqMarkdownParser): I needed a small library and CLI to access the properties of Logseq blocks, with JSON output to use with `jq`.
 - [wallabag_to_logseq_and_omnivore](https://github.com/thiswillbeyourgithub/wallabag_to_logseq_and_omnivore): *[Archived]* I needed to import my read Wallabag articles and highlights into Logseq, and send the unread ones to Omnivore.
 - [LogseqPDFImporter](https://github.com/thiswillbeyourgithub/LogseqPDFImporter): I needed to import PDFs annotated in other readers into Logseq, keeping highlight colors and area highlights as images.
-- [MdXLogseqTODOSync](https://github.com/thiswillbeyourgithub/MdXLogseqTODOSync): Synchronization tool for maintaining TODO items across different markdown file formats with support for pattern filtering, custom delimiters, and nested bullet point preservation.
+- [MdXLogseqTODOSync](https://github.com/thiswillbeyourgithub/MdXLogseqTODOSync): I needed to sync the TODO items between delimiters in two Markdown files, so that updating my Logseq graph updates a repository's README.
 
 ## Open-WebUI
 *[Open-WebUI](https://github.com/open-webui/open-webui/issues) is a self hosted AI platform*
@@ -256,7 +256,7 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 
 ## Others
 *8 projects so far*
-- [FUTOmeter](https://github.com/thiswillbeyourgithub/FUTOmeter): Library suite for privacy-preserving usage tracking and context-aware donation prompts in FOSS applications, enabling sustainable funding through data-driven user engagement metrics.
+- [FUTOmeter](https://github.com/thiswillbeyourgithub/FUTOmeter): *[Idea]* I wanted to sketch a privacy-preserving way for FOSS apps to measure usage locally and show well-timed donation prompts, in the spirit of FUTO.
 
 ---
 
