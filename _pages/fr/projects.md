@@ -32,7 +32,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 <details><summary><i>Une note sur le "vibecoding"</i></summary>
 <ul>
-    <li><i>Je ne fais pas de <a href="https://simonwillison.net/2025/Mar/19/vibe-coding/">vibecoding</a> sur ces projets. Je ne les génère pas en mode mains libres en publiant ce que le modèle produit. J'écris des spécifications techniques soignées et j'assume la responsabilité de chaque décision de conception derrière le code. L'IA est un outil que je pilote, pas un pilote automatique.</i></li>
+    <li><i>La plupart du temps, je ne fais pas de <a href="https://simonwillison.net/2025/Mar/19/vibe-coding/">vibecoding</a> sur ces projets : j'essaie d'écrire des spécifications techniques soignées, j'utilise des tests unitaires aussi souvent que possible, et j'assume la responsabilité des choix de conception derrière le code. Dans les rares cas où un petit projet annexe a été vibecodé, son README le dit explicitement.</i></li>
 </ul>
 </details>
 
