@@ -97,10 +97,10 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 ## Machine learning
 *6 projects so far*
 
-- [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): A FastAPI-based API for PII (Personally Identifiable Information) anonymization using local LLMs ([Ollama](https://ollama.com/)/[vllm](https://vllm.ai/)) with [Presidio](https://microsoft.github.io/presidio/) compatibility and enhanced entity definition flexibility.
-    - [PII French Medical Test Suite](https://github.com/thiswillbeyourgithub/PII_french_medical_test_suite): A Python-based test runner for assessing Microsoft Presidio's PII detection in French medical text, complete with detailed analysis and metrics.
-- [Beta-Variational-Autoencoder](https://github.com/thiswillbeyourgithub/Beta-Variational-Autoencoder): Deep learning model implementing beta-variational autoencoder architecture for dimensionality reduction and data compression using the scikit-learn API.
-- [GridSearchReductor](https://github.com/thiswillbeyourgithub/GridSearchReductor): Statistical optimization tool leveraging stratified sampling to reduce parameter search space while maintaining effective parameter coverage in experiments. Vibecoded.
+- [LLM Presidio Like PII Remover](https://github.com/thiswillbeyourgithub/LLM_presidio_like_PII_remover): I wanted to see how well small local LLMs can spot personal information in text, using plain-language definitions instead of trained models.
+    - [PII French Medical Test Suite](https://github.com/thiswillbeyourgithub/PII_french_medical_test_suite): I needed a way to measure how well these models detect personal information in French medical sentences containing fake data.
+- [Beta-Variational-Autoencoder](https://github.com/thiswillbeyourgithub/Beta-Variational-Autoencoder): I needed a simple beta-VAE with a scikit-learn interface for another project and could not find one.
+- [GridSearchReductor](https://github.com/thiswillbeyourgithub/GridSearchReductor): I needed to run fewer experiments than a full grid search while still covering the parameter space reasonably well.
 - [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): *See above*
 - `REDACTED NAME`: *See above*
 
@@ -208,7 +208,7 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 ## Miscellaneous Tools
 *46 projects so far*
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): I needed to search ICD-11 codes by meaning rather than by exact keywords.
-- [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan): Linux daemon that drives NVIDIA fan speeds from the GDDR6X memory junction temperature instead of just the core, because the stock driver curve ignores VRAM that can run 25C hotter than the GPU. Includes hysteresis and step limits to avoid thermal cycling, a minimum fan floor, an optional power limit, and fail-safe behavior that pushes fans to 100% on any sensor or watchdog failure.
+- [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan): I needed to keep my GPU's memory from overheating, since the stock fan curve only reacts to the core temperature.
 - [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): Comments in some `.xlsx` files were invisible in Nextcloud's mobile viewer, so this script moves them into the cells.
 - [envlocker](https://github.com/thiswillbeyourgithub/envlocker): I needed to keep API keys out of my `.zshrc` in plain text without adding a secrets manager.
 - [ufw-docker-recap](https://github.com/thiswillbeyourgithub/ufw-docker-recap): I needed to double-check which container ports my firewall really exposed.
