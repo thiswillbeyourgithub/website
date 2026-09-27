@@ -108,10 +108,10 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 *[Anki](https://github.com/ankitects/anki/) is an open source flashcard/spaced repetition memorization system*
 *14 projects so far*
 
-- [Stahl Ankifier](https://github.com/thiswillbeyourgithub/StahlAnkifier): Convert the book `Prescriber's Guide - Stahl's Essential Psychopharmacology` PDF into [Anki flashcards](https://apps.ankiweb.net/) to make better psychiatrists.
-- [Voice2Anki](https://github.com/thiswillbeyourgithub/Voice2Anki): Universal language learning tool combining speech recognition and AI to automatically generate and manage personalized flashcards from voice recordings with adaptive formatting and intelligent memory features.
-- [AnkiAiUtils](https://github.com/thiswillbeyourgithub/AnkiAIUtils){: #ankiaiutils}: Advanced toolkit that enhances Anki flashcards through automated AI-powered generation of explanations, mnemonics, illustrations and reformulations, with support for personalized memory systems and semantic similarity matching.
-- [AnnA_anki_neuronal_Appendix](https://github.com/thiswillbeyourgithub/AnnA_Anki_neuronal_Appendix){: #anna}: Machine learning system that optimizes Anki flashcard review order by analyzing semantic similarities to prevent reviewing related cards together, improving retention while reducing daily workload.
+- [Stahl Ankifier](https://github.com/thiswillbeyourgithub/StahlAnkifier): I needed to memorize the *Prescriber's Guide* (Stahl) as a psychiatry resident, and turning the PDF into cards by hand would have taken months.
+- [Voice2Anki](https://github.com/thiswillbeyourgithub/Voice2Anki): I needed to create good flashcards quickly by speaking them, in my own phrasing, on any subject.
+- [AnkiAiUtils](https://github.com/thiswillbeyourgithub/AnkiAIUtils){: #ankiaiutils}: I needed extra help with the cards I kept failing, such as an explanation, a mnemonic or an illustration added automatically.
+- [AnnA_anki_neuronal_Appendix](https://github.com/thiswillbeyourgithub/AnnA_Anki_neuronal_Appendix){: #anna}: I needed to stop reviewing near-identical cards on the same day, and to get through a backlog without losing retention.
 - [py_ankiconnect](https://github.com/thiswillbeyourgithub/py_ankiconnect): I needed a simple way to talk to Anki from my Python projects and from the command line.
 - [AnkiAutoMindmap](https://github.com/thiswillbeyourgithub/AnkiAutoMindmap): I needed an overview of everything I had written on a topic (for example headaches), as mind maps built from my cards.
 - [i3_seach_anki_collection](https://github.com/thiswillbeyourgithub/i3_search_anki_collection): I needed an i3 key binding that opens a search prompt and shows the matching cards in Anki's browser.
