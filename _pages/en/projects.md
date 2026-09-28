@@ -57,8 +57,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 ## Medicine / Computer Science / Larger projects
 {: #larger-projects}
 *24 projects so far*
-- [justelesRCP](https://justelesrcp.olicorne.org): I needed the official French drug reference sheets (RCP) from the public ANSM/BDPM data as a fast static site with free AI-powered search, no ads and no tracking, and I host it at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org).
-- [neurarium](https://neurarium.olicorne.org/?lang=en): I wanted a 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model, and I host it at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en).
+- [justelesRCP](https://justelesrcp.olicorne.org): A fast static site for the official French drug reference sheets (RCP), built from the public ANSM/BDPM data, with free AI-powered search, no ads and no tracking (public instance at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
+- [neurarium](https://neurarium.olicorne.org/?lang=en): A 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model (public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en)).
 
 ### Medical audio transcription
 
@@ -66,32 +66,32 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 Common transcription software makes too many mistakes on medical text. UltiMed is my attempt at an open alternative: a dataset, a finetuned model, and the scripts behind them.
 
-- [parakeet-tdt-0.6b-v3-UltiMed-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx): I needed a French medical finetune of Parakeet, optimized for CPU and the browser, which makes 7 to 8 times fewer errors on technical medical text than the base model, and it can be tested in [Parakeet Web](https://parakeetweb.olicorne.org).
-- [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1): I wanted to make decent French medical dictation something any software vendor can offer for free, so I published 3,105 hours of machine-spoken, dictation-style sentences under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with no patient data involved.
-    - [UltiMed-ASR-FR-v1-scripts](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-scripts): I wanted others to be able to rebuild the dataset, or adapt it to another specialty or language.
-    - [UltiMed-ASR-FR-v1-Voxtral](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-Voxtral): I needed a carefully optimized local text-to-speech model to read every sentence of the dataset aloud.
-    - [UltiMed-ASR-FR-v1-NeMo_training_scripts](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-NeMo_training_scripts): I wanted the finetuning run, done on my own machine, to be reproducible.
-- [parakeet-tdt-0.6b-v3-optimized-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx): I needed a version of NVIDIA's [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) speech recognition model heavily optimized to run on low-end machines and in the browser.
-- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): I wanted voice transcription that runs entirely in the browser, and I host a free instance at [parakeetweb.olicorne.org](https://parakeetweb.olicorne.org) that serves both of my models.
-- [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd): *[Archived]* I needed a small Gradio app where several volunteers could record sentences at the same time to build a speech recognition dataset.
+- [parakeet-tdt-0.6b-v3-UltiMed-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx): A French medical finetune of Parakeet, optimized for CPU and the browser, with 7 to 8 times fewer errors on technical medical text than the base model (testable in [Parakeet Web](https://parakeetweb.olicorne.org)).
+- [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1): An open French medical speech dataset: 3,105 hours of machine-spoken, dictation-style sentences under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with no patient data involved, so that any software vendor can offer decent French medical dictation for free.
+    - [UltiMed-ASR-FR-v1-scripts](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-scripts): The generation pipeline, so that others can rebuild the dataset or adapt it to another specialty or language.
+    - [UltiMed-ASR-FR-v1-Voxtral](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-Voxtral): The carefully optimized local text-to-speech model that read every sentence of the dataset aloud.
+    - [UltiMed-ASR-FR-v1-NeMo_training_scripts](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-NeMo_training_scripts): The scripts to reproduce the finetuning run, done on my own machine.
+- [parakeet-tdt-0.6b-v3-optimized-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx): A version of NVIDIA's [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) speech recognition model heavily optimized to run on low-end machines and in the browser.
+- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): Voice transcription that runs entirely in the browser, serving multiple models including my own (free public instance at [parakeetweb.olicorne.org](https://parakeetweb.olicorne.org)).
+- [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd): *[Archived]* A small Gradio app where several volunteers could record sentences at the same time to build a speech recognition dataset.
 
 ### Other larger projects
 
-- [SAM3-Skin-HeartRate](https://github.com/thiswillbeyourgithub/SAM3-Skin-HeartRate): I wanted to reimplement [faceHR](https://github.com/ajsteele/faceHR) with automatic skin segmentation (SAM 3) to amplify the color changes from blood flow, with arterial punctures in mind.
-- [PrevMed](https://github.com/PrevMedOrg/PrevMed) (short for *Preventive Medicine*): A team needed a minimal, free and open-source platform where non-technical users write clinical questionnaires in YAML with no personal data stored (I was paid to design and then build it).
-- [wdoc](https://github.com/thiswillbeyourgithub/wdoc){: #wdoc}: I needed a tool to query and summarize documents of any kind (PDFs, YouTube videos, Anki, web pages, and more) with any LLM. (To be clear: no patient data is ever involved, not even anonymized, and not even on servers I run myself.)
-    - [OmniQA](https://github.com/thiswillbeyourgithub/OmniQA): *[Archived]* I wanted to index any kind of document and ask an LLM questions about it, the ancestor of [wdoc](#wdoc).
-- [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): I needed a fork to explore questions raised in [repeng](https://github.com/vgel/repeng/)'s issues, adding features such as chat-format inputs and Qwen3 support, which I proposed upstream.
-- `REDACTED NAME` (private repo): I needed a library that handles the many differences between clustering methods (no inference, fuzzy clusters, label remapping) in order to benchmark them all, the subject of my M1 internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin).
-- [gradio_pharmacokinetic_simulator](https://github.com/thiswillbeyourgithub/gradio_pharmacokinetic_simulator): I wanted an interactive plot of plasma concentrations over time under different dosing regimens, to train my pharmacokinetic intuition.
-    - [med-pharmacokinetic-simulator](https://github.com/thiswillbeyourgithub/Med-pharmacokinetic-simulator): A friend needed an R/Shiny simulation of immediate-release methylphenidate to plan doses around sleep, years before the Gradio version (one of my very first coding projects).
-- [ADHD_european_drug_map](https://github.com/thiswillbeyourgithub/ADHD-european-drug-map): A friend suggested it: I needed to download the EMA's medication list automatically and map which ADHD drugs are authorized in each country.
-- KnQuant (not yet pushed): *[Unfinished]* I wanted a library to turn unstructured text into knowledge triplets searchable with multi-modal embeddings.
-- [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA): I wanted to see whether embeddings and some math could extract more information from survey data, for example by letting different psychiatric questionnaires be compared.
-- [WebSend](https://github.com/thiswillbeyourgithub/WebSend): I needed a secure way to transfer phone photos to a firewalled computer, end-to-end encrypted over WebRTC through a server that cannot read them, and I host a free instance at [websend.olicorne.org](https://websend.olicorne.org).
-- [AiFormParser](https://github.com/thiswillbeyourgithub/AiFormParser): *[Unfinished]* I saw the need to turn paper clinical questionnaires into spreadsheets without the patient data ever leaving the browser.
-- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): I needed a sleep tracker for [wasp-os](https://github.com/wasp-os/wasp-os) with an alarm timed to my sleep cycles, which I have used every night since about 2021.
-    - [InfiniSleep-tracking](https://github.com/thiswillbeyourgithub/InfiniSleep-tracking): I needed my watch to record my sleep on its own, with the longer battery life of [InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime).
+- [SAM3-Skin-HeartRate](https://github.com/thiswillbeyourgithub/SAM3-Skin-HeartRate): A reimplementation of [faceHR](https://github.com/ajsteele/faceHR) with automatic skin segmentation (SAM 3) to amplify the color changes from blood flow, with arterial punctures in mind.
+- [PrevMed](https://github.com/PrevMedOrg/PrevMed) (short for *Preventive Medicine*): A minimal, free and open-source platform where non-technical users write clinical questionnaires in YAML with no personal data stored (I was paid to design and then build it).
+- [wdoc](https://github.com/thiswillbeyourgithub/wdoc){: #wdoc}: A tool to query and summarize documents of any kind (PDFs, YouTube videos, Anki, web pages, and more) with any LLM. (To be clear: no patient data is ever involved, not even anonymized, and not even on servers I run myself.)
+    - [OmniQA](https://github.com/thiswillbeyourgithub/OmniQA): *[Archived]* A tool to index any kind of document and ask an LLM questions about it, the ancestor of [wdoc](#wdoc).
+- [repeng-research-fork](https://github.com/thiswillbeyourgithub/repeng-research-fork): A fork to explore questions raised in [repeng](https://github.com/vgel/repeng/)'s issues, adding features such as chat-format inputs and Qwen3 support, proposed upstream.
+- `REDACTED NAME` (private repo): A library that handles the many differences between clustering methods (no inference, fuzzy clusters, label remapping) in order to benchmark them all, the subject of my M1 internship at [NeuroSpin](https://fr.wikipedia.org/wiki/NeuroSpin).
+- [gradio_pharmacokinetic_simulator](https://github.com/thiswillbeyourgithub/gradio_pharmacokinetic_simulator): An interactive plot of plasma concentrations over time under different dosing regimens, to train pharmacokinetic intuition.
+    - [med-pharmacokinetic-simulator](https://github.com/thiswillbeyourgithub/Med-pharmacokinetic-simulator): An R/Shiny simulation of immediate-release methylphenidate made for a friend to plan doses around sleep, years before the Gradio version (one of my very first coding projects).
+- [ADHD_european_drug_map](https://github.com/thiswillbeyourgithub/ADHD-european-drug-map): A map of which ADHD drugs are authorized in each European country, built automatically from the EMA's medication list (suggested by a friend).
+- KnQuant (not yet pushed): *[Unfinished]* A library to turn unstructured text into knowledge triplets searchable with multi-modal embeddings.
+- [QuestEA](https://github.com/thiswillbeyourgithub/QuestEA): An exploration of whether embeddings and some math can extract more information from survey data, for example by letting different psychiatric questionnaires be compared.
+- [WebSend](https://github.com/thiswillbeyourgithub/WebSend): A secure way to transfer phone photos to a firewalled computer, end-to-end encrypted over WebRTC through a server that cannot read them (free public instance at [websend.olicorne.org](https://websend.olicorne.org)).
+- [AiFormParser](https://github.com/thiswillbeyourgithub/AiFormParser): *[Unfinished]* A way to turn paper clinical questionnaires into spreadsheets without the patient data ever leaving the browser.
+- [sleep_tracker_pinetime](https://github.com/thiswillbeyourgithub/SleepTk_pinetime_sleep_tracker): A sleep tracker for [wasp-os](https://github.com/wasp-os/wasp-os) with an alarm timed to sleep cycles (used every night since about 2021).
+    - [InfiniSleep-tracking](https://github.com/thiswillbeyourgithub/InfiniSleep-tracking): A fork of [InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime) so that the watch records sleep on its own, with InfiniTime's longer battery life.
     - I use [my Gadgetbridge fork](https://codeberg.org/thiswillbeyourgithub/Gadgetbridge-infinisleep-tracking) to poll the data from the watch.
 
 ## Machine learning
