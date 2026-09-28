@@ -11,7 +11,7 @@ redirect_from:
 
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
 
-A word on scale before you scroll: most of what follows is itch-scratching. Small tools I built because something annoyed me, published in case it annoys you too. The work I'd want to be judged on is grouped under [Larger projects](#larger-projects). AI multiplied how much I can ship, but the foundations predate it: [wdoc](#wdoc), [AnnA](#anna) and [AnkiAIUtils](#ankiaiutils) were written by hand. (To be clear: no patient data is ever involved in any of it, not even anonymized, and not even on servers I run myself.)
+A word on scale before you scroll: most of what follows is itch-scratching. Small tools I built because something annoyed me, published in case it annoys you too. The work I'd want to be judged on is grouped under [Larger projects](#larger-projects). AI multiplied how much I can ship, but the foundations predate it: [wdoc](#wdoc), [AnnA](#anna) and [AnkiAIUtils](#ankiaiutils) were written by hand. (To be clear: no patient data is ever involved in any of this, not even anonymized, and not even on servers I run myself.) (To be clear: no patient data is ever involved in any of it, not even anonymized, and not even on servers I run myself.)
 
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
