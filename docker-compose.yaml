@@ -20,4 +20,5 @@ services:
     - no-new-privileges:true
     pull_policy: always
     restart: unless-stopped
+    oom_score_adj: -850   # almost never chosen (-1000 = never, caddy=900)
 
