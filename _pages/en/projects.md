@@ -11,13 +11,13 @@ redirect_from:
 
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
 
-A word on scale before you scroll: most of what follows is itch-scratching. Small tools I built because something annoyed me, published in case it annoys you too. The work I'd want to be judged on is grouped under [Larger projects](#larger-projects). AI multiplied how much I can ship, but the foundations predate it: [wdoc](#wdoc), [AnnA](#anna) and [AnkiAIUtils](#ankiaiutils) were written by hand. (To be clear: no patient data is ever involved in any of this, not even anonymized, and not even on servers I run myself.) (To be clear: no patient data is ever involved in any of it, not even anonymized, and not even on servers I run myself.)
+A word on scale before you scroll: most of what follows is itch-scratching. Small tools I built because something annoyed me, published in case it annoys you too. The work I'd want to be judged on is grouped under [Larger projects](#larger-projects). AI multiplied how much I can ship, but the foundations predate it: [wdoc](#wdoc), [AnnA](#anna) and [AnkiAIUtils](#ankiaiutils) were written by hand. (To be clear: no patient data is ever involved in any of this, not even anonymized, and not even on servers I run myself.)
 
 My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 134*
+*Individual project count on this page: 136*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -56,7 +56,9 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
 ## Medicine / Computer Science / Larger projects
 {: #larger-projects}
-*24 projects so far*
+*26 projects so far*
+- [justelesdocs](https://github.com/thiswillbeyourgithub/justelesdocs/blob/main/README.md): An AI search over hundreds of PDFs at once: you ask a question in plain language and land on the matching passage, highlighted on its original page, no ads and no tracking.
+    - [psydocs](https://psydocs.olicorne.org): Over 500 psychiatry guidelines and recommendations ([HAS](https://www.has-sante.fr/) and international bodies) searchable in one question, in French or English (free public instance at [psydocs.olicorne.org](https://psydocs.olicorne.org)).
 - [justelesRCP](https://justelesrcp.olicorne.org): A fast static site for the official French drug reference sheets (RCP), built from the public [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/) data, with free AI-powered search, no ads and no tracking (free public instance at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
 - [neurarium](https://neurarium.olicorne.org/?lang=en): A 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model (free public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en)).
 

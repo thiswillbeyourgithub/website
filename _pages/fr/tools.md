@@ -19,6 +19,8 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 # Outils pratiques
 *Certains de ces outils sont de moi ; leurs descriptions complètes sont sur [PROJETS](./projects). (Pour être clair : aucune donnée de patient n'est jamais impliquée, pas même anonymisée, et pas même sur des serveurs que j'héberge moi-même.)*
 
+- J'ai fait [psydocs](https://psydocs.olicorne.org), une recherche dans les recommandations de psychiatrie qui affiche le passage correspondant sur sa page d'origine, pour lire la source elle-même plutôt qu'un résumé. [Instance publique](https://psydocs.olicorne.org), [code source du logiciel](https://github.com/thiswillbeyourgithub/justelesdocs).
+
 - J'ai fait [neurarium](https://neurarium.olicorne.org/?lang=fr), un atlas de neuroanatomie en 3D couvrant les régions, les projections, les récepteurs, les psychotropes et leur métabolisme, avec un niveau de sourçage indiqué sur chaque entrée pour savoir ce qui est solide et ce qui l'est moins. [Instance publique](https://neurarium.olicorne.org/?lang=fr), [code source](https://github.com/thiswillbeyourgithub/neurarium).
 
   <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.gif" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>

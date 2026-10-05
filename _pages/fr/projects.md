@@ -16,7 +16,7 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 134*
+*Nombre de projets individuels sur cette page : 136*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -55,7 +55,9 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 
 ## Médecine / Science Informatique / Gros projets
 {: #larger-projects}
-*24 projets jusqu'à présent*
+*26 projets jusqu'à présent*
+- [justelesdocs](https://github.com/thiswillbeyourgithub/justelesdocs/blob/main/README.fr.md) : Une recherche par IA sur des centaines de PDF à la fois : on pose une question en langage naturel et on arrive sur le passage qui y répond, surligné sur sa page d'origine, sans publicité et sans pistage.
+    - [psydocs](https://psydocs.olicorne.org) : Plus de 500 recommandations et guides de bonne pratique en psychiatrie ([HAS](https://www.has-sante.fr/) et instances internationales) interrogeables en une seule question, en français ou en anglais (instance publique gratuite sur [psydocs.olicorne.org](https://psydocs.olicorne.org)).
 - [justelesRCP](https://justelesrcp.olicorne.org) : Un site statique rapide pour consulter les RCP officiels français, généré à partir des données publiques [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/), avec une recherche par IA gratuite, sans publicité et sans pistage (instance publique gratuite sur [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
 - [neurarium](https://neurarium.olicorne.org/?lang=fr) : Un atlas 3D à sources notées qui relie l'anatomie cérébrale, les voies, les récepteurs et les médicaments psychiatriques dans un même modèle interrogeable (instance publique gratuite sur [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=fr)).
 
