@@ -86,7 +86,7 @@ redirect_from:
 
 ## Autres
 * Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - depuis 2024
-* Permis B - 2015
+* Permis B
 
 # Publication
   <ul class="publications">{% for post in site.publications reversed %}
