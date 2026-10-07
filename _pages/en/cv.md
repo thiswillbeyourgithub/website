@@ -40,7 +40,7 @@ redirect_from:
       <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
-      <strong>Github:</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (<a href="https://github-stats-extended.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile">top ~2.3%</a>, 2024-26, pre- & post-AI)
+      <strong>Github:</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (<a href="https://gstats.olicorne.org">top ~2.3%</a>, 2024-26, pre- & post-AI)
     </div>
     <div class="cv-info-item">
       <strong>Generated on:</strong> {{ site.time | date: "%d %b %Y" }}
@@ -78,7 +78,7 @@ redirect_from:
 * **Machine Learning and big data** PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization
 * **Unix proficiency** (GNU/Linux, OSX), system administration (remote server management and self hosting, deployment), algorithmic complexity, advanced shell concepts (zsh/bash) and regexp, user interfaces (WebUI/GUI/CLI), vi/vim/neovim, Web development
 * **Collaboration software proficiency** git, Jupyter Notebook, markdown
-* **Free/Open Source Software** strong commitment ([top ~2.3% on Github](https://github-stats-extended.vercel.app/api?username=thiswillbeyourgithub&show_icons=true&theme=transparent&rank_icon=percentile), 2024-26 pre- & post-AI, 7k+ PyPI downloads/month, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
+* **Free/Open Source Software** strong commitment ([top ~2.3% on Github](https://gstats.olicorne.org), 2024-26 pre- & post-AI, 7k+ PyPI downloads/month, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * **Healthcare related websites** made multiple websites for colleagues and patients, always free and open source (drug information, document transfer, audio transcription, ...)
 * **Hardware knowledge** soldering, software/hardware sizing and resource optimization, server assembly, embedded systems (micropython, smartwatch)
 
