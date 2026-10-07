@@ -58,7 +58,7 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 {: #larger-projects}
 *26 projects so far*
 - [justelesdocs](https://github.com/thiswillbeyourgithub/justelesdocs/blob/main/README.md): An AI search over hundreds of PDFs at once: you ask a question in plain language and land on the matching passage, highlighted on its original page, no ads and no tracking.
-    - [psydocs](https://psydocs.olicorne.org): Over 500 psychiatry guidelines and recommendations ([HAS](https://www.has-sante.fr/) and international bodies) searchable in one question, in French or English (free public instance at [psydocs.olicorne.org](https://psydocs.olicorne.org)).
+    - [psychiatheque](https://psychiatheque.olicorne.org): Over 500 psychiatry guidelines and recommendations ([HAS](https://www.has-sante.fr/) and international bodies) searchable in one question, in French or English (free public instance at [psychiatheque.olicorne.org](https://psychiatheque.olicorne.org)).
 - [justelesRCP](https://justelesrcp.olicorne.org): A fast static site for the official French drug reference sheets (RCP), built from the public [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/) data, with free AI-powered search, no ads and no tracking (free public instance at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
 - [neurarium](https://neurarium.olicorne.org/?lang=en): A 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model (free public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en)).
 

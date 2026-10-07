@@ -16,7 +16,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 # Helper tools
 *Some of these are tools I made; fuller descriptions are on [PROJECTS](./projects). (To be clear: no patient data is ever involved, not even anonymized, and not even on servers I run myself.)*
 
-- I made [psydocs](https://psydocs.olicorne.org), a search over psychiatry guidelines and recommendations that shows the matching passage on its original page, so you read the source itself rather than a summary. [Public instance](https://psydocs.olicorne.org), [source of the software](https://github.com/thiswillbeyourgithub/justelesdocs).
+- I made [psychiatheque](https://psychiatheque.olicorne.org), a search over psychiatry guidelines and recommendations that shows the matching passage on its original page, so you read the source itself rather than a summary. [Public instance](https://psychiatheque.olicorne.org), [source of the software](https://github.com/thiswillbeyourgithub/justelesdocs).
 
 - I made [neurarium](https://neurarium.olicorne.org/?lang=en), a 3D neuroanatomy atlas covering regions, projections, receptors, psychiatric drugs and their metabolism, with a provenance grade on every entry so you can tell what is solid and what is not. [Public instance](https://neurarium.olicorne.org/?lang=en), [source](https://github.com/thiswillbeyourgithub/neurarium).
 
