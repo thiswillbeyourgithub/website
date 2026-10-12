@@ -28,7 +28,6 @@ COPY Gemfile.lock ./
 
 
 # Install bundler and dependencies
-RUN gem install connection_pool:2.5.0
 RUN gem install bundler:2.4.19
 RUN bundle install
 
