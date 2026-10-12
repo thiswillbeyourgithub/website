@@ -44,6 +44,7 @@ en: &DEFAULT_EN
   loading_label              : "Loading..."
   site_last_updated          : "Site last updated"
   privacy_analytics          : "Privacy preserving analytics by a self hosted umami.is instance"
+  privacy_policy             : "Privacy"
   open_source                : "This website is open source"
   fork_of                    : "a fork of"
   author_bio                 : "Psychiatry resident & self-taught developer / data scientist."
@@ -149,6 +150,7 @@ fr: &DEFAULT_FR
   loading_label              :
   site_last_updated          : "Site mis à jour le"
   privacy_analytics          : "Analyses respectueuses de la vie privée par une instance umami.is auto-hébergée"
+  privacy_policy             : "Confidentialité"
   open_source                : "Ce site web est open source"
   fork_of                    : "un fork de"
   author_bio                 : "Médecin Psychiatre (interne) & développeur / data scientist autodidacte."
