@@ -67,6 +67,13 @@
   }
 }
 
+/* CV publications use h2 for heading order but keep the former h3 look */
+.publications .archive__item-title {
+  margin-bottom: 0;
+  padding: 0;
+  font-size: $type-size-5;
+}
+
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;

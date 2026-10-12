@@ -118,8 +118,8 @@
   /* social buttons */
 
   $social:
-  (bluesky, $bluesky-color),
-  (mastodon, $mastodon-color),
+  (bluesky, mix(#000, $bluesky-color, 25%)), // darkened for WCAG AA text contrast
+  (mastodon, mix(#000, $mastodon-color, 15%)), // darkened for WCAG AA text contrast
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (google-plus, $google-plus-color),

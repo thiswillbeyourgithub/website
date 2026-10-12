@@ -15,7 +15,7 @@
   {% assign crumb_path = site.categories.path %}
 {% endif %}
 
-<nav class="breadcrumbs">
+<nav class="breadcrumbs" aria-label="{{ site.data.ui-text[page_lang].breadcrumb_label | default: "Breadcrumb" }}">
   <ol itemscope itemtype="http://schema.org/BreadcrumbList">
 
     {% assign crumbs = page.url | split: '/' %}
@@ -28,8 +28,8 @@
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ base_path }}/" itemprop="item"><span itemprop="name">{{ site.data.ui-text[page_lang].breadcrumb_home_label | default: "Home" }}</span></a>
             <meta itemprop="position" content="{{ i }}" />
+            <span class="sep" aria-hidden="true"> {{ site.data.ui-text[page_lang].breadcrumb_separator | default: "/" }} </span>
           </li>
-          <span class="sep"> {{ site.data.ui-text[page_lang].breadcrumb_separator | default: "/" }} </span>
         {% endif %}
         {% if forloop.last %}
           <li class="current">{{ page.title }}</li>
@@ -47,8 +47,8 @@
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ base_path }}{{ accumulated_path }}/" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
             <meta itemprop="position" content="{{ i }}" />
+            <span class="sep" aria-hidden="true"> {{ site.data.ui-text[page_lang].breadcrumb_separator | default: "/" }} </span>
           </li>
-          <span class="sep"> {{ site.data.ui-text[page_lang].breadcrumb_separator | default: "/" }} </span>
         {% endif %}
       {% endif %}
     {% endfor %}

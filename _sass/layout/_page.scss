@@ -76,8 +76,10 @@
     // text-decoration: underline;
     text-decoration: none;
 
-    // Add subtle underline in light mode only
-    html:not([data-theme="dark"]) & {
+    // Subtle underline so links stay distinguishable from body text (WCAG 1.4.1).
+    // Both selectors keep the specificity that also draws the TOC separators.
+    html:not([data-theme="dark"]) &,
+    html[data-theme="dark"] & {
       border-bottom: 1px dotted var(--global-link-color);
     }
     // But remove border from image links - :has() prevents underline on image links

@@ -3,7 +3,7 @@
 {% assign page_lang = page.lang | default: site.locale | default: 'en' %}
 <section class="page__share">
   {% if site.data.ui-text[page_lang].share_on_label %}
-    <h4 class="page__share-title">{{ site.data.ui-text[page_lang].share_on_label | default: "Share on" }}</h4>
+    <h2 class="page__share-title">{{ site.data.ui-text[page_lang].share_on_label | default: "Share on" }}</h2>
   {% endif %}
 
   <a href="https://bsky.app/intent/compose?text={{ base_path }}{{ page.url }}" class="btn btn--bluesky" title="{{ site.data.ui-text[page_lang].share_on_label | default: 'Share on' }} Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
