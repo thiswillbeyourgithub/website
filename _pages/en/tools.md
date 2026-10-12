@@ -57,3 +57,7 @@ des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-san
 # Formulas and Scores
 
 - [QTc calculation](https://www.psychopharma.fr/qtc) by [PsychoPharma.fr](https://www.psychopharma.fr).
+
+# Adverse effects
+
+- [VigiAccess](https://www.vigiaccess.org/), by the WHO ([VigiBase data access](https://who-umc.org/vigibase-data-access/)): side effects of medications as reported worldwide, for example to check whether a medication has already been involved in cases of catatonia. These are spontaneous reports, so they do not tell how frequent an effect is.
