@@ -32,5 +32,12 @@ RUN gem install connection_pool:2.5.0
 RUN gem install bundler:2.4.19
 RUN bundle install
 
+# Fail the build if a gem has a known vulnerability (ignore list in .bundler-audit.yml)
+# AUDIT_DATE is set by deploy.sh to bust the cache so the check runs on every build
+COPY .bundler-audit.yml ./
+RUN gem install bundler-audit --no-document
+ARG AUDIT_DATE
+RUN echo "Auditing gems ($AUDIT_DATE)" && bundle-audit check --update
+
 # Command to serve the Jekyll site
 CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]

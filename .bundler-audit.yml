@@ -1,0 +1,4 @@
+---
+ignore:
+  # rubyzip: capped < 3.0 by jekyll-remote-theme (pulled in by github-pages), no fix possible yet
+  - CVE-2026-85396
