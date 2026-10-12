@@ -23,3 +23,4 @@ Every page above has a French translation under {{ site.url }}/fr/ (for example 
 
 - [Atom feed]({{ site.url }}/feed.xml): Latest posts.
 - [Sitemap]({{ site.url }}/sitemap.xml): All indexable URLs.
+- [Full text]({{ site.url }}/llms-full.txt): Every English page concatenated into one Markdown file.

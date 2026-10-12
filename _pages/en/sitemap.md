@@ -5,6 +5,7 @@ ref: sitemap
 permalink: /en/sitemap
 author_profile: true
 lang: en
+llms_full: false
 redirect_from:
     - /sitemap
 ---
