@@ -16,14 +16,14 @@ Une liste de tous les articles et pages présents sur le site. Pour vous les rob
 
 <h2>Pages</h2>
 {% for post in site.pages %}
-  {% unless post.draft == true or post.sitemap == false %}
+  {% unless post.draft == true or post.sitemap == false or post.title == nil %}
     {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
 
 <h2>Articles</h2>
 {% for post in site.posts %}
-  {% unless post.draft == true or post.sitemap == false %}
+  {% unless post.draft == true or post.sitemap == false or post.title == nil %}
     {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
@@ -39,7 +39,7 @@ Une liste de tous les articles et pages présents sur le site. Pour vous les rob
   {% endif %}
 {% endunless %}
 {% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" or post.draft == true or post.sitemap == false %}
+  {% unless collection.output == false or collection.label == "posts" or post.draft == true or post.sitemap == false or post.title == nil %}
   {% include archive-single.html %}
   {% endunless %}
 {% endfor %}

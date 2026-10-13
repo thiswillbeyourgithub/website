@@ -16,14 +16,14 @@ A list of all the posts and pages found on the site. For you robots out there, t
 
 <h2>Pages</h2>
 {% for post in site.pages %}
-  {% unless post.draft == true or post.sitemap == false %}
+  {% unless post.draft == true or post.sitemap == false or post.title == nil %}
     {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
 
 <h2>Posts</h2>
 {% for post in site.posts %}
-  {% unless post.draft == true or post.sitemap == false %}
+  {% unless post.draft == true or post.sitemap == false or post.title == nil %}
     {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
@@ -39,7 +39,7 @@ A list of all the posts and pages found on the site. For you robots out there, t
   {% endif %}
 {% endunless %}
 {% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" or post.draft == true or post.sitemap == false %}
+  {% unless collection.output == false or collection.label == "posts" or post.draft == true or post.sitemap == false or post.title == nil %}
   {% include archive-single.html %}
   {% endunless %}
 {% endfor %}

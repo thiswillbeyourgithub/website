@@ -11,5 +11,7 @@ lang: fr
 
 {% include base_path %}
 {% for post in site.pages %}
-  {% include archive-single.html %}
+  {% if post.title %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
