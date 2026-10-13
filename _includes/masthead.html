@@ -72,31 +72,31 @@
 </div>
 
 <script>
-// Handle dropdown menu interactions for touch devices and clicks
+/* Handle dropdown menu interactions for touch devices and clicks */
 document.addEventListener('DOMContentLoaded', function() {
   const dropdowns = document.querySelectorAll('.has-dropdown');
   
   dropdowns.forEach(function(dropdown) {
     const toggle = dropdown.querySelector('.dropdown-toggle');
     
-    // Toggle dropdown on click
+    /* Toggle dropdown on click */
     toggle.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
       
-      // Close other dropdowns
+      /* Close other dropdowns */
       dropdowns.forEach(function(other) {
         if (other !== dropdown) {
           other.classList.remove('active');
         }
       });
       
-      // Toggle this dropdown
+      /* Toggle this dropdown */
       dropdown.classList.toggle('active');
     });
   });
   
-  // Close dropdowns when clicking outside
+  /* Close dropdowns when clicking outside */
   document.addEventListener('click', function() {
     dropdowns.forEach(function(dropdown) {
       dropdown.classList.remove('active');
