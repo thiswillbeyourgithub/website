@@ -14,7 +14,7 @@ A more formal introduction is at [CV](../en/cv).
 
 I try my best to maintain a page listing the tools I use during my psychiatry residency: [TOOLS](./tools).
 
-**Open for collaborations.** *If anything on this page resonates, please [get in touch](./contact). As of 2026 I have some time alongside my residency and I'm glad to help where I can, paid or otherwise. In the future I'm interested in pursuing a master's and then a PhD, so I'd be glad to hear from any interested lab or team too.*
+**Open for collaborations.** *If anything on this page resonates, please [get in touch](./contact). As of 2026 my residency leaves me some time, and I would be happy to join projects where I can be useful, paid or otherwise. In the future I'm interested in pursuing a master's and then a PhD, so I'd be glad to hear from any interested lab or team too.*
 {: .notice--purple}
 
 
