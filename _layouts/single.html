@@ -82,7 +82,7 @@ layout: default
 
       <footer class="page__meta">
         {% if site.data.ui-text[page_lang].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[page_lang].meta_label }}</h4>
+          <h2 class="page__meta-title">{{ site.data.ui-text[page_lang].meta_label }}</h2>
         {% endif %}
         {% include page__taxonomy.html %}
       </footer>
@@ -101,7 +101,7 @@ layout: default
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
       {% if site.data.ui-text[page_lang].related_label %}
-        <h4 class="page__related-title">{{ site.data.ui-text[page_lang].related_label | default: "You May Also Enjoy" }}</h4>
+        <h2 class="page__related-title">{{ site.data.ui-text[page_lang].related_label | default: "You May Also Enjoy" }}</h2>
       {% endif %}
       <div class="grid__wrapper">
         <!-- {% assign related_posts = site.related_posts | where: "lang", page_lang %} -->
