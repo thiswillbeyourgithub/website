@@ -65,3 +65,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 # Effets indésirables
 
 - [VigiAccess](https://www.vigiaccess.org/), par l'OMS ([accès aux données VigiBase](https://who-umc.org/vigibase-data-access/)) : effets indésirables des médicaments tels que déclarés dans le monde, par exemple pour vérifier si un médicament a déjà été impliqué dans des cas de catatonie. Il s'agit de déclarations spontanées, elles n'indiquent donc pas la fréquence d'un effet.
+
+# Divers
+
+- [History of Psychiatry](https://jillykid.github.io/psychiatric_timeline/), frise chronologique interactive par [jillykid](https://bsky.app/profile/jillykid.bsky.social) : psychopharmacologie, neurosciences et psychothérapie côte à côte, décennie par décennie.
