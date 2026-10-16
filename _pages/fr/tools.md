@@ -68,4 +68,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 # Divers
 
+- [Code de la santé publique : soins psychiatriques](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006155032/#LEGISCTA000024316521), les lois françaises encadrant les soins psychiatriques, sur Légifrance. Toujours utile d'avoir le cadre légal officiel sous la main.
+    - Soins sans consentement à la demande d'un tiers ou en cas de péril imminent : [articles L3212-1 et suivants](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006171189/#LEGISCTA000024316653).
+    - Soins sans consentement sur décision du représentant de l'État : [articles L3213-1 et suivants](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006171188/#LEGISCTA000024316589).
 - [History of Psychiatry](https://jillykid.github.io/psychiatric_timeline/), frise chronologique interactive par [jillykid](https://bsky.app/profile/jillykid.bsky.social) : psychopharmacologie, neurosciences et psychothérapie côte à côte, décennie par décennie.

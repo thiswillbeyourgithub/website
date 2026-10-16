@@ -67,4 +67,7 @@ des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-san
 
 # Misc
 
+- [Code de la santé publique: psychiatric care](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006155032/#LEGISCTA000024316521), the French laws governing psychiatric care, on Légifrance. Always good to have the official legal framework at hand.
+    - Involuntary care at the request of a third party or in case of imminent danger: [articles L3212-1 and following](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006171189/#LEGISCTA000024316653).
+    - Involuntary care on decision of the State representative: [articles L3213-1 and following](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006171188/#LEGISCTA000024316589).
 - [History of Psychiatry](https://jillykid.github.io/psychiatric_timeline/), interactive timeline by [jillykid](https://bsky.app/profile/jillykid.bsky.social): psychopharmacology, neuroscience and psychotherapy side by side, decade by decade.
