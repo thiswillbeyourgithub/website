@@ -56,6 +56,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 - [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
 - To know which drugs is unavailable to patients: [Disponibilité
 des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
+- For prescribing to children and adolescents: [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), by the [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
 
 # Formulas and Scores
 
