@@ -29,6 +29,8 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 
 - I made [justelesRCP](https://justelesrcp.olicorne.org) to look up drug data faster: the official French RCP sheets (ANSM/BDPM/EMA open data, around 15,600 medications) as a fast, ad-free site with AI-based plain-language search. [Source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
+- I host an instance of [BentoPDF](https://pdf.olicorne.org) to edit PDFs (merge, split, compress, etc.) entirely in the browser, so the server never sees the documents. [Public instance](https://pdf.olicorne.org), [source](https://github.com/alam00000/bentopdf).
+
 # Prescribing
 
 - [Search by French indication](https://www.psychopharma.fr/recherche) by [PsychoPharma.fr](https://www.psychopharma.fr).

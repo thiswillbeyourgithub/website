@@ -31,6 +31,8 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 - J'ai fait [justelesRCP](https://justelesrcp.olicorne.org) pour consulter plus vite les données des médicaments : les RCP officiels (données ouvertes ANSM/BDPM/EMA, environ 15 600 médicaments) sur un site rapide et sans publicité, avec une recherche en langage naturel basée sur l'IA. [Code source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
+- J'héberge une instance de [BentoPDF](https://pdf.olicorne.org) pour modifier des PDF (fusionner, découper, compresser, etc.) entièrement dans le navigateur, donc le serveur ne voit jamais les documents. [Instance publique](https://pdf.olicorne.org), [code source](https://github.com/alam00000/bentopdf).
+
 # Prescription
 
 - [Recherche par indication française](https://www.psychopharma.fr/recherche) sur [PsychoPharma.fr](https://www.psychopharma.fr).
