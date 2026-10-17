@@ -33,6 +33,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 # Clinique
 - Pour la catatonie, j'ai trouvé très utiles les [vidéos de la BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) de l'Université de Rochester : chaque item de l'échelle est illustré par une vidéo, ce qui rend les signes bien plus faciles à reconnaître.
+- Fiches de rappel du [Tutorat TECT](https://tutorat-tect.org/fiches-de-stage/), pratiques pour revoir les bases : [ECG](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20ECG.pdf) ([copie]({{ base_path }}/tutorat_TECT/Fiche%20ECG.pdf)), [radiologie thoracique](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Radiologie%20Thoracique.pdf) ([copie]({{ base_path }}/tutorat_TECT/Fiche%20Radiologie%20Thoracique.pdf)), [biologie](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Biologie.pdf) ([copie]({{ base_path }}/tutorat_TECT/Fiche%20Biologie.pdf)).
 
 # Psychothérapie
 - [TCC Montréal](https://tccmontreal.com/) : une très bonne ressource en français sur les thérapies cognitives et comportementales (TCC).

@@ -31,6 +31,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 
 # Clinical
 - For catatonia, I found the [videos of the BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) by the University of Rochester very helpful: each item of the scale is illustrated by a video, which makes the signs much easier to recognize.
+- Refresher sheets by [Tutorat TECT](https://tutorat-tect.org/fiches-de-stage/), handy to brush up on the basics: [ECG](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20ECG.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20ECG.pdf)), [chest X-ray](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Radiologie%20Thoracique.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Radiologie%20Thoracique.pdf)), [lab tests](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Biologie.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Biologie.pdf)).
 
 # Psychotherapy
 - [TCC Montréal](https://tccmontreal.com/): a great French-language resource on cognitive behavioral therapy (CBT).
