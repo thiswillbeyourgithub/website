@@ -29,12 +29,6 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 
 - I made [justelesRCP](https://justelesrcp.olicorne.org) to look up drug data faster: the official French RCP sheets (ANSM/BDPM/EMA open data, around 15,600 medications) as a fast, ad-free site with AI-based plain-language search. [Source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
-# Clinical
-- Refresher sheets by [Tutorat TECT](https://tutorat-tect.org/fiches-de-stage/), handy to brush up on the basics: [ECG](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20ECG.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20ECG.pdf)), [chest X-ray](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Radiologie%20Thoracique.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Radiologie%20Thoracique.pdf)), [lab tests](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Biologie.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Biologie.pdf)).
-
-# Psychotherapy
-- [TCC Montréal](https://tccmontreal.com/): a great French-language resource on cognitive behavioral therapy (CBT).
-
 # Prescribing
 
 - [Search by French indication](https://www.psychopharma.fr/recherche) by [PsychoPharma.fr](https://www.psychopharma.fr).
@@ -72,6 +66,12 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 - [QTc calculation](https://www.psychopharma.fr/qtc) by [PsychoPharma.fr](https://www.psychopharma.fr).
 - [Anticholinergic burden calculation (ACBcalc)](https://www.acbcalc.com/).
 - For catatonia, I found the [videos of the BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) by the University of Rochester very helpful: each item of the scale is illustrated by a video, which makes the signs much easier to recognize.
+
+# Clinical
+- Refresher sheets by [Tutorat TECT](https://tutorat-tect.org/fiches-de-stage/), handy to brush up on the basics: [ECG](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20ECG.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20ECG.pdf)), [chest X-ray](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Radiologie%20Thoracique.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Radiologie%20Thoracique.pdf)), [lab tests](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Biologie.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Biologie.pdf)).
+
+# Psychotherapy
+- [TCC Montréal](https://tccmontreal.com/): a great French-language resource on cognitive behavioral therapy (CBT).
 
 # Misc
 
