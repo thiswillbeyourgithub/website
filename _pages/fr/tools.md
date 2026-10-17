@@ -68,7 +68,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - [Recherche par indication française](https://www.psychopharma.fr/recherche) sur [PsychoPharma.fr](https://www.psychopharma.fr).
 - [Équivalence entre benzodiazépines](https://www.psychopharma.fr/equivalence) sur [PsychoPharma.fr](https://www.psychopharma.fr).
 - [Conversion mg/ml/gouttes](https://www.psychopharma.fr/conversion) sur [PsychoPharma.fr](https://www.psychopharma.fr).
-- [Switch d'antidépresseurs](https://www.psychopharma.fr/switch) sur [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Switch d'antidépresseurs](https://www.psychopharma.fr/switch) sur [PsychoPharma.fr](https://www.psychopharma.fr), et une version en anglais sur [Psychiatrienet](https://wiki.psychiatrienet.nl/wiki/SwitchAntidepressants). Les deux diffèrent parfois, il vaut donc la peine de vérifier les deux.
 - Pour la prescription chez l'enfant et l'adolescent : [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), par la [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
 
 # Formules et Scores
