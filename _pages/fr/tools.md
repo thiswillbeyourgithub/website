@@ -32,13 +32,27 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - J'ai fait [justelesRCP](https://justelesrcp.olicorne.org) pour consulter plus vite les données des médicaments : les RCP officiels (données ouvertes ANSM/BDPM/EMA, environ 15 600 médicaments) sur un site rapide et sans publicité, avec une recherche en langage naturel basée sur l'IA. [Code source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
 # Clinique
-- Pour la catatonie, j'ai trouvé très utiles les [vidéos de la BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) de l'Université de Rochester : chaque item de l'échelle est illustré par une vidéo, ce qui rend les signes bien plus faciles à reconnaître.
 - Fiches de rappel du [Tutorat TECT](https://tutorat-tect.org/fiches-de-stage/), pratiques pour revoir les bases : [ECG](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20ECG.pdf) ([copie]({{ base_path }}/tutorat_TECT/Fiche%20ECG.pdf)), [radiologie thoracique](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Radiologie%20Thoracique.pdf) ([copie]({{ base_path }}/tutorat_TECT/Fiche%20Radiologie%20Thoracique.pdf)), [biologie](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Biologie.pdf) ([copie]({{ base_path }}/tutorat_TECT/Fiche%20Biologie.pdf)).
 
 # Psychothérapie
 - [TCC Montréal](https://tccmontreal.com/) : une très bonne ressource en français sur les thérapies cognitives et comportementales (TCC).
 
-# Interactions enzymatiques
+# Prescription
+
+- [Recherche par indication française](https://www.psychopharma.fr/recherche) sur [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Équivalence entre benzodiazépines](https://www.psychopharma.fr/equivalence) sur [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Conversion mg/ml/gouttes](https://www.psychopharma.fr/conversion) sur [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Switch d'antidépresseurs](https://www.psychopharma.fr/switch) sur [PsychoPharma.fr](https://www.psychopharma.fr), et une version en anglais sur [Psychiatrienet](https://wiki.psychiatrienet.nl/wiki/SwitchAntidepressants). Les deux diffèrent parfois, il vaut donc la peine de vérifier les deux.
+- Pour la prescription chez l'enfant et l'adolescent : [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), par la [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
+
+## Informations générales sur les médicaments
+- [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/) ([décrit ci-dessous](#interactions-enzymatiques)).
+- Le `Résumé des Caractéristiques du Produit` accessible via la [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
+- [Vidal](https://www.vidal.fr/) ainsi que [Hoptimal Vidal](https://hoptimal.vidal.fr/) (version « hôpital »).
+- Pour savoir quels médicaments sont indisponibles aux patients : [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
+- Pour la pharmacologie des médicaments de neurologie et de psychiatrie : le site du [Collège National de Pharmacologie Médicale](https://pharmacomedicale.org/medicaments/par-specialites/category/neurologie-psychiatrie-3).
+
+## Interactions enzymatiques
 - [PharmFreq](https://pharmfreq.com/) : de jolis widgets qui cartographient la fréquence mondiale des variants pharmacogénétiques. Pratique pour estimer la probabilité d'un phénotype métaboliseur donné chez un patient selon l'origine géographique de sa famille.
 - M'a été recommandé : [DDI-Predictor](https://www.ddi-predictor.org/), par les Hospices Civils de Lyon et / ou l'Université Claude Bernard Lyon I, Lyon, France.
 - Semble plutôt complet et m'a été recommandé : [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/).
@@ -51,30 +65,15 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
     - Uniquement sur les antidépresseurs, 2013 : [Dosage plasmatique des médicaments antidépresseurs](https://www.revmed.ch/revue-medicale-suisse/2013/revue-medicale-suisse-377/dosage-plasmatique-des-medicaments-antidepresseurs)
 - [SuperCYPsPred](https://insilico-cyp.charite.de/SuperCYPsPred/), 2020 : ce site web de recherche semblait contenir des outils prometteurs mais ils semblaient mal gérer leurs certificats HTTPS.
 
+## Effets indésirables
 
-# Informations générales sur les médicaments
-- [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/) ([décrit ci-dessus](#interactions-enzymatiques)).
-- Le `Résumé des Caractéristiques du Produit` accessible via la [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
-- [Vidal](https://www.vidal.fr/) ainsi que [Hoptimal Vidal](https://hoptimal.vidal.fr/) (version « hôpital »).
-- Pour savoir quels médicaments sont indisponibles aux patients : [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
-- Pour la pharmacologie des médicaments de neurologie et de psychiatrie : le site du [Collège National de Pharmacologie Médicale](https://pharmacomedicale.org/medicaments/par-specialites/category/neurologie-psychiatrie-3).
+- [VigiAccess](https://www.vigiaccess.org/), par l'OMS ([accès aux données VigiBase](https://who-umc.org/vigibase-data-access/)) : effets indésirables des médicaments tels que déclarés dans le monde, par exemple pour vérifier si un médicament a déjà été impliqué dans des cas de catatonie. Il s'agit de déclarations spontanées, elles n'indiquent donc pas la fréquence d'un effet.
 
-# Prescription
-
-- [Recherche par indication française](https://www.psychopharma.fr/recherche) sur [PsychoPharma.fr](https://www.psychopharma.fr).
-- [Équivalence entre benzodiazépines](https://www.psychopharma.fr/equivalence) sur [PsychoPharma.fr](https://www.psychopharma.fr).
-- [Conversion mg/ml/gouttes](https://www.psychopharma.fr/conversion) sur [PsychoPharma.fr](https://www.psychopharma.fr).
-- [Switch d'antidépresseurs](https://www.psychopharma.fr/switch) sur [PsychoPharma.fr](https://www.psychopharma.fr), et une version en anglais sur [Psychiatrienet](https://wiki.psychiatrienet.nl/wiki/SwitchAntidepressants). Les deux diffèrent parfois, il vaut donc la peine de vérifier les deux.
-- Pour la prescription chez l'enfant et l'adolescent : [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), par la [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
-
-# Formules et scores
+# Formules, échelles cliniques et scores
 
 - [Calcul du QTc](https://www.psychopharma.fr/qtc) sur [PsychoPharma.fr](https://www.psychopharma.fr).
 - [Calcul de la charge anticholinergique (ACBcalc)](https://www.acbcalc.com/).
-
-# Effets indésirables
-
-- [VigiAccess](https://www.vigiaccess.org/), par l'OMS ([accès aux données VigiBase](https://who-umc.org/vigibase-data-access/)) : effets indésirables des médicaments tels que déclarés dans le monde, par exemple pour vérifier si un médicament a déjà été impliqué dans des cas de catatonie. Il s'agit de déclarations spontanées, elles n'indiquent donc pas la fréquence d'un effet.
+- Pour la catatonie, j'ai trouvé très utiles les [vidéos de la BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) de l'Université de Rochester : chaque item de l'échelle est illustré par une vidéo, ce qui rend les signes bien plus faciles à reconnaître.
 
 # Divers
 

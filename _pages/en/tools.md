@@ -30,13 +30,27 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 - I made [justelesRCP](https://justelesrcp.olicorne.org) to look up drug data faster: the official French RCP sheets (ANSM/BDPM/EMA open data, around 15,600 medications) as a fast, ad-free site with AI-based plain-language search. [Source](https://github.com/thiswillbeyourgithub/justelesRCP).
 
 # Clinical
-- For catatonia, I found the [videos of the BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) by the University of Rochester very helpful: each item of the scale is illustrated by a video, which makes the signs much easier to recognize.
 - Refresher sheets by [Tutorat TECT](https://tutorat-tect.org/fiches-de-stage/), handy to brush up on the basics: [ECG](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20ECG.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20ECG.pdf)), [chest X-ray](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Radiologie%20Thoracique.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Radiologie%20Thoracique.pdf)), [lab tests](https://tutorat-tect.org/wp-content/uploads/fiches-stage/Fiche%20Biologie.pdf) ([mirror]({{ base_path }}/tutorat_TECT/Fiche%20Biologie.pdf)).
 
 # Psychotherapy
 - [TCC Montréal](https://tccmontreal.com/): a great French-language resource on cognitive behavioral therapy (CBT).
 
-# Enzymatic interactions
+# Prescribing
+
+- [Search by French indication](https://www.psychopharma.fr/recherche) by [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Benzodiazepine equivalence](https://www.psychopharma.fr/equivalence) by [PsychoPharma.fr](https://www.psychopharma.fr).
+- [mg/ml/drops conversion](https://www.psychopharma.fr/conversion) by [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Antidepressant switch](https://www.psychopharma.fr/switch) by [PsychoPharma.fr](https://www.psychopharma.fr), and an English version on [Psychiatrienet](https://wiki.psychiatrienet.nl/wiki/SwitchAntidepressants). The two sometimes differ, so it is worth checking both.
+- For prescribing to children and adolescents: [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), by the [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
+
+## General drug information
+- [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/) ([described below](#enzymatic-interactions)).
+- The `Résumé des Caractéristiques du Produit` accessed through the [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
+- [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
+- To know which drugs are unavailable to patients: [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
+- For the pharmacology of neurology and psychiatry drugs: the [Collège National de Pharmacologie Médicale](https://pharmacomedicale.org/medicaments/par-specialites/category/neurologie-psychiatrie-3) website.
+
+## Enzymatic interactions
 - [PharmFreq](https://pharmfreq.com/): nice widgets mapping the worldwide frequency of pharmacogenetic variants. Handy to weigh how likely a given metabolizer phenotype is for a patient depending on where their family comes from.
 - Was recommended to me: [DDI-Predictor](https://www.ddi-predictor.org/), by the Hospices Civils de Lyon and / or University Claude Bernard Lyon I, Lyon, France.
 - Seems rather complete and was recommended to me: [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/).
@@ -49,30 +63,15 @@ On this page, I try to keep track of resources I think can be useful to psychiat
     - Only about antidepressants, 2013: [Dosage plasmatique des médicaments antidépresseurs](https://www.revmed.ch/revue-medicale-suisse/2013/revue-medicale-suisse-377/dosage-plasmatique-des-medicaments-antidepresseurs)
 - [SuperCYPsPred](https://insilico-cyp.charite.de/SuperCYPsPred/), 2020: this research website seemed to contain promising tools but they seemed to handle pretty badly their HTTPS certificates.
 
+## Adverse effects
 
-# General drug information
-- [ClinPGx (formerly PharmGKB)](https://www.clinpgx.org/) ([described above](#enzymatic-interactions)).
-- The `Résumé des Caractéristiques du Produit` accessed through the [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
-- [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
-- To know which drugs are unavailable to patients: [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
-- For the pharmacology of neurology and psychiatry drugs: the [Collège National de Pharmacologie Médicale](https://pharmacomedicale.org/medicaments/par-specialites/category/neurologie-psychiatrie-3) website.
+- [VigiAccess](https://www.vigiaccess.org/), by the WHO ([VigiBase data access](https://who-umc.org/vigibase-data-access/)): side effects of medications as reported worldwide, for example to check whether a medication has already been involved in cases of catatonia. These are spontaneous reports, so they do not tell how frequent an effect is.
 
-# Prescribing
-
-- [Search by French indication](https://www.psychopharma.fr/recherche) by [PsychoPharma.fr](https://www.psychopharma.fr).
-- [Benzodiazepine equivalence](https://www.psychopharma.fr/equivalence) by [PsychoPharma.fr](https://www.psychopharma.fr).
-- [mg/ml/drops conversion](https://www.psychopharma.fr/conversion) by [PsychoPharma.fr](https://www.psychopharma.fr).
-- [Antidepressant switch](https://www.psychopharma.fr/switch) by [PsychoPharma.fr](https://www.psychopharma.fr), and an English version on [Psychiatrienet](https://wiki.psychiatrienet.nl/wiki/SwitchAntidepressants). The two sometimes differ, so it is worth checking both.
-- For prescribing to children and adolescents: [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), by the [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
-
-# Formulas and scores
+# Formulas, clinical scales and scores
 
 - [QTc calculation](https://www.psychopharma.fr/qtc) by [PsychoPharma.fr](https://www.psychopharma.fr).
 - [Anticholinergic burden calculation (ACBcalc)](https://www.acbcalc.com/).
-
-# Adverse effects
-
-- [VigiAccess](https://www.vigiaccess.org/), by the WHO ([VigiBase data access](https://who-umc.org/vigibase-data-access/)): side effects of medications as reported worldwide, for example to check whether a medication has already been involved in cases of catatonia. These are spontaneous reports, so they do not tell how frequent an effect is.
+- For catatonia, I found the [videos of the BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) by the University of Rochester very helpful: each item of the scale is illustrated by a video, which makes the signs much easier to recognize.
 
 # Misc
 
