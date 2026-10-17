@@ -34,6 +34,9 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 # Clinique
 - Pour la catatonie, j'ai trouvé très utiles les [vidéos de la BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) de l'Université de Rochester : chaque item de l'échelle est illustré par une vidéo, ce qui rend les signes bien plus faciles à reconnaître.
 
+# Psychothérapie
+- [TCC Montréal](https://tccmontreal.com/) : une très bonne ressource en français sur les thérapies cognitives et comportementales (TCC).
+
 # Interactions enzymatiques
 - [PharmFreq](https://pharmfreq.com/) : de jolis widgets qui cartographient la fréquence mondiale des variants pharmacogénétiques. Pratique pour estimer la probabilité d'un phénotype métaboliseur donné chez un patient selon l'origine géographique de sa famille.
 - M'a été recommandé : [DDI-Predictor](https://www.ddi-predictor.org/), par les Hospices Civils de Lyon et / ou l'Université Claude Bernard Lyon I, Lyon, France.

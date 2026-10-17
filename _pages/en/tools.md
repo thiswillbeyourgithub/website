@@ -32,6 +32,9 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 # Clinical
 - For catatonia, I found the [videos of the BFCRS (Bush-Francis Catatonia Rating Scale)](https://www.urmc.rochester.edu/psychiatry/divisions/collaborative-care-and-wellness/bush-francis-catatonia-rating-scale/bfcrs) by the University of Rochester very helpful: each item of the scale is illustrated by a video, which makes the signs much easier to recognize.
 
+# Psychotherapy
+- [TCC Montréal](https://tccmontreal.com/): a great French-language resource on cognitive behavioral therapy (CBT).
+
 # Enzymatic interaction
 - [PharmFreq](https://pharmfreq.com/): nice widgets mapping the worldwide frequency of pharmacogenetic variants. Handy to weigh how likely a given metabolizer phenotype is for a patient depending on where their family comes from.
 - Was recommended to me: [DDI-Predictor](https://www.ddi-predictor.org/), by the Hospices Civils de Lyon and / or University Claude Bernard Lyon I, Lyon, France.
