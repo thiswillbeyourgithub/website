@@ -59,6 +59,7 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 - [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
 - To know which drugs is unavailable to patients: [Disponibilité
 des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
+- For the pharmacology of neurology and psychiatry drugs: the [Collège National de Pharmacologie Médicale](https://pharmacomedicale.org/medicaments/par-specialites/category/neurologie-psychiatrie-3) website.
 
 # Prescribing
 
