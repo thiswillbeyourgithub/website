@@ -44,8 +44,8 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - Semble plutôt complet et m'a été recommandé : [ClinPGx (anciennement PharmGKB)](https://www.clinpgx.org/).
     - J'ai remarqué au moins une fois une simplification assez importante : le texte sur ClinPGx mentionnait un cytochrome comme étant le principal, alors que la source expliquait en fait que celui-ci était celui qui se liait le plus à la molécule mais comme il était moins présent, il n'était en fait pas le principal métaboliseur du médicament donné.
     - Ma conclusion est que la manière la plus fiable de vérifier les voies enzymatiques des médicaments est d'utiliser ClinPGx pour raisonner mais ensuite de lire tous les résumés des sources sous-jacentes pour réduire les chances que cela se reproduise.
-- Initialement prometteur, semble citer les sources de manière systématique mais pas encore sûr de l'exhaustivité, 2021 initialement mais serait mis a jour 2 fois par an:
-    - Mais: ne mentionne pas par exemple la lamotrigine, ou que une partie des interaction enzymatiques connue de la venlafaxine.
+- Initialement prometteur, semble citer les sources de manière systématique mais pas encore sûr de l'exhaustivité, 2021 initialement mais serait mis à jour 2 fois par an :
+    - Mais : ne mentionne pas par exemple la lamotrigine, et seulement une partie des interactions enzymatiques connues de la venlafaxine.
     - [Drug Interaction Flockhart Table](https://medicine.iu.edu/internal-medicine/specialties/clinical-pharmacology/drug-interaction-flockhart-table)
         - [https://drug-interactions.medicine.iu.edu/main-table](https://drug-interactions.medicine.iu.edu/main-table)
         - [https://drug-interactions.medicine.iu.edu/search](https://drug-interactions.medicine.iu.edu/search)
@@ -71,7 +71,7 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - [Switch d'antidépresseurs](https://www.psychopharma.fr/switch) sur [PsychoPharma.fr](https://www.psychopharma.fr), et une version en anglais sur [Psychiatrienet](https://wiki.psychiatrienet.nl/wiki/SwitchAntidepressants). Les deux diffèrent parfois, il vaut donc la peine de vérifier les deux.
 - Pour la prescription chez l'enfant et l'adolescent : [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), par la [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
 
-# Formules et Scores
+# Formules et scores
 
 - [Calcul du QTc](https://www.psychopharma.fr/qtc) sur [PsychoPharma.fr](https://www.psychopharma.fr).
 - [Calcul de la charge anticholinergique (ACBcalc)](https://www.acbcalc.com/).
