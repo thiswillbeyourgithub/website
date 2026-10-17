@@ -57,6 +57,13 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - Le `Résumé des Caractéristiques du Produit` accessible via la [Base de données publique du médicament](https://base-donnees-publique.medicaments.gouv.fr/).
 - [Vidal](https://www.vidal.fr/) ainsi que [Hoptimal Vidal](https://hoptimal.vidal.fr/) (version « hôpital »).
 - Pour savoir quels médicaments sont indisponibles aux patients : [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
+
+# Prescription
+
+- [Recherche par indication française](https://www.psychopharma.fr/recherche) sur [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Équivalence entre benzodiazépines](https://www.psychopharma.fr/equivalence) sur [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Conversion mg/ml/gouttes](https://www.psychopharma.fr/conversion) sur [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Switch d'antidépresseurs](https://www.psychopharma.fr/switch) sur [PsychoPharma.fr](https://www.psychopharma.fr).
 - Pour la prescription chez l'enfant et l'adolescent : [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), par la [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
 
 # Formules et Scores

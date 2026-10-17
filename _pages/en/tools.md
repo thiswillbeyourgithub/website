@@ -56,6 +56,13 @@ On this page, I try to keep track of resource I think can be useful to psychiatr
 - [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
 - To know which drugs is unavailable to patients: [Disponibilité
 des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
+
+# Prescribing
+
+- [Search by French indication](https://www.psychopharma.fr/recherche) by [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Benzodiazepine equivalence](https://www.psychopharma.fr/equivalence) by [PsychoPharma.fr](https://www.psychopharma.fr).
+- [mg/ml/drops conversion](https://www.psychopharma.fr/conversion) by [PsychoPharma.fr](https://www.psychopharma.fr).
+- [Antidepressant switch](https://www.psychopharma.fr/switch) by [PsychoPharma.fr](https://www.psychopharma.fr).
 - For prescribing to children and adolescents: [Pharmacologie SFPEADA](https://pharmacologie.sfpeada.fr), by the [Société Française de Psychiatrie de l'Enfant et de l'Adolescent](https://sfpeada.fr).
 
 # Formulas and Scores
