@@ -21,17 +21,17 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 - J'ai fait [psychiatheque](https://psychiatheque.olicorne.org), une recherche dans les recommandations de psychiatrie qui affiche le passage correspondant sur sa page d'origine, pour lire la source elle-même plutôt qu'un résumé. [Instance publique](https://psychiatheque.olicorne.org), [code source du logiciel](https://github.com/thiswillbeyourgithub/justelesdocs).
 
+- J'ai fait [justelesRCP](https://justelesrcp.olicorne.org) pour consulter plus vite les données des médicaments : les RCP officiels (données ouvertes ANSM/BDPM/EMA, environ 15 600 médicaments) sur un site rapide et sans publicité, avec une recherche en langage naturel basée sur l'IA. [Code source](https://github.com/thiswillbeyourgithub/justelesRCP).
+
 - J'ai fait [neurarium](https://neurarium.olicorne.org/?lang=fr), un atlas de neuroanatomie en 3D couvrant les régions, les projections, les récepteurs, les psychotropes et leur métabolisme, avec un niveau de sourçage indiqué sur chaque entrée pour savoir ce qui est solide et ce qui l'est moins. [Instance publique](https://neurarium.olicorne.org/?lang=fr), [code source](https://github.com/thiswillbeyourgithub/neurarium).
 
   <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.gif" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>
 
+- Sur [pdf.olicorne.org](https://pdf.olicorne.org) j'héberge des outils PDF (rotation, suppression de pages, découpage, fusion, reconnaissance de texte, etc.) qui tournent entièrement dans votre navigateur : votre PDF n'atteint jamais un serveur. Il s'agit d'une instance de [BentoPDF](https://github.com/alam00000/bentopdf).
+
 - J'ai fait [WebSend](https://websend.olicorne.org) pour numériser des documents sans scanner à plat : ouvrez la page sur votre téléphone et sur l'ordinateur, et la photo passe directement de l'un à l'autre, chiffrée de bout en bout. [Instance publique](https://websend.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/WebSend).
 
 - J'ai fait [Parakeet Web](https://parakeetweb.olicorne.org) pour transcrire la parole en texte sur des machines verrouillées : le modèle tourne dans le navigateur lui-même, donc rien n'est envoyé nulle part. Il peut charger un affinage médical français que j'ai entraîné ([modèle](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx), à partir d'un [jeu de données](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1) ouvert que j'ai construit pour l'occasion) : **7-8x moins d'erreurs que le modèle de base sur le vocabulaire médical technique**, la parole ordinaire restant pour ainsi dire inchangée. Les deux sont sous licence libre, donc n'importe quelle équipe ou n'importe quel éditeur peut les réutiliser plutôt que de les refaire. [Instance publique](https://parakeetweb.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/parakeet_web).
-
-- J'ai fait [justelesRCP](https://justelesrcp.olicorne.org) pour consulter plus vite les données des médicaments : les RCP officiels (données ouvertes ANSM/BDPM/EMA, environ 15 600 médicaments) sur un site rapide et sans publicité, avec une recherche en langage naturel basée sur l'IA. [Code source](https://github.com/thiswillbeyourgithub/justelesRCP).
-
-- J'héberge une instance de [BentoPDF](https://pdf.olicorne.org) pour modifier des PDF (fusionner, découper, compresser, etc.) entièrement dans le navigateur, donc le serveur ne voit jamais les documents. [Instance publique](https://pdf.olicorne.org), [code source](https://github.com/alam00000/bentopdf).
 
 # Prescription
 
