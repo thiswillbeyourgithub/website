@@ -51,14 +51,14 @@ redirect_from:
 
 
 # Education
-* Specialized Studies Diploma (DES) in Psychiatry - since 2025
-    * Paris Cité University, Paris Psychiatry, Coordination: Pr Caroline DUBERTRET
-    * Validation of the optional neuropsychiatry seminar "Neuro-psychiatric approach to behavioral disorders", Pr Philippe FOSSATI, Pitié-Salpêtrière University Hospital (Paris) - 2026
-* Master's degree (M1), 2019-2025
+* [Psychiatry residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) (French DES) - since 2025
+    * Paris Cité University, Paris Psychiatry program, Program director: Pr Caroline DUBERTRET
+    * Completed the optional neuropsychiatry seminar "Neuro-psychiatric approach to behavioral disorders", Pr Philippe FOSSATI, Pitié-Salpêtrière University Hospital (Paris) - 2026
+* First year of Master's degree (M1) - 2019-2025
     * Health Research Track, Neuroscience, Genetics, R programming, Paris Cité University
     * Reviewers: Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
-* General and Advanced Medical Sciences Degree - 2016-2025
-    * Paris Cité University, Bichat site
+* Medical school, undergraduate and graduate cycles (French DFGSM and DFASM) - 2016-2025
+    * Paris Cité University, Bichat campus
 * [Intensive undergraduate program in mathematics, physics and chemistry](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles) (French CPGE) - 2015-2016
     * Lycée Carnot, Paris, Physics Chemistry section (PCSI-PC)
 
