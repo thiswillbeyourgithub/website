@@ -36,7 +36,7 @@ redirect_from:
       <strong>ORCID :</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
-      <strong>Github :</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (<a href="https://gstats.olicorne.org">top ~2.3%</a>, 2024-26, pré- & post-IA)
+      <strong>GitHub :</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (<a href="https://gstats.olicorne.org">top ~2.3%</a>, 2024-26, pré- & post-IA)
     </div>
     <div class="cv-info-item">
       <strong>Généré le :</strong> {{ site.time | date: "%d %b %Y" }}
@@ -74,7 +74,7 @@ redirect_from:
 * **Machine Learning et big data** PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation
 * **Environnement Unix** (GNU/Linux, OSX), administration système (gestion de serveurs distants et auto-hébergement, déploiement), complexité algorithmique, notions avancées du shell (zsh/bash) et regexp, interfaces utilisateur (WebUI/GUI/CLI), vi/vim/neovim, développement Web
 * **Logiciels de collaboration** git, Jupyter Notebook, markdown
-* **Logiciels Libres** engagement fort ([top ~2.3% sur Github](https://gstats.olicorne.org), 2024-26 pré- & post-IA, 7k+ téléchargements PyPI/mois, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
+* **Logiciels Libres** engagement fort ([top ~2.3% sur GitHub](https://gstats.olicorne.org), 2024-26 pré- & post-IA, 7k+ téléchargements PyPI/mois, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * **Sites web liés à la santé** plusieurs sites réalisés pour des collègues et des patients, toujours gratuits et open source (informations sur les médicaments, transfert de documents, transcription audio, ...)
 * **Notions de hardware** soudure, dimensionnement software/hardware et optimisations de ressources, assemblage de serveurs, embarqué (micropython, montre connectée)
 
