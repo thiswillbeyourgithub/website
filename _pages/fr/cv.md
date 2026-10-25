@@ -24,22 +24,22 @@ redirect_from:
   <h1>Olivier Cornelis</h1>
   <div class="cv-info">
     <div class="cv-info-item">
-      <strong>Email:</strong> <a href="mailto:cv@oliviercornelis.fr">cv@oliviercornelis.fr</a>
+      <strong>Email :</strong> <a href="mailto:cv@oliviercornelis.fr">cv@oliviercornelis.fr</a>
     </div>
     <div class="cv-info-item">
-      <strong>Site web:</strong> <a href="https://olicorne.org">olicorne.org</a>
+      <strong>Site web :</strong> <a href="https://olicorne.org">olicorne.org</a>
     </div>
     <div class="cv-info-item">
-      <strong>Lieu:</strong> Paris, France
+      <strong>Lieu :</strong> Paris, France
     </div>
     <div class="cv-info-item">
-      <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
+      <strong>ORCID :</strong> <a href="https://orcid.org/0000-0002-5445-4679">0000-0002-5445-4679</a>
     </div>
     <div class="cv-info-item">
-      <strong>Github:</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (<a href="https://gstats.olicorne.org">top ~2.3%</a>, 2024-26, pré- & post-IA)
+      <strong>Github :</strong> <a href="https://github.com/thiswillbeyourgithub/">@thiswillbeyourgithub</a> (<a href="https://gstats.olicorne.org">top ~2.3%</a>, 2024-26, pré- & post-IA)
     </div>
     <div class="cv-info-item">
-      <strong>Généré le:</strong> {{ site.time | date: "%d %b %Y" }}
+      <strong>Généré le :</strong> {{ site.time | date: "%d %b %Y" }}
     </div>
   </div>
 </div>
@@ -52,7 +52,7 @@ redirect_from:
     * Validation du séminaire optionnel de neuropsychiatrie « Approche neuro-psychiatrique des troubles du comportement », Pr Philippe FOSSATI, Groupe Hospitalier Pitié-Salpêtrière (Paris) - 2026
 * Master 1 (M1) - 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
-    * Rapporteurs: Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
+    * Rapporteurs : Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
 * Diplômes de Formation Générale (DFGSM) et Approfondie (DFASM) en Sciences Médicales - 2016-2025
     * Université Paris Cité, site Bichat
 * Classe Préparatoire aux Grandes Écoles - 2015-2016
@@ -62,7 +62,7 @@ redirect_from:
 
 # Stages & Expériences
 * *NeuroSpin*, équipe UNICOG du Pr Stanislas DEHAENE, sous-équipe dirigée par le Pr Béchir JARRAYA, Gif-sur-Yvette, France - 2022
-    * Stage de M1: Modélisation computationnelle des états de conscience via IRMf, Développement de bibliothèques Python, Apprentissage automatique, Clustering de données de haute dimension
+    * Stage de M1 : Modélisation computationnelle des états de conscience via IRMf, Développement de bibliothèques Python, Apprentissage automatique, Clustering de données de haute dimension
 * *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH, USA - 2015
     * Stage d’un mois à la *Geisel School of Medicine*, programmation en R, cf publication
 
