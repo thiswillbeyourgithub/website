@@ -65,7 +65,7 @@ redirect_from:
 
 
 # Internships & Experience
-* *NeuroSpin*, UNICOG team of Prof. Stanislas DEHAENE, subteam led by Prof. Béchir JARRAYA, Gif-Sur-Yvettes, France - 2022
+* *NeuroSpin*, UNICOG team of Prof. Stanislas DEHAENE, subteam led by Prof. Béchir JARRAYA, Gif-sur-Yvette, France - 2022
     * Master's internship: Computational modeling of consciousness states via fMRI, Python library development, Machine learning, High-dimensional data clustering
 * *Dartmouth College (Ivy League)*, Prof. Chris AMOS, Hanover, NH, USA - 2015
     * One-month internship at *Geisel School of Medicine*, R programming, see publication
