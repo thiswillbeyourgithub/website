@@ -61,8 +61,8 @@ My code repositories are hosted on [github](https://github.com/thiswillbeyourgit
 
     <a href="https://neurarium.olicorne.org/?lang=en"><img alt="neurarium" src="{{ base_path }}/images/neurarium.gif" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>
 
-- [justelesdocs](https://github.com/thiswillbeyourgithub/justelesdocs/blob/main/README.md): An AI search over hundreds of PDFs at once: you ask a question in plain language and land on the matching passage, highlighted on its original page, no ads and no tracking.
-    - [psychiatheque](https://psychiatheque.olicorne.org): Over 500 psychiatry guidelines and recommendations ([HAS](https://www.has-sante.fr/) and international bodies) searchable in one question, in French or English (free public instance at [psychiatheque.olicorne.org](https://psychiatheque.olicorne.org)).
+- [psychiatheque](https://psychiatheque.olicorne.org): Over 500 psychiatry guidelines and recommendations ([HAS](https://www.has-sante.fr/) and international bodies) searchable in one question, in French or English (free public instance at [psychiatheque.olicorne.org](https://psychiatheque.olicorne.org)).
+    - [justelesdocs](https://github.com/thiswillbeyourgithub/justelesdocs/blob/main/README.md): An AI search over hundreds of PDFs at once: you ask a question in plain language and land on the matching passage, highlighted on its original page, no ads and no tracking.
 - [justelesRCP](https://justelesrcp.olicorne.org): A fast static site for the official French drug reference sheets (RCP), built from the public [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/) data, with free AI-powered search, no ads and no tracking (free public instance at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
 
 ### Medical audio transcription
