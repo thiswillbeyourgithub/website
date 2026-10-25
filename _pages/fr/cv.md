@@ -27,7 +27,7 @@ redirect_from:
       <strong>Email:</strong> <a href="mailto:cv@oliviercornelis.fr">cv@oliviercornelis.fr</a>
     </div>
     <div class="cv-info-item">
-      <strong>Website:</strong> <a href="https://olicorne.org">olicorne.org</a>
+      <strong>Site web:</strong> <a href="https://olicorne.org">olicorne.org</a>
     </div>
     <div class="cv-info-item">
       <strong>Lieu:</strong> Paris, France
@@ -72,7 +72,7 @@ redirect_from:
 * **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (*representation engineering*), recherche par *embeddings* (RAG, wdoc), génération d'image, *finetuning* ASR/STT et création de jeux de données d'entraînement, optimisations pour l'inférence médicale hors ligne
 * **Reconnaissance vocale** publication en libre accès de [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1), un jeu de données de 3 105 heures de parole médicale française et d'un affinage de Parakeet-v3 entraîné dessus avec un seul GPU grand public (8 fois moins d'erreurs sur du texte médical technique), optimisé pour un usage hors ligne sur CPU dans un navigateur
 * **Machine Learning et big data** PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation
-* **Environnement Unix** (GNU/Linux, OSX), administration système (gestion de serveurs distants et self hosting, déploiement), complexité algorithmique, notions avancées du shell (zsh/bash) et regexp, interface utilisateur (WebUI/GUI/CLI), vi/vim/neovim, développement Web
+* **Environnement Unix** (GNU/Linux, OSX), administration système (gestion de serveurs distants et auto-hébergement, déploiement), complexité algorithmique, notions avancées du shell (zsh/bash) et regexp, interface utilisateur (WebUI/GUI/CLI), vi/vim/neovim, développement Web
 * **Logiciels de collaboration** git, Jupyter Notebook, markdown
 * **Logiciels Libres** engagement fort ([top ~2.3% sur Github](https://gstats.olicorne.org), 2024-26 pré- & post-IA, 7k+ téléchargements PyPI/mois, [InterHop](https://interhop.org/), [DataForGood](https://dataforgood.fr/))
 * **Sites web liés à la santé** plusieurs sites réalisés pour des collègues et des patients, toujours gratuits et open source (informations sur les médicaments, transfert de documents, transcription audio, ...)
@@ -101,6 +101,6 @@ redirect_from:
     * *Python 3 : des fondamentaux aux concepts avancés du langage*
 * **HuggingFace** : *Natural Language Processing Machine Learning Course* - 2021
 
-# Extra professionnel
+# Centres d'intérêt
 - Organisateur de rencontres physiques d'une communauté en ligne sur les risques inhérents à l'IA et la rationalité
 - Cinéphile, serrurerie, photographie argentique, sport
