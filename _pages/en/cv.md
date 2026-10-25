@@ -52,8 +52,8 @@ redirect_from:
 
 # Education
 * [Psychiatry residency](https://en.wikipedia.org/wiki/Medical_education_in_France#Third_cycle_of_the_medical_studies) (French DES) - since 2025
-    * Paris Cité University, Paris Psychiatry program, Program director: Pr Caroline DUBERTRET
-    * Completed the optional neuropsychiatry seminar "Neuro-psychiatric approach to behavioral disorders", Pr Philippe FOSSATI, Pitié-Salpêtrière University Hospital (Paris) - 2026
+    * Paris Cité University, Paris Psychiatry program, Program director: Prof. Caroline DUBERTRET
+    * Completed the optional neuropsychiatry seminar "Neuro-psychiatric approach to behavioral disorders", Prof. Philippe FOSSATI, Pitié-Salpêtrière University Hospital (Paris) - 2026
 * First year of Master's degree (M1) - 2019-2025
     * Health Research Track, Neuroscience, Genetics, R programming, Paris Cité University
     * Reviewers: Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
@@ -65,10 +65,10 @@ redirect_from:
 
 
 # Internships & Experience
-* *NeuroSpin*, UNICOG team of Pr Stanislas DEHAENE, subteam led by Pr Béchir JARRAYA, Gif-Sur-Yvettes, France - 2022
+* *NeuroSpin*, UNICOG team of Prof. Stanislas DEHAENE, subteam led by Prof. Béchir JARRAYA, Gif-Sur-Yvettes, France - 2022
     * Master's internship: Computational modeling of consciousness states via fMRI, Python library development, Machine learning, High-dimensional data clustering
-* *Dartmouth College (Ivy League)*, Pr Chris AMOS, Hanover, NH, USA - 2015
-    * One-month internship at *Geisel School of Medicine*, R programming, cf publication
+* *Dartmouth College (Ivy League)*, Prof. Chris AMOS, Hanover, NH, USA - 2015
+    * One-month internship at *Geisel School of Medicine*, R programming, see publication
 
 
 # Skills
