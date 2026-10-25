@@ -13,7 +13,7 @@ In this page, you can read the exhaustive list of coding projects I've created o
 
 A word on scale before you scroll: a portion of what follows is itch-scratching. Small tools I built because something annoyed me, published in case it annoys you too. The work I'd want to be judged on is grouped under [Larger projects](#larger-projects). If you are curious what I could do before AI, [wdoc](#wdoc), [AnnA](#anna) and [AnkiAIUtils](#ankiaiutils) were written by hand. AI has since multiplied how much I can ship.
 
-My code repositories are hosted on [github](https://github.com/thiswillbeyourgithub/):
+My code repositories are currently hosted on [github](https://github.com/thiswillbeyourgithub/):
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
