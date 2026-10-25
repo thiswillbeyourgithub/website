@@ -59,8 +59,8 @@ redirect_from:
     * Reviewers: Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
 * General and Advanced Medical Sciences Degree - 2016-2025
     * Paris Cité University, Bichat site
-* Preparatory Class for Grandes Écoles - 2015-2016
-    * Carnot High School, Physics Chemistry section (PCSI-PC)
+* [Intensive undergraduate program in mathematics, physics and chemistry](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles) (French CPGE) - 2015-2016
+    * Lycée Carnot, Paris, Physics Chemistry section (PCSI-PC)
 
 
 
