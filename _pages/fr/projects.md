@@ -61,6 +61,8 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 - [justelesRCP](https://justelesrcp.olicorne.org) : Un site statique rapide pour consulter les RCP officiels français, généré à partir des données publiques [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/), avec une recherche par IA gratuite, sans publicité et sans pistage (instance publique gratuite sur [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
 - [neurarium](https://neurarium.olicorne.org/?lang=fr) : Un atlas 3D à sources notées qui relie l'anatomie cérébrale, les voies, les récepteurs et les médicaments psychiatriques dans un même modèle interrogeable (instance publique gratuite sur [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=fr)).
 
+    <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.gif" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>
+
 ### Transcription audio médicale
 
 #### UltiMed
