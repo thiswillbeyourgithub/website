@@ -12,8 +12,9 @@ redirect_from:
 In this page, you can read the exhaustive list of coding projects I've created over the years. It's quite long so use the table of content below to browse.
 
 A word before you scroll:
-    - The work I'd want to be judged on is grouped under [Larger projects](#larger-projects) as a good portion of the rest is itch-scratching: small tools I built to solve small annoyances.
-    - If you are curious what I could do before AI, [wdoc](#wdoc), [AnnA](#anna) and [AnkiAIUtils](#ankiaiutils) were written by hand, before AI.
+
+- The work I'd want to be judged on is grouped under [Larger projects](#larger-projects) as a good portion of the rest is itch-scratching: small tools I built to solve small annoyances.
+- If you are curious what I could do before AI, [wdoc](#wdoc), [AnnA](#anna) and [AnkiAIUtils](#ankiaiutils) were written by hand.
 
 My code repositories are currently hosted on [github](https://github.com/thiswillbeyourgithub/):
 
