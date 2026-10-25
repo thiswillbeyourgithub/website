@@ -50,10 +50,10 @@ redirect_from:
 * Diplôme d'Études Spécialisées (DES) de Psychiatrie - depuis 2025
     * Université Paris Cité, Psychiatrie Paris, Coordination : Pre Caroline DUBERTRET
     * Validation du séminaire optionnel de neuropsychiatrie « Approche neuro-psychiatrique des troubles du comportement », Pr Philippe FOSSATI, Groupe Hospitalier Pitié-Salpêtrière (Paris) - 2026
-* Master 1, 2019-2025
+* Master 1 (M1) - 2019-2025
     * Parcours Recherche en Santé, Neurosciences, Génétique, programmation en R, Université Paris Cité
     * Rapporteurs: Dr Anton IFTIMOVICI (MD-PhD), Dr Estelle PRUVOST-ROBIEUX (MD-PhD), Dr Adeline-Alice BONNARD (MD)
-* Diplôme de Formation Générale et Approfondie en Sciences Médicales - 2016-2025
+* Diplômes de Formation Générale (DFGSM) et Approfondie (DFASM) en Sciences Médicales - 2016-2025
     * Université Paris Cité, site Bichat
 * Classe Préparatoire aux Grandes Écoles - 2015-2016
     * Lycée Général Carnot, section Physique Chimie (PCSI-PC)
