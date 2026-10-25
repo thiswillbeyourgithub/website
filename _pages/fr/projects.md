@@ -10,7 +10,7 @@ lang: fr
 
 Sur cette page, vous pouvez lire la liste exhaustive des projets de programmation que j'ai créés au fil des années. Elle est assez longue, utilisez donc la table des matières ci-dessous pour naviguer.
 
-Un mot sur l'échelle avant de faire défiler : une partie de ce qui suit relève du grattage de démangeaison. De petits outils créés parce que quelque chose m'agaçait, publiés au cas où cela vous agacerait aussi. Le travail sur lequel j'aimerais être jugé est regroupé dans [Gros projets](#larger-projects). Si vous êtes curieux de ce que je savais faire avant l'IA, [wdoc](#wdoc), [AnnA](#anna) et [AnkiAIUtils](#ankiaiutils) ont été écrits à la main. L'IA a depuis multiplié ce que je peux produire. (Pour être clair : aucune donnée de patient n'est jamais impliquée dans tout cela, pas même anonymisée, et pas même sur des serveurs que j'héberge moi-même.)
+Un mot sur l'échelle avant de faire défiler : une partie de ce qui suit relève du grattage de démangeaison. De petits outils créés parce que quelque chose m'agaçait, publiés au cas où cela vous agacerait aussi. Le travail sur lequel j'aimerais être jugé est regroupé dans [Gros projets](#larger-projects). Si vous êtes curieux de ce que je savais faire avant l'IA, [wdoc](#wdoc), [AnnA](#anna) et [AnkiAIUtils](#ankiaiutils) ont été écrits à la main. L'IA a depuis multiplié ce que je peux produire.
 
 Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbeyourgithub/):
 
@@ -46,6 +46,12 @@ Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbey
 <details><summary><i>Une note sur les licences</i></summary>
 <ul>
     <li><i>La plupart, sinon tous mes projets sont publiés sous la <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">licence AGPLv3</a>. Auparavant, j'utilisais presque exclusivement la <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">licence GPLv3</a>.</i></li>
+</ul>
+</details>
+
+<details><summary><i>Une note sur les données de patients</i></summary>
+<ul>
+    <li><i>Aucune donnée de patient n'est jamais impliquée dans tout cela, pas même anonymisée, et pas même sur des serveurs que j'héberge moi-même.</i></li>
 </ul>
 </details>
 
