@@ -89,7 +89,6 @@ redirect_from:
 * German level A1-A2
 
 ## Other
-* Technical & Innovation Advisor at *Société Nouvelle des Cycles Cavales* (ecological intermediate mobility) - since 2024
 * Driver's license (category B)
 
 # Publication

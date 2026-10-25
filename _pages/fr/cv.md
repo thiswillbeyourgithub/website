@@ -85,7 +85,6 @@ redirect_from:
 * Allemand niveau A1-A2
 
 ## Autres
-* Conseiller Technique & Innovation chez *Société Nouvelle des Cycles Cavales* (mobilités intermédiaires écologiques) - depuis 2024
 * Permis B
 
 # Publication
