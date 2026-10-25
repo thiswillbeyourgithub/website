@@ -10,9 +10,11 @@ lang: fr
 
 Sur cette page, vous pouvez lire la liste exhaustive des projets de programmation que j'ai créés au fil des années. Elle est assez longue, utilisez donc la table des matières ci-dessous pour naviguer.
 
-Un mot sur l'échelle avant de faire défiler : une partie de ce qui suit relève du grattage de démangeaison. De petits outils créés parce que quelque chose m'agaçait, publiés au cas où cela vous agacerait aussi. Le travail sur lequel j'aimerais être jugé est regroupé dans [Gros projets](#larger-projects). Si vous êtes curieux de ce que je savais faire avant l'IA, [wdoc](#wdoc), [AnnA](#anna) et [AnkiAIUtils](#ankiaiutils) ont été écrits à la main. L'IA a depuis multiplié ce que je peux produire.
+Un mot avant de faire défiler :
+    - Le travail sur lequel j'aimerais être jugé est regroupé dans [Gros projets](#larger-projects), car une bonne partie du reste relève du grattage de démangeaison : de petits outils créés pour résoudre de petits agacements.
+    - Si vous êtes curieux de ce que je savais faire avant l'IA, [wdoc](#wdoc), [AnnA](#anna) et [AnkiAIUtils](#ankiaiutils) ont été écrits à la main, avant l'IA.
 
-Mes dépôts de code sont hébergés sur [github](https://github.com/thiswillbeyourgithub/):
+Mes dépôts de code sont actuellement hébergés sur [github](https://github.com/thiswillbeyourgithub/):
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
