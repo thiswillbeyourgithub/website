@@ -25,11 +25,11 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
 - J'ai fait [neurarium](https://neurarium.olicorne.org/?lang=fr), un atlas de neuroanatomie en 3D couvrant les régions, les projections, les récepteurs, les psychotropes et leur métabolisme, avec un niveau de sourçage indiqué sur chaque entrée pour savoir ce qui est solide et ce qui l'est moins. [Instance publique](https://neurarium.olicorne.org/?lang=fr), [code source](https://github.com/thiswillbeyourgithub/neurarium).
 
-  <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.gif" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>
+  <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.gif" width="560" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>
 
 - J'ai fait [DrugsMap](https://drugsmap.olicorne.org/), à partir des données de [neurarium](https://neurarium.olicorne.org/?lang=fr), pour voir d'un coup d'œil quels psychotropes ont des profils de récepteurs proches, par exemple les antipsychotiques selon D2 vs 5-HT2A ou les antidépresseurs selon SERT vs NET. [Code source](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.fr.md).
 
-  <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="capture de DrugsMap" src="{{ base_path }}/images/drugsmap.fr.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.fr.png';"></a>
+  <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="capture de DrugsMap" src="{{ base_path }}/images/drugsmap.fr.png" width="560" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.fr.png';"></a>
 
 - Sur [pdf.olicorne.org](https://pdf.olicorne.org) j'héberge des outils PDF (rotation, suppression de pages, découpage, fusion, reconnaissance de texte, etc.) qui tournent entièrement dans votre navigateur : votre PDF n'atteint jamais un serveur. Il s'agit d'une instance de [BentoPDF](https://github.com/alam00000/bentopdf).
 

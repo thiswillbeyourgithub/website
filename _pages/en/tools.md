@@ -22,11 +22,11 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 
 - I made [neurarium](https://neurarium.olicorne.org/?lang=en), a 3D neuroanatomy atlas covering regions, projections, receptors, psychiatric drugs and their metabolism, with a provenance grade on every entry so you can tell what is solid and what is not. [Public instance](https://neurarium.olicorne.org/?lang=en), [source](https://github.com/thiswillbeyourgithub/neurarium).
 
-  <a href="https://neurarium.olicorne.org/?lang=en"><img alt="neurarium" src="{{ base_path }}/images/neurarium.gif" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>
+  <a href="https://neurarium.olicorne.org/?lang=en"><img alt="neurarium" src="{{ base_path }}/images/neurarium.gif" width="560" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/screenshot.png';"></a>
 
 - I made [DrugsMap](https://drugsmap.olicorne.org/), built on [neurarium](https://neurarium.olicorne.org/?lang=en)'s data, to see at a glance which psychiatric drugs have similar receptor profiles, for example antipsychotics on D2 vs 5-HT2A or antidepressants on SERT vs NET. [Source](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.md).
 
-  <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="DrugsMap" src="{{ base_path }}/images/drugsmap.en.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.en.png';"></a>
+  <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="DrugsMap" src="{{ base_path }}/images/drugsmap.en.png" width="560" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.en.png';"></a>
 
 - At [pdf.olicorne.org](https://pdf.olicorne.org) I host PDF tools (rotate, remove pages, split, merge, text recognition, etc.) that run entirely in your browser: your PDF never reaches a server. It is a [BentoPDF](https://github.com/alam00000/bentopdf) instance.
 
