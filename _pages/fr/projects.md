@@ -65,17 +65,17 @@ Mes dépôts de code sont actuellement hébergés sur [github](https://github.co
 ## Médecine / Science Informatique / Gros projets
 {: #larger-projects}
 *27 projets jusqu'à présent*
-- [neurarium](https://neurarium.olicorne.org/?lang=fr) : Un atlas 3D à sources notées qui relie l'anatomie cérébrale, les voies, les récepteurs et les médicaments psychiatriques dans un même modèle interrogeable (instance publique gratuite sur [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=fr)).
+- [neurarium](https://neurarium.olicorne.org/?lang=fr) : Un atlas 3D à sources notées qui relie l'anatomie cérébrale, les voies, les récepteurs et les médicaments psychiatriques dans un même modèle interrogeable (instance publique gratuite sur [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=fr), [code source](https://github.com/thiswillbeyourgithub/neurarium)).
 
     <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.webp" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/preview.webp';"></a>
 
-- [DrugsMap](https://drugsmap.olicorne.org/) : Les psychotropes sur une carte, proches quand ils agissent sur les mêmes récepteurs dans des proportions voisines, à partir des données ouvertes de [neurarium](https://neurarium.olicorne.org/?lang=fr).
+- [DrugsMap](https://drugsmap.olicorne.org/) : Les psychotropes sur une carte, proches quand ils agissent sur les mêmes récepteurs dans des proportions voisines, à partir des données ouvertes de [neurarium](https://neurarium.olicorne.org/?lang=fr) (instance publique gratuite sur [drugsmap.olicorne.org](https://drugsmap.olicorne.org/), [code source](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.fr.md)).
 
     <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="capture de DrugsMap" src="{{ base_path }}/images/drugsmap.fr.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.fr.png';"></a>
 
 - [psychiatheque](https://psychiatheque.olicorne.org) : Plus de 500 recommandations et guides de bonne pratique en psychiatrie ([HAS](https://www.has-sante.fr/) et instances internationales) interrogeables en une seule question, en français ou en anglais (instance publique gratuite sur [psychiatheque.olicorne.org](https://psychiatheque.olicorne.org)).
     - [justelesdocs](https://github.com/thiswillbeyourgithub/justelesdocs/blob/main/README.fr.md) : Une recherche par IA sur des centaines de PDF à la fois : on pose une question en langage naturel et on arrive sur le passage qui y répond, surligné sur sa page d'origine, sans publicité et sans pistage.
-- [justelesRCP](https://justelesrcp.olicorne.org) : Un site statique rapide pour consulter les RCP officiels français, généré à partir des données publiques [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/), avec une recherche par IA gratuite, sans publicité et sans pistage (instance publique gratuite sur [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
+- [justelesRCP](https://justelesrcp.olicorne.org) : Un site statique rapide pour consulter les RCP officiels français, généré à partir des données publiques [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/), avec une recherche par IA gratuite, sans publicité et sans pistage (instance publique gratuite sur [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/justelesRCP)).
 
 ### Transcription audio médicale
 

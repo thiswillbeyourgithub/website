@@ -66,17 +66,17 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 ## Medicine / Computer Science / Larger projects
 {: #larger-projects}
 *27 projects so far*
-- [neurarium](https://neurarium.olicorne.org/?lang=en): A 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model (free public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en)).
+- [neurarium](https://neurarium.olicorne.org/?lang=en): A 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model (free public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en), [source code](https://github.com/thiswillbeyourgithub/neurarium)).
 
     <a href="https://neurarium.olicorne.org/?lang=en"><img alt="neurarium" src="{{ base_path }}/images/neurarium.webp" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/preview.webp';"></a>
 
-- [DrugsMap](https://drugsmap.olicorne.org/): Psychiatric drugs on a map, close together when they hit the same receptors in similar proportions, built on [neurarium](https://neurarium.olicorne.org/?lang=en)'s open data.
+- [DrugsMap](https://drugsmap.olicorne.org/): Psychiatric drugs on a map, close together when they hit the same receptors in similar proportions, built on [neurarium](https://neurarium.olicorne.org/?lang=en)'s open data (free public instance at [drugsmap.olicorne.org](https://drugsmap.olicorne.org/), [source code](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.md)).
 
     <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="DrugsMap" src="{{ base_path }}/images/drugsmap.en.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.en.png';"></a>
 
 - [psychiatheque](https://psychiatheque.olicorne.org): Over 500 psychiatry guidelines and recommendations ([HAS](https://www.has-sante.fr/) and international bodies) searchable in one question, in French or English (free public instance at [psychiatheque.olicorne.org](https://psychiatheque.olicorne.org)).
     - [justelesdocs](https://github.com/thiswillbeyourgithub/justelesdocs/blob/main/README.md): An AI search over hundreds of PDFs at once: you ask a question in plain language and land on the matching passage, highlighted on its original page, no ads and no tracking.
-- [justelesRCP](https://justelesrcp.olicorne.org): A fast static site for the official French drug reference sheets (RCP), built from the public [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/) data, with free AI-powered search, no ads and no tracking (free public instance at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org)).
+- [justelesRCP](https://justelesrcp.olicorne.org): A fast static site for the official French drug reference sheets (RCP), built from the public [ANSM](https://ansm.sante.fr/)/[BDPM](https://base-donnees-publique.medicaments.gouv.fr/) data, with free AI-powered search, no ads and no tracking (free public instance at [justelesrcp.olicorne.org](https://justelesrcp.olicorne.org), [source code](https://github.com/thiswillbeyourgithub/justelesRCP)).
 
 ### Medical audio transcription
 
