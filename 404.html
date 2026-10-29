@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /404.html
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <title>Redirecting&hellip;</title>
+  <meta name="robots" content="noindex">
+  <noscript><meta http-equiv="refresh" content="0; url={{ site.baseurl }}/en/404"></noscript>
+  <!-- Served by the server at the missing url: forward that url and the page
+       the visitor came from to the localized 404 page so umami can log them -->
+  <script>
+    var lang = window.location.pathname.indexOf('/fr/') === 0 ? 'fr' : 'en';
+    var params = new URLSearchParams({
+      missing: window.location.pathname + window.location.search,
+      from: document.referrer || 'none'
+    });
+    window.location.replace('{{ site.baseurl }}/' + lang + '/404?' + params.toString());
+  </script>
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ site.baseurl }}/en/404">Click here if you are not redirected.</a>
+</html>

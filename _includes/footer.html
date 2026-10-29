@@ -66,3 +66,18 @@ https://umami.is/docs/track-outbound-links
     }
   });
 </script>
+
+{% if page.ref == 404 %}
+<!-- Track 404s to umami: the missing url and the page the visitor came from (passed by /404.html) -->
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof umami !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      umami.track('404', {
+        missing: params.get('missing') || 'unknown',
+        from: params.get('from') || document.referrer || 'none'
+      });
+    }
+  });
+</script>
+{% endif %}
