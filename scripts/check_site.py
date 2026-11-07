@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["playwright"]
+# dependencies = ["playwright", "tqdm"]
 # ///
 """
 End-to-end checks of a built olicorne.org, run against the live site or a local build.
@@ -19,6 +19,11 @@ feeds, llms*.txt, security.txt expiry), security headers (https only) and the
 interactive widgets (language dropdown, theme toggle, referrer override).
 Exits 1 if anything failed.
 
+Page loads are paced (--delay seconds between them) and retried with a growing
+backoff (--retries), because the server's firewall (ufw "limit" rules) can
+refuse connections when hit too fast, which Firefox reports as
+NS_ERROR_CONNECTION_REFUSED. Each pass shows a tqdm progress bar on stderr.
+
 If playwright complains about missing browsers:
     uv run --with playwright playwright install chromium firefox
 """
@@ -28,6 +33,7 @@ import datetime
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -35,6 +41,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+from tqdm import tqdm
 
 LIVE = "https://olicorne.org"
 AXE_URL = "https://cdn.jsdelivr.net/npm/axe-core@4.10.3/axe.min.js"
@@ -52,21 +59,53 @@ document.addEventListener('securitypolicyviolation', e =>
 
 failures = collections.defaultdict(set)  # problem -> set of urls
 
+# Pacing and retry settings, overwritten from the command line in main().
+# Module level so goto() and fetch() need no extra parameters at every call site.
+PACE = {"delay": 1.0, "retries": 3, "backoff": 15.0, "timeout": 60000}
+
 
 def fail(problem, url):
     failures[problem].add(url)
 
 
 def fetch(url, method="GET"):
-    """Return (status, headers, body) without raising on HTTP errors."""
+    """Return (status, headers, body) without raising on HTTP errors.
+
+    Network errors (refused connection, timeout) are retried with the same
+    backoff as goto(), and reported as status 0 if they persist.
+    """
     req = urllib.request.Request(url, method=method, headers={"User-Agent": "check_site"})
-    try:
-        with urllib.request.urlopen(req, timeout=20) as r:
-            return r.status, r.headers, r.read() if method == "GET" else b""
-    except urllib.error.HTTPError as e:
-        return e.code, e.headers, b""
-    except Exception as e:  # noqa: BLE001 network errors are reported as status 0
-        return 0, {}, str(e).encode()
+    for attempt in range(PACE["retries"] + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=PACE["timeout"] / 1000) as r:
+                return r.status, r.headers, r.read() if method == "GET" else b""
+        except urllib.error.HTTPError as e:
+            return e.code, e.headers, b""
+        except Exception as e:  # noqa: BLE001 network errors are reported as status 0
+            if attempt == PACE["retries"]:
+                return 0, {}, str(e).encode()
+            time.sleep(PACE["backoff"] * (attempt + 1))
+
+
+def goto(page, url, **kw):
+    """page.goto() with pacing and retries, for every page load of the script.
+
+    Sleeps PACE["delay"] before each load so the crawl stays under the server's
+    rate limit. If a load raises (ex: NS_ERROR_CONNECTION_REFUSED, timeout), it
+    waits PACE["backoff"] * attempt seconds (15 s, 30 s, 45 s by default) and
+    tries again; the last error is re-raised so callers report it as before.
+    A download ("Download is starting") is not a network problem: re-raised at once.
+    """
+    for attempt in range(PACE["retries"] + 1):
+        time.sleep(PACE["delay"])
+        try:
+            return page.goto(url, wait_until="load", timeout=PACE["timeout"], **kw)
+        except Exception as e:  # noqa: BLE001
+            if "Download is starting" in str(e) or attempt == PACE["retries"]:
+                raise
+            wait = PACE["backoff"] * (attempt + 1)
+            tqdm.write(f"retry {attempt + 1}/{PACE['retries']} in {wait:.0f}s for {url}: {str(e)[:80]}")
+            time.sleep(wait)
 
 
 def localize(url, base):
@@ -165,7 +204,7 @@ def page_meta(page, url):
 
 
 def check_widgets(page, base):
-    page.goto(base + "/en/", wait_until="load")
+    goto(page, base + "/en/")
     sel = "#lang-selector"
     if page.locator(sel).count():
         page.click(f"{sel} .dropdown-toggle")
@@ -180,10 +219,10 @@ def check_widgets(page, base):
     page.click("#theme-toggle button")
     if page.get_attribute("html", "data-theme") == before:
         fail("theme toggle does not change data-theme", base + "/en/")
-    page.goto(base + "/en/?ref=example.com", wait_until="load")
+    goto(page, base + "/en/?ref=example.com")
     if page.evaluate("document.referrer") != "http://example.com":
         fail("?ref= referrer override does not work", base + "/en/?ref=example.com")
-    page.goto(base + "/en/", wait_until="load")
+    goto(page, base + "/en/")
     try:
         page.evaluate("document.referrer")
     except Exception:  # noqa: BLE001
@@ -196,7 +235,13 @@ def main():
     ap.add_argument("--no-axe", action="store_true", help="skip accessibility checks")
     ap.add_argument("--no-firefox", action="store_true", help="only check JS errors in Chromium")
     ap.add_argument("--max-pages", type=int, default=300)
+    ap.add_argument("--delay", type=float, default=PACE["delay"], help="seconds to wait before each page load")
+    ap.add_argument("--retries", type=int, default=PACE["retries"], help="retries of a failed page load")
+    ap.add_argument("--backoff", type=float, default=PACE["backoff"],
+                    help="seconds before retry n is n times this")
+    ap.add_argument("--timeout", type=float, default=PACE["timeout"] / 1000, help="page load timeout in seconds")
     args = ap.parse_args()
+    PACE.update(delay=args.delay, retries=args.retries, backoff=args.backoff, timeout=args.timeout * 1000)
     base = args.base.rstrip("/")
     host = urllib.parse.urlparse(base).netloc
 
@@ -226,14 +271,19 @@ def main():
                 and fail(f"[chromium] console error: {m.text[:150]}", current["url"]))
         page.on("response", lambda r: r.status >= 400 and r.url != current["url"]
                 and fail(f"subresource {r.status}: {r.url}", current["url"]))
+        # The total is unknown up front (links are discovered while crawling),
+        # so the bar's total is bumped to "seen + still queued" at each page.
+        bar = tqdm(desc="crawl (chromium)", unit="page")
         while queue and len(seen_pages) < args.max_pages:
             url = strip_frag(queue.pop(0))
             if url in seen_pages or SKIP.search(urllib.parse.urlparse(url).path):
                 continue
             seen_pages.add(url)
             current["url"] = url
+            bar.total = min(args.max_pages, len(seen_pages) + len(set(queue) - seen_pages))
+            bar.update(1)
             try:
-                resp = page.goto(url, wait_until="load", timeout=30000)
+                resp = goto(page, url)
             except Exception as e:  # noqa: BLE001
                 if "Download is starting" in str(e):  # extensionless file, e.g. /files/PGP_public_key
                     other_links.add((url, url))
@@ -265,10 +315,12 @@ def main():
                     queue.append(target)
                 elif not is_page(target):
                     other_links.add((url, target))
+        bar.close()
         ctx.close()
 
         # Non-page internal links (files, images, pdfs).
-        for src, target in sorted(other_links):
+        for src, target in tqdm(sorted(other_links), desc="file links", unit="link"):
+            time.sleep(PACE["delay"])
             if SKIP.search(urllib.parse.urlparse(src).path):
                 continue
             status = fetch(target, "HEAD")[0]
@@ -290,10 +342,10 @@ def main():
             ctx = browser.new_context()
             page = ctx.new_page()
             page.on("pageerror", lambda e, n=name: fail(f"[{n}] JS error: {str(e)[:150]}", current["url"]))
-            for url in pages:
+            for url in tqdm(pages, desc=name, unit="page"):
                 current["url"] = url
                 try:
-                    page.goto(url, wait_until="load", timeout=30000)
+                    goto(page, url)
                     page.wait_for_timeout(300)
                 except Exception as e:  # noqa: BLE001
                     fail(f"[{name}] failed to load: {str(e)[:100]}", url)
@@ -311,8 +363,12 @@ def main():
             for scheme in ("light", "dark"):
                 ctx = chromium.new_context(color_scheme=scheme)
                 page = ctx.new_page()
-                for url in pages:
-                    page.goto(url, wait_until="load")
+                for url in tqdm(pages, desc=f"axe ({scheme})", unit="page"):
+                    try:
+                        goto(page, url)
+                    except Exception as e:  # noqa: BLE001
+                        fail(f"[axe {scheme}] failed to load: {str(e)[:100]}", url)
+                        continue
                     page.wait_for_timeout(1200)  # let intro animations finish, they skew contrast
                     page.add_script_tag(content=axe)
                     res = page.evaluate("t => axe.run({runOnly: t})", AXE_TAGS)
