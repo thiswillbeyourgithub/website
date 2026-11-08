@@ -1,0 +1,34 @@
+<!doctype html>
+<!--
+  Local development page for helper.js, no Jekyll needed.
+  Run from _apps/psy-checklist/ of the website repo:  python -m http.server 8000
+  then open http://localhost:8000/dev.html
+  (fetch() of trame.md does not work from file://, hence the tiny server.)
+  It loads the very same helper.js and trame.md as the generated Jekyll page,
+  so whatever works here works online.
+-->
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trame helper (dev)</title>
+  <script src="helper.js"></script>
+</head>
+<body>
+  <button type="button" id="open" disabled>Ouvrir l'assistant de compte rendu</button>
+  <!-- pre-wrap: unwrapped long lines would widen the page, mobile browsers then zoom out and the overlay would not fit the screen. -->
+  <pre id="trame" style="white-space:pre-wrap">Chargement de trame.md...</pre>
+  <script>
+    fetch("trame.md", { cache: "no-store" })
+      .then((r) => r.text())
+      .then((md) => {
+        document.getElementById("trame").textContent = md;
+        const btn = document.getElementById("open");
+        btn.disabled = false;
+        btn.addEventListener("click", () => TrameHelper.open(md));
+        // Opening directly speeds up the edit/reload loop while developing.
+        TrameHelper.open(md);
+      });
+  </script>
+</body>
+</html>
