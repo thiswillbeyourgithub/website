@@ -2,8 +2,6 @@
 title: "Checklist de consultation psychiatrique"
 permalink: /fr/psy-checklist
 lang: fr
-sitemap: false
-noindex: true
 ref: psy-checklist
 excerpt_separator: ""
 share: false
@@ -11,8 +9,9 @@ related: false
 read_time: false
 ---
 
-**Expérimental :** cette page et son assistant sont en cours de construction et ne sont pas encore prêts à être utilisés par quelqu'un d'autre que moi. Le contenu, la structure et le fonctionnement changent encore régulièrement.
-{: .notice--warning}
+**Expérimental :** en construction, pas encore prêt pour un usage par d'autres, erreurs probables. Spécifications humaines, code écrit en majorité par une IA (Claude Code).
+{: .notice--danger}
+
 
 Cette page rassemble ma liste personnelle, volontairement exhaustive, de tout ce que j'ai un jour trouvé utile de demander en consultation de psychiatrie. Tout n'est évidemment pas pertinent dans chaque situation : c'est un aide-mémoire dans lequel piocher, pas un questionnaire à dérouler en entier.
 

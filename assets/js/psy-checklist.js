@@ -117,7 +117,7 @@
    * with the date and short hash of the last commit touching its folder, plus
    * " +modifs" if the working tree had uncommitted changes, ex:
    * "2026-11-07 8b4f826". Keep the line exactly as is or the build fails. */
-  const VERSION = "2026-11-08 1d5f3aa";
+  const VERSION = "2026-11-08 2e07162";
 
   // ------------------------------------------------------------------ parsing
 
@@ -1411,7 +1411,7 @@
     }
     r.querySelector(".trh-help-body").innerHTML =
       `<h3>Raccourcis (mode ${S.mode})</h3>` +
-      `<p class="trh-help-tip">Version : ${esc(VERSION)}</p>` +
+      `<p class="trh-help-tip">Version expérimentale ${esc(VERSION)} : erreurs probables, code écrit en majorité par une IA (Claude Code).</p>` +
       `<p class="trh-help-key">Appuyez sur une touche pour voir à quoi elle sert (Échap ou « ? » pour fermer).</p><table>` +
       Object.entries(ACTIONS)
         .map(
