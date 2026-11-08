@@ -13,7 +13,7 @@ builds the site from git (deploy.sh rebuilds them and stops if they differ
 from what is committed):
 
 1. `_pages/fr/psy-checklist.md`, the French page served at /fr/psy-checklist:
-   - front matter keeping it reachable but not advertised (see `common_fields`),
+   - front matter (see `common_fields`),
    - a short introduction (INTRO) and a centered button opening the helper,
    - trame.md itself between two empty marker divs (`#trame-start` and
      `#trame-end`), so the page shows the rendered trame and helper.js can
@@ -37,11 +37,6 @@ An inlined script then breaks (the first `//` comment swallows the rest of
 the code) and so does the raw trame (its parser is line based). Hence the
 `<pre>` for the trame, and a separate static script file, which the site CSP
 allows ('self' scripts).
-
-"Not advertised" means: `sitemap: false` keeps the pages out of sitemap.xml,
-the HTML site map page and llms-full.txt, `noindex: true` adds a robots
-noindex meta tag (_includes/head/custom.html), and no other page links to
-them. Remove these two fields and add a link on the tools page to advertise it.
 
 A real page is written rather than including trame.md from Jekyll because
 trame.md has no front matter and must not get one, and it is needed twice
@@ -95,12 +90,21 @@ def version() -> str:
 # on purpose: it is a personal memo shared as is, not a reference. It states
 # plainly what the Umami event records (helper.js sends a single event named
 # "checklist-psy-open", without any data, each time the helper is opened).
-# The first paragraph is a Minimal Mistakes warning notice (kramdown IAL
-# "{: .notice--warning}") stating the page is experimental and not meant for
-# other people yet; remove it once the checklist and assistant are stable.
-INTRO = """\
-**Expérimental :** cette page et son assistant sont en cours de construction et ne sont pas encore prêts à être utilisés par quelqu'un d'autre que moi. Le contenu, la structure et le fonctionnement changent encore régulièrement.
-{: .notice--warning}
+# The first paragraph is a red Minimal Mistakes notice (kramdown IAL
+# "{: .notice--danger}"), first thing on the page so nobody misses it: the
+# page is experimental, errors are probable, and the code was mostly written
+# by an LLM from my specifications. The English stub carries the same
+# warning (NOTICE_EN), keep both in sync.
+NOTICE_IAL = "{: .notice--danger}\n"
+NOTICE_FR = (
+    "**Expérimental :** en construction, pas encore prêt pour un usage par d'autres, erreurs probables. "
+    "Spécifications humaines, code écrit en majorité par une IA (Claude Code).\n" + NOTICE_IAL
+)
+NOTICE_EN = (
+    "**Experimental:** work in progress, not ready for use by others yet, errors are likely. "
+    "Human specifications, code mostly written by an AI (Claude Code).\n" + NOTICE_IAL
+)
+INTRO = NOTICE_FR + """
 
 Cette page rassemble ma liste personnelle, volontairement exhaustive, de tout ce que j'ai un jour trouvé utile de demander en consultation de psychiatrie. Tout n'est évidemment pas pertinent dans chaque situation : c'est un aide-mémoire dans lequel piocher, pas un questionnaire à dérouler en entier.
 
@@ -129,10 +133,8 @@ def common_fields(ref: str) -> list[str]:
     """
     Front matter lines shared by the French and English pages.
 
-    `sitemap: false` keeps them out of sitemap.xml, the HTML site map and
-    llms-full.txt, `noindex: true` asks search engines not to index them, the
-    `ref` (unique to these pages) keeps them out of the language selector of
-    other pages, and the empty excerpt separator disables excerpts (Jekyll
+    The `ref` (unique to these pages) keeps them out of the language selector
+    of other pages, and the empty excerpt separator disables excerpts (Jekyll
     would otherwise render the first paragraph on its own, which can cut
     through a {% raw %} wrapper).
 
@@ -147,8 +149,6 @@ def common_fields(ref: str) -> list[str]:
         YAML lines.
     """
     return [
-        "sitemap: false",
-        "noindex: true",
         f"ref: {ref}",
         'excerpt_separator: ""',
         "share: false",
@@ -251,6 +251,7 @@ def main() -> None:
                     *common_fields(ref=SLUG),
                 ]
             ),
+            NOTICE_EN,
             f"Not yet translated to English. The French version is [here](/fr/{SLUG}).",
             "",
         ]

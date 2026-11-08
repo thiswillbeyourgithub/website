@@ -1411,7 +1411,7 @@
     }
     r.querySelector(".trh-help-body").innerHTML =
       `<h3>Raccourcis (mode ${S.mode})</h3>` +
-      `<p class="trh-help-tip">Version : ${esc(VERSION)}</p>` +
+      `<p class="trh-help-tip">Version expérimentale ${esc(VERSION)} : erreurs probables, code écrit en majorité par une IA (Claude Code).</p>` +
       `<p class="trh-help-key">Appuyez sur une touche pour voir à quoi elle sert (Échap ou « ? » pour fermer).</p><table>` +
       Object.entries(ACTIONS)
         .map(
