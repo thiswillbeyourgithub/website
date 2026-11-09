@@ -29,6 +29,9 @@
   }
 
   .page-source-link {
+    // underline so axe link-in-text-block passes on pages with a long title
+    text-decoration: underline;
+
     &:hover {
       color: var(--global-link-color-hover);
       background-color: var(--global-border-color);
