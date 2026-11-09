@@ -597,7 +597,7 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
     - anxiété somatique : palpitations / oppression thoracique / sueurs / tremblements / troubles digestifs / sensation de boule dans la gorge
     - attaques de panique : fréquence / durée / dernière / symptômes / peur de mourir ou de devenir fou / anticipation anxieuse / agoraphobie
     - phobies : sociale / spécifique (laquelle) / agoraphobie / conduites d'évitement / retentissement
-- Symptômes délirants : adhésion / participation émotionnelle / ancienneté / critique / conduites induites par le délire / extension
+- Symptômes délirants : adhésion / participation émotionnelle / ancienneté / accessible à la critique <!-- non --> / conduites induites par le délire / extension <!-- phrase -->
     - thème : persécution / préjudice / grandeur / érotomanie / jalousie / mystique / hypocondriaque / filiation / référence / influence / ruine / culpabilité / négation d'organe
     - mécanisme : interprétatif / intuitif / imaginatif / hallucinatoire
     - organisation : systématisé / non systématisé
