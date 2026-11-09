@@ -1,0 +1,17 @@
+{% comment %}
+  Citation line and Paper / PDF / Slides / Bibtex links for a publication or talk.
+  Adapted from academicpages commit f0d65c0, keeping our labels and <p> wrapper.
+  Params: citation, paperurl, pdfurl, slidesurl, bibtexurl, small (adds font-size: smaller).
+  When pdfurl is set the citation is hidden and small is ignored (former local layout branch).
+{% endcomment %}
+{% assign citation = include.citation %}
+{% assign small = include.small %}
+{% if include.pdfurl %}{% assign citation = nil %}{% assign small = nil %}{% endif %}
+{% assign links = "" | split: "" %}
+{% if include.paperurl %}{% capture link %}<a href="{{ include.paperurl }}">Paper</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+{% if include.pdfurl %}{% capture link %}<a href="{{ include.pdfurl }}">PDF</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+{% if include.slidesurl %}{% capture link %}<a href="{{ include.slidesurl }}">Slides</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+{% if include.bibtexurl %}{% capture link %}<a href="{{ include.bibtexurl }}">Bibtex</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+{% if citation or links.size > 0 %}
+<p{% if small %} style="font-size: smaller"{% endif %}>{% if citation %}Recommended citation: {{ citation }}{% if links.size > 0 %}<br />{% endif %}{% endif %}{{ links | join: " | " }}</p>
+{% endif %}
