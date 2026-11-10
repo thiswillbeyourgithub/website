@@ -603,9 +603,9 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
     - organisation : systématisé / non systématisé
     - automatisme mental : écho de la pensée / vol de la pensée / pensées imposées / commentaire des actes / divulgation de la pensée / syndrome d'influence
 - Hallucinations : adhésion / fréquence / retentissement / attitude d'écoute observée
-    - modalité : auditives / visuelles / cénesthésiques / olfactives / gustatives / tactiles
-    - hallucinations acoustico-verbales : voix commentant les actes / voix dialoguant entre elles / voix injonctives / voix connues ou inconnues / perçues dans la tête ou à l'extérieur
-    - moment de survenue : hypnagogiques / hypnopompiques / à tout moment
+    - (modalité) : auditives / visuelles / cénesthésiques / olfactives / gustatives / tactiles
+    - voix : commentant les actes / dialoguant entre elles / injonctives / connues / inconnues / perçues dans la tête / perçues à l'extérieur
+    - (survenue) : hypnagogiques / hypnopompiques / à tout moment
 - Symptômes négatifs : émoussement affectif / alogie / aboulie / apragmatisme / anhédonie / retrait social / incurie
 - Dissociation : déréalisation / dépersonnalisation / amnésie dissociative / absences / fugue dissociative / contexte déclenchant
 - Obsessions et compulsions (TOC) : temps passé par jour / résistance / caractère égodystone / insight / retentissement
