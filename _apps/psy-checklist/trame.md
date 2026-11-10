@@ -587,7 +587,7 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
 - Émotion dominante dans la journée
 - Tristesse : TOUJOURS coter sur 0/10 <!-- 0 = aucune tristesse, 10 = la pire tristesse imaginable ; noter la cote donnée par le patient. -->
 - Affectivité : implication émotionnelle / adaptée au discours / émoussement affectif / anesthésie affective / hyperesthésie affective / labilité émotionnelle / incontinence émotionnelle / discordance / ambivalence / alexithymie
-    - pleurs : durée / fréquence / contexte
+    - pleurs <!-- préciser durée, fréquence, contexte -->
 - Symptômes dépressifs : humeur triste / anhédonie / aboulie / apragmatisme / clinophilie / asthénie / troubles de la concentration / ralentissement / culpabilité / dévalorisation / désespoir / idées de mort / troubles du sommeil / troubles de l'appétit / baisse de la libido / repli social
     - caractéristiques : mélancoliques / atypiques (hypersomnie, hyperphagie, sensibilité au rejet) / psychotiques / saisonnières / mixtes
 - Symptômes maniaques ou hypomaniaques : réduction du besoin de sommeil sans fatigue / exaltation / irritabilité / logorrhée / tachypsychie / fuite des idées / distractibilité / hyperactivité orientée vers un but / projets multiples / dépenses / désinhibition / familiarité / idées de grandeur / épisodes passés de ce type, même brefs (quelques jours)
