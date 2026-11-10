@@ -576,11 +576,11 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
     - agitation : motrice / verbale / déambulation / impossibilité de rester assis / agressivité
     - catatonie : stupeur / catalepsie / flexibilité cireuse / négativisme / mutisme / échopraxie / écholalie / opposition
 - Discours : spontané / pauvre (réponses brèves) / informatif / cohérent / incohérent / centré sur un thème / hors sujet
-    - débit : normal / logorrhée / débit accéléré / débit ralenti / bradyphémie / pauses prolongées / mutisme / mussitation
+    - (débit) : débit normal / logorrhée / débit accéléré / débit ralenti / bradyphémie / pauses prolongées / mutisme / mussitation
     - volume : normal / fort / faible / chuchoté / variable
-    - prosodie : normale / monocorde / aprosodie / emphatique, théâtrale
-    - articulation : normale / dysarthrie / bégaiement / bredouillement
-    - langage : néologismes / paralogismes / schizophasie / écholalie / verbigération / persévérations / pragmatique du langage altérée (compréhension littérale) / pédanterie, langage maniéré
+    - (prosodie) : prosodie normale / prosodie monocorde / aprosodie / prosodie emphatique, théâtrale
+    - (articulation) : articulation normale / dysarthrie / bégaiement / bredouillement
+    - (langage) : néologismes / paralogismes / schizophasie / écholalie / verbigération / persévérations / pragmatique du langage altérée (compréhension littérale) / pédanterie, langage maniéré
 - Cours de la pensée : normal / tachypsychie / bradypsychie / fuite des idées / coq-à-l'âne / diffluence / digressions / perd le fil / barrages / fading / relâchement des associations / pensée circonstanciée / persévération / ruminations / pauvreté idéique (alogie)
 - Contenu de la pensée : préoccupations principales / idées de dévalorisation / idées de culpabilité / idées d'incurabilité / idées de ruine / idées de mort / idées de grandeur / idées de référence / idées obsédantes / idée surinvestie / phobies
 - Humeur : euthymique / triste / dépressive / exaltée / expansive / irritable / dysphorique / labile / anxieuse / variation nycthémérale
