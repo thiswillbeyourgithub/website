@@ -560,7 +560,7 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
 - Présentation
     - âge apparent
     - corpulence
-    - (tenue) : tenue adaptée / tenue négligée / tenue excentrique ou bizarre
+    - tenue : adaptée / négligée / excentrique / bizarre
     - (hygiène) : hygiène corporelle correcte / incurie
     - maquillage ou parure inhabituels
     - cicatrices visibles
