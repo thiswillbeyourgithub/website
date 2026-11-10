@@ -566,7 +566,7 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
     - cicatrices visibles
 - Vigilance et orientation
     - (vigilance) : vigilance normale / obnubilation / confusion
-    - (orientation) : orientation temporelle / orientation spatiale / orientation personnelle
+    - (orientation) : orientation temporo-spatiale conservée / désorientation temporelle / désorientation spatiale / désorientation personnelle
 - Contact : bon / syntone / familier / distant / froid / méfiant / hostile / opposant / ludique / théâtral / séducteur / perplexe / fuyant
     - regard : soutenu / fuyant / fixe / absent / scrutateur
     - mimique : expressive / hypomimie / amimie / hypermimie / paramimie / discordante
