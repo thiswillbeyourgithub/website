@@ -592,11 +592,11 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
     - caractéristiques : mélancoliques / atypiques (hypersomnie, hyperphagie, sensibilité au rejet) / psychotiques / saisonnières / mixtes
 - Symptômes maniaques ou hypomaniaques : réduction du besoin de sommeil sans fatigue / exaltation / irritabilité / logorrhée / tachypsychie / fuite des idées / distractibilité / hyperactivité orientée vers un but / projets multiples / dépenses / familiarité / idées de grandeur / épisodes passés de ce type, même brefs (quelques jours)
     - désinhibition : sexuelle / sociale / verbale / conduites à risque
-- Anxiété : psychique / somatique / anticipatoire / anxiété généralisée / évitement
-    - anxiété psychique : inquiétudes / appréhension / tension / soucis incontrôlables
-    - anxiété somatique : palpitations / oppression thoracique / sueurs / tremblements / troubles digestifs / sensation de boule dans la gorge
-    - attaques de panique : fréquence / durée / dernière / symptômes / peur de mourir ou de devenir fou / anticipation anxieuse / agoraphobie
-    - phobies : sociale / spécifique (laquelle) / agoraphobie / conduites d'évitement / retentissement
+- Anxiété : anticipatoire / généralisée / évitement
+    - psychique : inquiétudes / appréhension / tension / soucis incontrôlables
+    - somatique : palpitations / oppression thoracique / sueurs / tremblements / troubles digestifs / sensation de boule dans la gorge
+    - attaques de panique : peur de mourir ou de devenir fou / anticipation anxieuse <!-- préciser fréquence, durée, dernière crise, symptômes -->
+    - phobies : sociale / spécifique (laquelle) / agoraphobie
 - Symptômes délirants : adhésion / participation émotionnelle / ancienneté / accessible à la critique <!-- non --> / conduites induites par le délire / extension
     - thème : persécution / préjudice / grandeur / érotomanie / jalousie / mystique / hypocondriaque / filiation / référence / influence / ruine / culpabilité / négation d'organe
     - mécanisme : interprétatif / intuitif / imaginatif / hallucinatoire
