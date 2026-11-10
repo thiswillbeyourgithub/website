@@ -571,8 +571,8 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
     - regard : soutenu / fuyant / fixe / absent / scrutateur
     - (mimique) : mimique expressive / hypomimie / amimie / hypermimie / paramimie / mimique discordante
     - attitude : coopérante / réticente / revendicatrice / passive / agitée / d'écoute (semble entendre des voix)
-- Psychomotricité : normale / ralentissement psychomoteur / agitation / akathisie / tremblements / stéréotypies / maniérisme / bizarreries / tics
-    - ralentissement psychomoteur : observé / perception subjective / latence des réponses / bradykinésie
+- Psychomotricité : normale / akathisie / tremblements / stéréotypies / maniérisme / bizarreries / tics
+    - ralentissement psychomoteur : observé / ressenti / latence des réponses / bradykinésie
     - agitation : motrice / verbale / déambulation / impossibilité de rester assis / agressivité
     - catatonie : stupeur / catalepsie / flexibilité cireuse / négativisme / mutisme / échopraxie / écholalie / opposition
 - Discours : spontané / pauvre (réponses brèves) / informatif / cohérent / incohérent / centré sur un thème / hors sujet
