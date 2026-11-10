@@ -224,6 +224,7 @@
     const glossary = [];
     let comment = null; // inside a multi line comment: "glossaire" or "other"
     let checklist = null; // the checklist item collecting the current lines, if any
+    let sectionPhrase = false; // current heading tagged "<!-- phrase -->"
     for (let line of md.split(/\r?\n/)) {
       if (comment) {
         const end = line.indexOf("-->");
@@ -244,8 +245,9 @@
       // except the "phrase" tag (see notionText).
       const notes = [];
       line = line.replace(/<!--([\s\S]*?)-->/g, (_, c) => (notes.push(c.trim()), ""));
-      const phrase = notes.includes("phrase");
-      if (phrase) notes.splice(notes.indexOf("phrase"), 1);
+      const tag = (t) => notes.includes(t) && (notes.splice(notes.indexOf(t), 1), true);
+      const phrase = tag("phrase");
+      const nophrase = tag("nophrase");
       if (!line.trim()) continue;
       const heading = line.match(/^(#+)\s+(.*)$/);
       if (heading) {
@@ -253,6 +255,7 @@
         checklist = notes.includes("checklist") ? { kind: "checklist", title, lines: [] } : null;
         // Several tags may share one comment: "<!-- entete urgence suivi -->".
         const tags = notes.join(" ").split(/\s+/);
+        sectionPhrase = phrase || tags.includes("phrase");
         items.push(
           checklist || {
             kind: "section",
@@ -303,10 +306,17 @@
         text: "",
         note: notes.join("\n"),
         phrase,
+        sectionPhrase: sectionPhrase && !nophrase,
       });
     }
-    // Sub notions of a "phrase" notion are written as phrase too.
     const parent = notionParents(items);
+    // In a heading tagged "<!-- phrase -->", every top notion with sub notions
+    // is a phrase notion, except those tagged "<!-- nophrase -->".
+    items.forEach((it, i) => {
+      if (it.sectionPhrase && parent[i] < 0 && items.some((x, j) => parent[j] === i && x.kind === "notion")) it.phrase = true;
+      delete it.sectionPhrase;
+    });
+    // Sub notions of a "phrase" notion are written as phrase too.
     // A phrase sub notion with fields is a choice (its fields are options, laid
     // out in a row); the fields of the top notion are yes / no characterizers.
     items.forEach((it, i) => {
