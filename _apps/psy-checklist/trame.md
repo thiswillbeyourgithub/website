@@ -567,10 +567,10 @@ alliance thérapeutique : qualité du lien de confiance et de collaboration entr
 - Vigilance et orientation
     - (vigilance) : vigilance normale / obnubilation / confusion
     - (orientation) : orientation temporo-spatiale conservée / désorientation temporelle / désorientation spatiale / désorientation personnelle
-- Contact : bon / syntone / familier / distant / froid / méfiant / hostile / opposant / ludique / théâtral / séducteur / perplexe / fuyant
+- Contact : bon / syntone <!-- non --> / familier / distant / froid / méfiant / hostile / opposant / ludique / théâtral / séducteur / perplexe / fuyant
     - regard : soutenu / fuyant / fixe / absent / scrutateur
-    - mimique : expressive / hypomimie / amimie / hypermimie / paramimie / discordante
-    - attitude : coopérante / réticente / revendicatrice / passive / agitée / attitude d'écoute (semble entendre des voix)
+    - (mimique) : mimique expressive / hypomimie / amimie / hypermimie / paramimie / mimique discordante
+    - attitude : coopérante / réticente / revendicatrice / passive / agitée / d'écoute (semble entendre des voix)
 - Psychomotricité : normale / ralentissement psychomoteur / agitation / akathisie / tremblements / stéréotypies / maniérisme / bizarreries / tics
     - ralentissement psychomoteur : observé / perception subjective / latence des réponses / bradykinésie
     - agitation : motrice / verbale / déambulation / impossibilité de rester assis / agressivité
