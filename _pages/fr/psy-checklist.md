@@ -579,57 +579,57 @@ délivrance fractionnée : délivrance du traitement en pharmacie pour quelques 
 alliance thérapeutique : qualité du lien de confiance et de collaboration entre le patient et les soignants
 -->
 
-## Évaluation clinique <!-- urgence suivi -->
+## Évaluation clinique <!-- urgence suivi phrase -->
 - Systématiquement pour chaque symptôme : date de début / récurrence / intensité / facteurs déclenchants / retentissement
 - Présentation
     - âge apparent
     - corpulence
-    - (tenue) : tenue adaptée / tenue négligée / tenue excentrique ou bizarre
+    - tenue : adaptée / négligée / excentrique / bizarre
     - (hygiène) : hygiène corporelle correcte / incurie
     - maquillage ou parure inhabituels
     - cicatrices visibles
 - Vigilance et orientation
     - (vigilance) : vigilance normale / obnubilation / confusion
-    - (orientation) : orientation temporelle / orientation spatiale / orientation personnelle
-- Contact : bon / syntone / familier / distant / froid / méfiant / hostile / opposant / ludique / théâtral / séducteur / perplexe / fuyant
+    - (orientation) : orientation temporo-spatiale conservée / désorientation temporelle / désorientation spatiale / désorientation personnelle
+- Contact : bon / syntone <!-- non --> / familier / distant / froid / méfiant / hostile / opposant / ludique / théâtral / séducteur / perplexe / fuyant
     - regard : soutenu / fuyant / fixe / absent / scrutateur
-    - mimique : expressive / hypomimie / amimie / hypermimie / paramimie / discordante
-    - attitude : coopérante / réticente / revendicatrice / passive / agitée / attitude d'écoute (semble entendre des voix)
-- Psychomotricité : normale / ralentissement psychomoteur / agitation / akathisie / tremblements / stéréotypies / maniérisme / bizarreries / tics
-    - ralentissement psychomoteur : observé / perception subjective / latence des réponses / bradykinésie
+    - (mimique) : mimique expressive / hypomimie / amimie / hypermimie / paramimie / mimique discordante
+    - attitude : coopérante / réticente / revendicatrice / passive / agitée / d'écoute (semble entendre des voix)
+- Psychomotricité : normale / akathisie / tremblements / stéréotypies / maniérisme / bizarreries / tics
+    - ralentissement psychomoteur : observé / ressenti / latence des réponses / bradykinésie
     - agitation : motrice / verbale / déambulation / impossibilité de rester assis / agressivité
     - catatonie : stupeur / catalepsie / flexibilité cireuse / négativisme / mutisme / échopraxie / écholalie / opposition
 - Discours : spontané / pauvre (réponses brèves) / informatif / cohérent / incohérent / centré sur un thème / hors sujet
-    - débit : normal / logorrhée / débit accéléré / débit ralenti / bradyphémie / pauses prolongées / mutisme / mussitation
+    - (débit) : débit normal / logorrhée / débit accéléré / débit ralenti / bradyphémie / pauses prolongées / mutisme / mussitation
     - volume : normal / fort / faible / chuchoté / variable
-    - prosodie : normale / monocorde / aprosodie / emphatique, théâtrale
-    - articulation : normale / dysarthrie / bégaiement / bredouillement
-    - langage : néologismes / paralogismes / schizophasie / écholalie / verbigération / persévérations / pragmatique du langage altérée (compréhension littérale) / pédanterie, langage maniéré
+    - (prosodie) : prosodie normale / prosodie monocorde / aprosodie / prosodie emphatique, théâtrale
+    - (articulation) : articulation normale / dysarthrie / bégaiement / bredouillement
+    - (langage) : néologismes / paralogismes / schizophasie / écholalie / verbigération / persévérations / pragmatique du langage altérée (compréhension littérale) / pédanterie, langage maniéré
 - Cours de la pensée : normal / tachypsychie / bradypsychie / fuite des idées / coq-à-l'âne / diffluence / digressions / perd le fil / barrages / fading / relâchement des associations / pensée circonstanciée / persévération / ruminations / pauvreté idéique (alogie)
 - Contenu de la pensée : préoccupations principales / idées de dévalorisation / idées de culpabilité / idées d'incurabilité / idées de ruine / idées de mort / idées de grandeur / idées de référence / idées obsédantes / idée surinvestie / phobies
 - Humeur : euthymique / triste / dépressive / exaltée / expansive / irritable / dysphorique / labile / anxieuse / variation nycthémérale
 - Émotion dominante dans la journée
 - Tristesse : TOUJOURS coter sur 0/10 <!-- 0 = aucune tristesse, 10 = la pire tristesse imaginable ; noter la cote donnée par le patient. -->
 - Affectivité : implication émotionnelle / adaptée au discours / émoussement affectif / anesthésie affective / hyperesthésie affective / labilité émotionnelle / incontinence émotionnelle / discordance / ambivalence / alexithymie
-    - pleurs : durée / fréquence / contexte
+    - pleurs <!-- préciser durée, fréquence, contexte -->
 - Symptômes dépressifs : humeur triste / anhédonie / aboulie / apragmatisme / clinophilie / asthénie / troubles de la concentration / ralentissement / culpabilité / dévalorisation / désespoir / idées de mort / troubles du sommeil / troubles de l'appétit / baisse de la libido / repli social
     - caractéristiques : mélancoliques / atypiques (hypersomnie, hyperphagie, sensibilité au rejet) / psychotiques / saisonnières / mixtes
-- Symptômes maniaques ou hypomaniaques : réduction du besoin de sommeil sans fatigue / exaltation / irritabilité / logorrhée / tachypsychie / fuite des idées / distractibilité / hyperactivité orientée vers un but / projets multiples / dépenses / désinhibition / familiarité / idées de grandeur / épisodes passés de ce type, même brefs (quelques jours)
+- Symptômes maniaques ou hypomaniaques : réduction du besoin de sommeil sans fatigue / exaltation / irritabilité / logorrhée / tachypsychie / fuite des idées / distractibilité / hyperactivité orientée vers un but / projets multiples / dépenses / familiarité / idées de grandeur / épisodes passés de ce type, même brefs (quelques jours)
     - désinhibition : sexuelle / sociale / verbale / conduites à risque
-- Anxiété : psychique / somatique / anticipatoire / anxiété généralisée / évitement
-    - anxiété psychique : inquiétudes / appréhension / tension / soucis incontrôlables
-    - anxiété somatique : palpitations / oppression thoracique / sueurs / tremblements / troubles digestifs / sensation de boule dans la gorge
-    - attaques de panique : fréquence / durée / dernière / symptômes / peur de mourir ou de devenir fou / anticipation anxieuse / agoraphobie
-    - phobies : sociale / spécifique (laquelle) / agoraphobie / conduites d'évitement / retentissement
-- Symptômes délirants : adhésion / participation émotionnelle / ancienneté / critique / conduites induites par le délire / extension
+- Anxiété : anticipatoire / généralisée / évitement
+    - psychique : inquiétudes / appréhension / tension / soucis incontrôlables
+    - somatique : palpitations / oppression thoracique / sueurs / tremblements / troubles digestifs / sensation de boule dans la gorge
+    - attaques de panique : peur de mourir ou de devenir fou / anticipation anxieuse <!-- préciser fréquence, durée, dernière crise, symptômes -->
+    - phobies : sociale / spécifique (laquelle) / agoraphobie
+- Symptômes délirants : adhésion / participation émotionnelle / ancienneté / accessible à la critique <!-- non --> / conduites induites par le délire / extension
     - thème : persécution / préjudice / grandeur / érotomanie / jalousie / mystique / hypocondriaque / filiation / référence / influence / ruine / culpabilité / négation d'organe
     - mécanisme : interprétatif / intuitif / imaginatif / hallucinatoire
     - organisation : systématisé / non systématisé
     - automatisme mental : écho de la pensée / vol de la pensée / pensées imposées / commentaire des actes / divulgation de la pensée / syndrome d'influence
 - Hallucinations : adhésion / fréquence / retentissement / attitude d'écoute observée
-    - modalité : auditives / visuelles / cénesthésiques / olfactives / gustatives / tactiles
-    - hallucinations acoustico-verbales : voix commentant les actes / voix dialoguant entre elles / voix injonctives / voix connues ou inconnues / perçues dans la tête ou à l'extérieur
-    - moment de survenue : hypnagogiques / hypnopompiques / à tout moment
+    - (modalité) : auditives / visuelles / cénesthésiques / olfactives / gustatives / tactiles
+    - voix : commentant les actes / dialoguant entre elles / injonctives / connues / inconnues / perçues dans la tête / perçues à l'extérieur
+    - (survenue) : hypnagogiques / hypnopompiques / à tout moment
 - Symptômes négatifs : émoussement affectif / alogie / aboulie / apragmatisme / anhédonie / retrait social / incurie
 - Dissociation : déréalisation / dépersonnalisation / amnésie dissociative / absences / fugue dissociative / contexte déclenchant
 - Obsessions et compulsions (TOC) : temps passé par jour / résistance / caractère égodystone / insight / retentissement
@@ -1299,57 +1299,57 @@ autopunition : se faire du mal pour se punir d'une faute ressentie
 délivrance fractionnée : délivrance du traitement en pharmacie pour quelques jours à la fois, pour limiter un stock dangereux
 alliance thérapeutique : qualité du lien de confiance et de collaboration entre le patient et les soignants
 --&gt;
-## Évaluation clinique &lt;!-- urgence suivi --&gt;
+## Évaluation clinique &lt;!-- urgence suivi phrase --&gt;
 - Systématiquement pour chaque symptôme : date de début / récurrence / intensité / facteurs déclenchants / retentissement
 - Présentation
     - âge apparent
     - corpulence
-    - (tenue) : tenue adaptée / tenue négligée / tenue excentrique ou bizarre
+    - tenue : adaptée / négligée / excentrique / bizarre
     - (hygiène) : hygiène corporelle correcte / incurie
     - maquillage ou parure inhabituels
     - cicatrices visibles
 - Vigilance et orientation
     - (vigilance) : vigilance normale / obnubilation / confusion
-    - (orientation) : orientation temporelle / orientation spatiale / orientation personnelle
-- Contact : bon / syntone / familier / distant / froid / méfiant / hostile / opposant / ludique / théâtral / séducteur / perplexe / fuyant
+    - (orientation) : orientation temporo-spatiale conservée / désorientation temporelle / désorientation spatiale / désorientation personnelle
+- Contact : bon / syntone &lt;!-- non --&gt; / familier / distant / froid / méfiant / hostile / opposant / ludique / théâtral / séducteur / perplexe / fuyant
     - regard : soutenu / fuyant / fixe / absent / scrutateur
-    - mimique : expressive / hypomimie / amimie / hypermimie / paramimie / discordante
-    - attitude : coopérante / réticente / revendicatrice / passive / agitée / attitude d'écoute (semble entendre des voix)
-- Psychomotricité : normale / ralentissement psychomoteur / agitation / akathisie / tremblements / stéréotypies / maniérisme / bizarreries / tics
-    - ralentissement psychomoteur : observé / perception subjective / latence des réponses / bradykinésie
+    - (mimique) : mimique expressive / hypomimie / amimie / hypermimie / paramimie / mimique discordante
+    - attitude : coopérante / réticente / revendicatrice / passive / agitée / d'écoute (semble entendre des voix)
+- Psychomotricité : normale / akathisie / tremblements / stéréotypies / maniérisme / bizarreries / tics
+    - ralentissement psychomoteur : observé / ressenti / latence des réponses / bradykinésie
     - agitation : motrice / verbale / déambulation / impossibilité de rester assis / agressivité
     - catatonie : stupeur / catalepsie / flexibilité cireuse / négativisme / mutisme / échopraxie / écholalie / opposition
 - Discours : spontané / pauvre (réponses brèves) / informatif / cohérent / incohérent / centré sur un thème / hors sujet
-    - débit : normal / logorrhée / débit accéléré / débit ralenti / bradyphémie / pauses prolongées / mutisme / mussitation
+    - (débit) : débit normal / logorrhée / débit accéléré / débit ralenti / bradyphémie / pauses prolongées / mutisme / mussitation
     - volume : normal / fort / faible / chuchoté / variable
-    - prosodie : normale / monocorde / aprosodie / emphatique, théâtrale
-    - articulation : normale / dysarthrie / bégaiement / bredouillement
-    - langage : néologismes / paralogismes / schizophasie / écholalie / verbigération / persévérations / pragmatique du langage altérée (compréhension littérale) / pédanterie, langage maniéré
+    - (prosodie) : prosodie normale / prosodie monocorde / aprosodie / prosodie emphatique, théâtrale
+    - (articulation) : articulation normale / dysarthrie / bégaiement / bredouillement
+    - (langage) : néologismes / paralogismes / schizophasie / écholalie / verbigération / persévérations / pragmatique du langage altérée (compréhension littérale) / pédanterie, langage maniéré
 - Cours de la pensée : normal / tachypsychie / bradypsychie / fuite des idées / coq-à-l'âne / diffluence / digressions / perd le fil / barrages / fading / relâchement des associations / pensée circonstanciée / persévération / ruminations / pauvreté idéique (alogie)
 - Contenu de la pensée : préoccupations principales / idées de dévalorisation / idées de culpabilité / idées d'incurabilité / idées de ruine / idées de mort / idées de grandeur / idées de référence / idées obsédantes / idée surinvestie / phobies
 - Humeur : euthymique / triste / dépressive / exaltée / expansive / irritable / dysphorique / labile / anxieuse / variation nycthémérale
 - Émotion dominante dans la journée
 - Tristesse : TOUJOURS coter sur 0/10 &lt;!-- 0 = aucune tristesse, 10 = la pire tristesse imaginable ; noter la cote donnée par le patient. --&gt;
 - Affectivité : implication émotionnelle / adaptée au discours / émoussement affectif / anesthésie affective / hyperesthésie affective / labilité émotionnelle / incontinence émotionnelle / discordance / ambivalence / alexithymie
-    - pleurs : durée / fréquence / contexte
+    - pleurs &lt;!-- préciser durée, fréquence, contexte --&gt;
 - Symptômes dépressifs : humeur triste / anhédonie / aboulie / apragmatisme / clinophilie / asthénie / troubles de la concentration / ralentissement / culpabilité / dévalorisation / désespoir / idées de mort / troubles du sommeil / troubles de l'appétit / baisse de la libido / repli social
     - caractéristiques : mélancoliques / atypiques (hypersomnie, hyperphagie, sensibilité au rejet) / psychotiques / saisonnières / mixtes
-- Symptômes maniaques ou hypomaniaques : réduction du besoin de sommeil sans fatigue / exaltation / irritabilité / logorrhée / tachypsychie / fuite des idées / distractibilité / hyperactivité orientée vers un but / projets multiples / dépenses / désinhibition / familiarité / idées de grandeur / épisodes passés de ce type, même brefs (quelques jours)
+- Symptômes maniaques ou hypomaniaques : réduction du besoin de sommeil sans fatigue / exaltation / irritabilité / logorrhée / tachypsychie / fuite des idées / distractibilité / hyperactivité orientée vers un but / projets multiples / dépenses / familiarité / idées de grandeur / épisodes passés de ce type, même brefs (quelques jours)
     - désinhibition : sexuelle / sociale / verbale / conduites à risque
-- Anxiété : psychique / somatique / anticipatoire / anxiété généralisée / évitement
-    - anxiété psychique : inquiétudes / appréhension / tension / soucis incontrôlables
-    - anxiété somatique : palpitations / oppression thoracique / sueurs / tremblements / troubles digestifs / sensation de boule dans la gorge
-    - attaques de panique : fréquence / durée / dernière / symptômes / peur de mourir ou de devenir fou / anticipation anxieuse / agoraphobie
-    - phobies : sociale / spécifique (laquelle) / agoraphobie / conduites d'évitement / retentissement
-- Symptômes délirants : adhésion / participation émotionnelle / ancienneté / critique / conduites induites par le délire / extension
+- Anxiété : anticipatoire / généralisée / évitement
+    - psychique : inquiétudes / appréhension / tension / soucis incontrôlables
+    - somatique : palpitations / oppression thoracique / sueurs / tremblements / troubles digestifs / sensation de boule dans la gorge
+    - attaques de panique : peur de mourir ou de devenir fou / anticipation anxieuse &lt;!-- préciser fréquence, durée, dernière crise, symptômes --&gt;
+    - phobies : sociale / spécifique (laquelle) / agoraphobie
+- Symptômes délirants : adhésion / participation émotionnelle / ancienneté / accessible à la critique &lt;!-- non --&gt; / conduites induites par le délire / extension
     - thème : persécution / préjudice / grandeur / érotomanie / jalousie / mystique / hypocondriaque / filiation / référence / influence / ruine / culpabilité / négation d'organe
     - mécanisme : interprétatif / intuitif / imaginatif / hallucinatoire
     - organisation : systématisé / non systématisé
     - automatisme mental : écho de la pensée / vol de la pensée / pensées imposées / commentaire des actes / divulgation de la pensée / syndrome d'influence
 - Hallucinations : adhésion / fréquence / retentissement / attitude d'écoute observée
-    - modalité : auditives / visuelles / cénesthésiques / olfactives / gustatives / tactiles
-    - hallucinations acoustico-verbales : voix commentant les actes / voix dialoguant entre elles / voix injonctives / voix connues ou inconnues / perçues dans la tête ou à l'extérieur
-    - moment de survenue : hypnagogiques / hypnopompiques / à tout moment
+    - (modalité) : auditives / visuelles / cénesthésiques / olfactives / gustatives / tactiles
+    - voix : commentant les actes / dialoguant entre elles / injonctives / connues / inconnues / perçues dans la tête / perçues à l'extérieur
+    - (survenue) : hypnagogiques / hypnopompiques / à tout moment
 - Symptômes négatifs : émoussement affectif / alogie / aboulie / apragmatisme / anhédonie / retrait social / incurie
 - Dissociation : déréalisation / dépersonnalisation / amnésie dissociative / absences / fugue dissociative / contexte déclenchant
 - Obsessions et compulsions (TOC) : temps passé par jour / résistance / caractère égodystone / insight / retentissement

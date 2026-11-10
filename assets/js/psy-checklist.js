@@ -117,7 +117,7 @@
    * with the date and short hash of the last commit touching its folder, plus
    * " +modifs" if the working tree had uncommitted changes, ex:
    * "2026-11-07 8b4f826". Keep the line exactly as is or the build fails. */
-  const VERSION = "2026-11-08 2e07162";
+  const VERSION = "2026-11-10 671bf72";
 
   // ------------------------------------------------------------------ parsing
 
@@ -133,6 +133,9 @@
     urgence: { label: "Consultation d'urgence", short: "Urg", tip: "Ne garde dépliées que les sections utiles en urgence (marquées « urgence » dans la trame : motif, histoire de la maladie, suicidologie, évaluation clinique, traitements actuels, conclusion...) ; les autres restent dépliables d'un clic." },
     suivi: { label: "Consultation de suivi", short: "Suivi", tip: "Ne garde dépliées que les sections qui évoluent d'une consultation à l'autre (marquées « suivi » dans la trame : sommeil, alimentation, fonctionnement, consommations, traitements actuels, état clinique...) ; les autres restent dépliables d'un clic." },
   };
+
+  // Placeholder for a "<!-- non -->" mark while a trame line is split, see parseTrame.
+  const NON = "\u0001";
 
   /* Split `str` on `sep`, ignoring separators nested inside parentheses, so that
    * "moyen (lame / brûlure) / gravité" gives ["moyen (lame / brûlure)", "gravité"]. */
@@ -221,6 +224,7 @@
     const glossary = [];
     let comment = null; // inside a multi line comment: "glossaire" or "other"
     let checklist = null; // the checklist item collecting the current lines, if any
+    let sectionPhrase = false; // current heading tagged "<!-- phrase -->"
     for (let line of md.split(/\r?\n/)) {
       if (comment) {
         const end = line.indexOf("-->");
@@ -234,9 +238,16 @@
         if (!line.includes("-->")) comment = opening[1] ? "glossaire" : "other";
         continue;
       }
-      // Trailing comments are notes of the notion written on the same line.
+      // "<!-- non -->" right after a field (or a bare label) makes its negation
+      // "non X" instead of "pas de X": kept as a NON mark until the fields are split.
+      line = line.replace(/\s*<!--\s*non\s*-->/g, NON);
+      // Trailing comments are notes of the notion written on the same line,
+      // except the "phrase" tag (see notionText).
       const notes = [];
       line = line.replace(/<!--([\s\S]*?)-->/g, (_, c) => (notes.push(c.trim()), ""));
+      const tag = (t) => notes.includes(t) && (notes.splice(notes.indexOf(t), 1), true);
+      const phrase = tag("phrase");
+      const nophrase = tag("nophrase");
       if (!line.trim()) continue;
       const heading = line.match(/^(#+)\s+(.*)$/);
       if (heading) {
@@ -244,6 +255,7 @@
         checklist = notes.includes("checklist") ? { kind: "checklist", title, lines: [] } : null;
         // Several tags may share one comment: "<!-- entete urgence suivi -->".
         const tags = notes.join(" ").split(/\s+/);
+        sectionPhrase = phrase || tags.includes("phrase");
         items.push(
           checklist || {
             kind: "section",
@@ -282,17 +294,36 @@
         label = raw;
         names = [];
       }
+      const unmark = (s) => s.split(NON).join("").trim();
       items.push({
         kind: "notion",
         depth: Math.floor(indent / 4),
-        raw,
-        label,
-        fields: names.map((name) => ({ name, picked: false, neg: false, value: "" })),
+        raw: unmark(raw),
+        label: unmark(label),
+        non: label.endsWith(NON),
+        fields: names.map((name) => ({ name: unmark(name), non: name.includes(NON), picked: false, neg: false, value: "" })),
         state: "pending",
         text: "",
         note: notes.join("\n"),
+        phrase,
+        sectionPhrase: sectionPhrase && !nophrase,
       });
     }
+    const parent = notionParents(items);
+    // In a heading tagged "<!-- phrase -->", every top notion with sub notions
+    // is a phrase notion, except those tagged "<!-- nophrase -->".
+    items.forEach((it, i) => {
+      if (it.sectionPhrase && parent[i] < 0 && items.some((x, j) => parent[j] === i && x.kind === "notion")) it.phrase = true;
+      delete it.sectionPhrase;
+    });
+    // Sub notions of a "phrase" notion are written as phrase too.
+    // A phrase sub notion with fields is a choice (its fields are options, laid
+    // out in a row); the fields of the top notion are yes / no characterizers.
+    items.forEach((it, i) => {
+      if (it.kind !== "notion" || parent[i] < 0 || !items[parent[i]].phrase) return;
+      it.phrase = true;
+      it.choice = it.fields.length > 0;
+    });
     // Tooltips are resolved once here rather than at every render: the glossary
     // can be anywhere in the file and the matching runs a regex per term.
     for (const it of items) {
@@ -341,6 +372,7 @@
    * A top label in parentheses gives the answers alone, e.g. "- (Nom et
    * prénom)" with "Jean Martin" typed gives "Jean Martin". */
   function notionText(n, subs = [], top = true) {
+    if (n.phrase) return phraseText(n, subs, top);
     const parts = n.fields
       .filter((f) => f.picked)
       .map((f) => (f.neg ? negate(f.name).toLowerCase() : f.value ? `${clean(f.name)} : ${f.value}` : clean(f.name)));
@@ -362,6 +394,37 @@
     return all.length ? `${head} (${all.join(", ")})` : head;
   }
 
+  /* Negation of a phrase slot, lowercase: "pas de critique", or "non
+   * critiqué" for a field or label marked "<!-- non -->" in the trame. */
+  const negSlot = (name, non) => (non ? `non ${lowerFirst(bare(name))}` : lowerFirst(negate(name)));
+  const withDetail = (s, details) => (details.length ? `${s} (${details.join(", ")})` : s);
+
+  /* notionText() of a notion tagged "<!-- phrase -->" and of its sub notions:
+   * "Notion : caractérisant (détail), caractérisant (détail), ...".
+   * The fields of the top notion are yes / no characterizers, details in
+   * parentheses; a sub notion is a choice, its picks joined by "-", its own
+   * detail and its sub notions in parentheses. Example with
+   *   - Symptômes délirants : adhésion / critique <!-- non --> <!-- phrase -->
+   *       - thème : persécution / mystique
+   *       - mécanisme : intuitif / hallucinatoire
+   * gives "Symptômes délirants : adhésion, non critique (au premier entretien
+   * seulement), thème mystique (dit « être le fils de Jésus »), mécanisme
+   * intuitif-hallucinatoire". */
+  function phraseText(n, subs, top) {
+    const label = clean(n.label || n.raw).replace(/\s*\?\s*$/, "");
+    const neg = n.state === "negative";
+    const picks = n.fields.filter((f) => f.picked);
+    if (top) {
+      const slots = picks.map((f) => withDetail(f.neg ? negSlot(f.name, f.non) : clean(f.name), f.value ? [f.value] : []));
+      const head = withDetail(neg ? capitalize(negSlot(n.label || n.raw, n.non)) : capitalize(label), n.text ? [n.text] : []);
+      const all = [...slots, ...subs];
+      return all.length && !neg ? `${head} : ${all.join(", ")}` : head;
+    }
+    const values = picks.map((f) => (f.neg ? negSlot(f.name, f.non) : f.value ? `${clean(f.name)} (${f.value})` : clean(f.name))).join("-");
+    const head = neg ? negSlot(n.label || n.raw, n.non) : [clean(n.label), values].filter(Boolean).join(" ") || label;
+    return withDetail(head, neg ? (n.text ? [n.text] : []) : [n.text, ...subs].filter(Boolean));
+  }
+
   /* Index of the parent notion of every item (-1 at the top of a section),
    * from the indentation. Free texts get a parent too but are never one.
    * Example: [section, "Travail" (depth 0), "(contrat)" (depth 1), "Loisirs"
@@ -377,6 +440,14 @@
       if (it.kind === "notion") stack.push(i);
     });
     return parent;
+  }
+
+  /* Direct sub notions of every item, from notionParents(): e.g. [section,
+   * "Travail", "(contrat)", "Loisirs"] gives [[], [2], [], []]. */
+  function subNotions(items, parent) {
+    const kids = items.map(() => []);
+    items.forEach((it, i) => it.kind === "notion" && parent[i] >= 0 && kids[parent[i]].push(i));
+    return kids;
   }
 
   /* Text of notion i with its answered sub notions chained in (recursively),
@@ -430,8 +501,7 @@
       out.push(line);
     };
     const parent = notionParents(items);
-    const kids = items.map(() => []); // direct sub notions of each notion
-    items.forEach((it, i) => it.kind === "notion" && parent[i] >= 0 && kids[parent[i]].push(i));
+    const kids = subNotions(items, parent);
     items.forEach((it, idx) => {
       if (it.kind === "section") {
         open = open.filter((o) => o.sec.level < it.level);
@@ -467,7 +537,8 @@
     // to drop the buttons on a tablet used with a keyboard.
     hideReport: localStorage.getItem("trame-helper-hide-report") === "1",
     hideBar: localStorage.getItem("trame-helper-hide-bar") === "1",
-    prompt: null, // {label, onDone} while the text input bar is open
+    prompt: null, // {label, onDone, onInput?} while the text input bar is open
+    slotJump: null, // slots (see slotsOf) after "f", waiting for the letter of one
     root: null,
     // Opening sentence of the compte rendu, edited in the header row. Kept in
     // memory only, like the answers. Date prefilled with today, as DD/MM/YYYY.
@@ -514,6 +585,7 @@
     // reach[i]: notion i is open and not under a closed one, so its sub notions show.
     const reach = new Array(S.items.length).fill(false);
     const folded = () => secs.some((s) => s.collapsed);
+    const active = phraseRoot(S.cur, parent);
     S.items.forEach((it, i) => {
       if (it.kind === "section" || it.kind === "checklist") {
         // A checklist acts as a level 1 heading: it ends the previous group.
@@ -525,11 +597,43 @@
       nest[i] = secs.length;
       const closed = parent[i] >= 0 && !reach[parent[i]];
       vis[i] = folded() ? "folded" : closed && it.kind === "notion" ? "hidden" : "ok";
+      // The slots of a phrase notion show only while the cursor is in it;
+      // otherwise its row shows the sentence they make (see renderRow).
+      const root = phraseRoot(i, parent);
+      if (root >= 0 && root !== i && root !== active) vis[i] = "folded";
       if (it.kind !== "notion") return;
       for (let a = parent[i]; a >= 0; a = parent[a]) kids[a]++;
       reach[i] = isOpen(it) && !closed;
     });
-    return { vis, kids, nest };
+    return { vis, kids, nest, active, parent };
+  }
+
+  /* Index of the top notion of the phrase notion i (i itself at the top), or
+   * -1 if i is not part of a phrase notion. `parent` is notionParents(). */
+  function phraseRoot(i, parent) {
+    const it = S.items[i];
+    if (!it || !it.phrase) return -1;
+    while (parent[i] >= 0) i = parent[i];
+    return i;
+  }
+
+  /* Slots of the phrase notion `root` currently displayed, in order, each with
+   * its jump letter (see the "slot" action): the fields of the top notion,
+   * then its displayed sub notions. The letter is the first letter of the
+   * slot name not taken by an earlier slot, e.g. adhésion a, ancienneté n,
+   * thème t, mécanisme m. Returns [{idx, field, letter}]. */
+  function slotsOf(root, v) {
+    const out = [];
+    S.items[root].fields.forEach((f, fi) => out.push({ idx: root, field: fi, name: f.name }));
+    for (let i = root + 1; i < S.items.length && S.items[i].kind === "notion" && S.items[i].depth > S.items[root].depth; i++) {
+      if (shown(v.vis, i)) out.push({ idx: i, field: -1, name: S.items[i].label || S.items[i].raw });
+    }
+    const used = new Set();
+    for (const s of out) {
+      s.letter = [...norm(clean(s.name) || s.name)].find((c) => /[a-z]/.test(c) && !used.has(c)) || "";
+      used.add(s.letter);
+    }
+    return out;
   }
 
   /* Whether item i is displayed and reachable by the navigation keys. */
@@ -559,11 +663,13 @@
    * notion" after a decision. */
   function step(dir) {
     const it = cur();
-    const n = it.kind === "notion" ? it.fields.length : 0;
+    // The options of a phrase choice are laid out in a row: left / right only.
+    const vertical = (x) => x.kind === "notion" && !x.choice;
+    const n = vertical(it) ? it.fields.length : 0;
     if (dir > 0 && S.field < n - 1) return void S.field++;
-    if (dir < 0 && S.field > -1) return void S.field--;
+    if (dir < 0 && S.field > -1 && vertical(it)) return void S.field--;
     move(dir);
-    if (dir < 0 && cur().kind === "notion") S.field = cur().fields.length - 1;
+    if (dir < 0 && vertical(cur())) S.field = cur().fields.length - 1;
   }
 
   /* Indices of the sections containing item i, innermost first (a section
@@ -643,6 +749,9 @@
    * item of the parent level (e.g. from the last notion of "## Sommeil" to
    * "## Transit"). On a field, it acts as from its notion. */
   function sibling(dir) {
+    // Inside a phrase notion, J / K leave it: act as from its top notion.
+    const root = phraseRoot(S.cur, notionParents(S.items));
+    if (root >= 0) S.cur = root;
     const { vis, nest } = visibility();
     const r = rankOf(S.cur, nest);
     for (let i = S.cur + dir; i >= 0 && i < S.items.length; i += dir) {
@@ -724,6 +833,73 @@
     });
   }
 
+  /* Positive answer on notion `it`: on its selected field, picks it (or
+   * unpicks it when already picked, unless `force`), else adds the notion as is. */
+  function markYes(it, force = false) {
+    if (S.field < 0) return void (it.state = "as_is");
+    const f = it.fields[S.field];
+    f.picked = force || !(f.picked && !f.neg);
+    f.neg = false;
+    if (it.state === "excluded") it.state = "pending";
+  }
+
+  /* Negative answer on notion `it` or its selected field. A phrase field keeps
+   * its detail: "non critique (au premier entretien seulement)". */
+  function markNo(it) {
+    if (S.field < 0) return void (it.state = "negative");
+    Object.assign(it.fields[S.field], { picked: true, neg: true }, it.phrase ? {} : { value: "" });
+    if (it.state === "excluded") it.state = "pending";
+  }
+
+  /* Ask the detail written in parentheses after a phrase slot: the selected
+   * yes / no field, or else the notion (a choice takes one detail for all its
+   * options). An unanswered slot becomes a yes; a negative one stays negative.
+   * `after` runs once the detail is typed (not on cancel). */
+  function askDetail(after) {
+    const it = cur();
+    const f = S.field >= 0 && !it.choice ? it.fields[S.field] : null;
+    const name = f ? f.name : it.label || it.raw;
+    ask(`Détail (entre parenthèses) › ${clean(name) || name}`, f ? f.value : it.text, (v) => {
+      if (f) {
+        f.value = v;
+        f.picked = true;
+      } else {
+        it.text = v;
+        if (it.state === "pending" || it.state === "excluded") it.state = "as_is";
+      }
+      if (it.state === "excluded") it.state = "pending";
+      if (after) after();
+    });
+  }
+
+  /* Pick an option of the phrase choice by typing: the typed text filters
+   * the options as it is typed (the first one starting with it, else the
+   * first one containing it, is selected), Enter picks it, or adds the text
+   * as a new option when nothing matches. E.g. on "thème : persécution /
+   * mystique", "myst" picks mystique and "religieux" adds "religieux". */
+  function pickOption() {
+    const it = cur();
+    const match = (v) => {
+      const q = norm(v.trim());
+      if (!q) return -1;
+      const names = it.fields.map((f) => norm(clean(f.name) || f.name));
+      const start = names.findIndex((n) => n.startsWith(q));
+      return start >= 0 ? start : names.findIndex((n) => n.includes(q));
+    };
+    ask(`${clean(it.label) || "Option"} › taper pour filtrer, Entrée pour cocher`, "", (v) => {
+      if (!v) return;
+      const m = match(v);
+      if (m >= 0) Object.assign(it.fields[m], { picked: true, neg: false });
+      else it.fields.push({ name: v, non: false, picked: true, neg: false, value: "" });
+      S.field = m >= 0 ? m : it.fields.length - 1;
+      if (it.state === "excluded") it.state = "pending";
+    });
+    S.prompt.onInput = (v) => {
+      S.field = match(v);
+      render();
+    };
+  }
+
   function copyReport() {
     const text = report().map((l) => l.text).join("\n");
     const fallback = () => {
@@ -786,15 +962,50 @@
         const it = cur();
         if (it.kind === "free" || it.kind === "section") return ACTIONS.addText.run();
         snapshot();
-        if (S.field >= 0) {
-          const f = it.fields[S.field];
-          f.picked = !(f.picked && !f.neg);
-          f.neg = false;
-          if (it.state === "excluded") it.state = "pending";
-        } else {
-          it.state = "as_is";
-          move(1);
-        }
+        markYes(it);
+        // A phrase notion goes on to its first slot, a yes / no slot to the next
+        // one; the options of a choice are picked in a row, so they stay.
+        if (S.field < 0) it.phrase ? step(1) : move(1);
+        else if (it.phrase && !it.choice && it.fields[S.field].picked) step(1);
+      },
+    },
+    addOrFold: {
+      label: "Ajouter / replier",
+      tip: "Comme « Ajouter tel quel », sauf sur un titre de section, qu'il replie ou déplie.",
+      run: () => (cur().kind === "section" ? ACTIONS.toggleFold.run() : ACTIONS.add.run()),
+    },
+    yesDetail: {
+      label: "Oui + détail",
+      tip: "Ajoute la notion ou la caractéristique sélectionnée et demande un détail, écrit entre parenthèses, puis passe à la suivante.",
+      run: () => {
+        if (cur().kind !== "notion") return ACTIONS.addText.run();
+        snapshot();
+        markYes(cur(), true);
+        askDetail(() => step(1));
+      },
+    },
+    noDetail: {
+      label: "Non + détail",
+      tip: "Met la notion ou la caractéristique sélectionnée au négatif (« pas de... », ou « non... ») et demande un détail, écrit entre parenthèses, puis passe à la suivante.",
+      run: () => {
+        if (cur().kind !== "notion") return;
+        snapshot();
+        markNo(cur());
+        askDetail(() => step(1));
+      },
+    },
+    pick: {
+      label: "Choisir / taper une option",
+      tip: "Sur une liste d'options (ex : thème, mécanisme) : taper filtre les options, Entrée coche celle mise en évidence, ou ajoute le texte tapé comme option s'il ne correspond à aucune. Ailleurs : comme « Ajouter + texte ».",
+      run: () => (cur().choice ? pickOption() : ACTIONS.addText.run()),
+    },
+    slot: {
+      label: "Aller à une caractéristique",
+      tip: "Suivi de la lettre affichée devant une caractéristique de la notion ouverte (ex : f puis t pour [t]hème), y va directement.",
+      run: () => {
+        const v = visibility();
+        if (v.active < 0) return flash("Pas de notion ouverte avec des caractéristiques");
+        S.slotJump = slotsOf(v.active, v);
       },
     },
     addText: {
@@ -804,6 +1015,7 @@
         const it = cur();
         if (it.kind === "section") return ask(`Texte sous « ${it.title} »`, it.text, (v) => (it.text = v));
         if (it.kind === "free") return ask("Texte libre", it.text, (v) => (it.text = v));
+        if (it.phrase) return askDetail();
         if (S.field >= 0) {
           const f = it.fields[S.field];
           return ask(`${clean(it.label) || "Champ"} › ${clean(f.name)}`, f.value, (v) => {
@@ -846,13 +1058,9 @@
         const it = cur();
         if (it.kind !== "notion") return;
         snapshot();
-        if (S.field >= 0) {
-          Object.assign(it.fields[S.field], { picked: true, neg: true, value: "" });
-          if (it.state === "excluded") it.state = "pending";
-        } else {
-          it.state = "negative";
-          move(1);
-        }
+        markNo(it);
+        if (S.field < 0) move(1);
+        else if (it.phrase && !it.choice) step(1);
       },
     },
     freeBelow: { label: "Texte libre après", tip: "Insère une ligne de texte libre sous la ligne courante.", run: () => insertFree(1) },
@@ -1154,14 +1362,14 @@
     Home: "first",
     End: "last",
     Enter: "add",
-    "S-Enter": "addText",
+    "S-Enter": "pick",
     "+": "addText",
     Delete: "exclude",
     Backspace: "exclude",
     "-": "negative",
     Insert: "freeBelow",
     "S-Insert": "freeAbove",
-    " ": "toggleFold",
+    " ": "addOrFold",
     F3: "foldAll",
     "*": "toggleHidden",
     "C-j": "toggleReport",
@@ -1195,6 +1403,10 @@
     a: "addText",
     x: "exclude",
     n: "negative",
+    A: "yesDetail",
+    N: "noDetail",
+    i: "pick",
+    f: "slot",
     o: "freeBelow",
     O: "freeAbove",
     "/": "search",
@@ -1231,6 +1443,14 @@
       return e.preventDefault();
     }
     if (e.target.closest && e.target.closest(".trh-head")) return; // typing in the header fields
+    // Second key of the slot jump ("f" then a letter, see the "slot" action).
+    if (S.slotJump && !/^(Shift|Control|Alt|Meta)$/.test(e.key)) {
+      const s = S.slotJump.find((x) => x.letter === e.key);
+      S.slotJump = null;
+      e.preventDefault();
+      if (s) (S.cur = s.idx), (S.field = s.field);
+      return render();
+    }
     let k = keyName(e);
     // Do not hijack Ctrl+C while the user is selecting text in the preview.
     if (k === "C-c" && String(window.getSelection())) return;
@@ -1344,22 +1564,32 @@
     }
     // The selected notion shows its fields one per line (trh-vert), so the
     // up / down keys walk through them (see step()); other rows stay compact.
-    cls.push(`trh-st-${it.state}`, notionIncluded(it) ? "trh-in" : "", sel && it.fields.length ? "trh-vert" : "");
-    const chips = it.fields
-      .map((f, fi) => {
-        const c = ["trh-chip", f.picked ? (f.neg ? "trh-neg" : "trh-picked") : "", sel && fi === S.field ? "trh-fcur" : ""];
-        if (f.tip) c.push("trh-term");
-        return `<span class="${c.join(" ")}" data-idx="${idx}" data-field="${fi}"${f.tip ? ` data-tip="${esc(f.tip)}"` : ""}>${esc(f.name)}${
-          f.value ? ` : <i>${esc(f.value)}</i>` : ""
-        }</span>`;
-      })
-      .join("");
+    // A phrase notion (see phraseText): its top row shows the sentence made so
+    // far; its slots (fields one per line, sub notions) only while the cursor
+    // is in it, each with its jump letter (see the "slot" action).
+    const root = phraseRoot(idx, v.parent) === idx;
+    const slotted = root && v.active === idx;
+    const key = (field) => (v.letters.has(`${idx}:${field}`) ? `<span class="trh-key">${v.letters.get(`${idx}:${field}`)}</span>` : "");
+    const glyph = (f) => (slotted ? `${f.picked ? (f.neg ? "✗" : "✓") : "·"} ` : "");
+    cls.push(`trh-st-${it.state}`, notionIncluded(it) ? "trh-in" : "", (sel || slotted) && it.fields.length && !it.choice ? "trh-vert" : "");
+    const chips =
+      root && !slotted && notionIncluded(it)
+        ? ""
+        : it.fields
+            .map((f, fi) => {
+              const c = ["trh-chip", f.picked ? (f.neg ? "trh-neg" : "trh-picked") : "", sel && fi === S.field ? "trh-fcur" : ""];
+              if (f.tip) c.push("trh-term");
+              const value = f.value ? (it.phrase ? ` (<i>${esc(f.value)}</i>)` : ` : <i>${esc(f.value)}</i>`) : "";
+              return `<span class="${c.join(" ")}" data-idx="${idx}" data-field="${fi}"${f.tip ? ` data-tip="${esc(f.tip)}"` : ""}>${key(fi)}${glyph(f)}${esc(f.name)}${value}</span>`;
+            })
+            .join("");
+    const note = root ? phraseOf(S.items, subNotions(S.items, v.parent), idx, true) : it.text;
     const labelCls = `trh-label${sel && S.field === -1 ? " trh-fcur" : ""}${it.tip ? " trh-term" : ""}`;
     return `<div class="${cls.join(" ")}" data-idx="${idx}" ${pad}>
       <span class="trh-badge">${BADGE[it.state]}</span>
-      <span class="${labelCls}" data-idx="${idx}" data-field="-1"${it.tip ? ` data-tip="${esc(it.tip)}"` : ""}>${esc(it.label || (it.fields.length ? "…" : it.raw))}</span>
+      ${key(-1)}<span class="${labelCls}" data-idx="${idx}" data-field="-1"${it.tip ? ` data-tip="${esc(it.tip)}"` : ""}>${esc(it.label || (it.fields.length ? "…" : it.raw))}</span>
       ${chips}${kids[idx] && !isOpen(it) ? `<span class="trh-kids">+${kids[idx]}</span>` : ""}${
-        it.text ? `<div class="trh-note">${esc(it.text)}</div>` : ""
+        note ? `<div class="trh-note${root ? " trh-sum" : ""}">${esc(note)}</div>` : ""
       }
     </div>`;
   }
@@ -1377,6 +1607,9 @@
     r.classList.toggle("trh-noreport", S.hideReport);
     r.classList.toggle("trh-nobar", S.hideBar);
     const v = visibility();
+    // Jump letters of the slots of the open phrase notion, keyed "idx:field".
+    v.letters = new Map(v.active >= 0 ? slotsOf(v.active, v).map((s) => [`${s.idx}:${s.field}`, s.letter]) : []);
+    r.classList.toggle("trh-jump", !!S.slotJump);
     // Rewriting the list detaches the header form, which drops its focus:
     // remember it to give it back (e.g. the header action focuses a field,
     // then dispatch() renders again).
@@ -1484,6 +1717,10 @@
   .trh-check ul{margin:.2em 0 0;padding-left:1.4em}
   .trh-hidden{opacity:.45}
   .trh-kids{margin-left:.3em;color:var(--faint);font-size:.85em}
+  .trh-key{display:inline-block;min-width:1em;margin-right:.3em;padding:0 .2em;border:1px solid var(--border);border-radius:3px;
+    font:bold .8em monospace;text-align:center;color:var(--muted)}
+  .trh-jump .trh-key{background:var(--hl);border-color:var(--hl-border);color:var(--fg)}
+  .trh-sum{color:var(--muted)}
   .trh button.trh-on{background:var(--on);border-color:var(--accent)}
   .trh-cur{outline:2px solid var(--accent);background:var(--cur)}
   .trh-badge{display:inline-block;width:1.2em;color:var(--faint)}
@@ -1563,7 +1800,7 @@
   const TOOLBAR = [
     ["toggleBar", "toggleReport"], // first group: kept when the toolbar is collapsed
     ["up", "down", "left", "right", "prevSibling", "nextSibling", "parent", "child", "prevSection", "nextSection", "first", "last"],
-    ["add", "addText", "negative", "exclude", "freeAbove", "freeBelow"],
+    ["add", "addText", "negative", "exclude", "yesDetail", "noDetail", "pick", "freeAbove", "freeBelow"],
     ["toggleFold", "foldAll", "toggleHidden"],
     Object.keys(PRESETS).map((id) => `preset-${id}`),
     ["header", "search", "undo", "copy", "toggleMode", "tutorial", "help", "close"],
@@ -1573,7 +1810,7 @@
    * toolbar would not fit. The full label stays available as aria-label. */
   const SHORT = {
     up: "↑", down: "↓", left: "←", right: "→", prevSibling: "⇡", nextSibling: "⇣", parent: "⇠", child: "⇢", prevSection: "⇞", nextSection: "⇟", first: "⤒", last: "⤓",
-    add: "✓", addText: "✓✎", negative: "¬", exclude: "✗", freeAbove: "✎↑", freeBelow: "✎↓",
+    add: "✓", addText: "✓✎", negative: "¬", exclude: "✗", yesDetail: "✓(", noDetail: "¬(", pick: "▤", freeAbove: "✎↑", freeBelow: "✎↓",
     toggleFold: "▾", foldAll: "▸▸", toggleHidden: "👁", toggleBar: "☰", toggleReport: "▤",
     header: "📅", search: "🔍", undo: "↶", copy: "⧉", toggleMode: "⌨", tutorial: "🎓", help: "?", close: "✕",
     ...Object.fromEntries(Object.entries(PRESETS).map(([id, p]) => [`preset-${id}`, p.short])),
@@ -1672,6 +1909,8 @@
       finish(form.querySelector("input").value);
     });
     form.querySelector("[data-cancel]").addEventListener("click", () => finish(null));
+    // Live filtering while typing, e.g. the options of a choice (see pickOption).
+    form.querySelector("input").addEventListener("input", (e) => S.prompt && S.prompt.onInput && S.prompt.onInput(e.target.value));
     form.querySelector("input").addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         e.preventDefault();
