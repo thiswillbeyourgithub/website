@@ -12,7 +12,7 @@ redirect_from:
 
 {% include base_path %}
 
-Sur cette page, j'essaie de garder une trace des ressources qui peuvent être utiles aux internes en psychiatrie. Dans chaque section, je fais de mon mieux pour ordonner par ordre d'importance.
+Sur cette page, j'essaie de garder une trace des ressources qui peuvent être utiles aux internes en psychiatrie.
 
 {% include toc_wide %}
 

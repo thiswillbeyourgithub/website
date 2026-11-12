@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-On this page, I try to keep track of resources I think can be useful to psychiatry residents. In each section, I try my best to order by most important first.
+On this page, I try to keep track of resources I think can be useful to psychiatry residents.
 
 {% include toc_wide %}
 
