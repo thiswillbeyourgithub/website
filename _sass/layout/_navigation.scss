@@ -200,25 +200,8 @@
     }
   }
 
-  /* Direct child only: this is the hamburger toggle, not the theme-toggle
-     button nested inside the links list. */
-  > button {
-    position: absolute;
-    /* WCAG 2.2 target size: comfortable 44x44 tap area. */
-    min-width: 2.75rem;
-    min-height: 2.75rem;
-    right: 0;
-    padding: 0 0.5rem;
-    border: 0;
-    background-color: var(--global-bg-color);
-    color: var(--global-text-color);
-    cursor: pointer;
-    z-index: 100;
-  }
-
   .visible-links {
-    /* Use flex-wrap so nav items can flow into 2 rows before
-       overflowing into the hamburger menu */
+    /* Use flex-wrap so nav items flow onto as many rows as needed */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -267,6 +250,57 @@
       }
     }
 
+    /* Below 1024px the whole menu no longer fits on one line. Row 1 = site
+       title on the left, language picker and theme toggle pinned to the
+       right; the page links sit below with centered labels: on a 3-column
+       grid on phones, on a single equal-width row on tablets. */
+    @media (max-width: 1023px) {
+      /* Flex order: title (0), tail items (1), forced line break (2),
+         page links (3). */
+      > li {
+        order: 3;
+        flex: 0 0 33.333%;
+        text-align: center;
+
+        > a {
+          display: inline-block;
+          margin: 0;
+        }
+
+        @media (min-width: $small) {
+          flex: 1 1 0;
+        }
+
+        &:first-child {
+          order: 0;
+          flex: 0 1 auto;
+          margin-right: auto;
+          text-align: left;
+        }
+
+        &.tail {
+          order: 1;
+          flex: 0 0 auto;
+
+          > a {
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+        order: 2;
+        flex-basis: 100%;
+        height: 0;
+      }
+
+      #theme-toggle button {
+        margin: 0 0 0 0.5rem;
+        justify-content: flex-end;
+      }
+    }
+
     a {
       position: relative;
 
@@ -289,64 +323,6 @@
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
-      }
-    }
-  }
-
-  .hidden-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 15px;
-    padding: 5px;
-    border: 1px solid var(--global-border-color);
-    border-radius: $border-radius;
-    background: var(--global-bg-color);
-    box-shadow: 0 0 10px rgba(#000, 0.25);
-
-    a {
-      margin: 0;
-      padding: 10px 20px;
-      font-size: $type-size-5;
-
-      &:hover {
-        color: var(--global-masthead-link-color-hover);
-        background: var(--global-border-color);
-      }
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -11px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: var(--global-border-color) transparent;
-      display: block;
-      z-index: 0;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: -10px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: var(--global-bg-color) transparent;
-      display: block;
-      z-index: 1;
-    }
-
-    li {
-      display: block;
-      border-bottom: 1px solid var(--global-border-color);
-
-      &:last-child {
-        border-bottom: none;
       }
     }
   }
