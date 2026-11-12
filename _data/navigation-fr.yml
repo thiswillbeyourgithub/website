@@ -1,4 +1,9 @@
 # French navigation menu
+# WARNING: on phones the masthead shows these pages on a 3-column grid
+# (see the max-width: 1023px block in _sass/layout/_navigation.scss).
+# There are currently 6 pages = 2 rows. Adding a 7th starts a third row:
+# before adding or renaming a page, check the rendering with the site owner
+# (Pixel 7a screenshots) to avoid a third row.
 main:
   - title: "À PROPOS"
     url: /fr/about
