@@ -3,10 +3,10 @@
    ========================================================================== */
 
 .masthead {
-  position: fixed;
+  /* In the normal page flow (not fixed): the bar scrolls away with the page. */
+  position: relative;
   background: var(--global-bg-color);
   height: fit-content;
-  top: 0;
   width: 100%;
 
   -webkit-animation: intro 0.3s both;
