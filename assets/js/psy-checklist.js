@@ -117,7 +117,7 @@
    * with the date and short hash of the last commit touching its folder, plus
    * " +modifs" if the working tree had uncommitted changes, ex:
    * "2026-11-07 8b4f826". Keep the line exactly as is or the build fails. */
-  const VERSION = "2026-11-10 671bf72";
+  const VERSION = "2026-11-16 12218f8";
 
   // ------------------------------------------------------------------ parsing
 
@@ -361,9 +361,27 @@
     return n.state !== "pending" || n.text !== "" || n.fields.some((f) => f.picked);
   }
 
-  /* Text of a notion in the compte rendu. `subs` are the texts of its sub
-   * notions (see phraseOf), chained after its own answers with ", " so the
-   * line reads as a sentence. `top` is true for the notion starting the line:
+  /* The compte rendu is built as "pieces": bits of text tagged with what
+   * produced them, so the text pane can tell a slot from the words around it
+   * (see the text pane, textKey). A piece is {t, idx?, field?, role?}: role
+   * "name" (a picked field, field >= 0, or the notion itself, field -1) or
+   * "detail" (the text typed for that field, or the `text` of the item:
+   * notion detail, free text, text under a section title); no role:
+   * generated words (": ", " (", ", ", titles...), not editable. Example:
+   * "Hallucinations : adhésion (totale)" is
+   *   [{t: "Hallucinations", idx: 7, field: -1, role: "name"}, {t: " : "},
+   *    {t: "adhésion", idx: 7, field: 0, role: "name"}, {t: " ("},
+   *    {t: "totale", idx: 7, field: 0, role: "detail"}, {t: ")"}]. */
+  const P = (t, ref) => ({ t, ...ref });
+  const ptext = (ps) => ps.map((p) => p.t).join("");
+  // Piece lists joined with a generated separator, like Array.join for strings.
+  const pjoin = (lists, sep) => lists.flatMap((ps, i) => (i ? [P(sep), ...ps] : ps));
+  const capFirst = (ps) => (ps.length ? [{ ...ps[0], t: capitalize(ps[0].t) }, ...ps.slice(1)] : ps);
+
+  /* Text of notion i in the compte rendu, as pieces (see P). `subs` are the
+   * pieces of its sub notions (see phraseOf), chained after its own answers
+   * with ", " so the line reads as a sentence. `top` is true for the notion
+   * starting the line:
    *   top:    "Médecin traitant : nom : Dr X, coordonnées"
    *           "Travail : en activité, CDI, pas d'arrêts de travail prolongés"
    *   nested: "souffrance au travail (surcharge, conflit)", "CDI" (label in
@@ -371,33 +389,43 @@
    *           "aime son travail" (as is, a trailing "?" dropped).
    * A top label in parentheses gives the answers alone, e.g. "- (Nom et
    * prénom)" with "Jean Martin" typed gives "Jean Martin". */
-  function notionText(n, subs = [], top = true) {
-    if (n.phrase) return phraseText(n, subs, top);
-    const parts = n.fields
-      .filter((f) => f.picked)
-      .map((f) => (f.neg ? negate(f.name).toLowerCase() : f.value ? `${clean(f.name)} : ${f.value}` : clean(f.name)));
-    if (n.text) parts.push(n.text);
+  function notionText(n, i, subs, top) {
+    if (n.phrase) return phraseText(n, i, subs, top);
+    const self = { idx: i, field: -1, role: "name" };
+    const name = (fi) => ({ idx: i, field: fi, role: "name" });
+    const parts = picked(n).map(([f, fi]) =>
+      f.neg
+        ? [P(negate(f.name).toLowerCase(), name(fi))]
+        : f.value
+          ? [P(clean(f.name), name(fi)), P(" : "), P(f.value, { idx: i, field: fi, role: "detail" })]
+          : [P(clean(f.name), name(fi))]
+    );
+    if (n.text) parts.push([P(n.text, { idx: i, field: -1, role: "detail" })]);
     const all = [...parts, ...subs];
     const label = clean(n.label);
     if (n.state === "negative" && !parts.length) {
       const neg = negate(n.label || n.raw);
-      return top ? neg : lowerFirst(neg);
+      return [P(top ? neg : lowerFirst(neg), self)];
     }
     const alone = bare(n.raw).replace(/\s*\?\s*$/, ""); // nothing picked nor typed
     if (top) {
-      if (!label) return capitalize(all.length ? all.join(", ") : alone);
+      if (!label) return all.length ? capFirst(pjoin(all, ", ")) : [P(capitalize(alone), self)];
       const prefix = n.state === "negative" ? negate(n.label) : capitalize(label);
-      return all.length ? `${prefix} : ${all.join(", ")}` : prefix;
+      return all.length ? [P(prefix, self), P(" : "), ...pjoin(all, ", ")] : [P(prefix, self)];
     }
-    if (!label) return all.length ? all.join(", ") : lowerFirst(alone);
+    if (!label) return all.length ? pjoin(all, ", ") : [P(lowerFirst(alone), self)];
     const head = n.state === "negative" ? lowerFirst(negate(n.label)) : label.replace(/\s*\?\s*$/, "");
-    return all.length ? `${head} (${all.join(", ")})` : head;
+    return withDetail([P(head, self)], all);
   }
+
+  // Picked fields of notion n with their index: [[field, index]...].
+  const picked = (n) => n.fields.map((f, fi) => [f, fi]).filter(([f]) => f.picked);
 
   /* Negation of a phrase slot, lowercase: "pas de critique", or "non
    * critiqué" for a field or label marked "<!-- non -->" in the trame. */
   const negSlot = (name, non) => (non ? `non ${lowerFirst(bare(name))}` : lowerFirst(negate(name)));
-  const withDetail = (s, details) => (details.length ? `${s} (${details.join(", ")})` : s);
+  // Pieces `ps` followed by the piece lists `details` in parentheses, if any.
+  const withDetail = (ps, details) => (details.length ? [...ps, P(" ("), ...pjoin(details, ", "), P(")")] : ps);
 
   /* notionText() of a notion tagged "<!-- phrase -->" and of its sub notions:
    * "Notion : caractérisant (détail), caractérisant (détail), ...".
@@ -410,19 +438,29 @@
    * gives "Symptômes délirants : adhésion, non critique (au premier entretien
    * seulement), thème mystique (dit « être le fils de Jésus »), mécanisme
    * intuitif-hallucinatoire". */
-  function phraseText(n, subs, top) {
+  function phraseText(n, i, subs, top) {
     const label = clean(n.label || n.raw).replace(/\s*\?\s*$/, "");
     const neg = n.state === "negative";
-    const picks = n.fields.filter((f) => f.picked);
+    const self = { idx: i, field: -1, role: "name" };
+    const own = n.text ? [[P(n.text, { idx: i, field: -1, role: "detail" })]] : [];
+    // A picked field with its detail: "non critique (au premier entretien)".
+    const slot = ([f, fi]) =>
+      withDetail([P(f.neg ? negSlot(f.name, f.non) : clean(f.name), { idx: i, field: fi, role: "name" })], f.value ? [[P(f.value, { idx: i, field: fi, role: "detail" })]] : []);
     if (top) {
-      const slots = picks.map((f) => withDetail(f.neg ? negSlot(f.name, f.non) : clean(f.name), f.value ? [f.value] : []));
-      const head = withDetail(neg ? capitalize(negSlot(n.label || n.raw, n.non)) : capitalize(label), n.text ? [n.text] : []);
-      const all = [...slots, ...subs];
-      return all.length && !neg ? `${head} : ${all.join(", ")}` : head;
+      const head = withDetail([P(neg ? capitalize(negSlot(n.label || n.raw, n.non)) : capitalize(label), self)], own);
+      const all = [...picked(n).map(slot), ...subs];
+      return all.length && !neg ? [...head, P(" : "), ...pjoin(all, ", ")] : head;
     }
-    const values = picks.map((f) => (f.neg ? negSlot(f.name, f.non) : f.value ? `${clean(f.name)} (${f.value})` : clean(f.name))).join("-");
-    const head = neg ? negSlot(n.label || n.raw, n.non) : [clean(n.label), values].filter(Boolean).join(" ") || label;
-    return withDetail(head, neg ? (n.text ? [n.text] : []) : [n.text, ...subs].filter(Boolean));
+    const values = pjoin(picked(n).map(slot), "-");
+    const lab = clean(n.label);
+    const head = neg
+      ? [P(negSlot(n.label || n.raw, n.non), self)]
+      : lab
+        ? [P(lab, self), ...(values.length ? [P(" "), ...values] : [])]
+        : values.length
+          ? values
+          : [P(label, self)];
+    return withDetail(head, neg ? own : [...own, ...subs]);
   }
 
   /* Index of the parent notion of every item (-1 at the top of a section),
@@ -450,15 +488,16 @@
     return kids;
   }
 
-  /* Text of notion i with its answered sub notions chained in (recursively),
-   * or "" if nothing in it was answered. A negative or excluded notion hides
-   * its sub notions in the list, so their old answers are left out too. */
+  /* Pieces (see P) of notion i with its answered sub notions chained in
+   * (recursively), or [] if nothing in it was answered. A negative or excluded
+   * notion hides its sub notions in the list, so their old answers are left
+   * out too. */
   function phraseOf(items, kids, i, top) {
     const n = items[i];
     const closed = n.state === "negative" || n.state === "excluded";
-    const subs = closed ? [] : kids[i].map((j) => phraseOf(items, kids, j, false)).filter(Boolean);
-    if (!notionIncluded(n) && !subs.length) return "";
-    return notionText(n, subs, top);
+    const subs = closed ? [] : kids[i].map((j) => phraseOf(items, kids, j, false)).filter((ps) => ps.length);
+    if (!notionIncluded(n) && !subs.length) return [];
+    return notionText(n, i, subs, top);
   }
 
   /* First line of the compte rendu, e.g. with
@@ -485,20 +524,22 @@
    * Example: answering only "endormissement" under "# Mode de vie / ## Sommeil"
    * gives the texts ["MODE DE VIE :", "Sommeil :", "- Endormissement"].
    * One line per top level notion: its sub notions are chained into it (see
-   * phraseOf), the line keeping the index of the top level notion. */
+   * phraseOf), the line keeping the index of the top level notion.
+   * Each line also has its `pieces` (see P), for the text pane. */
   function buildReport(items, header) {
+    const line = (idx, pieces, heading) => ({ idx, text: ptext(pieces), pieces, ...(heading ? { heading } : {}) });
     // idx -1: the header line has no source item (clicking it opens the header fields).
-    const out = header ? [{ idx: -1, text: headerText(header) }] : [];
+    const out = header ? [line(-1, [P(headerText(header))])] : [];
     let open = []; // sections containing the current item, outermost first: {idx, sec, written}
-    const write = (line) => {
+    const write = (l) => {
       for (const o of open) {
         if (o.written) continue;
         o.written = true;
         // A blank line between top level groups only, to keep the text compact.
-        if (o.sec.level === 1 && out.length) out.push({ idx: o.idx, text: "" });
-        if (o.sec.title) out.push({ idx: o.idx, text: headingText(o.sec), heading: o.sec.level });
+        if (o.sec.level === 1 && out.length) out.push(line(o.idx, []));
+        if (o.sec.title) out.push(line(o.idx, [P(headingText(o.sec))], o.sec.level));
       }
-      out.push(line);
+      out.push(l);
     };
     const parent = notionParents(items);
     const kids = subNotions(items, parent);
@@ -506,14 +547,14 @@
       if (it.kind === "section") {
         open = open.filter((o) => o.sec.level < it.level);
         open.push({ idx, sec: it, written: false });
-        if (it.text) write({ idx, text: it.text });
+        if (it.text) write(line(idx, [P(it.text, { idx, field: -1, role: "detail" })]));
       } else if (it.kind === "checklist") {
         open = []; // what follows a checklist is not inside the previous section
       } else if (it.kind === "free") {
-        if (it.text) write({ idx, text: "  ".repeat(it.depth) + it.text });
+        if (it.text) write(line(idx, [P("  ".repeat(it.depth)), P(it.text, { idx, field: -1, role: "detail" })]));
       } else if (parent[idx] < 0) {
-        const text = phraseOf(items, kids, idx, true);
-        if (text) write({ idx, text: "- " + text });
+        const ps = phraseOf(items, kids, idx, true);
+        if (ps.length) write(line(idx, [P("- "), ...ps]));
       }
     });
     return out;
@@ -526,6 +567,7 @@
     cur: 0, // index in items
     field: -1, // -1 = the notion itself, otherwise index of the selected field
     undo: [],
+    redo: [],
     lastSearch: "",
     mode: localStorage.getItem("trame-helper-mode") || "basic",
     pendingKey: "", // first key of a vim two key sequence ("g g", "z h"...)
@@ -547,9 +589,24 @@
 
   const report = () => buildReport(S.items, S.header);
 
+  const state = () => JSON.stringify({ items: S.items, cur: S.cur, field: S.field });
+
+  /* Save the state before a modification. A new modification drops the redo
+   * stack, like in any editor: after undo, undo, edit, "redo" has nothing to
+   * bring back. */
   function snapshot() {
-    S.undo.push(JSON.stringify({ items: S.items, cur: S.cur, field: S.field }));
+    S.undo.push(state());
     if (S.undo.length > 300) S.undo.shift();
+    S.redo = [];
+  }
+
+  /* Undo (from = S.undo, to = S.redo) or redo (the reverse): restore the last
+   * saved state of `from`, saving the current one on `to`. */
+  function restore(from, to, none) {
+    const prev = from.pop();
+    if (!prev) return flash(none);
+    to.push(state());
+    Object.assign(S, JSON.parse(prev));
   }
 
   const cur = () => S.items[S.cur];
@@ -663,8 +720,7 @@
    * notion" after a decision. */
   function step(dir) {
     const it = cur();
-    // The options of a phrase choice are laid out in a row: left / right only.
-    const vertical = (x) => x.kind === "notion" && !x.choice;
+    const vertical = (x) => x.kind === "notion";
     const n = vertical(it) ? it.fields.length : 0;
     if (dir > 0 && S.field < n - 1) return void S.field++;
     if (dir < 0 && S.field > -1 && vertical(it)) return void S.field--;
@@ -774,9 +830,12 @@
     }
   }
 
-  /* One level down: the first displayed child item (sub section, notion or
-   * detail), or else the first field of the notion. */
+  /* One level down: the first field of the notion (shown right below its
+   * label), or else its first displayed child item (sub section, notion or
+   * detail). A field has nothing below it. */
   function child() {
+    if (S.field >= 0) return;
+    if (cur().kind === "notion" && cur().fields.length) return void (S.field = 0);
     const { vis, nest } = visibility();
     const r = rankOf(S.cur, nest);
     for (let i = S.cur + 1; i < S.items.length && S.items[i].kind !== "checklist"; i++) {
@@ -821,16 +880,17 @@
   }
 
   function insertFree(offset) {
-    snapshot();
     const depth = cur().kind === "section" ? 0 : cur().depth;
     const at = S.cur + offset;
-    S.items.splice(at, 0, { kind: "free", depth, text: "" });
-    jumpTo(at);
-    ask("Texte libre", "", (v) => {
+    const insert = () => {
+      S.items.splice(at, 0, { kind: "free", depth, text: "" });
+      jumpTo(at);
+    };
+    undoablePrompt(insert, () => ask("Texte libre", "", (v) => {
       // An empty free text has no purpose: drop it so it does not clutter the list.
       if (v) cur().text = v;
       else S.items.splice(S.cur, 1), (S.cur = Math.min(S.cur, S.items.length - 1));
-    });
+    }));
   }
 
   /* Positive answer on notion `it`: on its selected field, picks it (or
@@ -870,6 +930,26 @@
       if (it.state === "excluded") it.state = "pending";
       if (after) after();
     });
+  }
+
+  /* "Oui + détail" / "Non + détail": `mark` answers the selected notion or
+   * slot, then the detail is asked. Answer and detail are one modification
+   * (one undo); Escape in the detail bar cancels both, back to the state
+   * before the key, e.g. A then Escape on an unanswered slot leaves it
+   * unanswered. */
+  function answerWithDetail(mark) {
+    undoablePrompt(mark, () => askDetail(() => step(1)));
+  }
+
+  /* Run `change` then open a text bar with `open` (which calls ask), as one
+   * modification: one undo entry for both, and Escape (or "Annuler") in the
+   * bar restores the state from before `change`. */
+  function undoablePrompt(change, open) {
+    const before = state();
+    snapshot();
+    change();
+    open();
+    S.prompt.undoBefore = before;
   }
 
   /* Pick an option of the phrase choice by typing: the typed text filters
@@ -915,6 +995,276 @@
     flash("Compte rendu copié");
   }
 
+  // ------------------------------------------------------------------ text pane
+
+  /* Keyboard editing of the compte rendu (Tab from the list), with basic vim
+   * keys. The text is generated, so only what the user typed can be edited:
+   * the detail of a slot (in parentheses), the text of a notion, a free text
+   * or the text under a section title (pieces of role "detail", see P).
+   * Deleting a slot name unanswers the slot. Every edit changes the answers
+   * and the text is rebuilt from them, so the list and the text stay in sync.
+   * S.text = {line, col, pending, ins}: cursor (line of report(), column),
+   * first key of a sequence ("d", "c i"...), and while typing ins = {ref,
+   * off, dirty}: the detail being edited (ref = {idx, field}) and the cursor
+   * offset inside it. Example: on "- Hallucinations : adhésion (totale)",
+   * the cursor on "t" of "totale" then "x" gives "(otale)"; "x" on
+   * "adhésion" unpicks adhésion. */
+  const WORD = /[\p{L}\p{N}]/u;
+  const sameSlot = (p, ref) => p.idx === ref.idx && p.field === ref.field;
+
+  // Piece of line `l` under column `col`, with its start column, or null.
+  function pieceAt(l, col) {
+    let s = 0;
+    for (const p of l.pieces) {
+      if (col < s + p.t.length) return { p, start: s };
+      s += p.t.length;
+    }
+    return null;
+  }
+
+  // Line and column of the piece of `role` for slot `ref` (+ off), or null.
+  function locate(ref, role, off) {
+    const ls = report();
+    for (let li = 0; li < ls.length; li++) {
+      let s = 0;
+      for (const p of ls[li].pieces) {
+        if (p.role === role && sameSlot(p, ref)) return { line: li, col: s + Math.min(off, p.t.length) };
+        s += p.t.length;
+      }
+    }
+    return null;
+  }
+
+  // Slot whose detail a piece edits: a choice keeps one detail for all its options.
+  function detailRef(p) {
+    const it = S.items[p.idx];
+    return { idx: p.idx, field: p.role === "name" && it.choice ? -1 : p.field };
+  }
+  const detailOf = (r) => (r.field >= 0 ? S.items[r.idx].fields[r.field].value : S.items[r.idx].text) || "";
+  function setDetail(r, v) {
+    const it = S.items[r.idx];
+    if (r.field >= 0) Object.assign(it.fields[r.field], { value: v }, v ? { picked: true } : {});
+    else {
+      it.text = v;
+      if (v && it.kind === "notion" && (it.state === "pending" || it.state === "excluded")) it.state = "as_is";
+    }
+  }
+
+  // Unanswer the slot of a "name" piece: unpick the field, or reset the notion.
+  function unanswer(p) {
+    const it = S.items[p.idx];
+    if (p.field >= 0) Object.assign(it.fields[p.field], { picked: false, neg: false });
+    else Object.assign(it, { state: "pending", text: "" }), it.fields.forEach((f) => (f.picked = f.neg = false));
+  }
+
+  /* Put the text cursor on the line of the selected item (on its selected
+   * field if it is in the text), when coming from the list. */
+  function textEnter() {
+    S.hideReport = false;
+    const ls = report();
+    let best = null;
+    ls.forEach((l, li) => {
+      let s = 0;
+      for (const p of l.pieces) {
+        if (p.idx === S.cur && (!best || (p.field === S.field && !best.exact))) best = { line: li, col: s, exact: p.field === S.field };
+        s += p.t.length;
+      }
+      if (!best && l.idx === S.cur) best = { line: li, col: 0 };
+    });
+    if (!best) best = { line: Math.max(0, ls.findLastIndex((l) => l.idx >= 0 && l.idx <= S.cur)), col: 0 };
+    S.text = { line: best.line, col: best.col, pending: "", ins: null };
+  }
+
+  // The list follows the text cursor: select the notion (and field) under it.
+  function textSync() {
+    const l = report()[S.text.line];
+    if (!l) return;
+    const at = pieceAt(l, S.text.col);
+    const p = at && at.p.idx !== undefined ? at.p : null;
+    const idx = p ? p.idx : l.idx;
+    if (idx < 0) return;
+    const field = p && S.items[idx].kind === "notion" ? p.field : -1;
+    jumpTo(idx, field);
+  }
+
+  // Keep the cursor inside the text after a change (undo, unanswered slot...).
+  function textClamp() {
+    const ls = report();
+    const T = S.text;
+    T.line = Math.max(0, Math.min(T.line, ls.length - 1));
+    const len = ls.length ? ls[T.line].text.length : 0;
+    T.col = Math.max(0, Math.min(T.col, T.ins ? len : len - 1));
+  }
+
+  // Next (dir 1) or previous (dir -1) start of a word, across lines.
+  function wordMove(dir) {
+    const ls = report().map((l) => l.text + "\n");
+    const T = S.text;
+    const isW = (li, c) => WORD.test(ls[li][c] || "");
+    let li = T.line;
+    let c = T.col;
+    const adv = () => {
+      c += dir;
+      if (c < 0) {
+        if (li === 0) return false;
+        li--, (c = ls[li].length - 1);
+      } else if (c >= ls[li].length) {
+        if (li === ls.length - 1) return false;
+        li++, (c = 0);
+      }
+      return true;
+    };
+    if (dir > 0) {
+      while (isW(li, c) && adv());
+      while (!isW(li, c) && adv());
+    } else {
+      adv();
+      while (!isW(li, c) && adv());
+      while (c > 0 && isW(li, c - 1)) c--;
+    }
+    if (isW(li, c)) (T.line = li), (T.col = c);
+  }
+
+  /* Start typing into the detail of the slot under the cursor, at offset
+   * `where` ("before" / "after" the cursor; a slot name types at the end of
+   * its detail). Generated words cannot be edited. */
+  function textInsert(where, clear = false) {
+    const l = report()[S.text.line];
+    const at = l && pieceAt(l, S.text.col);
+    if (!at || !at.p.role) return flash("Texte généré : non modifiable (seuls les détails le sont)");
+    const ref = detailRef(at.p);
+    if (clear) snapshot(), setDetail(ref, "");
+    const len = detailOf(ref).length;
+    const off = clear ? 0 : at.p.role === "detail" ? S.text.col - at.start + (where === "after" ? 1 : 0) : len;
+    S.text.ins = { ref, off: Math.min(off, len), dirty: clear };
+  }
+
+  // Cursor position while typing: in the detail, or after the slot name while it is empty.
+  function textInsCursor() {
+    const { ref, off } = S.text.ins;
+    const pos = locate(ref, "detail", off) || locate(ref, "name", Infinity);
+    if (pos) Object.assign(S.text, pos);
+  }
+
+  function insertKey(e, k) {
+    const I = S.text.ins;
+    const v = detailOf(I.ref);
+    const edit = (nv, off) => {
+      if (!I.dirty) snapshot(), (I.dirty = true); // one undo for the whole typing
+      setDetail(I.ref, nv);
+      I.off = off;
+    };
+    if (k === "Escape" || k === "Enter") S.text.ins = null;
+    else if (k === "Backspace") I.off > 0 && edit(v.slice(0, I.off - 1) + v.slice(I.off), I.off - 1);
+    else if (k === "Delete") I.off < v.length && edit(v.slice(0, I.off) + v.slice(I.off + 1), I.off);
+    else if (k === "ArrowLeft") I.off = Math.max(0, I.off - 1);
+    else if (k === "ArrowRight") I.off = Math.min(v.length, I.off + 1);
+    else if (e.key.length === 1 && !e.ctrlKey && !e.metaKey) edit(v.slice(0, I.off) + e.key + v.slice(I.off), I.off + 1);
+    else return;
+    e.preventDefault();
+    if (S.text.ins) textInsCursor();
+    else S.text.col--; // like vim, leaving insert mode steps back onto the last typed character
+    fixCur();
+    render();
+  }
+
+  /* Keys of the text pane in normal mode. Sequences are written "d w",
+   * "c i (" like in the keymaps. */
+  const TEXT_KEYS = {
+    h: () => S.text.col--,
+    ArrowLeft: () => S.text.col--,
+    l: () => S.text.col++,
+    ArrowRight: () => S.text.col++,
+    j: () => S.text.line++,
+    ArrowDown: () => S.text.line++,
+    k: () => S.text.line--,
+    ArrowUp: () => S.text.line--,
+    w: () => wordMove(1),
+    b: () => wordMove(-1),
+    0: () => (S.text.col = 0),
+    Home: () => (S.text.col = 0),
+    $: () => (S.text.col = Infinity),
+    End: () => (S.text.col = Infinity),
+    "g g": () => (S.text.line = 0),
+    G: () => (S.text.line = Infinity),
+    i: () => textInsert("before"),
+    a: () => textInsert("after"),
+    "c i (": () => textInsert("before", true),
+    "c i )": () => textInsert("before", true),
+    "d i (": () => {
+      textInsert("before", true);
+      S.text.ins = null;
+    },
+    x: () => textDelete(false),
+    Delete: () => textDelete(false),
+    "d w": () => textDelete(true),
+    u: () => ACTIONS.undo.run(),
+    "C-z": () => ACTIONS.undo.run(),
+    R: () => ACTIONS.redo.run(),
+    "C-y": () => ACTIONS.redo.run(),
+  };
+  TEXT_KEYS["d i )"] = TEXT_KEYS["d i ("];
+
+  /* x (one character) or d w (to the end of the word) on a detail; on a slot
+   * name, both unanswer the slot. */
+  function textDelete(word) {
+    const l = report()[S.text.line];
+    const at = l && pieceAt(l, S.text.col);
+    if (!at || !at.p.role) return flash("Texte généré : non modifiable (seuls les détails le sont)");
+    snapshot();
+    if (at.p.role === "name") return unanswer(at.p);
+    const ref = detailRef(at.p);
+    const v = detailOf(ref);
+    const off = S.text.col - at.start;
+    let end = off + 1;
+    if (word) {
+      while (end < v.length && WORD.test(v[end]) && WORD.test(v[off])) end++;
+      while (end < v.length && v[end] === " ") end++;
+    }
+    setDetail(ref, v.slice(0, off) + v.slice(end));
+    const pos = locate(ref, "detail", off);
+    if (pos) Object.assign(S.text, pos);
+  }
+
+  function textKey(e) {
+    const T = S.text;
+    const k = keyName(e);
+    if (T.ins) return insertKey(e, k);
+    if (/^(Shift|Control|Alt|Meta)$/.test(e.key)) return;
+    if (k === "Tab" || k === "Escape") {
+      e.preventDefault();
+      S.text = null;
+      return render();
+    }
+    e.preventDefault();
+    const seq = T.pending ? `${T.pending} ${k}` : k;
+    T.pending = "";
+    if (Object.keys(TEXT_KEYS).some((s) => s.startsWith(seq + " "))) return void (T.pending = seq);
+    if (!TEXT_KEYS[seq]) return;
+    TEXT_KEYS[seq]();
+    if (T.ins) textInsCursor();
+    textClamp();
+    textSync();
+    fixCur();
+    render();
+  }
+
+  /* HTML of report line `l`: pieces in spans styled by role (in the text
+   * pane), and the text cursor at column `col` (null: none). */
+  function lineHtml(l, col, ins) {
+    const cursor = (c) => `<span class="${ins ? "trh-ti" : "trh-tc"}">${c}</span>`;
+    let s = 0;
+    let out = "";
+    for (const p of l.pieces) {
+      const o = col === null ? -1 : col - s;
+      const inner = o >= 0 && o < p.t.length ? esc(p.t.slice(0, o)) + cursor(esc(p.t[o])) + esc(p.t.slice(o + 1)) : esc(p.t);
+      out += S.text && p.role ? `<span class="trh-p${p.role[0]}">${inner}</span>` : inner;
+      s += p.t.length;
+    }
+    if (col !== null && col >= s) out += cursor("&nbsp;");
+    return out || "&nbsp;";
+  }
+
   function flash(msg) {
     const el = S.root.querySelector(".trh-flash");
     el.textContent = msg;
@@ -933,23 +1283,10 @@
   const ACTIONS = {
     up: { label: "Précédent", tip: "Remonte d'une ligne ou d'un champ de la notion sélectionnée (les lignes masquées ou repliées sont sautées).", run: () => step(-1) },
     down: { label: "Suivant", tip: "Descend d'une ligne ; sur la notion sélectionnée, passe d'abord par ses champs, affichés l'un sous l'autre (les lignes masquées ou repliées sont sautées).", run: () => step(1) },
-    left: {
-      label: "Champ précédent",
-      tip: "Sélectionne le champ (pastille) précédent ; tout à gauche, la notion elle-même.",
-      run: () => (S.field = Math.max(-1, S.field - 1)),
-    },
-    right: {
-      label: "Champ suivant",
-      tip: "Sélectionne le champ (pastille) suivant de la notion.",
-      run: () => {
-        const f = cur().fields;
-        if (f) S.field = Math.min(f.length - 1, S.field + 1);
-      },
-    },
     prevSibling: { label: "Frère précédent", tip: "Remonte au titre ou à la notion précédente de même niveau (ou au niveau parent s'il n'y en a plus), en sautant les détails.", run: () => sibling(-1) },
     nextSibling: { label: "Frère suivant", tip: "Descend au titre ou à la notion suivante de même niveau (ou au niveau parent après la dernière), en sautant les détails et les champs.", run: () => sibling(1) },
     parent: { label: "Niveau parent", tip: "Remonte d'un niveau : du champ à sa notion, de la notion à sa notion parente ou à sa section, de la section à sa partie.", run: parent },
-    child: { label: "Niveau enfant", tip: "Descend d'un niveau : de la partie à sa première section, de la section à sa première notion, de la notion à son premier détail ou à son premier champ.", run: child },
+    child: { label: "Niveau enfant", tip: "Descend d'un niveau : de la partie à sa première section, de la section à sa première notion, de la notion à son premier champ ou, sans champ, à son premier détail.", run: child },
     prevSection: { label: "Section précédente", tip: "Va au titre de la section précédente.", run: () => nextSection(-1) },
     nextSection: { label: "Section suivante", tip: "Va au titre de la section suivante.", run: () => nextSection(1) },
     first: { label: "Début", tip: "Va à la première ligne de la trame.", run: () => ((S.cur = 0), (S.field = -1)) },
@@ -979,9 +1316,7 @@
       tip: "Ajoute la notion ou la caractéristique sélectionnée et demande un détail, écrit entre parenthèses, puis passe à la suivante.",
       run: () => {
         if (cur().kind !== "notion") return ACTIONS.addText.run();
-        snapshot();
-        markYes(cur(), true);
-        askDetail(() => step(1));
+        answerWithDetail(() => markYes(cur(), true));
       },
     },
     noDetail: {
@@ -989,9 +1324,7 @@
       tip: "Met la notion ou la caractéristique sélectionnée au négatif (« pas de... », ou « non... ») et demande un détail, écrit entre parenthèses, puis passe à la suivante.",
       run: () => {
         if (cur().kind !== "notion") return;
-        snapshot();
-        markNo(cur());
-        askDetail(() => step(1));
+        answerWithDetail(() => markNo(cur()));
       },
     },
     pick: {
@@ -1118,11 +1451,22 @@
     undo: {
       label: "Annuler",
       tip: "Annule la dernière modification.",
+      run: () => restore(S.undo, S.redo, "Rien à annuler"),
+    },
+    redo: { label: "Rétablir", tip: "Rétablit la dernière modification annulée.", run: () => restore(S.redo, S.undo, "Rien à rétablir") },
+    focusBar: {
+      label: "Aller aux boutons",
+      tip: "Met le clavier sur la barre de boutons : flèches ou h j k l pour se déplacer, Entrée ou Espace pour appuyer, Échap pour revenir à la trame.",
       run: () => {
-        const prev = S.undo.pop();
-        if (!prev) return flash("Rien à annuler");
-        Object.assign(S, JSON.parse(prev));
+        S.hideBar = false;
+        const b = barButtons()[0];
+        if (b) b.focus();
       },
+    },
+    textMode: {
+      label: "Aller au compte rendu",
+      tip: "Met le clavier dans le compte rendu : h j k l, w b, 0 $ pour se déplacer, i a pour écrire dans un détail (entre parenthèses), c i ( pour le réécrire, x ou d w pour effacer (sur un nom de case : la décoche), u pour annuler. Le texte généré n'est pas modifiable. Tab ou Échap pour revenir à la trame.",
+      run: textEnter,
     },
     copy: { label: "Copier le CR", tip: "Copie le compte rendu dans le presse-papiers.", run: copyReport },
     header: {
@@ -1316,9 +1660,9 @@
   function tourStart() {
     if (S.tour) return;
     S.root.classList.remove("trh-help-open");
-    const { items, cur: c, field, undo, header, showHidden, preset } = S;
-    S.tour = { i: 0, saved: JSON.stringify({ items, cur: c, field, undo, header, showHidden, preset }) };
-    Object.assign(S, { items: parseTrame(S.md), cur: 0, field: -1, undo: [], showHidden: false, preset: null });
+    const { items, cur: c, field, undo, redo, header, showHidden, preset } = S;
+    S.tour = { i: 0, saved: JSON.stringify({ items, cur: c, field, undo, redo, header, showHidden, preset }) };
+    Object.assign(S, { items: parseTrame(S.md), cur: 0, field: -1, undo: [], redo: [], showHidden: false, preset: null });
     tourHeader({ moment: "", sex: "n", present: "" });
   }
 
@@ -1351,12 +1695,10 @@
   const BASIC_KEYS = {
     ArrowUp: "up",
     ArrowDown: "down",
-    ArrowLeft: "left",
-    ArrowRight: "right",
+    ArrowLeft: "parent",
+    ArrowRight: "child",
     "S-ArrowUp": "prevSibling",
     "S-ArrowDown": "nextSibling",
-    "S-ArrowLeft": "parent",
-    "S-ArrowRight": "child",
     PageUp: "prevSection",
     PageDown: "nextSection",
     Home: "first",
@@ -1376,28 +1718,32 @@
     "C-b": "toggleBar",
     "C-f": "search",
     "C-z": "undo",
+    "C-y": "redo",
     "C-c": "copy",
     F2: "toggleMode",
     F1: "help",
     "?": "help", // not a letter, so harmless in basic mode
     F4: "header",
+    // Chrome on Linux and Windows keeps Shift+Escape (its task manager): F8 also works.
+    "S-Escape": "focusBar",
+    F8: "focusBar",
+    Tab: "textMode",
     Escape: "close",
   };
   const VIM_KEYS = {
     k: "up",
     j: "down",
-    h: "left",
-    l: "right",
+    h: "parent",
+    l: "child",
     K: "prevSibling",
     J: "nextSibling",
-    H: "parent",
-    L: "child",
     "g g": "first",
     "z a": "toggleFold",
     "z A": "foldAll",
     "z h": "toggleHidden",
     "z r": "toggleReport",
     "z b": "toggleBar",
+    "z m": "focusBar",
     ...Object.fromEntries(Object.keys(PRESETS).map((id, i) => [`z ${i + 1}`, `preset-${id}`])),
     G: "last",
     a: "addText",
@@ -1411,6 +1757,7 @@
     O: "freeAbove",
     "/": "search",
     u: "undo",
+    R: "redo",
     y: "copy",
     e: "header",
   };
@@ -1443,6 +1790,19 @@
       return e.preventDefault();
     }
     if (e.target.closest && e.target.closest(".trh-head")) return; // typing in the header fields
+    // Keyboard on the toolbar (see the "focusBar" action): Enter and Space
+    // press the button natively, other keys do not reach the trame.
+    const btn = e.target.closest && e.target.closest(".trh-bar button");
+    if (btn) {
+      const dir = BAR_KEYS[e.key];
+      if (dir) barMove(btn, dir);
+      else if (e.key === "Escape") btn.blur();
+      else return;
+      return e.preventDefault();
+    }
+    // Keyboard in the compte rendu (see the "textMode" action); help keys still open the help.
+    const helpKey = e.key === "F1" || e.key === "?";
+    if (S.text && (S.text.ins || (!helpKey && !S.root.classList.contains("trh-help-open")))) return textKey(e);
     // Second key of the slot jump ("f" then a letter, see the "slot" action).
     if (S.slotJump && !/^(Shift|Control|Alt|Meta)$/.test(e.key)) {
       const s = S.slotJump.find((x) => x.letter === e.key);
@@ -1480,6 +1840,29 @@
     if (!action) return;
     e.preventDefault();
     dispatch(action);
+  }
+
+  const BAR_KEYS = { ArrowLeft: "left", h: "left", ArrowRight: "right", l: "right", ArrowUp: "up", k: "up", ArrowDown: "down", j: "down" };
+
+  // Toolbar buttons currently displayed (the collapsed toolbar or the phone layout hide some).
+  const barButtons = () => [...S.root.querySelectorAll(".trh-bar button")].filter((b) => b.offsetParent);
+
+  /* Move the keyboard focus from toolbar button `btn` to its neighbour on
+   * screen: left / right in reading order, up / down to the closest button
+   * (horizontally) of the previous / next row, since the buttons wrap on
+   * several rows. */
+  function barMove(btn, dir) {
+    const all = barButtons();
+    const i = all.indexOf(btn);
+    if (dir === "left" || dir === "right") return void (all[i + (dir === "left" ? -1 : 1)] || btn).focus();
+    const box = (b) => b.getBoundingClientRect();
+    const r = box(btn);
+    const mid = (x) => x.left + x.width / 2;
+    const rows = all.filter((b) => (dir === "down" ? box(b).top > r.bottom - 2 : box(b).bottom < r.top + 2));
+    if (!rows.length) return;
+    const top = dir === "down" ? Math.min(...rows.map((b) => box(b).top)) : Math.max(...rows.map((b) => box(b).top));
+    const row = rows.filter((b) => Math.abs(box(b).top - top) < 2);
+    row.sort((a, b) => Math.abs(mid(box(a)) - mid(r)) - Math.abs(mid(box(b)) - mid(r)))[0].focus();
   }
 
   /* Highlight the rows of the help table bound to key `k` (exact key name, or
@@ -1567,11 +1950,14 @@
     // A phrase notion (see phraseText): its top row shows the sentence made so
     // far; its slots (fields one per line, sub notions) only while the cursor
     // is in it, each with its jump letter (see the "slot" action).
+    // The options of a choice also go one per line, below its label, e.g.
+    // "[t] thème (dit être le fils de Jésus)" then "· persécution", "✓ mystique".
     const root = phraseRoot(idx, v.parent) === idx;
     const slotted = root && v.active === idx;
+    const inPhrase = v.active >= 0 && phraseRoot(idx, v.parent) === v.active;
     const key = (field) => (v.letters.has(`${idx}:${field}`) ? `<span class="trh-key">${v.letters.get(`${idx}:${field}`)}</span>` : "");
-    const glyph = (f) => (slotted ? `${f.picked ? (f.neg ? "✗" : "✓") : "·"} ` : "");
-    cls.push(`trh-st-${it.state}`, notionIncluded(it) ? "trh-in" : "", (sel || slotted) && it.fields.length && !it.choice ? "trh-vert" : "");
+    const glyph = (f) => (inPhrase ? `${f.picked ? (f.neg ? "✗" : "✓") : "·"} ` : "");
+    cls.push(`trh-st-${it.state}`, notionIncluded(it) ? "trh-in" : "", (sel || inPhrase) && it.fields.length ? "trh-vert" : "", it.choice ? "trh-choice" : "");
     const chips =
       root && !slotted && notionIncluded(it)
         ? ""
@@ -1583,11 +1969,16 @@
               return `<span class="${c.join(" ")}" data-idx="${idx}" data-field="${fi}"${f.tip ? ` data-tip="${esc(f.tip)}"` : ""}>${key(fi)}${glyph(f)}${esc(f.name)}${value}</span>`;
             })
             .join("");
-    const note = root ? phraseOf(S.items, subNotions(S.items, v.parent), idx, true) : it.text;
+    // The detail of a phrase slot is written to the right of its label, in
+    // parentheses as in the compte rendu; other details go on a line below.
+    const inline = it.phrase && !root && it.text;
+    const note = root ? ptext(phraseOf(S.items, subNotions(S.items, v.parent), idx, true)) : inline ? "" : it.text;
     const labelCls = `trh-label${sel && S.field === -1 ? " trh-fcur" : ""}${it.tip ? " trh-term" : ""}`;
     return `<div class="${cls.join(" ")}" data-idx="${idx}" ${pad}>
       <span class="trh-badge">${BADGE[it.state]}</span>
-      ${key(-1)}<span class="${labelCls}" data-idx="${idx}" data-field="-1"${it.tip ? ` data-tip="${esc(it.tip)}"` : ""}>${esc(it.label || (it.fields.length ? "…" : it.raw))}</span>
+      ${key(-1)}<span class="${labelCls}" data-idx="${idx}" data-field="-1"${it.tip ? ` data-tip="${esc(it.tip)}"` : ""}>${esc(it.label || (it.fields.length ? "…" : it.raw))}${
+        inline ? ` (<i>${esc(it.text)}</i>)` : ""
+      }</span>
       ${chips}${kids[idx] && !isOpen(it) ? `<span class="trh-kids">+${kids[idx]}</span>` : ""}${
         note ? `<div class="trh-note${root ? " trh-sum" : ""}">${esc(note)}</div>` : ""
       }
@@ -1597,8 +1988,18 @@
   /* Compte rendu pane only: also called on its own while typing in the header
    * fields, where re-rendering the list would steal their focus. */
   function renderLines() {
+    const T = S.text;
+    S.root.classList.toggle("trh-textmode", !!T);
+    if (T) textClamp();
     S.root.querySelector(".trh-lines").innerHTML = report()
-      .map((l) => `<div class="trh-line${l.heading ? " trh-h" : ""}${l.idx === S.cur ? " trh-lcur" : ""}" data-idx="${l.idx}">${esc(l.text) || "&nbsp;"}</div>`)
+      .map(
+        (l, li) =>
+          `<div class="trh-line${l.heading ? " trh-h" : ""}${l.idx === S.cur ? " trh-lcur" : ""}" data-idx="${l.idx}">${lineHtml(
+            l,
+            T && li === T.line ? T.col : null,
+            T && T.ins
+          )}</div>`
+      )
       .join("");
   }
 
@@ -1731,6 +2132,8 @@
   .trh-chip{display:inline-block;margin:.1em .2em;padding:0 .4em;border:1px solid var(--border);border-radius:10px;font-size:.9em;color:var(--muted);
     max-width:100%;box-sizing:border-box;overflow-wrap:anywhere} /* long fields wrap instead of widening the row */
   .trh-vert .trh-chip{display:block;width:fit-content;margin-left:1.6em}
+  /* Options of a choice: one level below its label (a sub notion step is 1.5em). */
+  .trh-vert.trh-choice .trh-chip{margin-left:3.1em}
 .trh-picked{background:var(--ok-bg);border-color:var(--ok);color:var(--ok-fg)}
   .trh-neg{background:var(--neg-bg);border-color:var(--neg);color:var(--neg-fg)}
   .trh-fcur{outline:2px solid var(--accent)}
@@ -1739,6 +2142,11 @@
   .trh-free{color:var(--accent)}
   .trh-line{cursor:pointer}
   .trh-line:hover,.trh-lcur{background:var(--cur)}
+  .trh-textmode .trh-lines{outline:2px solid var(--accent)}
+  .trh-tc{background:var(--accent);color:var(--panel)}
+  .trh-ti{box-shadow:inset 2px 0 var(--accent)}
+  .trh-textmode .trh-pd{color:var(--accent)}
+  .trh-textmode .trh-pn{text-decoration:underline dotted}
   .trh-h{font-weight:bold}
   .trh-prompt{padding:.5em;border-top:2px solid var(--accent);background:var(--panel);display:flex;gap:.5em;align-items:center}
   /* Author display:flex above would override the hidden attribute without this. */
@@ -1799,20 +2207,20 @@
    * everything the keyboard can. */
   const TOOLBAR = [
     ["toggleBar", "toggleReport"], // first group: kept when the toolbar is collapsed
-    ["up", "down", "left", "right", "prevSibling", "nextSibling", "parent", "child", "prevSection", "nextSection", "first", "last"],
+    ["up", "down", "parent", "child", "prevSibling", "nextSibling", "prevSection", "nextSection", "first", "last"],
     ["add", "addText", "negative", "exclude", "yesDetail", "noDetail", "pick", "freeAbove", "freeBelow"],
     ["toggleFold", "foldAll", "toggleHidden"],
     Object.keys(PRESETS).map((id) => `preset-${id}`),
-    ["header", "search", "undo", "copy", "toggleMode", "tutorial", "help", "close"],
+    ["header", "search", "undo", "redo", "copy", "toggleMode", "tutorial", "help", "close"],
   ];
 
   /* Symbol labels used instead of the full labels on phones, where the full
    * toolbar would not fit. The full label stays available as aria-label. */
   const SHORT = {
-    up: "↑", down: "↓", left: "←", right: "→", prevSibling: "⇡", nextSibling: "⇣", parent: "⇠", child: "⇢", prevSection: "⇞", nextSection: "⇟", first: "⤒", last: "⤓",
+    up: "↑", down: "↓", prevSibling: "⇡", nextSibling: "⇣", parent: "←", child: "→", prevSection: "⇞", nextSection: "⇟", first: "⤒", last: "⤓",
     add: "✓", addText: "✓✎", negative: "¬", exclude: "✗", yesDetail: "✓(", noDetail: "¬(", pick: "▤", freeAbove: "✎↑", freeBelow: "✎↓",
     toggleFold: "▾", foldAll: "▸▸", toggleHidden: "👁", toggleBar: "☰", toggleReport: "▤",
-    header: "📅", search: "🔍", undo: "↶", copy: "⧉", toggleMode: "⌨", tutorial: "🎓", help: "?", close: "✕",
+    header: "📅", search: "🔍", undo: "↶", redo: "↷", copy: "⧉", toggleMode: "⌨", tutorial: "🎓", help: "?", close: "✕",
     ...Object.fromEntries(Object.entries(PRESETS).map(([id, p]) => [`preset-${id}`, p.short])),
   };
 
@@ -1858,8 +2266,14 @@
     root.addEventListener("click", (e) => {
       const tourBtn = e.target.closest("[data-tour]");
       if (tourBtn) return tourDo(tourBtn.dataset.tour === "next" ? tourNext : tourEnd);
+      S.text = null; // the mouse leaves the keyboard editing of the compte rendu
       const btn = e.target.closest("[data-action]");
-      if (btn) return dispatch(btn.dataset.action);
+      if (btn) {
+        // A mouse click (detail > 0) must not leave the keyboard on the
+        // toolbar, where keys only move between buttons (see onKey).
+        if (e.detail) btn.blur();
+        return dispatch(btn.dataset.action);
+      }
       const fold = e.target.closest("[data-fold]");
       if (fold && !S.prompt) {
         S.cur = Number(fold.dataset.fold);
@@ -1895,12 +2309,12 @@
       form.querySelector("input").blur();
       if (value !== null) {
         // Search does not modify the compte rendu, so it should not fill the undo stack.
-        if (!/^Rechercher/.test(p.label)) snapshot();
+        if (!/^Rechercher/.test(p.label) && !p.undoBefore) snapshot();
         p.onDone(value.trim());
-      } else if (p.label === "Texte libre" && cur().kind === "free" && !cur().text) {
-        // Cancelled a brand new free text: remove the empty placeholder.
-        S.items.splice(S.cur, 1);
-        S.cur = Math.min(S.cur, S.items.length - 1);
+      } else if (p.undoBefore) {
+        // Escape cancels the whole operation, see undoablePrompt.
+        Object.assign(S, JSON.parse(p.undoBefore));
+        S.undo.pop();
       }
       render();
     };
