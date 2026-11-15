@@ -789,9 +789,12 @@
     }
   }
 
-  /* One level down: the first displayed child item (sub section, notion or
-   * detail), or else the first field of the notion. */
+  /* One level down: the first field of the notion (shown right below its
+   * label), or else its first displayed child item (sub section, notion or
+   * detail). A field has nothing below it. */
   function child() {
+    if (S.field >= 0) return;
+    if (cur().kind === "notion" && cur().fields.length) return void (S.field = 0);
     const { vis, nest } = visibility();
     const r = rankOf(S.cur, nest);
     for (let i = S.cur + 1; i < S.items.length && S.items[i].kind !== "checklist"; i++) {
@@ -969,23 +972,10 @@
   const ACTIONS = {
     up: { label: "Précédent", tip: "Remonte d'une ligne ou d'un champ de la notion sélectionnée (les lignes masquées ou repliées sont sautées).", run: () => step(-1) },
     down: { label: "Suivant", tip: "Descend d'une ligne ; sur la notion sélectionnée, passe d'abord par ses champs, affichés l'un sous l'autre (les lignes masquées ou repliées sont sautées).", run: () => step(1) },
-    left: {
-      label: "Champ précédent",
-      tip: "Sélectionne le champ (pastille) précédent ; tout à gauche, la notion elle-même.",
-      run: () => (S.field = Math.max(-1, S.field - 1)),
-    },
-    right: {
-      label: "Champ suivant",
-      tip: "Sélectionne le champ (pastille) suivant de la notion.",
-      run: () => {
-        const f = cur().fields;
-        if (f) S.field = Math.min(f.length - 1, S.field + 1);
-      },
-    },
     prevSibling: { label: "Frère précédent", tip: "Remonte au titre ou à la notion précédente de même niveau (ou au niveau parent s'il n'y en a plus), en sautant les détails.", run: () => sibling(-1) },
     nextSibling: { label: "Frère suivant", tip: "Descend au titre ou à la notion suivante de même niveau (ou au niveau parent après la dernière), en sautant les détails et les champs.", run: () => sibling(1) },
     parent: { label: "Niveau parent", tip: "Remonte d'un niveau : du champ à sa notion, de la notion à sa notion parente ou à sa section, de la section à sa partie.", run: parent },
-    child: { label: "Niveau enfant", tip: "Descend d'un niveau : de la partie à sa première section, de la section à sa première notion, de la notion à son premier détail ou à son premier champ.", run: child },
+    child: { label: "Niveau enfant", tip: "Descend d'un niveau : de la partie à sa première section, de la section à sa première notion, de la notion à son premier champ ou, sans champ, à son premier détail.", run: child },
     prevSection: { label: "Section précédente", tip: "Va au titre de la section précédente.", run: () => nextSection(-1) },
     nextSection: { label: "Section suivante", tip: "Va au titre de la section suivante.", run: () => nextSection(1) },
     first: { label: "Début", tip: "Va à la première ligne de la trame.", run: () => ((S.cur = 0), (S.field = -1)) },
@@ -1380,12 +1370,10 @@
   const BASIC_KEYS = {
     ArrowUp: "up",
     ArrowDown: "down",
-    ArrowLeft: "left",
-    ArrowRight: "right",
+    ArrowLeft: "parent",
+    ArrowRight: "child",
     "S-ArrowUp": "prevSibling",
     "S-ArrowDown": "nextSibling",
-    "S-ArrowLeft": "parent",
-    "S-ArrowRight": "child",
     PageUp: "prevSection",
     PageDown: "nextSection",
     Home: "first",
@@ -1416,12 +1404,10 @@
   const VIM_KEYS = {
     k: "up",
     j: "down",
-    h: "left",
-    l: "right",
+    h: "parent",
+    l: "child",
     K: "prevSibling",
     J: "nextSibling",
-    H: "parent",
-    L: "child",
     "g g": "first",
     "z a": "toggleFold",
     "z A": "foldAll",
@@ -1840,7 +1826,7 @@
    * everything the keyboard can. */
   const TOOLBAR = [
     ["toggleBar", "toggleReport"], // first group: kept when the toolbar is collapsed
-    ["up", "down", "left", "right", "prevSibling", "nextSibling", "parent", "child", "prevSection", "nextSection", "first", "last"],
+    ["up", "down", "parent", "child", "prevSibling", "nextSibling", "prevSection", "nextSection", "first", "last"],
     ["add", "addText", "negative", "exclude", "yesDetail", "noDetail", "pick", "freeAbove", "freeBelow"],
     ["toggleFold", "foldAll", "toggleHidden"],
     Object.keys(PRESETS).map((id) => `preset-${id}`),
@@ -1850,7 +1836,7 @@
   /* Symbol labels used instead of the full labels on phones, where the full
    * toolbar would not fit. The full label stays available as aria-label. */
   const SHORT = {
-    up: "↑", down: "↓", left: "←", right: "→", prevSibling: "⇡", nextSibling: "⇣", parent: "⇠", child: "⇢", prevSection: "⇞", nextSection: "⇟", first: "⤒", last: "⤓",
+    up: "↑", down: "↓", prevSibling: "⇡", nextSibling: "⇣", parent: "←", child: "→", prevSection: "⇞", nextSection: "⇟", first: "⤒", last: "⤓",
     add: "✓", addText: "✓✎", negative: "¬", exclude: "✗", yesDetail: "✓(", noDetail: "¬(", pick: "▤", freeAbove: "✎↑", freeBelow: "✎↓",
     toggleFold: "▾", foldAll: "▸▸", toggleHidden: "👁", toggleBar: "☰", toggleReport: "▤",
     header: "📅", search: "🔍", undo: "↶", redo: "↷", copy: "⧉", toggleMode: "⌨", tutorial: "🎓", help: "?", close: "✕",
