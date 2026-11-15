@@ -995,6 +995,276 @@
     flash("Compte rendu copié");
   }
 
+  // ------------------------------------------------------------------ text pane
+
+  /* Keyboard editing of the compte rendu (Tab from the list), with basic vim
+   * keys. The text is generated, so only what the user typed can be edited:
+   * the detail of a slot (in parentheses), the text of a notion, a free text
+   * or the text under a section title (pieces of role "detail", see P).
+   * Deleting a slot name unanswers the slot. Every edit changes the answers
+   * and the text is rebuilt from them, so the list and the text stay in sync.
+   * S.text = {line, col, pending, ins}: cursor (line of report(), column),
+   * first key of a sequence ("d", "c i"...), and while typing ins = {ref,
+   * off, dirty}: the detail being edited (ref = {idx, field}) and the cursor
+   * offset inside it. Example: on "- Hallucinations : adhésion (totale)",
+   * the cursor on "t" of "totale" then "x" gives "(otale)"; "x" on
+   * "adhésion" unpicks adhésion. */
+  const WORD = /[\p{L}\p{N}]/u;
+  const sameSlot = (p, ref) => p.idx === ref.idx && p.field === ref.field;
+
+  // Piece of line `l` under column `col`, with its start column, or null.
+  function pieceAt(l, col) {
+    let s = 0;
+    for (const p of l.pieces) {
+      if (col < s + p.t.length) return { p, start: s };
+      s += p.t.length;
+    }
+    return null;
+  }
+
+  // Line and column of the piece of `role` for slot `ref` (+ off), or null.
+  function locate(ref, role, off) {
+    const ls = report();
+    for (let li = 0; li < ls.length; li++) {
+      let s = 0;
+      for (const p of ls[li].pieces) {
+        if (p.role === role && sameSlot(p, ref)) return { line: li, col: s + Math.min(off, p.t.length) };
+        s += p.t.length;
+      }
+    }
+    return null;
+  }
+
+  // Slot whose detail a piece edits: a choice keeps one detail for all its options.
+  function detailRef(p) {
+    const it = S.items[p.idx];
+    return { idx: p.idx, field: p.role === "name" && it.choice ? -1 : p.field };
+  }
+  const detailOf = (r) => (r.field >= 0 ? S.items[r.idx].fields[r.field].value : S.items[r.idx].text) || "";
+  function setDetail(r, v) {
+    const it = S.items[r.idx];
+    if (r.field >= 0) Object.assign(it.fields[r.field], { value: v }, v ? { picked: true } : {});
+    else {
+      it.text = v;
+      if (v && it.kind === "notion" && (it.state === "pending" || it.state === "excluded")) it.state = "as_is";
+    }
+  }
+
+  // Unanswer the slot of a "name" piece: unpick the field, or reset the notion.
+  function unanswer(p) {
+    const it = S.items[p.idx];
+    if (p.field >= 0) Object.assign(it.fields[p.field], { picked: false, neg: false });
+    else Object.assign(it, { state: "pending", text: "" }), it.fields.forEach((f) => (f.picked = f.neg = false));
+  }
+
+  /* Put the text cursor on the line of the selected item (on its selected
+   * field if it is in the text), when coming from the list. */
+  function textEnter() {
+    S.hideReport = false;
+    const ls = report();
+    let best = null;
+    ls.forEach((l, li) => {
+      let s = 0;
+      for (const p of l.pieces) {
+        if (p.idx === S.cur && (!best || (p.field === S.field && !best.exact))) best = { line: li, col: s, exact: p.field === S.field };
+        s += p.t.length;
+      }
+      if (!best && l.idx === S.cur) best = { line: li, col: 0 };
+    });
+    if (!best) best = { line: Math.max(0, ls.findLastIndex((l) => l.idx >= 0 && l.idx <= S.cur)), col: 0 };
+    S.text = { line: best.line, col: best.col, pending: "", ins: null };
+  }
+
+  // The list follows the text cursor: select the notion (and field) under it.
+  function textSync() {
+    const l = report()[S.text.line];
+    if (!l) return;
+    const at = pieceAt(l, S.text.col);
+    const p = at && at.p.idx !== undefined ? at.p : null;
+    const idx = p ? p.idx : l.idx;
+    if (idx < 0) return;
+    const field = p && S.items[idx].kind === "notion" ? p.field : -1;
+    jumpTo(idx, field);
+  }
+
+  // Keep the cursor inside the text after a change (undo, unanswered slot...).
+  function textClamp() {
+    const ls = report();
+    const T = S.text;
+    T.line = Math.max(0, Math.min(T.line, ls.length - 1));
+    const len = ls.length ? ls[T.line].text.length : 0;
+    T.col = Math.max(0, Math.min(T.col, T.ins ? len : len - 1));
+  }
+
+  // Next (dir 1) or previous (dir -1) start of a word, across lines.
+  function wordMove(dir) {
+    const ls = report().map((l) => l.text + "\n");
+    const T = S.text;
+    const isW = (li, c) => WORD.test(ls[li][c] || "");
+    let li = T.line;
+    let c = T.col;
+    const adv = () => {
+      c += dir;
+      if (c < 0) {
+        if (li === 0) return false;
+        li--, (c = ls[li].length - 1);
+      } else if (c >= ls[li].length) {
+        if (li === ls.length - 1) return false;
+        li++, (c = 0);
+      }
+      return true;
+    };
+    if (dir > 0) {
+      while (isW(li, c) && adv());
+      while (!isW(li, c) && adv());
+    } else {
+      adv();
+      while (!isW(li, c) && adv());
+      while (c > 0 && isW(li, c - 1)) c--;
+    }
+    if (isW(li, c)) (T.line = li), (T.col = c);
+  }
+
+  /* Start typing into the detail of the slot under the cursor, at offset
+   * `where` ("before" / "after" the cursor; a slot name types at the end of
+   * its detail). Generated words cannot be edited. */
+  function textInsert(where, clear = false) {
+    const l = report()[S.text.line];
+    const at = l && pieceAt(l, S.text.col);
+    if (!at || !at.p.role) return flash("Texte généré : non modifiable (seuls les détails le sont)");
+    const ref = detailRef(at.p);
+    if (clear) snapshot(), setDetail(ref, "");
+    const len = detailOf(ref).length;
+    const off = clear ? 0 : at.p.role === "detail" ? S.text.col - at.start + (where === "after" ? 1 : 0) : len;
+    S.text.ins = { ref, off: Math.min(off, len), dirty: clear };
+  }
+
+  // Cursor position while typing: in the detail, or after the slot name while it is empty.
+  function textInsCursor() {
+    const { ref, off } = S.text.ins;
+    const pos = locate(ref, "detail", off) || locate(ref, "name", Infinity);
+    if (pos) Object.assign(S.text, pos);
+  }
+
+  function insertKey(e, k) {
+    const I = S.text.ins;
+    const v = detailOf(I.ref);
+    const edit = (nv, off) => {
+      if (!I.dirty) snapshot(), (I.dirty = true); // one undo for the whole typing
+      setDetail(I.ref, nv);
+      I.off = off;
+    };
+    if (k === "Escape" || k === "Enter") S.text.ins = null;
+    else if (k === "Backspace") I.off > 0 && edit(v.slice(0, I.off - 1) + v.slice(I.off), I.off - 1);
+    else if (k === "Delete") I.off < v.length && edit(v.slice(0, I.off) + v.slice(I.off + 1), I.off);
+    else if (k === "ArrowLeft") I.off = Math.max(0, I.off - 1);
+    else if (k === "ArrowRight") I.off = Math.min(v.length, I.off + 1);
+    else if (e.key.length === 1 && !e.ctrlKey && !e.metaKey) edit(v.slice(0, I.off) + e.key + v.slice(I.off), I.off + 1);
+    else return;
+    e.preventDefault();
+    if (S.text.ins) textInsCursor();
+    else S.text.col--; // like vim, leaving insert mode steps back onto the last typed character
+    fixCur();
+    render();
+  }
+
+  /* Keys of the text pane in normal mode. Sequences are written "d w",
+   * "c i (" like in the keymaps. */
+  const TEXT_KEYS = {
+    h: () => S.text.col--,
+    ArrowLeft: () => S.text.col--,
+    l: () => S.text.col++,
+    ArrowRight: () => S.text.col++,
+    j: () => S.text.line++,
+    ArrowDown: () => S.text.line++,
+    k: () => S.text.line--,
+    ArrowUp: () => S.text.line--,
+    w: () => wordMove(1),
+    b: () => wordMove(-1),
+    0: () => (S.text.col = 0),
+    Home: () => (S.text.col = 0),
+    $: () => (S.text.col = Infinity),
+    End: () => (S.text.col = Infinity),
+    "g g": () => (S.text.line = 0),
+    G: () => (S.text.line = Infinity),
+    i: () => textInsert("before"),
+    a: () => textInsert("after"),
+    "c i (": () => textInsert("before", true),
+    "c i )": () => textInsert("before", true),
+    "d i (": () => {
+      textInsert("before", true);
+      S.text.ins = null;
+    },
+    x: () => textDelete(false),
+    Delete: () => textDelete(false),
+    "d w": () => textDelete(true),
+    u: () => ACTIONS.undo.run(),
+    "C-z": () => ACTIONS.undo.run(),
+    R: () => ACTIONS.redo.run(),
+    "C-y": () => ACTIONS.redo.run(),
+  };
+  TEXT_KEYS["d i )"] = TEXT_KEYS["d i ("];
+
+  /* x (one character) or d w (to the end of the word) on a detail; on a slot
+   * name, both unanswer the slot. */
+  function textDelete(word) {
+    const l = report()[S.text.line];
+    const at = l && pieceAt(l, S.text.col);
+    if (!at || !at.p.role) return flash("Texte généré : non modifiable (seuls les détails le sont)");
+    snapshot();
+    if (at.p.role === "name") return unanswer(at.p);
+    const ref = detailRef(at.p);
+    const v = detailOf(ref);
+    const off = S.text.col - at.start;
+    let end = off + 1;
+    if (word) {
+      while (end < v.length && WORD.test(v[end]) && WORD.test(v[off])) end++;
+      while (end < v.length && v[end] === " ") end++;
+    }
+    setDetail(ref, v.slice(0, off) + v.slice(end));
+    const pos = locate(ref, "detail", off);
+    if (pos) Object.assign(S.text, pos);
+  }
+
+  function textKey(e) {
+    const T = S.text;
+    const k = keyName(e);
+    if (T.ins) return insertKey(e, k);
+    if (/^(Shift|Control|Alt|Meta)$/.test(e.key)) return;
+    if (k === "Tab" || k === "Escape") {
+      e.preventDefault();
+      S.text = null;
+      return render();
+    }
+    e.preventDefault();
+    const seq = T.pending ? `${T.pending} ${k}` : k;
+    T.pending = "";
+    if (Object.keys(TEXT_KEYS).some((s) => s.startsWith(seq + " "))) return void (T.pending = seq);
+    if (!TEXT_KEYS[seq]) return;
+    TEXT_KEYS[seq]();
+    if (T.ins) textInsCursor();
+    textClamp();
+    textSync();
+    fixCur();
+    render();
+  }
+
+  /* HTML of report line `l`: pieces in spans styled by role (in the text
+   * pane), and the text cursor at column `col` (null: none). */
+  function lineHtml(l, col, ins) {
+    const cursor = (c) => `<span class="${ins ? "trh-ti" : "trh-tc"}">${c}</span>`;
+    let s = 0;
+    let out = "";
+    for (const p of l.pieces) {
+      const o = col === null ? -1 : col - s;
+      const inner = o >= 0 && o < p.t.length ? esc(p.t.slice(0, o)) + cursor(esc(p.t[o])) + esc(p.t.slice(o + 1)) : esc(p.t);
+      out += S.text && p.role ? `<span class="trh-p${p.role[0]}">${inner}</span>` : inner;
+      s += p.t.length;
+    }
+    if (col !== null && col >= s) out += cursor("&nbsp;");
+    return out || "&nbsp;";
+  }
+
   function flash(msg) {
     const el = S.root.querySelector(".trh-flash");
     el.textContent = msg;
@@ -1192,6 +1462,11 @@
         const b = barButtons()[0];
         if (b) b.focus();
       },
+    },
+    textMode: {
+      label: "Aller au compte rendu",
+      tip: "Met le clavier dans le compte rendu : h j k l, w b, 0 $ pour se déplacer, i a pour écrire dans un détail (entre parenthèses), c i ( pour le réécrire, x ou d w pour effacer (sur un nom de case : la décoche), u pour annuler. Le texte généré n'est pas modifiable. Tab ou Échap pour revenir à la trame.",
+      run: textEnter,
     },
     copy: { label: "Copier le CR", tip: "Copie le compte rendu dans le presse-papiers.", run: copyReport },
     header: {
@@ -1452,6 +1727,7 @@
     // Chrome on Linux and Windows keeps Shift+Escape (its task manager): F8 also works.
     "S-Escape": "focusBar",
     F8: "focusBar",
+    Tab: "textMode",
     Escape: "close",
   };
   const VIM_KEYS = {
@@ -1524,6 +1800,9 @@
       else return;
       return e.preventDefault();
     }
+    // Keyboard in the compte rendu (see the "textMode" action); help keys still open the help.
+    const helpKey = e.key === "F1" || e.key === "?";
+    if (S.text && (S.text.ins || (!helpKey && !S.root.classList.contains("trh-help-open")))) return textKey(e);
     // Second key of the slot jump ("f" then a letter, see the "slot" action).
     if (S.slotJump && !/^(Shift|Control|Alt|Meta)$/.test(e.key)) {
       const s = S.slotJump.find((x) => x.letter === e.key);
@@ -1709,8 +1988,18 @@
   /* Compte rendu pane only: also called on its own while typing in the header
    * fields, where re-rendering the list would steal their focus. */
   function renderLines() {
+    const T = S.text;
+    S.root.classList.toggle("trh-textmode", !!T);
+    if (T) textClamp();
     S.root.querySelector(".trh-lines").innerHTML = report()
-      .map((l) => `<div class="trh-line${l.heading ? " trh-h" : ""}${l.idx === S.cur ? " trh-lcur" : ""}" data-idx="${l.idx}">${esc(l.text) || "&nbsp;"}</div>`)
+      .map(
+        (l, li) =>
+          `<div class="trh-line${l.heading ? " trh-h" : ""}${l.idx === S.cur ? " trh-lcur" : ""}" data-idx="${l.idx}">${lineHtml(
+            l,
+            T && li === T.line ? T.col : null,
+            T && T.ins
+          )}</div>`
+      )
       .join("");
   }
 
@@ -1853,6 +2142,11 @@
   .trh-free{color:var(--accent)}
   .trh-line{cursor:pointer}
   .trh-line:hover,.trh-lcur{background:var(--cur)}
+  .trh-textmode .trh-lines{outline:2px solid var(--accent)}
+  .trh-tc{background:var(--accent);color:var(--panel)}
+  .trh-ti{box-shadow:inset 2px 0 var(--accent)}
+  .trh-textmode .trh-pd{color:var(--accent)}
+  .trh-textmode .trh-pn{text-decoration:underline dotted}
   .trh-h{font-weight:bold}
   .trh-prompt{padding:.5em;border-top:2px solid var(--accent);background:var(--panel);display:flex;gap:.5em;align-items:center}
   /* Author display:flex above would override the hidden attribute without this. */
@@ -1972,6 +2266,7 @@
     root.addEventListener("click", (e) => {
       const tourBtn = e.target.closest("[data-tour]");
       if (tourBtn) return tourDo(tourBtn.dataset.tour === "next" ? tourNext : tourEnd);
+      S.text = null; // the mouse leaves the keyboard editing of the compte rendu
       const btn = e.target.closest("[data-action]");
       if (btn) {
         // A mouse click (detail > 0) must not leave the keyboard on the
