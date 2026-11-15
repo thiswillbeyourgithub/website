@@ -1143,6 +1143,15 @@
       run: () => restore(S.undo, S.redo, "Rien à annuler"),
     },
     redo: { label: "Rétablir", tip: "Rétablit la dernière modification annulée.", run: () => restore(S.redo, S.undo, "Rien à rétablir") },
+    focusBar: {
+      label: "Aller aux boutons",
+      tip: "Met le clavier sur la barre de boutons : flèches ou h j k l pour se déplacer, Entrée ou Espace pour appuyer, Échap pour revenir à la trame.",
+      run: () => {
+        S.hideBar = false;
+        const b = barButtons()[0];
+        if (b) b.focus();
+      },
+    },
     copy: { label: "Copier le CR", tip: "Copie le compte rendu dans le presse-papiers.", run: copyReport },
     header: {
       label: "En-tête",
@@ -1399,6 +1408,9 @@
     F1: "help",
     "?": "help", // not a letter, so harmless in basic mode
     F4: "header",
+    // Chrome on Linux and Windows keeps Shift+Escape (its task manager): F8 also works.
+    "S-Escape": "focusBar",
+    F8: "focusBar",
     Escape: "close",
   };
   const VIM_KEYS = {
@@ -1414,6 +1426,7 @@
     "z h": "toggleHidden",
     "z r": "toggleReport",
     "z b": "toggleBar",
+    "z m": "focusBar",
     ...Object.fromEntries(Object.keys(PRESETS).map((id, i) => [`z ${i + 1}`, `preset-${id}`])),
     G: "last",
     a: "addText",
@@ -1460,6 +1473,16 @@
       return e.preventDefault();
     }
     if (e.target.closest && e.target.closest(".trh-head")) return; // typing in the header fields
+    // Keyboard on the toolbar (see the "focusBar" action): Enter and Space
+    // press the button natively, other keys do not reach the trame.
+    const btn = e.target.closest && e.target.closest(".trh-bar button");
+    if (btn) {
+      const dir = BAR_KEYS[e.key];
+      if (dir) barMove(btn, dir);
+      else if (e.key === "Escape") btn.blur();
+      else return;
+      return e.preventDefault();
+    }
     // Second key of the slot jump ("f" then a letter, see the "slot" action).
     if (S.slotJump && !/^(Shift|Control|Alt|Meta)$/.test(e.key)) {
       const s = S.slotJump.find((x) => x.letter === e.key);
@@ -1497,6 +1520,29 @@
     if (!action) return;
     e.preventDefault();
     dispatch(action);
+  }
+
+  const BAR_KEYS = { ArrowLeft: "left", h: "left", ArrowRight: "right", l: "right", ArrowUp: "up", k: "up", ArrowDown: "down", j: "down" };
+
+  // Toolbar buttons currently displayed (the collapsed toolbar or the phone layout hide some).
+  const barButtons = () => [...S.root.querySelectorAll(".trh-bar button")].filter((b) => b.offsetParent);
+
+  /* Move the keyboard focus from toolbar button `btn` to its neighbour on
+   * screen: left / right in reading order, up / down to the closest button
+   * (horizontally) of the previous / next row, since the buttons wrap on
+   * several rows. */
+  function barMove(btn, dir) {
+    const all = barButtons();
+    const i = all.indexOf(btn);
+    if (dir === "left" || dir === "right") return void (all[i + (dir === "left" ? -1 : 1)] || btn).focus();
+    const box = (b) => b.getBoundingClientRect();
+    const r = box(btn);
+    const mid = (x) => x.left + x.width / 2;
+    const rows = all.filter((b) => (dir === "down" ? box(b).top > r.bottom - 2 : box(b).bottom < r.top + 2));
+    if (!rows.length) return;
+    const top = dir === "down" ? Math.min(...rows.map((b) => box(b).top)) : Math.max(...rows.map((b) => box(b).top));
+    const row = rows.filter((b) => Math.abs(box(b).top - top) < 2);
+    row.sort((a, b) => Math.abs(mid(box(a)) - mid(r)) - Math.abs(mid(box(b)) - mid(r)))[0].focus();
   }
 
   /* Highlight the rows of the help table bound to key `k` (exact key name, or
@@ -1886,7 +1932,12 @@
       const tourBtn = e.target.closest("[data-tour]");
       if (tourBtn) return tourDo(tourBtn.dataset.tour === "next" ? tourNext : tourEnd);
       const btn = e.target.closest("[data-action]");
-      if (btn) return dispatch(btn.dataset.action);
+      if (btn) {
+        // A mouse click (detail > 0) must not leave the keyboard on the
+        // toolbar, where keys only move between buttons (see onKey).
+        if (e.detail) btn.blur();
+        return dispatch(btn.dataset.action);
+      }
       const fold = e.target.closest("[data-fold]");
       if (fold && !S.prompt) {
         S.cur = Number(fold.dataset.fold);
