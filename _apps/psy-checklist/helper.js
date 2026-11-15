@@ -679,8 +679,7 @@
    * notion" after a decision. */
   function step(dir) {
     const it = cur();
-    // The options of a phrase choice are laid out in a row: left / right only.
-    const vertical = (x) => x.kind === "notion" && !x.choice;
+    const vertical = (x) => x.kind === "notion";
     const n = vertical(it) ? it.fields.length : 0;
     if (dir > 0 && S.field < n - 1) return void S.field++;
     if (dir < 0 && S.field > -1 && vertical(it)) return void S.field--;
@@ -1599,11 +1598,14 @@
     // A phrase notion (see phraseText): its top row shows the sentence made so
     // far; its slots (fields one per line, sub notions) only while the cursor
     // is in it, each with its jump letter (see the "slot" action).
+    // The options of a choice also go one per line, below its label, e.g.
+    // "[t] thème (dit être le fils de Jésus)" then "· persécution", "✓ mystique".
     const root = phraseRoot(idx, v.parent) === idx;
     const slotted = root && v.active === idx;
+    const inPhrase = v.active >= 0 && phraseRoot(idx, v.parent) === v.active;
     const key = (field) => (v.letters.has(`${idx}:${field}`) ? `<span class="trh-key">${v.letters.get(`${idx}:${field}`)}</span>` : "");
-    const glyph = (f) => (slotted ? `${f.picked ? (f.neg ? "✗" : "✓") : "·"} ` : "");
-    cls.push(`trh-st-${it.state}`, notionIncluded(it) ? "trh-in" : "", (sel || slotted) && it.fields.length && !it.choice ? "trh-vert" : "");
+    const glyph = (f) => (inPhrase ? `${f.picked ? (f.neg ? "✗" : "✓") : "·"} ` : "");
+    cls.push(`trh-st-${it.state}`, notionIncluded(it) ? "trh-in" : "", (sel || inPhrase) && it.fields.length ? "trh-vert" : "", it.choice ? "trh-choice" : "");
     const chips =
       root && !slotted && notionIncluded(it)
         ? ""
@@ -1615,11 +1617,16 @@
               return `<span class="${c.join(" ")}" data-idx="${idx}" data-field="${fi}"${f.tip ? ` data-tip="${esc(f.tip)}"` : ""}>${key(fi)}${glyph(f)}${esc(f.name)}${value}</span>`;
             })
             .join("");
-    const note = root ? phraseOf(S.items, subNotions(S.items, v.parent), idx, true) : it.text;
+    // The detail of a phrase slot is written to the right of its label, in
+    // parentheses as in the compte rendu; other details go on a line below.
+    const inline = it.phrase && !root && it.text;
+    const note = root ? phraseOf(S.items, subNotions(S.items, v.parent), idx, true) : inline ? "" : it.text;
     const labelCls = `trh-label${sel && S.field === -1 ? " trh-fcur" : ""}${it.tip ? " trh-term" : ""}`;
     return `<div class="${cls.join(" ")}" data-idx="${idx}" ${pad}>
       <span class="trh-badge">${BADGE[it.state]}</span>
-      ${key(-1)}<span class="${labelCls}" data-idx="${idx}" data-field="-1"${it.tip ? ` data-tip="${esc(it.tip)}"` : ""}>${esc(it.label || (it.fields.length ? "…" : it.raw))}</span>
+      ${key(-1)}<span class="${labelCls}" data-idx="${idx}" data-field="-1"${it.tip ? ` data-tip="${esc(it.tip)}"` : ""}>${esc(it.label || (it.fields.length ? "…" : it.raw))}${
+        inline ? ` (<i>${esc(it.text)}</i>)` : ""
+      }</span>
       ${chips}${kids[idx] && !isOpen(it) ? `<span class="trh-kids">+${kids[idx]}</span>` : ""}${
         note ? `<div class="trh-note${root ? " trh-sum" : ""}">${esc(note)}</div>` : ""
       }
@@ -1763,6 +1770,8 @@
   .trh-chip{display:inline-block;margin:.1em .2em;padding:0 .4em;border:1px solid var(--border);border-radius:10px;font-size:.9em;color:var(--muted);
     max-width:100%;box-sizing:border-box;overflow-wrap:anywhere} /* long fields wrap instead of widening the row */
   .trh-vert .trh-chip{display:block;width:fit-content;margin-left:1.6em}
+  /* Options of a choice: one level below its label (a sub notion step is 1.5em). */
+  .trh-vert.trh-choice .trh-chip{margin-left:3.1em}
 .trh-picked{background:var(--ok-bg);border-color:var(--ok);color:var(--ok-fg)}
   .trh-neg{background:var(--neg-bg);border-color:var(--neg);color:var(--neg-fg)}
   .trh-fcur{outline:2px solid var(--accent)}
