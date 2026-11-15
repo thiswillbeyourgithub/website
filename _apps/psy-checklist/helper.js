@@ -526,6 +526,7 @@
     cur: 0, // index in items
     field: -1, // -1 = the notion itself, otherwise index of the selected field
     undo: [],
+    redo: [],
     lastSearch: "",
     mode: localStorage.getItem("trame-helper-mode") || "basic",
     pendingKey: "", // first key of a vim two key sequence ("g g", "z h"...)
@@ -547,9 +548,24 @@
 
   const report = () => buildReport(S.items, S.header);
 
+  const state = () => JSON.stringify({ items: S.items, cur: S.cur, field: S.field });
+
+  /* Save the state before a modification. A new modification drops the redo
+   * stack, like in any editor: after undo, undo, edit, "redo" has nothing to
+   * bring back. */
   function snapshot() {
-    S.undo.push(JSON.stringify({ items: S.items, cur: S.cur, field: S.field }));
+    S.undo.push(state());
     if (S.undo.length > 300) S.undo.shift();
+    S.redo = [];
+  }
+
+  /* Undo (from = S.undo, to = S.redo) or redo (the reverse): restore the last
+   * saved state of `from`, saving the current one on `to`. */
+  function restore(from, to, none) {
+    const prev = from.pop();
+    if (!prev) return flash(none);
+    to.push(state());
+    Object.assign(S, JSON.parse(prev));
   }
 
   const cur = () => S.items[S.cur];
@@ -821,16 +837,17 @@
   }
 
   function insertFree(offset) {
-    snapshot();
     const depth = cur().kind === "section" ? 0 : cur().depth;
     const at = S.cur + offset;
-    S.items.splice(at, 0, { kind: "free", depth, text: "" });
-    jumpTo(at);
-    ask("Texte libre", "", (v) => {
+    const insert = () => {
+      S.items.splice(at, 0, { kind: "free", depth, text: "" });
+      jumpTo(at);
+    };
+    undoablePrompt(insert, () => ask("Texte libre", "", (v) => {
       // An empty free text has no purpose: drop it so it does not clutter the list.
       if (v) cur().text = v;
       else S.items.splice(S.cur, 1), (S.cur = Math.min(S.cur, S.items.length - 1));
-    });
+    }));
   }
 
   /* Positive answer on notion `it`: on its selected field, picks it (or
@@ -870,6 +887,26 @@
       if (it.state === "excluded") it.state = "pending";
       if (after) after();
     });
+  }
+
+  /* "Oui + détail" / "Non + détail": `mark` answers the selected notion or
+   * slot, then the detail is asked. Answer and detail are one modification
+   * (one undo); Escape in the detail bar cancels both, back to the state
+   * before the key, e.g. A then Escape on an unanswered slot leaves it
+   * unanswered. */
+  function answerWithDetail(mark) {
+    undoablePrompt(mark, () => askDetail(() => step(1)));
+  }
+
+  /* Run `change` then open a text bar with `open` (which calls ask), as one
+   * modification: one undo entry for both, and Escape (or "Annuler") in the
+   * bar restores the state from before `change`. */
+  function undoablePrompt(change, open) {
+    const before = state();
+    snapshot();
+    change();
+    open();
+    S.prompt.undoBefore = before;
   }
 
   /* Pick an option of the phrase choice by typing: the typed text filters
@@ -979,9 +1016,7 @@
       tip: "Ajoute la notion ou la caractéristique sélectionnée et demande un détail, écrit entre parenthèses, puis passe à la suivante.",
       run: () => {
         if (cur().kind !== "notion") return ACTIONS.addText.run();
-        snapshot();
-        markYes(cur(), true);
-        askDetail(() => step(1));
+        answerWithDetail(() => markYes(cur(), true));
       },
     },
     noDetail: {
@@ -989,9 +1024,7 @@
       tip: "Met la notion ou la caractéristique sélectionnée au négatif (« pas de... », ou « non... ») et demande un détail, écrit entre parenthèses, puis passe à la suivante.",
       run: () => {
         if (cur().kind !== "notion") return;
-        snapshot();
-        markNo(cur());
-        askDetail(() => step(1));
+        answerWithDetail(() => markNo(cur()));
       },
     },
     pick: {
@@ -1118,12 +1151,9 @@
     undo: {
       label: "Annuler",
       tip: "Annule la dernière modification.",
-      run: () => {
-        const prev = S.undo.pop();
-        if (!prev) return flash("Rien à annuler");
-        Object.assign(S, JSON.parse(prev));
-      },
+      run: () => restore(S.undo, S.redo, "Rien à annuler"),
     },
+    redo: { label: "Rétablir", tip: "Rétablit la dernière modification annulée.", run: () => restore(S.redo, S.undo, "Rien à rétablir") },
     copy: { label: "Copier le CR", tip: "Copie le compte rendu dans le presse-papiers.", run: copyReport },
     header: {
       label: "En-tête",
@@ -1316,9 +1346,9 @@
   function tourStart() {
     if (S.tour) return;
     S.root.classList.remove("trh-help-open");
-    const { items, cur: c, field, undo, header, showHidden, preset } = S;
-    S.tour = { i: 0, saved: JSON.stringify({ items, cur: c, field, undo, header, showHidden, preset }) };
-    Object.assign(S, { items: parseTrame(S.md), cur: 0, field: -1, undo: [], showHidden: false, preset: null });
+    const { items, cur: c, field, undo, redo, header, showHidden, preset } = S;
+    S.tour = { i: 0, saved: JSON.stringify({ items, cur: c, field, undo, redo, header, showHidden, preset }) };
+    Object.assign(S, { items: parseTrame(S.md), cur: 0, field: -1, undo: [], redo: [], showHidden: false, preset: null });
     tourHeader({ moment: "", sex: "n", present: "" });
   }
 
@@ -1376,6 +1406,7 @@
     "C-b": "toggleBar",
     "C-f": "search",
     "C-z": "undo",
+    "C-y": "redo",
     "C-c": "copy",
     F2: "toggleMode",
     F1: "help",
@@ -1411,6 +1442,7 @@
     O: "freeAbove",
     "/": "search",
     u: "undo",
+    R: "redo",
     y: "copy",
     e: "header",
   };
@@ -1803,7 +1835,7 @@
     ["add", "addText", "negative", "exclude", "yesDetail", "noDetail", "pick", "freeAbove", "freeBelow"],
     ["toggleFold", "foldAll", "toggleHidden"],
     Object.keys(PRESETS).map((id) => `preset-${id}`),
-    ["header", "search", "undo", "copy", "toggleMode", "tutorial", "help", "close"],
+    ["header", "search", "undo", "redo", "copy", "toggleMode", "tutorial", "help", "close"],
   ];
 
   /* Symbol labels used instead of the full labels on phones, where the full
@@ -1812,7 +1844,7 @@
     up: "↑", down: "↓", left: "←", right: "→", prevSibling: "⇡", nextSibling: "⇣", parent: "⇠", child: "⇢", prevSection: "⇞", nextSection: "⇟", first: "⤒", last: "⤓",
     add: "✓", addText: "✓✎", negative: "¬", exclude: "✗", yesDetail: "✓(", noDetail: "¬(", pick: "▤", freeAbove: "✎↑", freeBelow: "✎↓",
     toggleFold: "▾", foldAll: "▸▸", toggleHidden: "👁", toggleBar: "☰", toggleReport: "▤",
-    header: "📅", search: "🔍", undo: "↶", copy: "⧉", toggleMode: "⌨", tutorial: "🎓", help: "?", close: "✕",
+    header: "📅", search: "🔍", undo: "↶", redo: "↷", copy: "⧉", toggleMode: "⌨", tutorial: "🎓", help: "?", close: "✕",
     ...Object.fromEntries(Object.entries(PRESETS).map(([id, p]) => [`preset-${id}`, p.short])),
   };
 
@@ -1895,12 +1927,12 @@
       form.querySelector("input").blur();
       if (value !== null) {
         // Search does not modify the compte rendu, so it should not fill the undo stack.
-        if (!/^Rechercher/.test(p.label)) snapshot();
+        if (!/^Rechercher/.test(p.label) && !p.undoBefore) snapshot();
         p.onDone(value.trim());
-      } else if (p.label === "Texte libre" && cur().kind === "free" && !cur().text) {
-        // Cancelled a brand new free text: remove the empty placeholder.
-        S.items.splice(S.cur, 1);
-        S.cur = Math.min(S.cur, S.items.length - 1);
+      } else if (p.undoBefore) {
+        // Escape cancels the whole operation, see undoablePrompt.
+        Object.assign(S, JSON.parse(p.undoBefore));
+        S.undo.pop();
       }
       render();
     };
