@@ -151,6 +151,7 @@ logement thérapeutique : appartement associatif ou hospitalier avec accompagnem
     - temps d'écran mesuré par le téléphone si disponible
     - moment de la journée : au lit / la nuit / au réveil / pendant les repas
     - sentiment de perte de contrôle
+    - peur de rater quelque chose (FOMO)
     - retentissement : sommeil / travail / relations / humeur après usage
 - Social : relations amicales / amoureuses / familiales / isolement
 - Stabilité des amitiés
@@ -169,6 +170,7 @@ phobie scolaire | refus scolaire anxieux : refus d'aller à l'école lié à une
 mi-temps thérapeutique : reprise du travail à temps partiel, prescrite par le médecin et indemnisée, pour faciliter le retour après un arrêt
 épuisement professionnel | burn-out : épuisement émotionnel, cynisme et sentiment d'inefficacité liés à un stress professionnel chronique
 Replika : application de compagnon virtuel conversationnel, avec laquelle certains utilisateurs développent une relation affective
+FOMO | fear of missing out : peur de rater quelque chose (événement, information, échange) qui pousse à consulter sans cesse son téléphone et les réseaux sociaux
 -->
 
 ## Alimentation <!-- suivi -->
@@ -891,6 +893,7 @@ logement thérapeutique : appartement associatif ou hospitalier avec accompagnem
     - temps d'écran mesuré par le téléphone si disponible
     - moment de la journée : au lit / la nuit / au réveil / pendant les repas
     - sentiment de perte de contrôle
+    - peur de rater quelque chose (FOMO)
     - retentissement : sommeil / travail / relations / humeur après usage
 - Social : relations amicales / amoureuses / familiales / isolement
 - Stabilité des amitiés
@@ -909,6 +912,7 @@ phobie scolaire | refus scolaire anxieux : refus d'aller à l'école lié à une
 mi-temps thérapeutique : reprise du travail à temps partiel, prescrite par le médecin et indemnisée, pour faciliter le retour après un arrêt
 épuisement professionnel | burn-out : épuisement émotionnel, cynisme et sentiment d'inefficacité liés à un stress professionnel chronique
 Replika : application de compagnon virtuel conversationnel, avec laquelle certains utilisateurs développent une relation affective
+FOMO | fear of missing out : peur de rater quelque chose (événement, information, échange) qui pousse à consulter sans cesse son téléphone et les réseaux sociaux
 --&gt;
 ## Alimentation &lt;!-- suivi --&gt;
 - Corpulence : poids / taille / IMC / poids habituel / poids maximal et minimal atteints / vécu du poids et de la silhouette
