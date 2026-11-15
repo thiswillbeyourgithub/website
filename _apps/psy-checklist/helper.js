@@ -361,9 +361,27 @@
     return n.state !== "pending" || n.text !== "" || n.fields.some((f) => f.picked);
   }
 
-  /* Text of a notion in the compte rendu. `subs` are the texts of its sub
-   * notions (see phraseOf), chained after its own answers with ", " so the
-   * line reads as a sentence. `top` is true for the notion starting the line:
+  /* The compte rendu is built as "pieces": bits of text tagged with what
+   * produced them, so the text pane can tell a slot from the words around it
+   * (see the text pane, textKey). A piece is {t, idx?, field?, role?}: role
+   * "name" (a picked field, field >= 0, or the notion itself, field -1) or
+   * "detail" (the text typed for that field, or the `text` of the item:
+   * notion detail, free text, text under a section title); no role:
+   * generated words (": ", " (", ", ", titles...), not editable. Example:
+   * "Hallucinations : adhésion (totale)" is
+   *   [{t: "Hallucinations", idx: 7, field: -1, role: "name"}, {t: " : "},
+   *    {t: "adhésion", idx: 7, field: 0, role: "name"}, {t: " ("},
+   *    {t: "totale", idx: 7, field: 0, role: "detail"}, {t: ")"}]. */
+  const P = (t, ref) => ({ t, ...ref });
+  const ptext = (ps) => ps.map((p) => p.t).join("");
+  // Piece lists joined with a generated separator, like Array.join for strings.
+  const pjoin = (lists, sep) => lists.flatMap((ps, i) => (i ? [P(sep), ...ps] : ps));
+  const capFirst = (ps) => (ps.length ? [{ ...ps[0], t: capitalize(ps[0].t) }, ...ps.slice(1)] : ps);
+
+  /* Text of notion i in the compte rendu, as pieces (see P). `subs` are the
+   * pieces of its sub notions (see phraseOf), chained after its own answers
+   * with ", " so the line reads as a sentence. `top` is true for the notion
+   * starting the line:
    *   top:    "Médecin traitant : nom : Dr X, coordonnées"
    *           "Travail : en activité, CDI, pas d'arrêts de travail prolongés"
    *   nested: "souffrance au travail (surcharge, conflit)", "CDI" (label in
@@ -371,33 +389,43 @@
    *           "aime son travail" (as is, a trailing "?" dropped).
    * A top label in parentheses gives the answers alone, e.g. "- (Nom et
    * prénom)" with "Jean Martin" typed gives "Jean Martin". */
-  function notionText(n, subs = [], top = true) {
-    if (n.phrase) return phraseText(n, subs, top);
-    const parts = n.fields
-      .filter((f) => f.picked)
-      .map((f) => (f.neg ? negate(f.name).toLowerCase() : f.value ? `${clean(f.name)} : ${f.value}` : clean(f.name)));
-    if (n.text) parts.push(n.text);
+  function notionText(n, i, subs, top) {
+    if (n.phrase) return phraseText(n, i, subs, top);
+    const self = { idx: i, field: -1, role: "name" };
+    const name = (fi) => ({ idx: i, field: fi, role: "name" });
+    const parts = picked(n).map(([f, fi]) =>
+      f.neg
+        ? [P(negate(f.name).toLowerCase(), name(fi))]
+        : f.value
+          ? [P(clean(f.name), name(fi)), P(" : "), P(f.value, { idx: i, field: fi, role: "detail" })]
+          : [P(clean(f.name), name(fi))]
+    );
+    if (n.text) parts.push([P(n.text, { idx: i, field: -1, role: "detail" })]);
     const all = [...parts, ...subs];
     const label = clean(n.label);
     if (n.state === "negative" && !parts.length) {
       const neg = negate(n.label || n.raw);
-      return top ? neg : lowerFirst(neg);
+      return [P(top ? neg : lowerFirst(neg), self)];
     }
     const alone = bare(n.raw).replace(/\s*\?\s*$/, ""); // nothing picked nor typed
     if (top) {
-      if (!label) return capitalize(all.length ? all.join(", ") : alone);
+      if (!label) return all.length ? capFirst(pjoin(all, ", ")) : [P(capitalize(alone), self)];
       const prefix = n.state === "negative" ? negate(n.label) : capitalize(label);
-      return all.length ? `${prefix} : ${all.join(", ")}` : prefix;
+      return all.length ? [P(prefix, self), P(" : "), ...pjoin(all, ", ")] : [P(prefix, self)];
     }
-    if (!label) return all.length ? all.join(", ") : lowerFirst(alone);
+    if (!label) return all.length ? pjoin(all, ", ") : [P(lowerFirst(alone), self)];
     const head = n.state === "negative" ? lowerFirst(negate(n.label)) : label.replace(/\s*\?\s*$/, "");
-    return all.length ? `${head} (${all.join(", ")})` : head;
+    return withDetail([P(head, self)], all);
   }
+
+  // Picked fields of notion n with their index: [[field, index]...].
+  const picked = (n) => n.fields.map((f, fi) => [f, fi]).filter(([f]) => f.picked);
 
   /* Negation of a phrase slot, lowercase: "pas de critique", or "non
    * critiqué" for a field or label marked "<!-- non -->" in the trame. */
   const negSlot = (name, non) => (non ? `non ${lowerFirst(bare(name))}` : lowerFirst(negate(name)));
-  const withDetail = (s, details) => (details.length ? `${s} (${details.join(", ")})` : s);
+  // Pieces `ps` followed by the piece lists `details` in parentheses, if any.
+  const withDetail = (ps, details) => (details.length ? [...ps, P(" ("), ...pjoin(details, ", "), P(")")] : ps);
 
   /* notionText() of a notion tagged "<!-- phrase -->" and of its sub notions:
    * "Notion : caractérisant (détail), caractérisant (détail), ...".
@@ -410,19 +438,29 @@
    * gives "Symptômes délirants : adhésion, non critique (au premier entretien
    * seulement), thème mystique (dit « être le fils de Jésus »), mécanisme
    * intuitif-hallucinatoire". */
-  function phraseText(n, subs, top) {
+  function phraseText(n, i, subs, top) {
     const label = clean(n.label || n.raw).replace(/\s*\?\s*$/, "");
     const neg = n.state === "negative";
-    const picks = n.fields.filter((f) => f.picked);
+    const self = { idx: i, field: -1, role: "name" };
+    const own = n.text ? [[P(n.text, { idx: i, field: -1, role: "detail" })]] : [];
+    // A picked field with its detail: "non critique (au premier entretien)".
+    const slot = ([f, fi]) =>
+      withDetail([P(f.neg ? negSlot(f.name, f.non) : clean(f.name), { idx: i, field: fi, role: "name" })], f.value ? [[P(f.value, { idx: i, field: fi, role: "detail" })]] : []);
     if (top) {
-      const slots = picks.map((f) => withDetail(f.neg ? negSlot(f.name, f.non) : clean(f.name), f.value ? [f.value] : []));
-      const head = withDetail(neg ? capitalize(negSlot(n.label || n.raw, n.non)) : capitalize(label), n.text ? [n.text] : []);
-      const all = [...slots, ...subs];
-      return all.length && !neg ? `${head} : ${all.join(", ")}` : head;
+      const head = withDetail([P(neg ? capitalize(negSlot(n.label || n.raw, n.non)) : capitalize(label), self)], own);
+      const all = [...picked(n).map(slot), ...subs];
+      return all.length && !neg ? [...head, P(" : "), ...pjoin(all, ", ")] : head;
     }
-    const values = picks.map((f) => (f.neg ? negSlot(f.name, f.non) : f.value ? `${clean(f.name)} (${f.value})` : clean(f.name))).join("-");
-    const head = neg ? negSlot(n.label || n.raw, n.non) : [clean(n.label), values].filter(Boolean).join(" ") || label;
-    return withDetail(head, neg ? (n.text ? [n.text] : []) : [n.text, ...subs].filter(Boolean));
+    const values = pjoin(picked(n).map(slot), "-");
+    const lab = clean(n.label);
+    const head = neg
+      ? [P(negSlot(n.label || n.raw, n.non), self)]
+      : lab
+        ? [P(lab, self), ...(values.length ? [P(" "), ...values] : [])]
+        : values.length
+          ? values
+          : [P(label, self)];
+    return withDetail(head, neg ? own : [...own, ...subs]);
   }
 
   /* Index of the parent notion of every item (-1 at the top of a section),
@@ -450,15 +488,16 @@
     return kids;
   }
 
-  /* Text of notion i with its answered sub notions chained in (recursively),
-   * or "" if nothing in it was answered. A negative or excluded notion hides
-   * its sub notions in the list, so their old answers are left out too. */
+  /* Pieces (see P) of notion i with its answered sub notions chained in
+   * (recursively), or [] if nothing in it was answered. A negative or excluded
+   * notion hides its sub notions in the list, so their old answers are left
+   * out too. */
   function phraseOf(items, kids, i, top) {
     const n = items[i];
     const closed = n.state === "negative" || n.state === "excluded";
-    const subs = closed ? [] : kids[i].map((j) => phraseOf(items, kids, j, false)).filter(Boolean);
-    if (!notionIncluded(n) && !subs.length) return "";
-    return notionText(n, subs, top);
+    const subs = closed ? [] : kids[i].map((j) => phraseOf(items, kids, j, false)).filter((ps) => ps.length);
+    if (!notionIncluded(n) && !subs.length) return [];
+    return notionText(n, i, subs, top);
   }
 
   /* First line of the compte rendu, e.g. with
@@ -485,20 +524,22 @@
    * Example: answering only "endormissement" under "# Mode de vie / ## Sommeil"
    * gives the texts ["MODE DE VIE :", "Sommeil :", "- Endormissement"].
    * One line per top level notion: its sub notions are chained into it (see
-   * phraseOf), the line keeping the index of the top level notion. */
+   * phraseOf), the line keeping the index of the top level notion.
+   * Each line also has its `pieces` (see P), for the text pane. */
   function buildReport(items, header) {
+    const line = (idx, pieces, heading) => ({ idx, text: ptext(pieces), pieces, ...(heading ? { heading } : {}) });
     // idx -1: the header line has no source item (clicking it opens the header fields).
-    const out = header ? [{ idx: -1, text: headerText(header) }] : [];
+    const out = header ? [line(-1, [P(headerText(header))])] : [];
     let open = []; // sections containing the current item, outermost first: {idx, sec, written}
-    const write = (line) => {
+    const write = (l) => {
       for (const o of open) {
         if (o.written) continue;
         o.written = true;
         // A blank line between top level groups only, to keep the text compact.
-        if (o.sec.level === 1 && out.length) out.push({ idx: o.idx, text: "" });
-        if (o.sec.title) out.push({ idx: o.idx, text: headingText(o.sec), heading: o.sec.level });
+        if (o.sec.level === 1 && out.length) out.push(line(o.idx, []));
+        if (o.sec.title) out.push(line(o.idx, [P(headingText(o.sec))], o.sec.level));
       }
-      out.push(line);
+      out.push(l);
     };
     const parent = notionParents(items);
     const kids = subNotions(items, parent);
@@ -506,14 +547,14 @@
       if (it.kind === "section") {
         open = open.filter((o) => o.sec.level < it.level);
         open.push({ idx, sec: it, written: false });
-        if (it.text) write({ idx, text: it.text });
+        if (it.text) write(line(idx, [P(it.text, { idx, field: -1, role: "detail" })]));
       } else if (it.kind === "checklist") {
         open = []; // what follows a checklist is not inside the previous section
       } else if (it.kind === "free") {
-        if (it.text) write({ idx, text: "  ".repeat(it.depth) + it.text });
+        if (it.text) write(line(idx, [P("  ".repeat(it.depth)), P(it.text, { idx, field: -1, role: "detail" })]));
       } else if (parent[idx] < 0) {
-        const text = phraseOf(items, kids, idx, true);
-        if (text) write({ idx, text: "- " + text });
+        const ps = phraseOf(items, kids, idx, true);
+        if (ps.length) write(line(idx, [P("- "), ...ps]));
       }
     });
     return out;
@@ -1652,7 +1693,7 @@
     // The detail of a phrase slot is written to the right of its label, in
     // parentheses as in the compte rendu; other details go on a line below.
     const inline = it.phrase && !root && it.text;
-    const note = root ? phraseOf(S.items, subNotions(S.items, v.parent), idx, true) : inline ? "" : it.text;
+    const note = root ? ptext(phraseOf(S.items, subNotions(S.items, v.parent), idx, true)) : inline ? "" : it.text;
     const labelCls = `trh-label${sel && S.field === -1 ? " trh-fcur" : ""}${it.tip ? " trh-term" : ""}`;
     return `<div class="${cls.join(" ")}" data-idx="${idx}" ${pad}>
       <span class="trh-badge">${BADGE[it.state]}</span>
