@@ -51,6 +51,12 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 - [Vidal](https://www.vidal.fr/) ainsi que [Hoptimal Vidal](https://hoptimal.vidal.fr/) (version « hôpital »).
 - Pour savoir quels médicaments sont indisponibles aux patients : [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
 - Pour la pharmacologie des médicaments de neurologie et de psychiatrie : le site du [Collège National de Pharmacologie Médicale](https://pharmacomedicale.org/medicaments/par-specialites/category/neurologie-psychiatrie-3).
+- Les fiches de synthèse du [Dr Igor Thiriez](https://igorthiriez.com/presentation/) :
+  - Antidépresseurs : [fiche générale](https://igorthiriez.com/wp-content/uploads/2025/07/2025_atd.pdf), [switch d'antidépresseurs](https://igorthiriez.com/wp-content/uploads/2018/02/switch-atd1.pdf).
+  - Antipsychotiques : [fiche générale](https://igorthiriez.com/wp-content/uploads/2024/07/2024_atp.pdf), [comparaison des effets secondaires](https://igorthiriez.com/wp-content/uploads/2016/12/nles.pdf), [switch d'antipsychotiques](https://igorthiriez.com/wp-content/uploads/2016/12/switch-atp.pdf), [effets secondaires extrapyramidaux](https://igorthiriez.com/wp-content/uploads/2021/01/effets-secondaires-extrapyramidaux.pdf).
+  - Antipsychotiques, par molécule : [aripiprazole](https://igorthiriez.com/wp-content/uploads/2020/02/aripiprazole.pdf), [clozapine](https://igorthiriez.com/wp-content/uploads/2020/04/clozapine.pdf), [loxapine ou cyamémazine](https://igorthiriez.com/wp-content/uploads/2017/12/loxapacoutercian.pdf), [olanzapine](https://igorthiriez.com/wp-content/uploads/2020/02/olanzapine.pdf), [quétiapine](https://igorthiriez.com/wp-content/uploads/2020/04/quetiapine2.pdf), [rispéridone](https://igorthiriez.com/wp-content/uploads/2019/12/risperidone.pdf).
+  - Thymorégulateurs : [fiche générale](https://igorthiriez.com/wp-content/uploads/2017/08/2017-stabhum.pdf).
+  - Benzodiazépines et hypnotiques : [benzodiazépines](https://igorthiriez.com/wp-content/uploads/2025/06/bzd202531.pdf), [hypnotiques](https://igorthiriez.com/wp-content/uploads/2017/08/2017-hypno.pdf).
 
 ## Interactions enzymatiques
 - [PharmFreq](https://pharmfreq.com/) : de jolis widgets qui cartographient la fréquence mondiale des variants pharmacogénétiques. Pratique pour estimer la probabilité d'un phénotype métaboliseur donné chez un patient selon l'origine géographique de sa famille.

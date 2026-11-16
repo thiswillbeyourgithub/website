@@ -48,6 +48,12 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 - [Vidal](https://www.vidal.fr/) as well as [Hoptimal Vidal](https://hoptimal.vidal.fr/) ("hospital" version).
 - To know which drugs are unavailable to patients: [Disponibilité des produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments)
 - For the pharmacology of neurology and psychiatry drugs: the [Collège National de Pharmacologie Médicale](https://pharmacomedicale.org/medicaments/par-specialites/category/neurologie-psychiatrie-3) website.
+- The summary sheets by [Dr Igor Thiriez](https://igorthiriez.com/presentation/) (in French):
+  - Antidepressants: [overview](https://igorthiriez.com/wp-content/uploads/2025/07/2025_atd.pdf), [switching antidepressants](https://igorthiriez.com/wp-content/uploads/2018/02/switch-atd1.pdf).
+  - Antipsychotics: [overview](https://igorthiriez.com/wp-content/uploads/2024/07/2024_atp.pdf), [side effect comparison](https://igorthiriez.com/wp-content/uploads/2016/12/nles.pdf), [switching antipsychotics](https://igorthiriez.com/wp-content/uploads/2016/12/switch-atp.pdf), [extrapyramidal side effects](https://igorthiriez.com/wp-content/uploads/2021/01/effets-secondaires-extrapyramidaux.pdf).
+  - Antipsychotics, by molecule: [aripiprazole](https://igorthiriez.com/wp-content/uploads/2020/02/aripiprazole.pdf), [clozapine](https://igorthiriez.com/wp-content/uploads/2020/04/clozapine.pdf), [loxapine or cyamemazine](https://igorthiriez.com/wp-content/uploads/2017/12/loxapacoutercian.pdf), [olanzapine](https://igorthiriez.com/wp-content/uploads/2020/02/olanzapine.pdf), [quetiapine](https://igorthiriez.com/wp-content/uploads/2020/04/quetiapine2.pdf), [risperidone](https://igorthiriez.com/wp-content/uploads/2019/12/risperidone.pdf).
+  - Mood stabilizers: [overview](https://igorthiriez.com/wp-content/uploads/2017/08/2017-stabhum.pdf).
+  - Benzodiazepines and hypnotics: [benzodiazepines](https://igorthiriez.com/wp-content/uploads/2025/06/bzd202531.pdf), [hypnotics](https://igorthiriez.com/wp-content/uploads/2017/08/2017-hypno.pdf).
 
 ## Enzymatic interactions
 - [PharmFreq](https://pharmfreq.com/): nice widgets mapping the worldwide frequency of pharmacogenetic variants. Handy to weigh how likely a given metabolizer phenotype is for a patient depending on where their family comes from.
