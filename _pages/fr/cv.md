@@ -70,7 +70,7 @@ redirect_from:
 # Compétences
 ## Informatiques
 * **IA** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interprétabilité (*representation engineering*), recherche par *embeddings* (RAG, wdoc), génération d'images, *finetuning* ASR/STT et création de jeux de données d'entraînement, optimisations pour l'inférence médicale hors ligne
-* **Reconnaissance vocale** publication en libre accès de [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1), un jeu de données de 3 105 heures de parole médicale française et d'un affinage de Parakeet-v3 entraîné dessus avec un seul GPU grand public (8 fois moins d'erreurs sur du texte médical technique), optimisé pour un usage hors ligne sur CPU dans un navigateur
+* **Reconnaissance vocale** publication en libre accès d'[UltiMed](https://github.com/UltiMed-Org), un jeu de données de parole médicale française et un affinage de Parakeet-v3 entraîné dessus avec un seul GPU grand public, optimisé pour un usage hors ligne sur CPU dans un navigateur
 * **Machine Learning et big data** PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexité, optimisation
 * **Environnement Unix** (GNU/Linux, OSX), administration système (gestion de serveurs distants et auto-hébergement, déploiement), complexité algorithmique, notions avancées du shell (zsh/bash) et regexp, interfaces utilisateur (WebUI/GUI/CLI), vi/vim/neovim, développement Web
 * **Logiciels de collaboration** git, Jupyter Notebook, markdown

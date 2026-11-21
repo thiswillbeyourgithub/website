@@ -74,7 +74,7 @@ redirect_from:
 # Skills
 ## Computer Science
 * **AI** LLM (pytorch, scikit-learn, huggingface, ...), agents (LangChain, DIY), interpretability (*representation engineering*), embedding-based search (RAG, wdoc), image generation, ASR/STT *finetuning* and training-dataset creation, optimizations for offline medical inference
-* **Speech recognition** openly released [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1), a 3,105-hour French medical speech dataset and a Parakeet-v3 finetune trained on it with a single consumer GPU (8x fewer errors on technical medical text), optimized for offline use on CPU in the browser
+* **Speech recognition** openly released [UltiMed](https://github.com/UltiMed-Org), a French medical speech dataset and a Parakeet-v3 finetune trained on it with a single consumer GPU, optimized for offline use on CPU in the browser
 * **Machine Learning and big data** PCA, T-SNE, UMAP, TFIDF, numpy, pandas, regexp, complexity, optimization
 * **Unix proficiency** (GNU/Linux, OSX), system administration (remote server management and self hosting, deployment), algorithmic complexity, advanced shell concepts (zsh/bash) and regexp, user interfaces (WebUI/GUI/CLI), vi/vim/neovim, Web development
 * **Collaboration software proficiency** git, Jupyter Notebook, markdown

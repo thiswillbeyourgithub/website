@@ -20,7 +20,7 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 137*
+*Individual project count on this page: 133*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -65,7 +65,7 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 
 ## Medicine / Computer Science / Larger projects
 {: #larger-projects}
-*27 projects so far*
+*23 projects so far*
 - [neurarium](https://neurarium.olicorne.org/?lang=en): A 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model (free public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en), [source code](https://github.com/thiswillbeyourgithub/neurarium)).
 
     <a href="https://neurarium.olicorne.org/?lang=en"><img alt="neurarium" src="{{ base_path }}/images/neurarium.webp" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/preview.webp';"></a>
@@ -82,13 +82,9 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 
 #### UltiMed
 
-Common transcription software makes too many mistakes on medical text. UltiMed is my attempt at an open alternative: a dataset, a finetuned model, and the scripts behind them.
+Common transcription software makes too many mistakes on medical text. UltiMed is my attempt at an open alternative.
 
-- [parakeet-tdt-0.6b-v3-UltiMed-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx): A French medical finetune of [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3), optimized for CPU and the browser, with 7 to 8 times fewer errors on technical medical text than the base model (testable in [Parakeet Web](https://parakeetweb.olicorne.org)).
-- [UltiMed-ASR-FR-v1](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v1): An open French medical speech dataset: 3,105 hours of machine-spoken, dictation-style sentences under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with no patient data involved, so that any software vendor can offer decent French medical dictation for free.
-    - [UltiMed-ASR-FR-v1-scripts](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-scripts): The generation pipeline, so that others can rebuild the dataset or adapt it to another specialty or language.
-    - [UltiMed-ASR-FR-v1-Voxtral](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-Voxtral): The carefully optimized local text-to-speech model that read every sentence of the dataset aloud.
-    - [UltiMed-ASR-FR-v1-NeMo_training_scripts](https://github.com/thiswillbeyourgithub/UltiMed-ASR-FR-v1-NeMo_training_scripts): The scripts to reproduce the finetuning run, done on my own machine.
+- [UltiMed](https://github.com/UltiMed-Org): An open French medical speech dataset (no patient data), a [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) finetune optimized for CPU and the browser, the scripts behind them, and rules that fix the remaining errors (testable in [Parakeet Web](https://parakeetweb.olicorne.org)).
 - [parakeet-tdt-0.6b-v3-optimized-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx): A version of NVIDIA's [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) speech recognition model heavily optimized to run on low-end machines and in the browser.
 - [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): Voice transcription that runs entirely in the browser, serving multiple models including my own (free public instance at [parakeetweb.olicorne.org](https://parakeetweb.olicorne.org)).
 - [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd): *[Archived]* A small [Gradio](https://www.gradio.app/) app where several volunteers could record sentences at the same time to build a speech recognition dataset.
