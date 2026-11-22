@@ -96,6 +96,10 @@ $(document).ready(function () {
     }
   });
 
+  // The CV is meant to be printed: drop its heading permalinks, which would
+  // otherwise be empty unlabelled links (no permalink styling outside .page__content).
+  document.querySelectorAll(".cv-layout :is(h1, h2, h3, h4, h5, h6)[id] > a[href^='#']:empty").forEach(link => link.remove());
+
   // SCSS SETTINGS - These should be the same as the settings in the relevant files
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
 
