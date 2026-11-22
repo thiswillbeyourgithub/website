@@ -86,7 +86,17 @@ if (plotlyElements.length > 0) {
    ========================================================================== */
 
 $(document).ready(function () {
-  // SCSS SETTINGS - These should be the same as the settings in the relevant files 
+  // Kramdown supplies the permalink; move it after the heading when scripts run.
+  document.querySelectorAll(":is(.page__content, .archive) :is(h1, h2, h3, h4, h5, h6)[id]").forEach(heading => {
+    const link = heading.firstElementChild;
+    if (link && link.matches("a[href^='#']:empty") && link.getAttribute("href") === "#" + heading.id) {
+      link.classList.add("heading-permalink");
+      link.setAttribute("aria-label", "Permalink");
+      heading.appendChild(link);
+    }
+  });
+
+  // SCSS SETTINGS - These should be the same as the settings in the relevant files
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
 
   // If the user hasn't chosen a theme, follow the OS preference
