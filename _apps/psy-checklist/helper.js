@@ -2526,6 +2526,10 @@
       d.className = `trp-sec trp-sec${level}`;
       if (open.length) open[open.length - 1].el.appendChild(d);
       else n.parentNode.insertBefore(d, n);
+      // A link inside <summary> is a nested interactive control (a11y): drop
+      // the heading permalink kramdown adds (header_links), the table of
+      // contents already links to every section.
+      if (n.id) for (const a of n.querySelectorAll(`a[href="#${CSS.escape(n.id)}"]`)) a.remove();
       const sum = document.createElement("summary");
       sum.appendChild(n);
       d.appendChild(sum);
