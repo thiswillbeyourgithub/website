@@ -1,8 +1,8 @@
 # Base image: Ruby with necessary dependencies for Jekyll
 FROM ruby:4.0
 
-# Install dependencies
-RUN apt-get update && apt-get install -y \
+# Install dependencies. upgrade: the ruby:4.0 tag lags behind Debian security updates
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     build-essential \
     nodejs \
     && rm -rf /var/lib/apt/lists/*
