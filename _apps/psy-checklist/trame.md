@@ -6,6 +6,12 @@
 - A bien compris ? / a des questions avant de commencer ?
 
 # Motif de consultation <!-- urgence suivi -->
+- Plainte du patient : avec ses propres mots / depuis quand / ce qu'il attend de la consultation
+    - vécu des troubles : égosyntonique / égodystonique
+<!-- glossaire
+égosyntonique : trouble vécu comme faisant partie de soi, en accord avec ses valeurs et son image de soi, donc peu source de plainte (par exemple certains traits de personnalité ou une anorexie mentale)
+égodystonique : trouble vécu comme étranger à soi, en désaccord avec ses valeurs, source de souffrance et de demande d'aide (par exemple des obsessions dans un TOC)
+-->
 
 # Mode de vie
 
