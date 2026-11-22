@@ -19,7 +19,7 @@ Mes dépôts de code sont actuellement hébergés sur [github](https://github.co
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 133*
+*Nombre de projets individuels sur cette page : 134*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -219,7 +219,8 @@ Les logiciels de transcription courants font trop d'erreurs sur les textes médi
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker) : Un script qui prévient quand des films anciens comme *Stalker* ou *Solaris* passent dans un cinéma proche.
 
 ## Outils Divers
-*46 projets jusqu'à présent*
+*47 projets jusqu'à présent*
+- [endocam](https://github.com/thiswillbeyourgithub/endocam_usb_flexible_camera) : Un petit outil Linux et une application Android pour visualiser, photographier et filmer avec une caméra endoscopique USB bon marché.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain) : Un moyen de chercher des codes [CIM-11](https://icd.who.int/) par leur sens plutôt que par mots-clés exacts.
 - [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan) : Un moyen d'éviter la surchauffe de la mémoire du GPU, la courbe de ventilation d'origine ne réagissant qu'à la température du cœur.
 - [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells) : Un script qui déplace les commentaires des fichiers `.xlsx` dans les cellules, car ils étaient invisibles dans la visionneuse mobile de [Nextcloud](https://nextcloud.com/).

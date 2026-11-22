@@ -20,7 +20,7 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 133*
+*Individual project count on this page: 134*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -220,7 +220,8 @@ Common transcription software makes too many mistakes on medical text. UltiMed i
 - [allocine_checker](https://github.com/thiswillbeyourgithub/Allocine_Checker): A script that sends an alert when old films like *Stalker* or *Solaris* are screened in theaters nearby.
 
 ## Miscellaneous Tools
-*46 projects so far*
+*47 projects so far*
+- [endocam](https://github.com/thiswillbeyourgithub/endocam_usb_flexible_camera): A small Linux tool and Android app to preview, snap and record with an inexpensive USB endoscope camera.
 - [ICD-11_to_Langchain_Documents](https://github.com/thiswillbeyourgithub/ICD-11_to_langchain): A way to search [ICD-11](https://icd.who.int/) codes by meaning rather than by exact keywords.
 - [gpu_nvidia_vram_healthspan](https://github.com/thiswillbeyourgithub/gpu_nvidia_vram_healthspan): A way to keep the GPU's memory from overheating, since the stock fan curve only reacts to the core temperature.
 - [xlsx_move_comments_to_inside_cells](https://github.com/thiswillbeyourgithub/xlsx_move_comments_to_inside_cells): A script that moves `.xlsx` comments into the cells, because they were invisible in [Nextcloud](https://nextcloud.com/)'s mobile viewer.
