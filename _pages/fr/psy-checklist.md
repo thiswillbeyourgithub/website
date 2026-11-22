@@ -30,6 +30,12 @@ Le bouton ci-dessous ouvre un assistant qui permet de parcourir cette liste au c
 - A bien compris ? / a des questions avant de commencer ?
 
 # Motif de consultation <!-- urgence suivi -->
+- Plainte du patient : avec ses propres mots / depuis quand / ce qu'il attend de la consultation
+    - vécu des troubles : égosyntonique / égodystonique
+<!-- glossaire
+égosyntonique : trouble vécu comme faisant partie de soi, en accord avec ses valeurs et son image de soi, donc peu source de plainte (par exemple certains traits de personnalité ou une anorexie mentale)
+égodystonique : trouble vécu comme étranger à soi, en désaccord avec ses valeurs, source de souffrance et de demande d'aide (par exemple des obsessions dans un TOC)
+-->
 
 # Mode de vie
 
@@ -776,6 +782,12 @@ CMP | centre médico-psychologique : structure publique de consultation psychiat
 - Expliquer l'objectif de la consultation : faire le point sur sa situation / comprendre ce qui l'amène / recueillir son histoire / proposer une prise en charge adaptée
 - A bien compris ? / a des questions avant de commencer ?
 # Motif de consultation &lt;!-- urgence suivi --&gt;
+- Plainte du patient : avec ses propres mots / depuis quand / ce qu'il attend de la consultation
+    - vécu des troubles : égosyntonique / égodystonique
+&lt;!-- glossaire
+égosyntonique : trouble vécu comme faisant partie de soi, en accord avec ses valeurs et son image de soi, donc peu source de plainte (par exemple certains traits de personnalité ou une anorexie mentale)
+égodystonique : trouble vécu comme étranger à soi, en désaccord avec ses valeurs, source de souffrance et de demande d'aide (par exemple des obsessions dans un TOC)
+--&gt;
 # Mode de vie
 ## Informations administratives &lt;!-- entete urgence suivi --&gt;
 - (Nom et prénom)

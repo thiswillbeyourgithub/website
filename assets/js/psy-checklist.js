@@ -117,7 +117,7 @@
    * with the date and short hash of the last commit touching its folder, plus
    * " +modifs" if the working tree had uncommitted changes, ex:
    * "2026-11-07 8b4f826". Keep the line exactly as is or the build fails. */
-  const VERSION = "2026-11-16 09fc61c";
+  const VERSION = "2026-11-22 2a718b7";
 
   // ------------------------------------------------------------------ parsing
 
