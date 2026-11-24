@@ -32,6 +32,8 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 
 - I made [WebSend](https://websend.olicorne.org) to scan documents without a flatbed scanner: open the page on your phone and on the computer, and the photo transfers directly between the two, end-to-end encrypted. [Public instance](https://websend.olicorne.org), [source code](https://github.com/thiswillbeyourgithub/WebSend).
 
+- I made [Plumed](https://plumed.fr/) to dictate medical French into any application without the audio leaving the computer. It is a fork of [Murmure](https://github.com/Kieirra/murmure) that adds the [UltiMed](https://github.com/UltiMed-Org) model and the correction rules from Parakeet Web's medical mode (Windows, macOS, Linux). [Website and download](https://plumed.fr/).
+
 - I made [Parakeet Web](https://parakeetweb.olicorne.org/?mode=medical) to turn speech into text on locked-down machines: the model runs in the browser itself, so nothing is sent anywhere. It can load a French medical finetune I trained ([model](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx), from an open [dataset](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) I built for it, see [UltiMed](https://github.com/UltiMed-Org)), which makes far fewer errors than the base model on technical medical vocabulary. Both are freely licensed, so any team or vendor can reuse them rather than rebuild them. [Public instance](https://parakeetweb.olicorne.org), [source code](https://github.com/thiswillbeyourgithub/parakeet_web).
 
 # Prescribing
