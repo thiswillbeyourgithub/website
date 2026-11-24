@@ -12,12 +12,16 @@ redirect_from:
 
 {% include base_path %}
 
-Sur cette page, j'essaie de garder une trace des ressources qui peuvent être utiles aux internes en psychiatrie.
+Sur cette page, j'essaie de garder une trace des ressources qui peuvent être utiles aux internes en psychiatrie comme aux médecins en général.
 
 {% include toc_wide %}
 
 # Outils pratiques
 *Certains de ces outils sont de moi ; leurs descriptions complètes sont sur [PROJETS](./projects). (Pour être clair : aucune donnée de patient n'est jamais impliquée, pas même anonymisée, et pas même sur des serveurs que j'héberge moi-même.)*
+
+- J'ai fait [Plumed](https://plumed.fr/) pour dicter du français médical dans n'importe quelle application sans que l'audio quitte l'ordinateur. C'est un fork de [Murmure](https://github.com/Kieirra/murmure) qui ajoute le modèle [UltiMed](https://github.com/UltiMed-Org) et les règles de correction du mode médical de Parakeet Web (Windows, macOS, Linux). [Site et téléchargement](https://plumed.fr/).
+
+  - J'ai fait [Parakeet Web](https://parakeetweb.olicorne.org/?mode=medical) pour transcrire la parole en texte sur des machines verrouillées : le modèle tourne directement dans votre navigateur, vos données ne quittent donc jamais votre ordinateur. Il peut charger un modèle optimisé pour l'audio médical français, entraîné par mes soins ([modèle](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx), à partir d'un [jeu de données](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) ouvert que j'ai construit pour l'occasion, voir [UltiMed](https://github.com/UltiMed-Org)), qui fait beaucoup moins d'erreurs que le modèle de base sur le vocabulaire médical technique. Les deux sont sous licence libre, donc n'importe quelle équipe ou éditeur peut les réutiliser. [Instance publique](https://parakeetweb.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/parakeet_web).
 
 - J'ai fait [psychiatheque](https://psychiatheque.olicorne.org), une recherche dans les recommandations de psychiatrie qui affiche le passage correspondant sur sa page d'origine, pour lire la source elle-même plutôt qu'un résumé. [Instance publique](https://psychiatheque.olicorne.org), [code source du logiciel](https://github.com/thiswillbeyourgithub/justelesdocs).
 
@@ -27,17 +31,13 @@ Sur cette page, j'essaie de garder une trace des ressources qui peuvent être ut
 
   <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.webp" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/preview.webp';"></a>
 
-- J'ai fait [DrugsMap](https://drugsmap.olicorne.org/), à partir des données de [neurarium](https://neurarium.olicorne.org/?lang=fr), pour voir d'un coup d'œil quels psychotropes ont des profils de récepteurs proches, par exemple les antipsychotiques selon D2 vs 5-HT2A ou les antidépresseurs selon SERT vs NET. [Instance publique](https://drugsmap.olicorne.org/), [code source](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.fr.md).
+  - J'ai fait [DrugsMap](https://drugsmap.olicorne.org/), à partir des données de [neurarium](https://neurarium.olicorne.org/?lang=fr), pour voir d'un coup d'œil quels psychotropes ont des profils de récepteurs proches, par exemple les antipsychotiques selon D2 vs 5-HT2A ou les antidépresseurs selon SERT vs NET. [Instance publique](https://drugsmap.olicorne.org/), [code source](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.fr.md).
 
-  <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="capture de DrugsMap" src="{{ base_path }}/images/drugsmap.fr.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.fr.png';"></a>
-
-- Sur [pdf.olicorne.org](https://pdf.olicorne.org) j'héberge des outils PDF (rotation, suppression de pages, découpage, fusion, reconnaissance de texte, etc.) qui tournent entièrement dans votre navigateur : votre PDF n'atteint jamais un serveur. Il s'agit d'une instance de [BentoPDF](https://github.com/alam00000/bentopdf).
+    <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="capture de DrugsMap" src="{{ base_path }}/images/drugsmap.fr.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.fr.png';"></a>
 
 - J'ai fait [WebSend](https://websend.olicorne.org) pour numériser des documents sans scanner à plat : ouvrez la page sur votre téléphone et sur l'ordinateur, et la photo passe directement de l'un à l'autre, chiffrée de bout en bout. [Instance publique](https://websend.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/WebSend).
 
-- J'ai fait [Plumed](https://plumed.fr/) pour dicter du français médical dans n'importe quelle application sans que l'audio quitte l'ordinateur. C'est un fork de [Murmure](https://github.com/Kieirra/murmure) qui ajoute le modèle [UltiMed](https://github.com/UltiMed-Org) et les règles de correction du mode médical de Parakeet Web (Windows, macOS, Linux). [Site et téléchargement](https://plumed.fr/).
-
-- J'ai fait [Parakeet Web](https://parakeetweb.olicorne.org/?mode=medical) pour transcrire la parole en texte sur des machines verrouillées : le modèle tourne directement dans votre navigateur, vos données ne quittent donc jamais votre ordinateur. Il peut charger un modèle optimisé pour l'audio médical français, entraîné par mes soins ([modèle](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx), à partir d'un [jeu de données](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) ouvert que j'ai construit pour l'occasion, voir [UltiMed](https://github.com/UltiMed-Org)), qui fait beaucoup moins d'erreurs que le modèle de base sur le vocabulaire médical technique. Les deux sont sous licence libre, donc n'importe quelle équipe ou éditeur peut les réutiliser. [Instance publique](https://parakeetweb.olicorne.org), [code source](https://github.com/thiswillbeyourgithub/parakeet_web).
+- Sur [pdf.olicorne.org](https://pdf.olicorne.org) j'héberge des outils PDF (rotation, suppression de pages, découpage, fusion, reconnaissance de texte, etc.) qui tournent entièrement dans votre navigateur : votre PDF n'atteint jamais un serveur. Il s'agit d'une instance de [BentoPDF](https://github.com/alam00000/bentopdf).
 
 # Prescription
 

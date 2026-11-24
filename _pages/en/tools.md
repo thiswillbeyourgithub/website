@@ -9,12 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-On this page, I try to keep track of resources I think can be useful to psychiatry residents.
+On this page, I try to keep track of resources I think can be useful to psychiatry residents and doctors alike.
 
 {% include toc_wide %}
 
 # Helper tools
 *Some of these are tools I made; fuller descriptions are on [PROJECTS](./projects). (To be clear: no patient data is ever involved, not even anonymized, and not even on servers I run myself.)*
+
+- I made [Plumed](https://plumed.fr/) to dictate medical French into any application without the audio leaving the computer. It is a fork of [Murmure](https://github.com/Kieirra/murmure) that adds the [UltiMed](https://github.com/UltiMed-Org) model and the correction rules from Parakeet Web's medical mode (Windows, macOS, Linux). [Website and download](https://plumed.fr/).
+
+  - I made [Parakeet Web](https://parakeetweb.olicorne.org/?mode=medical) to turn speech into text on locked-down machines: the model runs in the browser itself, so nothing is sent anywhere. It can load a French medical finetune I trained ([model](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx), from an open [dataset](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) I built for it, see [UltiMed](https://github.com/UltiMed-Org)), which makes far fewer errors than the base model on technical medical vocabulary. Both are freely licensed, so any team or vendor can reuse them rather than rebuild them. [Public instance](https://parakeetweb.olicorne.org), [source code](https://github.com/thiswillbeyourgithub/parakeet_web).
 
 - I made [psychiatheque](https://psychiatheque.olicorne.org), a search over psychiatry guidelines and recommendations that shows the matching passage on its original page, so you read the source itself rather than a summary. [Public instance](https://psychiatheque.olicorne.org), [source of the software](https://github.com/thiswillbeyourgithub/justelesdocs).
 
@@ -24,17 +28,13 @@ On this page, I try to keep track of resources I think can be useful to psychiat
 
   <a href="https://neurarium.olicorne.org/?lang=en"><img alt="neurarium" src="{{ base_path }}/images/neurarium.webp" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/preview.webp';"></a>
 
-- I made [DrugsMap](https://drugsmap.olicorne.org/), built on [neurarium](https://neurarium.olicorne.org/?lang=en)'s data, to see at a glance which psychiatric drugs have similar receptor profiles, for example antipsychotics on D2 vs 5-HT2A or antidepressants on SERT vs NET. [Public instance](https://drugsmap.olicorne.org/), [source code](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.md).
+  - I made [DrugsMap](https://drugsmap.olicorne.org/), built on [neurarium](https://neurarium.olicorne.org/?lang=en)'s data, to see at a glance which psychiatric drugs have similar receptor profiles, for example antipsychotics on D2 vs 5-HT2A or antidepressants on SERT vs NET. [Public instance](https://drugsmap.olicorne.org/), [source code](https://github.com/thiswillbeyourgithub/neurarium/blob/main/public/drugs-map/README.md).
 
-  <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="DrugsMap" src="{{ base_path }}/images/drugsmap.en.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.en.png';"></a>
-
-- At [pdf.olicorne.org](https://pdf.olicorne.org) I host PDF tools (rotate, remove pages, split, merge, text recognition, etc.) that run entirely in your browser: your PDF never reaches a server. It is a [BentoPDF](https://github.com/alam00000/bentopdf) instance.
+    <a href="https://drugsmap.olicorne.org/#dmcat=antipsychotic_atypical,antipsychotic_conventional&dmmkt=0&dmtgt=aadc,comt,d1,d2,d3,d4,d5,dat,mao_b,vmat2,ache,bche,m1,m2,m3,m4,m5,nachr_a4b2,nachr_a7,h1,h2,h3,h4"><img alt="DrugsMap" src="{{ base_path }}/images/drugsmap.en.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/public/drugs-map/screenshot.en.png';"></a>
 
 - I made [WebSend](https://websend.olicorne.org) to scan documents without a flatbed scanner: open the page on your phone and on the computer, and the photo transfers directly between the two, end-to-end encrypted. [Public instance](https://websend.olicorne.org), [source code](https://github.com/thiswillbeyourgithub/WebSend).
 
-- I made [Plumed](https://plumed.fr/) to dictate medical French into any application without the audio leaving the computer. It is a fork of [Murmure](https://github.com/Kieirra/murmure) that adds the [UltiMed](https://github.com/UltiMed-Org) model and the correction rules from Parakeet Web's medical mode (Windows, macOS, Linux). [Website and download](https://plumed.fr/).
-
-- I made [Parakeet Web](https://parakeetweb.olicorne.org/?mode=medical) to turn speech into text on locked-down machines: the model runs in the browser itself, so nothing is sent anywhere. It can load a French medical finetune I trained ([model](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx), from an open [dataset](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) I built for it, see [UltiMed](https://github.com/UltiMed-Org)), which makes far fewer errors than the base model on technical medical vocabulary. Both are freely licensed, so any team or vendor can reuse them rather than rebuild them. [Public instance](https://parakeetweb.olicorne.org), [source code](https://github.com/thiswillbeyourgithub/parakeet_web).
+- At [pdf.olicorne.org](https://pdf.olicorne.org) I host PDF tools (rotate, remove pages, split, merge, text recognition, etc.) that run entirely in your browser: your PDF never reaches a server. It is a [BentoPDF](https://github.com/alam00000/bentopdf) instance.
 
 # Prescribing
 
