@@ -19,7 +19,7 @@ Mes dépôts de code sont actuellement hébergés sur [github](https://github.co
 
 [![(Cliquez ici si ca ne charge pas)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Nombre de projets individuels sur cette page : 134*
+*Nombre de projets individuels sur cette page : 135*
 
 *Certains de mes projets sont également publiés sur [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totalisant plus de 7k téléchargements par mois (en mars 2026).*
 
@@ -64,7 +64,7 @@ Mes dépôts de code sont actuellement hébergés sur [github](https://github.co
 
 ## Médecine / Science Informatique / Gros projets
 {: #larger-projects}
-*23 projets jusqu'à présent*
+*24 projets jusqu'à présent*
 - [neurarium](https://neurarium.olicorne.org/?lang=fr) : Un atlas 3D à sources notées qui relie l'anatomie cérébrale, les voies, les récepteurs et les médicaments psychiatriques dans un même modèle interrogeable (instance publique gratuite sur [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=fr), [code source](https://github.com/thiswillbeyourgithub/neurarium)).
 
     <a href="https://neurarium.olicorne.org/?lang=fr"><img alt="capture de neurarium" src="{{ base_path }}/images/neurarium.webp" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/preview.webp';"></a>
@@ -83,9 +83,13 @@ Mes dépôts de code sont actuellement hébergés sur [github](https://github.co
 
 Les logiciels de transcription courants font trop d'erreurs sur les textes médicaux. UltiMed est ma tentative d'alternative ouverte.
 
-- [UltiMed](https://github.com/UltiMed-Org) : Un jeu de données ouvert de parole médicale française (sans aucune donnée patient), un affinage de [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) optimisé pour le CPU et le navigateur, les scripts qui les ont produits, et des règles qui corrigent les erreurs restantes (testable dans [Parakeet Web](https://parakeetweb.olicorne.org)).
+- [Plumed](https://plumed.fr/) : Une dictée vocale pour les soignants francophones, qui écrit dans n'importe quelle application sous Windows, macOS et Linux, avec une reconnaissance qui tourne sur l'ordinateur lui-même. C'est un fork de [Murmure](https://github.com/Kieirra/murmure) qui réunit le modèle [UltiMed](https://github.com/UltiMed-Org), les règles de correction du mode médical de Parakeet Web et mes contributions passées à Murmure.
+
+    <a href="https://plumed.fr/"><img alt="capture de Plumed" src="{{ base_path }}/images/plumed.webp" width="450" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/plumedorg/plumed/main/docs/screenshots/accueil.png';"></a>
+
+- [UltiMed](https://github.com/UltiMed-Org) : Un jeu de données ouvert de parole médicale française (sans aucune donnée patient), un affinage de [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) optimisé pour le CPU et le navigateur, les scripts qui les ont produits, et des règles qui corrigent les erreurs restantes (utilisé dans [Plumed](https://plumed.fr/), testable dans [Parakeet Web](https://parakeetweb.olicorne.org)).
 - [parakeet-tdt-0.6b-v3-optimized-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx) : Une version du modèle de reconnaissance vocale [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) de NVIDIA, fortement optimisée pour tourner sur des machines modestes et dans le navigateur.
-- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web) : Une transcription vocale qui tourne entièrement dans le navigateur, proposant plusieurs modèles dont le mien (instance publique gratuite sur [parakeetweb.olicorne.org](https://parakeetweb.olicorne.org)).
+- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web) : Une transcription vocale qui tourne entièrement dans le navigateur, pour les ordinateurs où Plumed ne peut pas être installé, proposant plusieurs modèles dont le mien (instance publique gratuite sur [parakeetweb.olicorne.org](https://parakeetweb.olicorne.org)).
 - [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd) : *[Archivé]* Une petite application [Gradio](https://www.gradio.app/) permettant à plusieurs volontaires d'enregistrer des phrases simultanément, pour constituer un jeu de données de reconnaissance vocale.
 
 ### Autres gros projets
@@ -284,6 +288,7 @@ Voici une courte liste de certains projets auxquels j'ai contribué. Il peut s'a
 - [karakeep](https://github.com/karakeep-app/karakeep/pulls?q=author%3Athiswillbeyourgithub+) : Backend, frontend, primes, rapports de bugs, doc, ...
 - [i3](https://github.com/i3/i3/pull/6438) : Correction de bug qui spammait mes journaux et endommageait mes SSD.
 - [mwmbl](https://github.com/mwmbl/mwmbl/pulls?q=author%3Athiswillbeyourgithub+) : Documentation et code principalement lié au backend (changement de toute la db vers [LMDB](https://en.wikipedia.org/wiki/Lightning_Memory-Mapped_Database), amélioration des performances en changeant diverses bibliothèques, idées sur la décentralisation, ...).
+- [murmure](https://github.com/Kieirra/murmure/issues?q=involves%3Athiswillbeyourgithub) : Demandes de fonctionnalités, signalements de bugs, documentation et quelques pull requests, avant de le forker pour en faire [Plumed](https://plumed.fr/).
 - [academicpages.github.io](https://github.com/academicpages/academicpages.github.io/issues?q=thiswillbeyourgithub) : Ce site est un fork de academicpages. J'ai fait plusieurs contributions au cours du temps.
 - ...
 

@@ -20,7 +20,7 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 
 [![(click if this doesn't load)](https://gstats.olicorne.org)](https://uncached.gstats.olicorne.org)
 
-*Individual project count on this page: 134*
+*Individual project count on this page: 135*
 
 *Some of my projects are also published on [PyPI](https://pypi.org/user/thiswillbeyourgithub/), totaling more than 7k downloads per month (as of March 2026).*
 
@@ -65,7 +65,7 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 
 ## Medicine / Computer Science / Larger projects
 {: #larger-projects}
-*23 projects so far*
+*24 projects so far*
 - [neurarium](https://neurarium.olicorne.org/?lang=en): A 3D, source-graded atlas linking brain anatomy, pathways, receptors and psychiatric drugs in one searchable model (free public instance at [neurarium.olicorne.org](https://neurarium.olicorne.org/?lang=en), [source code](https://github.com/thiswillbeyourgithub/neurarium)).
 
     <a href="https://neurarium.olicorne.org/?lang=en"><img alt="neurarium" src="{{ base_path }}/images/neurarium.webp" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thiswillbeyourgithub/neurarium/refs/heads/main/docs/images/preview.webp';"></a>
@@ -84,9 +84,13 @@ My code repositories are currently hosted on [github](https://github.com/thiswil
 
 Common transcription software makes too many mistakes on medical text. UltiMed is my attempt at an open alternative.
 
-- [UltiMed](https://github.com/UltiMed-Org): An open French medical speech dataset (no patient data), a [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) finetune optimized for CPU and the browser, the scripts behind them, and rules that fix the remaining errors (testable in [Parakeet Web](https://parakeetweb.olicorne.org)).
+- [Plumed](https://plumed.fr/): Voice dictation for French healthcare workers, typed into any application on Windows, macOS and Linux, with recognition running on the computer itself. It is a fork of [Murmure](https://github.com/Kieirra/murmure) that gathers the [UltiMed](https://github.com/UltiMed-Org) model, the correction rules from Parakeet Web's medical mode and my earlier contributions to Murmure.
+
+    <a href="https://plumed.fr/"><img alt="Plumed" src="{{ base_path }}/images/plumed.webp" width="450" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/plumedorg/plumed/main/docs/screenshots/accueil.png';"></a>
+
+- [UltiMed](https://github.com/UltiMed-Org): An open French medical speech dataset (no patient data), a [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) finetune optimized for CPU and the browser, the scripts behind them, and rules that fix the remaining errors (used in [Plumed](https://plumed.fr/), testable in [Parakeet Web](https://parakeetweb.olicorne.org)).
 - [parakeet-tdt-0.6b-v3-optimized-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx): A version of NVIDIA's [Parakeet](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) speech recognition model heavily optimized to run on low-end machines and in the browser.
-- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): Voice transcription that runs entirely in the browser, serving multiple models including my own (free public instance at [parakeetweb.olicorne.org](https://parakeetweb.olicorne.org)).
+- [Parakeet Web](https://github.com/thiswillbeyourgithub/parakeet_web): Voice transcription that runs entirely in the browser, for computers where Plumed cannot be installed, serving multiple models including my own (free public instance at [parakeetweb.olicorne.org](https://parakeetweb.olicorne.org)).
 - [AudioCrowd](https://github.com/thiswillbeyourgithub/AudioCrowd): *[Archived]* A small [Gradio](https://www.gradio.app/) app where several volunteers could record sentences at the same time to build a speech recognition dataset.
 
 ### Other larger projects
@@ -285,6 +289,7 @@ This is a short list of some projects I contributed to. It can be code, document
 - [karakeep](https://github.com/karakeep-app/karakeep/pulls?q=author%3Athiswillbeyourgithub+): Backend, frontend, bounties, bug reports, doc, ...
 - [i3](https://github.com/i3/i3/pull/6438): Bugfix that was spamming my logs and hurting my SSDs.
 - [mwmbl](https://github.com/mwmbl/mwmbl/pulls?q=author%3Athiswillbeyourgithub+): Documentation and code mostly related to backend (changing the entire db to [LMDB](https://en.wikipedia.org/wiki/Lightning_Memory-Mapped_Database), improving performance by changing various libs, ideas about decentralizing, ...).
+- [murmure](https://github.com/Kieirra/murmure/issues?q=involves%3Athiswillbeyourgithub): Feature requests, bug reports, documentation and a few pull requests, before forking it into [Plumed](https://plumed.fr/).
 - [academicpages.github.io](https://github.com/academicpages/academicpages.github.io/issues?q=thiswillbeyourgithub): This entire website is a fork of academicpages. I contributed somewhat over time.
 - ...
 
